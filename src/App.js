@@ -8,6 +8,8 @@ import WorldOS from './pages/WorldOS';
 import WorldSync from './pages/WorldSync';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import ISEMV2025 from './pages/ISEMV2025';
+import ISEMVDemo from './pages/ISEMVDemo';
 import './App.css';
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
             <Route path="/worldsync" element={<WorldSync />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/isemv2025" element={<ISEMV2025 />} />
+            <Route path="/isemvdemo" element={<ISEMVDemo />} />
           </Routes>
         </main>
         <Footer />
