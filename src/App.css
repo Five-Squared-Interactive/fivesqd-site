@@ -655,3 +655,35 @@ a:hover {
 .mb-4 { margin-bottom: 2rem; }
 .py-4 { padding: 2rem 0; }
 .px-4 { padding: 0 2rem; }
+
+
+/* ISEMV2025 Page Styling */
+.action-item {
+  margin-bottom: 1rem;
+}
+
+.action-item h3 {
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+  font-size: 1.3rem;
+}
+
+.action-item p {
+  margin-bottom: 0.75rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.action-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.action-link:hover {
+  color: #004499;
+  border-bottom-color: #004499;
+  transform: translateX(2px);
+}
