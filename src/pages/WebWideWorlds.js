@@ -42,6 +42,9 @@ const WebWideWorlds = () => {
               />
             </div>
           </div>
+          <a href="/docs/www_whitepaper_v1.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            See the White Paper
+          </a>
         </div>
       </section>
 
