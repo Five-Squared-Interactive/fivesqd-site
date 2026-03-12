@@ -18,6 +18,7 @@ const Footer = () => {
                 <a href="https://aurelia.worldhub.me" target="_blank" rel="noopener noreferrer">Aurelia</a>
                 <a href="/worldos">WorldOS</a>
                 <a href="/worldsync">WorldSync</a>
+                <a href="/worldkit">WorldKit</a>
               </div>
               <div className="footer-column">
                 <a href="/webwideworlds">Web Wide Worlds</a>
@@ -29,12 +30,12 @@ const Footer = () => {
           
           <div className="footer-section">
             <h3>Contact</h3>
-            <a href="mailto:dylan@fivesquaredinteractive.com">dylan@fivesquaredinteractive.com</a>
+            <a href="mailto:community@fivesqd.com">community@fivesqd.com</a>
           </div>
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 Five Squared Interactive. All Rights Reserved.</p>
+          <p>&copy; 2026 Five Squared Interactive. All Rights Reserved.</p>
           <div className="footer-legal-links">
             <a href="/privacy-policy">Privacy Policy</a>
             <span> | </span>

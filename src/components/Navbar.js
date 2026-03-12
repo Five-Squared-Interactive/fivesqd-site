@@ -30,6 +30,7 @@ const Navbar = () => {
             <li><a href="https://aurelia.worldhub.me" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>Aurelia</a></li>
             <li><Link to="/worldos" onClick={() => setIsMenuOpen(false)}>WorldOS</Link></li>
             <li><Link to="/worldsync" onClick={() => setIsMenuOpen(false)}>WorldSync</Link></li>
+            <li><Link to="/worldkit" onClick={() => setIsMenuOpen(false)}>WorldKit</Link></li>
           </ul>
 
           <button 
