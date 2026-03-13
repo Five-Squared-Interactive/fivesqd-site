@@ -30,7 +30,7 @@ const Footer = () => {
           
           <div className="footer-section">
             <h3>Contact</h3>
-            <a href="mailto:community@fivesqd.com">community@fivesqd.com</a>
+            <a href="mailto:dylan@fivesqd.com">dylan@fivesqd.com</a>
           </div>
         </div>
         
