@@ -10,6 +10,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ISEMV2025 from './pages/ISEMV2025';
 import ISEMVDemo from './pages/ISEMVDemo';
+import WorldKit from './pages/WorldKit';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/isemv2025" element={<ISEMV2025 />} />
             <Route path="/isemvdemo" element={<ISEMVDemo />} />
+            <Route path="/worldkit" element={<WorldKit />} />
           </Routes>
         </main>
         <Footer />
