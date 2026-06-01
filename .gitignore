@@ -1,23 +1,26 @@
-# React app source (build output is in root)
-react-app/
-
-# Old HTML site backup
-old-site/
-
-# Node modules
+# Dependencies
 node_modules/
 
-# Build artifacts
+# Build output
+build/
+static/
+
+# react-snap pre-rendered routes
+200.html
+404.html
+asset-manifest.json
+
+# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
+# Local env
+*.local
 dist
 dist-ssr
-*.local
 
 # Editor directories and files
 .vscode/*
@@ -29,5 +32,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-node_modules/

@@ -39,8 +39,9 @@ const Home = () => {
               </Link>
             </div>
             <div>
-              <img 
+              <img
                 src="/images/webwideworlds-ecosystem.png"
+                alt="Web Wide Worlds ecosystem diagram"
                 style={{
                   width: '100%',
                   height: '300px',
