@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Five Squared Interactive</h3>
-            <p>Empowering creatives and makers to build and share interactive experiences.</p>
+            <p>Empowering creators and makers to build and share interactive experiences.</p>
           </div>
           
           <div className="footer-section">
