@@ -128,7 +128,7 @@ const TermsOfService = () => {
               If you have any questions about these Terms of Service, please contact us at:
             </p>
             <p>
-              <strong>Email:</strong> dylan@fivesquaredinteractive.com<br/>
+              <strong>Email:</strong> dylan@fivesqd.com<br/>
               <strong>Company:</strong> Five Squared Interactive
             </p>
           </div>

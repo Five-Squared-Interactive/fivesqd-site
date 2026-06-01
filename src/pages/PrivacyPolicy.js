@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
               If you have questions about this Privacy Policy or our privacy practices, please contact us at:
             </p>
             <p>
-              <strong>Email:</strong> dylan@fivesquaredinteractive.com<br/>
+              <strong>Email:</strong> dylan@fivesqd.com<br/>
               <strong>Company:</strong> Five Squared Interactive
             </p>
           </div>

@@ -29,12 +29,12 @@ const Footer = () => {
           
           <div className="footer-section">
             <h3>Contact</h3>
-            <a href="mailto:dylan@fivesquaredinteractive.com">dylan@fivesquaredinteractive.com</a>
+            <a href="mailto:dylan@fivesqd.com">dylan@fivesqd.com</a>
           </div>
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 Five Squared Interactive. All Rights Reserved.</p>
+          <p>&copy; 2026 Five Squared Interactive. All Rights Reserved.</p>
           <div className="footer-legal-links">
             <a href="/privacy-policy">Privacy Policy</a>
             <span> | </span>
