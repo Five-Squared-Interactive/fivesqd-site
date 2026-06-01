@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import PageTransition from './components/PageTransition';
 import Home from './pages/Home';
 import './App.css';
 
@@ -20,16 +21,18 @@ function App() {
         <Navbar />
         <main>
           <Suspense fallback={null}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/webwideworlds" element={<WebWideWorlds />} />
-              <Route path="/worldos" element={<WorldOS />} />
-              <Route path="/worldsync" element={<WorldSync />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/terms-of-service" element={<TermsOfService />} />
-              <Route path="/isemv2025" element={<ISEMV2025 />} />
-              <Route path="/isemvdemo" element={<ISEMVDemo />} />
-            </Routes>
+            <PageTransition>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/webwideworlds" element={<WebWideWorlds />} />
+                <Route path="/worldos" element={<WorldOS />} />
+                <Route path="/worldsync" element={<WorldSync />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-of-service" element={<TermsOfService />} />
+                <Route path="/isemv2025" element={<ISEMV2025 />} />
+                <Route path="/isemvdemo" element={<ISEMVDemo />} />
+              </Routes>
+            </PageTransition>
           </Suspense>
         </main>
         <Footer />
