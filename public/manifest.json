@@ -1,6 +1,6 @@
 {
   "short_name": "Five Squared Interactive",
-  "name": "Five Squared Interactive - Web Metaverse Platform",
+  "name": "Five Squared Interactive",
   "icons": [
     {
       "src": "images/fivesquared-light-small.png",
@@ -8,7 +8,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
