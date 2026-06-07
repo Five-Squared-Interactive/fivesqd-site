@@ -83,7 +83,7 @@ function ISEMVDemo() {
               <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
                 <div style={{ margin: '1rem 0' }}>
                   <img 
-                    src="/images/isemvdemoworld.png" 
+                    src="/images/isemvdemoworld.webp" 
                     alt="ISEMV Demo World" 
                     style={{
                       maxWidth: '75%',
@@ -105,14 +105,8 @@ function ISEMVDemo() {
                       value={username}
                       onChange={(e) => setUsername(e.target.value)}
                       placeholder="Enter your username (or leave blank for Guest)"
-                      style={{
-                        width: '100%',
-                        padding: '0.75rem',
-                        border: '2px solid #ddd',
-                        borderRadius: '0.5rem',
-                        fontSize: '1rem',
-                        boxSizing: 'border-box'
-                      }}
+                      maxLength={50}
+                      className="demo-input"
                     />
                   </div>
                   
@@ -120,13 +114,15 @@ function ISEMVDemo() {
                     <label htmlFor="touchMode" style={{ fontWeight: '600' }}>
                       Touch Mode:
                     </label>
-                    <label style={{ position: 'relative', display: 'inline-block', width: '60px', height: '34px' }}>
+                    <label className="toggle-switch" style={{ position: 'relative', display: 'inline-block', width: '60px', height: '34px' }}>
                       <input
                         type="checkbox"
                         id="touchMode"
+                        role="switch"
+                        aria-checked={touchMode}
                         checked={touchMode}
                         onChange={(e) => setTouchMode(e.target.checked)}
-                        style={{ opacity: 0, width: 0, height: 0 }}
+                        className="visually-hidden"
                       />
                       <span style={{
                         position: 'absolute',
@@ -135,13 +131,12 @@ function ISEMVDemo() {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                        backgroundColor: touchMode ? '#2196F3' : '#ccc',
+                        backgroundColor: touchMode ? 'var(--color-primary)' : 'var(--color-border)',
                         transition: '0.4s',
                         borderRadius: '34px'
-                      }}>
+                      }} aria-hidden="true">
                         <span style={{
                           position: 'absolute',
-                          content: '',
                           height: '26px',
                           width: '26px',
                           left: touchMode ? '30px' : '4px',
@@ -156,27 +151,15 @@ function ISEMVDemo() {
                   
                   <button
                     onClick={handleGoClick}
-                    style={{
-                      padding: '1rem 2rem',
-                      backgroundColor: '#0066cc',
-                      color: 'white',
-                      border: 'none',
-                      borderRadius: '0.5rem',
-                      fontSize: '1.1rem',
-                      fontWeight: '600',
-                      cursor: 'pointer',
-                      transition: 'background-color 0.2s'
-                    }}
-                    onMouseOver={(e) => e.target.style.backgroundColor = '#004499'}
-                    onMouseOut={(e) => e.target.style.backgroundColor = '#0066cc'}
+                    className="demo-launch-btn"
                   >
-                    🚀 Launch Demo World
+                    <span aria-hidden="true">🚀 </span>Launch Demo World
                   </button>
                 </div>
               </div>
             ) : (
               <div style={{ textAlign: 'center' }}>
-                <p style={{ marginBottom: '1rem', color: '#666' }}>
+                <p style={{ marginBottom: '1rem', color: 'var(--color-text-muted)' }}>
                   Welcome to the ISEMV Demo World, {username || 'Guest'}
                 </p>
                 <div 
@@ -185,13 +168,14 @@ function ISEMVDemo() {
                     position: 'relative', 
                     width: '100%', 
                     height: '600px', 
-                    border: '2px solid #ddd', 
+                    border: '2px solid var(--color-border)',
                     borderRadius: '0.5rem',
                     overflow: 'hidden'
                   }}
                 >
                   <iframe
                     src={iframeUrl}
+                    sandbox="allow-scripts allow-same-origin"
                     style={{
                       width: '100%',
                       height: '100%',
@@ -216,11 +200,9 @@ function ISEMVDemo() {
                       zIndex: 10,
                       transition: 'background-color 0.2s'
                     }}
-                    onMouseOver={(e) => e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.9)'}
-                    onMouseOut={(e) => e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.7)'}
-                    title={isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'}
+                    aria-label={isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'}
                   >
-                    {isFullscreen ? '⛶' : '⛶'}
+                    <span aria-hidden="true">{isFullscreen ? '✕' : '⛶'}</span>
                   </button>
                 </div>
                 <button
@@ -228,15 +210,7 @@ function ISEMVDemo() {
                     setDemoStarted(false);
                     setIframeUrl('');
                   }}
-                  style={{
-                    marginTop: '1rem',
-                    padding: '0.5rem 1rem',
-                    backgroundColor: '#666',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '0.25rem',
-                    cursor: 'pointer'
-                  }}
+                  className="demo-reset-btn"
                 >
                   Reset Demo
                 </button>

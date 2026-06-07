@@ -4,11 +4,11 @@ function ISEMV2025() {
   return (
     <div style={{ paddingTop: '60px' }}>
       {/* Hero Section */}
-      <section className="hero">
+      <section className="section-hero">
         <div className="container">
-          <div className="fade-in-up" style={{ marginBottom: '1.5rem' }}>
+          <h1 className="fade-in-up" style={{ marginBottom: '1.5rem' }}>
             Thank you for your interest in Web Wide Worlds
-          </div>
+          </h1>
           <p className="fade-in-up">
             We're excited to work with you in building an open metaverse
             <br />
@@ -26,7 +26,7 @@ function ISEMV2025() {
                 <p>Jump into the world we built together during the session.</p>
                 <div style={{ margin: '1rem 0', textAlign: 'center' }}>
                   <img 
-                    src="/images/isemvdemoworld.png" 
+                    src="/images/isemvdemoworld.webp" 
                     alt="ISEMV Demo World" 
                     style={{
                       maxWidth: '75%',
@@ -39,23 +39,23 @@ function ISEMV2025() {
                 <a href="/isemvdemo" className="action-link"><strong>Launch Sample World →</strong></a>
               </div>
 
-              <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid #eee' }} />
+              <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid var(--color-border)' }} />
 
               <div className="action-item">
                 <h3>Share Your Thoughts</h3>
                 <p>Do you have ideas? Let's get in touch!</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNPzvIPQJlYUNCf9jREntSnDTWyE3EOegf1Yz0yGOD_HTosQ/viewform?usp=header" className="action-link"><strong>Take the Survey →</strong></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNPzvIPQJlYUNCf9jREntSnDTWyE3EOegf1Yz0yGOD_HTosQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="action-link"><strong>Take the Survey →</strong></a>
               </div>
 
-              <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid #eee' }} />
+              <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid var(--color-border)' }} />
 
               <div className="action-item">
                 <h3>Check Out More Worlds</h3>
                 <p>Browse other sample environments built with Web Wide Worlds.</p>
-                <a href="https://webverse.info/webverseapp.html" className="action-link"><strong>Explore Sample Worlds →</strong></a>
+                <a href="https://webverse.info/webverseapp.html" target="_blank" rel="noopener noreferrer" className="action-link"><strong>Explore Sample Worlds →</strong></a>
               </div>
 
-              <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid #eee' }} />
+              <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid var(--color-border)' }} />
 
               <div className="action-item">
                 <h3>Visit Aurelia</h3>
@@ -65,23 +65,23 @@ function ISEMV2025() {
                 </a>
               </div>
 
-              <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid #eee' }} />
+              <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid var(--color-border)' }} />
 
               <div className="action-item">
                 <h3>Learn About Web Wide Worlds</h3>
                 <p>Dive into the architecture, philosophy, and tools behind the ecosystem.</p>
-                <a href="/webwideworlds" className="action-link"><strong>Web Wide Worlds Overview →</strong></a>
+                <a href="/technology" className="action-link"><strong>Web Wide Worlds Overview →</strong></a>
               </div>
 
-              <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid #eee' }} />
+              <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid var(--color-border)' }} />
 
               <div className="action-item">
                 <h3>Stay Connected</h3>
                 <p>Want updates, collaboration invites, or early access to new tools?</p>
-                <a href="https://discord.gg/6VZYdjHvSF" className="action-link"><strong>Join the Web Wide Worlds Discord →</strong></a>
+                <a href="https://discord.gg/6VZYdjHvSF" target="_blank" rel="noopener noreferrer" className="action-link"><strong>Join the Web Wide Worlds Discord →</strong></a>
                 <br />
                 <span>Or reach out directly: </span>
-                <a href="mailto:dylan@fivesqd.com" className="action-link"><strong>Contact Dylan →</strong></a>
+                <a href="mailto:info@fivesquaredinteractive.com" className="action-link"><strong>Contact Dylan →</strong></a>
               </div>
             </div>
           </div>

@@ -1,44 +1,67 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import { Link } from 'react-router-dom';
 
-const Footer = () => {
+const YEAR = new Date().getFullYear();
+
+const Footer = React.memo(() => {
+  const toggleTheme = useCallback(() => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  }, []);
+
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
+            <img
+              src="/images/fivesquared-gradient.png"
+              alt="Five Squared Interactive"
+              style={{ width: '48px', height: '48px', borderRadius: '10px', marginBottom: '1rem' }}
+            />
             <h3>Five Squared Interactive</h3>
-            <p>Empowering creators and makers to build and share interactive experiences.</p>
+            <p>Building open tools for 3D worlds on the web, and WorldHub to host them.</p>
           </div>
-          
+
           <div className="footer-section">
-            <h3>Learn</h3>
+            <h3>Explore</h3>
             <div className="footer-columns">
               <div className="footer-column">
-                <a href="https://webverse.fivesqd.com" target="_blank" rel="noopener noreferrer">WebVerse</a>
-                <a href="https://aurelia.worldhub.me" target="_blank" rel="noopener noreferrer">Aurelia</a>
-                <a href="/worldos">WorldOS</a>
-                <a href="/worldsync">WorldSync</a>
+                <Link to="/products">Products</Link>
+                <Link to="/products/worldhub">WorldHub</Link>
+                <Link to="/technology">Technology</Link>
+                <Link to="/ecosystem">Ecosystem</Link>
+                <Link to="/about">About</Link>
               </div>
               <div className="footer-column">
-                <a href="/webwideworlds">Web Wide Worlds</a>
-                <a href="https://github.com/Five-Squared-Interactive/VEML/wiki">VEML</a>
-                <a href="https://github.com/Five-Squared-Interactive/WebWideWorlds/blob/main/docs/JS_World_APIs.md">World JS API</a>
+                <a href="https://webverse.fivesqd.com" target="_blank" rel="noopener noreferrer">WebVerse</a>
+                <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="/docs/www_whitepaper_v1.pdf" target="_blank" rel="noopener noreferrer">White Paper</a>
               </div>
             </div>
           </div>
-          
+
           <div className="footer-section">
             <h3>Contact</h3>
-            <a href="mailto:dylan@fivesqd.com">dylan@fivesqd.com</a>
+            <a href="mailto:info@fivesquaredinteractive.com">info@fivesquaredinteractive.com</a>
+            <button
+              className="theme-toggle-footer"
+              onClick={toggleTheme}
+              aria-label="Toggle theme"
+            >
+              Toggle light/dark mode
+            </button>
           </div>
         </div>
-        
+
         <div className="footer-bottom">
-          <p>&copy; 2026 Five Squared Interactive. All Rights Reserved.</p>
+          <p>&copy; {YEAR} Five Squared Interactive. All Rights Reserved.</p>
           <div className="footer-legal-links">
-            <a href="/privacy-policy">Privacy Policy</a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
             <span> | </span>
-            <a href="/terms-of-service">Terms of Service</a>
+            <Link to="/terms-of-service">Terms of Service</Link>
           </div>
           <div className="social-links">
             <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -56,6 +79,7 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
 
 export default Footer;
+
