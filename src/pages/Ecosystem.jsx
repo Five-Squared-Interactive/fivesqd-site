@@ -31,7 +31,7 @@ const PATHS = [
       'The entire stack is MIT-licensed. Build a new world browser, an editor, a hosting service, a connector, a plugin — or something nobody has thought of yet. Every layer is designed to be swapped, extended, or replaced. No permission needed.',
     actions: [
       { label: 'Architecture Overview', to: '/technology' },
-      { label: 'Read the White Paper', href: '/docs/www_whitepaper_v1.pdf', external: true },
+      { label: 'Read the White Paper', href: '/docs/www_whitepaper_v1.1.pdf', external: true },
       { label: 'Source on GitHub', href: 'https://github.com/Five-Squared-Interactive', external: true },
     ],
   },
@@ -229,7 +229,7 @@ const Ecosystem = () => {
               View on GitHub
             </a>
             <a
-              href="/docs/www_whitepaper_v1.pdf"
+              href="/docs/www_whitepaper_v1.1.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"

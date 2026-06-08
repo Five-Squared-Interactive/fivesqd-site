@@ -28,7 +28,7 @@ const Technology = () => {
                   standard web servers for hosting, DNS, TLS, CDNs. No proprietary protocols.
                   No special hosting required. If you can host a website, you can host a world.
                 </p>
-                <a href="/docs/www_whitepaper_v1.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: '0.5rem' }}>
+                <a href="/docs/www_whitepaper_v1.1.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: '0.5rem' }}>
                   Read the White Paper
                 </a>
               </div>
@@ -678,7 +678,7 @@ worldsync/user/position`}</pre>
                 <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginRight: '1rem' }}>
                   GitHub
                 </a>
-                <a href="/docs/www_whitepaper_v1.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                <a href="/docs/www_whitepaper_v1.1.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
                   White Paper
                 </a>
               </div>

@@ -14,7 +14,7 @@ const TECH_MENU = [
   { name: 'VEML', desc: 'World markup language', to: '/technology#veml' },
   { name: 'WorldSync', desc: 'Real-time multiplayer sync', to: '/products/worldkit#worldsync' },
   { name: 'WorldOS', desc: 'Server-side plugin framework', to: '/products/worldkit#worldos' },
-  { name: 'White Paper', desc: 'Web Wide Worlds vision document', href: '/docs/www_whitepaper_v1.pdf', external: true },
+  { name: 'White Paper', desc: 'Web Wide Worlds vision document', href: '/docs/www_whitepaper_v1.1.pdf', external: true },
 ];
 
 const DropdownItem = ({ item, onClose }) => {

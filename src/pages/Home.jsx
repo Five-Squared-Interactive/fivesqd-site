@@ -244,7 +244,7 @@ const Home = () => {
             <div className="card text-center">
               <h3>Yours to Keep</h3>
               <p>You own your worlds — the code, the data, the hosting. No one can pull the rug.</p>
-              <a href="/docs/www_whitepaper_v1.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/docs/www_whitepaper_v1.1.pdf" target="_blank" rel="noopener noreferrer">
                 Read the White Paper
               </a>
             </div>

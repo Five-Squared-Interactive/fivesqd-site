@@ -38,7 +38,7 @@ const Footer = React.memo(() => {
               <div className="footer-column">
                 <a href="https://webverse.fivesqd.com" target="_blank" rel="noopener noreferrer">WebVerse</a>
                 <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="/docs/www_whitepaper_v1.pdf" target="_blank" rel="noopener noreferrer">White Paper</a>
+                <a href="/docs/www_whitepaper_v1.1.pdf" target="_blank" rel="noopener noreferrer">White Paper</a>
               </div>
             </div>
           </div>
