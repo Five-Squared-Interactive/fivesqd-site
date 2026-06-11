@@ -47,7 +47,6 @@ const Products = () => {
                 </p>
                 <div className="product-card-links">
                   <a href="https://worldhub.me" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Visit WorldHub</a>
-                  <Link to="/products/worldhub" className="btn btn-secondary btn-sm">See Plans</Link>
                 </div>
               </div>
             </div>
