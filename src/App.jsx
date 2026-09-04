@@ -19,9 +19,10 @@ const ISEMV2025 = lazy(() => import('./pages/ISEMV2025'));
 const ISEMVDemo = lazy(() => import('./pages/ISEMVDemo'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
-function App() {
+// The router-free tree: the browser wraps it in BrowserRouter (below);
+// the build-time prerenderer wraps it in StaticRouter (entry-server.jsx).
+export function AppShell() {
   return (
-    <Router>
       <div className="App">
         <a href="#main-content" className="skip-link">Skip to main content</a>
         <Navbar />
@@ -52,6 +53,13 @@ function App() {
         </main>
         <Footer />
       </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppShell />
     </Router>
   );
 }

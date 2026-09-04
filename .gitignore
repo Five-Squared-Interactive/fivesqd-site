@@ -16,3 +16,6 @@ build/
 .idea
 .DS_Store
 *.sw?
+
+# SSR bundle used only by scripts/prerender.mjs
+build-ssr/
