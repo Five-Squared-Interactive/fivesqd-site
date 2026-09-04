@@ -1,29 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-
-const ROUTE_TITLES = {
-  '/': 'Five Squared Interactive',
-  '/products': 'Products — Five Squared Interactive',
-  '/products/worldhub': 'WorldHub — Five Squared Interactive',
-  '/products/worldkit': 'WorldKit — Five Squared Interactive',
-  '/products/gitworlds': 'Git Worlds — Five Squared Interactive',
-  '/technology': 'Technology — Five Squared Interactive',
-  '/about': 'About — Five Squared Interactive',
-  '/privacy-policy': 'Privacy Policy — Five Squared Interactive',
-  '/terms-of-service': 'Terms of Service — Five Squared Interactive',
-  '/isemv2025': 'ISEMV 2025 — Five Squared Interactive',
-  '/isemvdemo': 'ISEMV Demo — Five Squared Interactive',
-};
-
-const ROUTE_DESCRIPTIONS = {
-  '/': 'Open tools for building and exploring 3D worlds on the web. WebVerse, WorldHub, WorldOS, and more.',
-  '/products': 'Explore Five Squared products: WebVerse, WorldHub, WorldOS, WorldKit, and Git Worlds.',
-  '/products/worldhub': 'WorldHub — managed hosting for persistent digital worlds.',
-  '/products/worldkit': 'WorldKit — developer tools for building worlds: WorldOS, WorldSync, editor, templates.',
-  '/products/gitworlds': 'Git Worlds — fork a template, edit VEML, push to deploy. Build 3D worlds with just Git.',
-  '/technology': 'The architecture, standards, and components behind Web Wide Worlds.',
-  '/about': 'About Five Squared Interactive — building open tools for 3D worlds on the web.',
-};
+// Route metadata lives in src/routes.js — the same map the build-time
+// prerenderer uses, so client-side navigation and the static HTML agree.
+import { ROUTE_TITLES, ROUTE_DESCRIPTIONS } from '../routes.js';
 
 const PageTransition = ({ children }) => {
   const location = useLocation();
@@ -44,7 +23,9 @@ const PageTransition = ({ children }) => {
   }, [location.pathname, location.hash]);
 
   useEffect(() => {
-    const pathname = location.pathname;
+    // Normalize: prerendered routes are directories, so GitHub Pages serves
+    // them at /path/ (trailing slash) — the metadata maps key on /path.
+    const pathname = location.pathname.replace(/\/+$/, '') || '/';
 
     // Update document title
     document.title = ROUTE_TITLES[pathname] || 'Five Squared Interactive';
