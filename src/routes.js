@@ -37,6 +37,11 @@ export const ROUTES = [
     description: 'WorldKit — developer tools for building worlds: WorldOS, WorldSync, editor, templates.',
   },
   {
+    path: '/first-world',
+    title: 'Your First World — Five Squared Interactive',
+    description: 'From a Blender scene to a link anyone can walk into: install the add-on, sign in, press Save as My World, share the link.',
+  },
+  {
     path: '/products/gitworlds',
     title: 'Git Worlds — Five Squared Interactive',
     description: 'Git Worlds — fork a template, edit VEML, push to deploy. Build 3D worlds with just Git.',

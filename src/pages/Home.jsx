@@ -209,7 +209,7 @@ const Home = () => {
           </div>
 
           <div className="text-center" style={{ marginTop: '2rem' }}>
-            <a href="https://id.worldhub.me/guide.html" className="btn btn-primary">Publish your first world</a>
+            <Link to="/first-world" className="btn btn-primary">Publish your first world</Link>
           </div>
         </div>
       </section>
