@@ -175,6 +175,45 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Publish from Blender */}
+      <section className="section section-light">
+        <div className="container">
+          <div className="text-center mb-4">
+            <h2>From Blender to a Live World</h2>
+            <p className="section-subtitle">
+              Build a scene in Blender and publish it as a world anyone can walk into — one button, one link.
+            </p>
+          </div>
+
+          <div className="gradient-steps">
+            <div className="gradient-step">
+              <div className="gradient-step-icon" aria-hidden="true">🧊</div>
+              <h3>Build</h3>
+              <p>Make your scene in Blender, the way you already do.</p>
+            </div>
+            <div className="gradient-step">
+              <div className="gradient-step-icon" aria-hidden="true">🧩</div>
+              <h3>Install</h3>
+              <p>Add the free Blender add-on and sign in once.</p>
+            </div>
+            <div className="gradient-step">
+              <div className="gradient-step-icon" aria-hidden="true">🚀</div>
+              <h3>Publish</h3>
+              <p>Press Save as My World. Your world goes live and opens in the browser.</p>
+            </div>
+            <div className="gradient-step">
+              <div className="gradient-step-icon" aria-hidden="true">🔗</div>
+              <h3>Share</h3>
+              <p>Send anyone the link. They walk in right in their browser — nothing to install.</p>
+            </div>
+          </div>
+
+          <div className="text-center" style={{ marginTop: '2rem' }}>
+            <Link to="/first-world" className="btn btn-primary">Publish your first world</Link>
+          </div>
+        </div>
+      </section>
+
       {/* Git Worlds workflow */}
       <section className="section">
         <div className="container">

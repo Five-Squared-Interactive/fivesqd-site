@@ -10,6 +10,7 @@ const Products = lazy(() => import('./pages/Products'));
 const WorldHub = lazy(() => import('./pages/WorldHub'));
 const WorldKit = lazy(() => import('./pages/WorldKit'));
 const GitWorlds = lazy(() => import('./pages/GitWorlds'));
+const FirstWorld = lazy(() => import('./pages/FirstWorld'));
 const Technology = lazy(() => import('./pages/Technology'));
 const Ecosystem = lazy(() => import('./pages/Ecosystem'));
 const About = lazy(() => import('./pages/About'));
@@ -35,6 +36,7 @@ export function AppShell() {
                 <Route path="/products/worldhub" element={<WorldHub />} />
                 <Route path="/products/worldkit" element={<WorldKit />} />
                 <Route path="/products/gitworlds" element={<GitWorlds />} />
+                <Route path="/first-world" element={<FirstWorld />} />
                 <Route path="/technology" element={<Technology />} />
                 <Route path="/ecosystem" element={<Ecosystem />} />
                 <Route path="/about" element={<About />} />
