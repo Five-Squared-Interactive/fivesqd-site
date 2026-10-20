@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { DEMO_WORLD_URL, GITHUB_ORG } from '../links';
+import WorldDocument from '../components/WorldDocument';
+import { DEMO_WORLD_URL, GITHUB_ORG, WORLD_HERO, WORLD_CARD, WORLD_HERO_ALT } from '../links';
 
 // The words are content/home.md; keep the two in step.
 const Home = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="section-hero-image">
+      <section className="section-hero-image hero-world" style={{ backgroundImage: `url(${WORLD_HERO})` }}>
         <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
           <h1 style={{ color: 'white' }}>A world is a web page.</h1>
-          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '680px', margin: '0 auto 2rem' }}>
-            Export a scene from Blender and get a link. Anyone opens it in a browser and walks
-            around, with you, on a phone or a laptop. Nothing to install, no account to visit.
+          <p style={{ color: 'rgba(255,255,255,0.92)', maxWidth: '680px', margin: '0 auto 2rem' }}>
+            A document at an address you own. Open it in a browser and walk around, with other
+            people, on a phone, a laptop or a headset. Nothing to install. One way to make one:
+            export a scene from Blender and press Save and Publish.
           </p>
           <div className="hero-actions">
             {DEMO_WORLD_URL && (
@@ -23,42 +25,24 @@ const Home = () => {
               Make your own
             </Link>
           </div>
-          {DEMO_WORLD_URL && (
-            <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.95rem', marginTop: '1rem' }}>
-              The demo is a living room exported from a Blender file. The link is the world.
-            </p>
-          )}
+          <p className="hero-caption">The Overlook, a world opened in the client.</p>
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>What makes it a page, not an upload</h2>
-            <p className="section-subtitle">Three things you can check on any published world.</p>
+            <h2>The whole world, and the whole document</h2>
+            <p className="section-subtitle">
+              Everything the world on the left is made of is the text on the right.
+            </p>
           </div>
-          <div className="grid grid-3">
-            <div className="card">
-              <h3>It is text you can read and change.</h3>
-              <p>
-                Open the document behind a world and you will find a short file: a title, where you
-                start, the light, the model it loads. Change a line and the world changes.
-              </p>
-            </div>
-            <div className="card">
-              <h3>It links to any other world.</h3>
-              <p>
-                A door in one world leads into another at a different address, the way one page links
-                to the next. Your room can open onto a friend's room, or onto a planet.
-              </p>
-            </div>
-            <div className="card">
-              <h3>It runs anywhere you put the files.</h3>
-              <p>
-                The world is a folder. Download it and put it on any web host, and the link works from
-                there. No server of ours is needed to open it.
-              </p>
-            </div>
+          <div className="world-pair">
+            <figure className="world-frame">
+              <img src={WORLD_CARD} alt={WORLD_HERO_ALT} width="800" height="426" loading="lazy" />
+              <figcaption>A world, opened in a browser.</figcaption>
+            </figure>
+            <WorldDocument caption="Its document: a title, a sky, where you start, the model it loads. The model is a standard glTF file. There is nothing else." />
           </div>
         </div>
       </section>
@@ -66,7 +50,41 @@ const Home = () => {
       <section className="section">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>Make one in five minutes</h2>
+            <h2>What makes it a page, not an upload</h2>
+          </div>
+          <div className="grid grid-3">
+            <div className="card">
+              <div className="card-glyph" aria-hidden="true">&lt;/&gt;</div>
+              <h3>You can read it.</h3>
+              <p>
+                Add <code>/index.veml</code> to any published world's address and the document opens
+                as text. It is short, and every line means something you can see.
+              </p>
+            </div>
+            <div className="card">
+              <div className="card-glyph" aria-hidden="true">⇄</div>
+              <h3>It links to other worlds.</h3>
+              <p>
+                A door, a sign or a frame in your scene can open onto another world's address, the
+                way one page links to the next. In Blender, a link is a field on the object.
+              </p>
+            </div>
+            <div className="card">
+              <div className="card-glyph" aria-hidden="true">▤</div>
+              <h3>It is files at an address.</h3>
+              <p>
+                A world is a folder of plain files served like any web page: no server of yours, no
+                database, no account to visit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-light">
+        <div className="container">
+          <div className="text-center mb-4">
+            <h2>Make one</h2>
           </div>
           <div className="gradient-steps">
             <div className="gradient-step">
@@ -77,7 +95,7 @@ const Home = () => {
             <div className="gradient-step">
               <div className="gradient-step-icon" aria-hidden="true">2</div>
               <h3>Publish</h3>
-              <p>Press Save as My World. Your world opens in the browser.</p>
+              <p>In the Save as My World box, press Save and Publish. Your world opens in the browser.</p>
             </div>
             <div className="gradient-step">
               <div className="gradient-step-icon" aria-hidden="true">3</div>
@@ -89,13 +107,13 @@ const Home = () => {
             <Link to="/first-world" className="btn btn-primary">The first-world guide</Link>
           </div>
           <p className="text-center" style={{ marginTop: '1.5rem', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>
-            Worlds you publish this way are hosted for you by WorldHub, and remain yours to download
-            and move.
+            Worlds published this way are hosted by WorldHub; the world is a document, and you
+            choose who may enter.
           </p>
         </div>
       </section>
 
-      <section className="section section-light">
+      <section className="section">
         <div className="container">
           <div className="grid grid-2">
             <div>
@@ -103,21 +121,23 @@ const Home = () => {
               <p>
                 For anyone with a scene and someone to show it to: a room you modelled, a building, a
                 place that no longer exists, a toy. For a group that wants a room of its own on the
-                web. For developers who want a 3D document format that is open, a client that is
-                MIT-licensed, and a sync layer that works with the engine they already have.
+                web. For developers who want an open 3D document format, an MIT-licensed client, and a
+                sync layer that works with the engine they already have.
               </p>
             </div>
             <div>
-              <h2>Everything is open</h2>
+              <h2>Open</h2>
               <p>
                 The format (VEML), the client (WebVerse), the engine under it (StraightFour), the sync
-                layer (WorldSync) and the runtime for worlds that need a server (WorldOS) are
-                MIT-licensed. Hosting is a convenience we offer, never a requirement.
+                layer (WorldSync) and the runtime for worlds with their own logic (WorldOS) are
+                MIT-licensed. The public release of the current generation is being prepared; the
+                earlier generation is on GitHub. Hosting is a convenience we offer, never a
+                requirement.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Link to="/technology" className="btn btn-secondary">How it works</Link>
                 <Link to="/ecosystem" className="btn btn-secondary">Build on it</Link>
-                <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">GitHub</a>
+                <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Earlier generation on GitHub</a>
               </div>
             </div>
           </div>

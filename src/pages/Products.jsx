@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GITHUB_ORG } from '../links';
+import { GITHUB_ORG, WORLD_CARD, WORLD_HERO, WORLD_HERO_ALT } from '../links';
 
 // The words are content/products.md; keep the two in step.
 const PIECES = [
@@ -8,80 +8,77 @@ const PIECES = [
     id: 'veml',
     name: 'VEML',
     tagline: 'The format',
+    image: '/images/VEMLLogo.png',
     text: 'A world is a VEML document plus glTF models. The 4.0 specification and its conformance suite are being prepared for publication; the earlier documents are on GitHub.',
-    links: [{ label: 'GitHub', href: `${GITHUB_ORG}/VEML` }],
   },
   {
     id: 'webverse',
     name: 'WebVerse',
     tagline: 'The client',
-    text: 'A web page that opens any world by its address. It is what a published link opens, on a phone or a laptop. A desktop version for offline and local-network use is in the works.',
-    links: [{ label: 'webverse.fivesqd.com', href: 'https://webverse.fivesqd.com' }],
+    image: WORLD_CARD,
+    imageAlt: WORLD_HERO_ALT,
+    text: "A web page that opens any world by its address, on a phone, a laptop or a headset's browser. It is what a published link opens. A desktop version for offline and local-network use is in the works.",
   },
   {
     id: 'straightfour',
     name: 'StraightFour',
     tagline: 'The engine',
-    text: 'Under the client: rendering, loading, physics, the scripting sandbox. A library; clients link against it.',
-    links: [],
+    image: '/images/StraightFourLogo.webp',
+    text: 'Under the client: rendering, loading, physics, the scripting sandbox. You meet it only if you build a client.',
   },
   {
     id: 'worldsync',
     name: 'WorldSync',
     tagline: 'Being there together',
-    text: 'The sync layer that lets visitors be in a world together. Works without a server for most worlds, with a server for worlds that want one. Standalone: an engine you already use can adopt it.',
-    links: [],
+    image: '/images/WorldSyncLogo.webp',
+    text: 'The clients in a world exchange what moved, directly for most worlds, through a server for worlds that want one. It stands alone: an engine you already use can adopt it to put its users in the same room.',
   },
   {
     id: 'worldos',
     name: 'WorldOS',
-    tagline: 'The runtime, when a world needs one',
-    text: 'For worlds that need an authority of their own: plugins, state no visitor owns, connections to outside systems. Most worlds do not need it.',
-    links: [{ label: 'GitHub', href: `${GITHUB_ORG}/WorldOS` }],
+    tagline: 'A world with its own logic',
+    image: '/images/WorldOSLogo.webp',
+    text: 'The runtime for a world that keeps a score, runs a simulation, has terrain people reshape, or listens to a sensor. Most worlds do not need it.',
   },
   {
     id: 'worldkit',
     name: 'WorldKit',
     tagline: 'The authoring tools',
+    image: '/images/icon-worldkit.png',
     text: 'Today: the Blender add-on, which exports a scene as a world and publishes it in one press.',
-    links: [{ label: 'Your first world', to: '/first-world' }],
+    link: { label: 'Your first world', to: '/first-world' },
   },
   {
     id: 'myworlds',
     name: 'MyWorlds',
-    tagline: 'Assemble a world in the browser',
-    text: 'The place to put a world together without Blender. Being rebuilt on the new client; not yet live.',
-    links: [],
+    tagline: 'Assembling a world in the browser',
+    text: 'Putting a world together without Blender. Being rebuilt on the new client; not yet live.',
   },
 ];
 
 const Piece = ({ p }) => (
-  <div className="card" id={p.id}>
+  <div className="card logo-card" id={p.id}>
+    {p.image && (
+      <div className="logo-card-image">
+        <img src={p.image} alt={p.imageAlt ?? ''} loading="lazy" />
+      </div>
+    )}
     <h3 style={{ marginBottom: '0.25rem' }}>{p.name}</h3>
     <p style={{ opacity: 0.75, marginBottom: '0.75rem' }}>{p.tagline}</p>
     <p>{p.text}</p>
-    {p.links.length > 0 && (
-      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-        {p.links.map((l) =>
-          l.to ? (
-            <Link key={l.label} to={l.to}>{l.label} &rarr;</Link>
-          ) : (
-            <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer">{l.label} &rarr;</a>
-          ),
-        )}
-      </div>
-    )}
+    {p.link && <Link to={p.link.to}>{p.link.label} &rarr;</Link>}
   </div>
 );
 
 const Products = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="section-hero-image">
+      <section className="section-hero-image hero-world hero-inner" style={{ backgroundImage: `url(${WORLD_HERO})` }}>
         <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
           <h1 style={{ color: 'white' }}>What we make</h1>
           <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '700px', margin: '0 auto' }}>
-            Open pieces that fit together, and one service. Each is listed with what it is today.
+            Open pieces that fit together, and one service. Each is listed with what it is today,
+            not what it will be.
           </p>
         </div>
       </section>
@@ -90,11 +87,16 @@ const Products = () => {
         <div className="container">
           <div className="text-center mb-4">
             <h2>The open stack</h2>
-            <p className="section-subtitle">MIT-licensed, on GitHub.</p>
           </div>
           <div className="grid grid-3">
             {PIECES.map((p) => <Piece key={p.id} p={p} />)}
           </div>
+          <p className="text-center" style={{ marginTop: '2rem', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto' }}>
+            All of it is MIT-licensed. The public release of the current generation is being
+            prepared; the repositories on{' '}
+            <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer">GitHub</a> today are the
+            earlier generation.
+          </p>
         </div>
       </section>
 
@@ -103,14 +105,10 @@ const Products = () => {
           <h2>The service</h2>
           <p>
             <strong>WorldHub</strong> is the one service we run. It hosts the worlds you publish from
-            Blender, signs you in (WorldHub ID), and lists worlds people want listed (Search). It is a
-            convenience: a world does not need WorldHub to exist, to be opened, or to be moved
-            somewhere else.
+            Blender and signs you in (WorldHub ID); a directory of worlds people choose to list is
+            coming. A world does not need WorldHub to exist or to be opened.
           </p>
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link to="/products/worldhub" className="btn btn-primary">About WorldHub</Link>
-            <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">All the code</a>
-          </div>
+          <Link to="/products/worldhub" className="btn btn-primary">About WorldHub</Link>
         </div>
       </section>
     </div>

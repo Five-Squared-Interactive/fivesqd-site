@@ -1,55 +1,61 @@
 # Home
 
-## Hero
+## Hero (over a frame of a real world; today The Overlook, a world opened in the client)
 
 **A world is a web page.**
 
-Export a scene from Blender and get a link. Anyone opens it in a browser
-and walks around, with you, on a phone or a laptop. Nothing to install,
-no account to visit.
+A document at an address you own. Open it in a browser and walk around,
+with other people, on a phone, a laptop or a headset. Nothing to install.
+One way to make one: export a scene from Blender and press Save and Publish.
 
 [Walk into one]({DEMO_WORLD_URL}) · [Make your own](/first-world)
 
-*(Under the buttons, small: the demo is a living room exported from a
-Blender file; the link is the world.)*
+## The whole world, on the left; the document, on the right
+
+*(Two columns: a picture of a published world, and beside it its complete
+`index.veml`, nine hundred bytes, shown as text. The caption:)*
+
+This is everything the world on the left is made of: a title, a sky, where
+you start, the model it loads. The model is a standard glTF file. There is
+nothing else.
 
 ## What makes it a page, not an upload
 
-Three things you can check on the demo world right now.
+**You can read it.** Add `/index.veml` to any published world's address
+and the document opens as text. It is short, and every line means
+something you can see.
 
-**It is text you can read and change.** Open the document behind the demo
-and you will find a short file: a title, where you start, the light, the
-model it loads. Change a line and the world changes.
+**It links to other worlds.** A door, a sign or a frame in your scene can
+open onto another world's address, the way one page links to the next.
+In Blender, a link is a field on the object.
 
-**It links to any other world.** A door in one world leads into another at
-a different address, the way one page links to the next. Your room can
-open onto a friend's room, or onto a planet.
+**It is files at an address.** A world is a folder of plain files served
+like any web page: no server of yours, no database, no account to visit.
+*(Not yet claimed: downloading the folder and moving it, and editing the
+document on the page. Both are coming; see drafts/published-world-page.md.)*
 
-**It runs anywhere you put the files.** The world is a folder. Download it
-and put it on any web host, and the link works from there. No server of
-ours is needed to open it.
+## Make one
 
-## Make one in five minutes
-
-1. Install the add-on in Blender 4.5 or newer.
-2. Press **Save as My World**.
+1. Install the add-on in Blender 4.5 or newer and sign in once.
+2. In the Save as My World box, press **Save and Publish**.
 3. Send the link.
 
-[The first-world guide](/first-world) walks through it. Worlds you publish
-this way are hosted for you by WorldHub, and remain yours to download and
-move.
+[The first-world guide](/first-world). Worlds published this way are
+hosted by WorldHub; the world is a document, and you choose who may enter.
 
 ## Who this is for
 
 For anyone with a scene and someone to show it to: a room you modelled, a
 building, a place that no longer exists, a toy. For a group that wants a
-room of its own on the web. For developers who want a 3D document format
-that is open, a client that is MIT-licensed, and a sync layer that works
-with the engine they already have.
+room of its own on the web. For developers who want an open 3D document
+format, an MIT-licensed client, and a sync layer that works with the engine
+they already have.
 
-## Everything is open
+## Open
 
 The format (VEML), the client (WebVerse), the engine under it
-(StraightFour), the sync layer (WorldSync) and the runtime for worlds that
-need a server (WorldOS) are MIT-licensed. Hosting is a convenience we offer,
-never a requirement. [How it works](/technology) · [Build on it](/ecosystem)
+(StraightFour), the sync layer (WorldSync) and the runtime for worlds with
+their own logic (WorldOS) are MIT-licensed. The public release of the
+current generation is being prepared; the earlier generation is on GitHub.
+Hosting is a convenience we offer, never a requirement.
+[How it works](/technology) · [Build on it](/ecosystem)

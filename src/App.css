@@ -1878,3 +1878,87 @@ pre.code-example {
   border-bottom-color: var(--color-primary-hover);
   transform: translateX(2px);
 }
+
+/* A world is a web page: the frame of a real world as the hero, the world
+   beside its document, and the cards that carry a glyph or a logo. */
+.hero-world {
+  background-position: center;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.hero-world::before {
+  background: linear-gradient(to bottom, rgba(10, 12, 18, 0.35) 0%, rgba(10, 12, 18, 0.75) 100%);
+}
+.hero-caption {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-top: 1.25rem;
+}
+.world-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .world-pair { grid-template-columns: 1fr; }
+}
+.world-frame, .doc-frame {
+  margin: 0;
+}
+.world-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  display: block;
+}
+.world-frame figcaption, .doc-frame figcaption {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-top: 0.75rem;
+}
+.doc-frame pre.code-example {
+  margin: 0;
+  max-height: 426px;
+  font-size: 0.78rem;
+}
+.card-glyph {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.logo-card-image {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: var(--color-bg-alt);
+}
+.logo-card-image img {
+  max-height: 96px;
+  max-width: 100%;
+  object-fit: contain;
+}
+#webverse .logo-card-image img {
+  max-height: 120px;
+  width: 100%;
+  object-fit: cover;
+}
+.step-shot {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid var(--color-border);
+}
+.hero-inner { min-height: 38vh; }
+.world-pair > * { min-width: 0; }
+.doc-frame pre.code-example { max-width: 100%; }
+.logo-card-image { background: #141821; }

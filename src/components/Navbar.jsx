@@ -5,7 +5,7 @@ const PRODUCTS_MENU = [
   { icon: '/images/icon-webverse.png', name: 'WebVerse', desc: 'The client', to: '/products#webverse' },
   { icon: '/images/icon-worldhub.png', name: 'WorldHub', desc: 'Hosting, sign-in, a directory', to: '/products/worldhub' },
   { icon: '/images/icon-worldkit.png', name: 'WorldKit', desc: 'The Blender add-on', to: '/products#worldkit' },
-  { icon: '/images/icon-worldos.png', name: 'WorldOS', desc: 'The runtime, when a world needs one', to: '/products#worldos' },
+  { icon: '/images/WorldOSLogo.webp', name: 'WorldOS', desc: 'A world with its own logic', to: '/technology#worldos' },
 ];
 
 const TECH_MENU = [
@@ -111,7 +111,7 @@ const Navbar = () => {
                 <button
                   className="dropdown-chevron"
                   onClick={() => setOpenDropdown(openDropdown === 'products' ? null : 'products')}
-                  aria-label="Expand Products menu"
+                  aria-label="Expand What we make menu"
                   aria-expanded={openDropdown === 'products'}
                   aria-haspopup="true"
                 >
@@ -141,7 +141,7 @@ const Navbar = () => {
                 <button
                   className="dropdown-chevron"
                   onClick={() => setOpenDropdown(openDropdown === 'technology' ? null : 'technology')}
-                  aria-label="Expand Technology menu"
+                  aria-label="Expand How it works menu"
                   aria-expanded={openDropdown === 'technology'}
                   aria-haspopup="true"
                 >

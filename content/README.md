@@ -31,6 +31,7 @@ nothing in `drafts/` is routed or prerendered.
 | `drafts/worldos.md` | the runtime's operator template and plugin guide are public |
 | `drafts/worldsync.md` | the protocol document is published outside the private repo |
 | `drafts/webverse-desktop.md` | a desktop build is downloadable |
+| `drafts/own-address.md` | a public client address exists, so a world served from anywhere opens (`CLIENT_URL` in `src/links.js`) |
 
 ## Rules the copy keeps
 
@@ -53,6 +54,22 @@ nothing in `drafts/` is routed or prerendered.
   Until then www.worldhub.me is the earlier site.
 - `how-it-works.md` says a relay forwards bytes where a network stands in
   the way: merged, live once the TURN key is on the box (#683).
-- Requiring sign-in for a world with an allow-list exists but is set by
-  the operator, not by the author, so the copy does not offer it.
+- The add-on's panel: the box is **Save as My World**, the button in it is
+  **Save and Publish**, and the box offers **Everyone** or **Only People I
+  Allow** with a viewers list (checked in the shipped zip's
+  `veml_scene_panel.py`). The copy says exactly that.
+- Phone controls are two sticks (left moves, right looks), not a drag; the
+  client's own hint is the source.
+- "Open the document", "Download this world" and "Edit" do not exist on
+  the published-world page yet; the copy claims only `/index.veml`, which
+  is served today, and the Blender **Link** field.
+- The current generation's code is not on GitHub yet; every GitHub link is
+  labelled "earlier generation" until the public release exists.
 - The e-mail is `info@fivesquaredinteractive.com`, the one the live site uses.
+- Imagery: the hero and the WebVerse card are The Overlook, a world opened
+  in the client (`public/images/world-overlook-*.webp`, shot 2026-10-20).
+  The living room, the Blender demo scene, renders magenta in the corpus
+  copy (missing textures) and cannot be shown until a textured scene is
+  published. The first-world steps have `shot` slots for Blender
+  screenshots nobody has taken yet. The social preview is
+  `og-world-is-a-page.png`.

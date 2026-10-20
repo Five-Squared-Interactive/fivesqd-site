@@ -1,22 +1,23 @@
 # Build on it
 
 Everything that opens, moves or syncs a world is MIT-licensed, and the
-format is written down as a specification with a conformance suite. There
-are three ways in.
+format is written down as a specification with a conformance suite, both
+being prepared for publication. There are three ways in.
 
 ## Make worlds
 
 You have a scene and someone to show it to. Install the Blender add-on,
-press Save as My World, send the link. Then open the document behind the
-world and see how little it is; a world is text you can read and change.
+press Save and Publish, send the link. Then add `/index.veml` to the
+address and see how little the world is; it is text you can read.
 [Your first world](/first-world)
 
 ## Put your own things in a world
 
 You have models, data, a game, a simulation. A world's document can load
 your glTF, script behaviour in JavaScript inside the client's sandbox, and
-link to anything at a URL. A world that needs a live authority can run on
-WorldOS, with plugins that talk to the systems you already have.
+link to anything at a URL. A world that keeps a score or listens to a
+sensor can run on WorldOS, with plugins that talk to the systems you
+already have.
 
 ## Build the pieces yourself
 
@@ -27,10 +28,13 @@ us. Build what fits and it works with everything else.
 
 ## Where to start
 
-- The repositories: [github.com/Five-Squared-Interactive](https://github.com/Five-Squared-Interactive)
-- The format: VEML (the 4.0 specification and its conformance suite are
-  being prepared for publication; the earlier documents are on GitHub)
-- The client: WebVerse, and StraightFour under it
-- Sync: WorldSync; runtime: WorldOS
+- The format: VEML. The 4.0 specification and its conformance suite are
+  being prepared for publication; the earlier documents are on GitHub.
+- The client: WebVerse, and StraightFour under it. Public release in
+  preparation.
+- Being together: WorldSync, the piece an engine you already use can adopt
+  first. The protocol document is being prepared for publication.
+- A world with its own logic: WorldOS.
+- The earlier generation of all of it: [github.com/Five-Squared-Interactive](https://github.com/Five-Squared-Interactive).
 
 Ask us anything: info@fivesquaredinteractive.com.

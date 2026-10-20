@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GITHUB_ORG, CONTACT_EMAIL } from '../links';
+import { GITHUB_ORG, CONTACT_EMAIL, WORLD_HERO } from '../links';
 
 // The words are content/about.md; keep the two in step.
 const About = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="section-hero-image">
+      <section className="section-hero-image hero-world hero-inner" style={{ backgroundImage: `url(${WORLD_HERO})` }}>
         <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
           <h1 style={{ color: 'white' }}>About Five Squared Interactive</h1>
           <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '680px', margin: '0 auto' }}>
@@ -49,8 +49,8 @@ const About = () => {
             public.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer" className="btn btn-primary">GitHub</a>
-            <a href={`mailto:${CONTACT_EMAIL}`} className="btn btn-secondary">Get in touch</a>
+            <a href={`mailto:${CONTACT_EMAIL}`} className="btn btn-primary">Get in touch</a>
+            <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Earlier generation on GitHub</a>
           </div>
         </div>
       </section>

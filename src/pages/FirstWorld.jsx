@@ -1,15 +1,16 @@
 import React from 'react';
+import { ADDON_ZIP } from '../links';
 
 // The first-world guide: from a Blender scene to a link anyone can walk into.
-// It lived on id.worldhub.me (the sign-in site) because that site's build
-// makes the add-on zip; the guide belongs with the rest of the product here.
-// The zip itself stays where it is built: it carries the sign-in service's
-// publishable key, which is never committed, so it cannot be a file in this repo.
-const ADDON_ZIP = 'https://id.worldhub.me/download/veml-blender-addon.zip';
-
-// A step's title is a card heading, not a page section: the site's h2 is sized
-// for sections. Lists match the paragraphs' size and indent.
-const listStyle = { paddingLeft: '1.25rem', margin: '0 0 1rem', lineHeight: 1.7, fontSize: '1.125rem' }; // the site's paragraph size (App.css `p`)
+// The words are content/first-world.md; keep the two in step. The add-on zip
+// is built by the sign-in site (it carries that site's publishable key,
+// never committed), so the link points there.
+//
+// Each step has room for a screenshot (the `shot` slot): the Add-ons list,
+// the Sign In button, the Save as My World box, the Entry Point tick, the
+// Link field, the world in a browser tab. They do not exist yet; when they
+// do, pass `shot={{ src, alt }}` and nothing else changes.
+const listStyle = { paddingLeft: '1.25rem', margin: '0 0 1rem', lineHeight: 1.7, fontSize: '1.125rem' };
 const kbd = {
   display: 'inline-block',
   padding: '0 0.4em',
@@ -22,9 +23,10 @@ const kbd = {
 };
 const K = ({ children }) => <kbd style={kbd}>{children}</kbd>;
 
-const Step = ({ title, children }) => (
-  <div className="card" style={{ marginBottom: '1.5rem', textAlign: 'left' }}>
-    <h3 style={{ marginTop: 0, fontSize: '1.35rem' }}>{title}</h3>
+const Step = ({ title, shot, children }) => (
+  <div className="card step-card" style={{ marginBottom: '1.5rem', textAlign: 'left' }}>
+    <h2 style={{ marginTop: 0, fontSize: '1.5rem' }}>{title}</h2>
+    {shot && <img className="step-shot" src={shot.src} alt={shot.alt} loading="lazy" />}
     {children}
   </div>
 );
@@ -41,22 +43,21 @@ const FirstWorld = () => {
 
       <section className="section section-light">
         <div className="container" style={{ maxWidth: '760px' }}>
-          <Step title="1. Get Blender">
-            <p>
-              Blender 4.5 or newer, free from{' '}
-              <a href="https://www.blender.org/download/" target="_blank" rel="noopener noreferrer">blender.org</a>.
-              You also need{' '}
-              <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a> installed; the
-              add-on uses it to build your world.
-            </p>
+          <Step title="1. What you need">
+            <ul style={listStyle}>
+              <li>
+                Blender 4.5 or newer, free from{' '}
+                <a href="https://www.blender.org/download/" target="_blank" rel="noopener noreferrer">blender.org</a>.
+              </li>
+              <li>
+                The add-on: <a href={ADDON_ZIP}>download</a>. It uses{' '}
+                <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a> to build your
+                world; if Node.js is not installed, the panel offers <strong>Get Node.js</strong>.
+              </li>
+            </ul>
           </Step>
 
           <Step title="2. Install the add-on">
-            <p>
-              <a className="btn btn-primary" href={ADDON_ZIP} download>
-                Download the add-on
-              </a>
-            </p>
             <ol style={listStyle}>
               <li>In Blender: <strong>Edit → Preferences → Add-ons</strong>.</li>
               <li>
@@ -68,7 +69,7 @@ const FirstWorld = () => {
             <p>Already had an older version? Remove it first, then install this one.</p>
           </Step>
 
-          <Step title="3. Sign in">
+          <Step title="3. Sign in once">
             <p>
               In the add-on's preferences, press <strong>Sign In</strong>. Your browser opens WorldHub; sign in with
               Google, GitHub, or a link we email you, and Blender picks it up on its own. You stay signed in; there is
@@ -76,14 +77,12 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="4. Save as My World">
+          <Step title="4. Publish">
             <p>
               Save your .blend file, then open the <strong>Scene</strong> tab of the Properties editor and find the{' '}
-              <strong>VEML World</strong> panel. Press <strong>Save as My World</strong>.
-            </p>
-            <p>
-              The first time takes a little longer. When it is done, your world opens in the browser. If you are not
-              signed in, the panel offers <strong>Sign In</strong> right there, and the world publishes once you are.
+              <strong>VEML World</strong> panel. In its <strong>Save as My World</strong> box, press{' '}
+              <strong>Save and Publish</strong>. The first time takes a little longer. When it is done, your world
+              opens in the browser. If you are not signed in, the box offers <strong>Sign In</strong> right there.
             </p>
             <p>
               Where do people start? Select a camera, open its <strong>Object</strong> tab, and tick{' '}
@@ -92,36 +91,20 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="5. Share it">
+          <Step title="5. Who may enter">
             <p>
-              The address your world opened at is the one to share, for example{' '}
-              <code>https://worlds.worldhub.me/w/…</code>. Anyone can open it in a browser; nothing to install. Press
-              Save as My World again and the same address shows the new version. Visitors who are signed in appear
-              under their own names.
+              In the same box, <strong>Everyone</strong> lets anyone with the link in. <strong>Only People I Allow</strong>{' '}
+              asks visitors to sign in and admits the people on your list. Visitors who are signed in appear under
+              their own names.
             </p>
           </Step>
 
-          <Step title="Now look at what you made">
-            <p>Your world is a web page, and you own it.</p>
-            <ul style={listStyle}>
-              <li>
-                <strong>Open the document.</strong> Next to the world is a link to the file behind it. It is short.
-                The title, the starting point, the sky, the model: all there in plain text.
-              </li>
-              <li>
-                <strong>Change something.</strong> Edit the title or move the starting point, save, and the same link
-                shows the change. (Editing on the page itself is coming; until then, change it in Blender and publish
-                again.)
-              </li>
-              <li>
-                <strong>Take it with you.</strong> Download the world's folder. Put it on any web host, your own
-                domain included, and the link works from there. Nothing you made depends on us.
-              </li>
-              <li>
-                <strong>Link it to another world.</strong> A door, a frame, a sign in your scene can open onto any
-                other world's address. That is how one world becomes part of many.
-              </li>
-            </ul>
+          <Step title="6. Share">
+            <p>
+              The address your world opened at is the one to share, for example{' '}
+              <code>https://worlds.worldhub.me/w/…</code>. Anyone can open it in a browser; nothing to install. Press
+              Save and Publish again and the same address shows the new version.
+            </p>
           </Step>
 
           <Step title="Walking around">
@@ -134,7 +117,30 @@ const FirstWorld = () => {
                 <K>F</K> to fly, where the world allows it: <K>Space</K> up, <K>Shift</K> down.
               </li>
               <li><K>H</K> shows these again.</li>
-              <li>On a phone or tablet: drag to look, and use the on-screen stick to move.</li>
+              <li>
+                On a phone or tablet: the left stick moves, the right stick looks, and the Jump, Chat and Fly buttons
+                sit above them.
+              </li>
+            </ul>
+          </Step>
+
+          <Step title="Now look at what you made">
+            <p>Your world is a web page.</p>
+            <ul style={listStyle}>
+              <li>
+                <strong>Read it.</strong> Add <code>/index.veml</code> to your world's address and the document opens
+                as text: the title, the starting point, the sky, the model. That is the whole world.
+              </li>
+              <li>
+                <strong>Link it to another world.</strong> Select an object in Blender, open its VEML Entity panel,
+                and put another world's address in the <strong>Link</strong> field. Walk up to it in your world and
+                you step into theirs. That is how one world becomes part of many.
+              </li>
+              <li>
+                <strong>Change it.</strong> Change the scene in Blender and press Save and Publish again; the same
+                address shows the new version. (Editing the document on the page itself, and downloading the folder
+                to host it elsewhere, are coming.)
+              </li>
             </ul>
           </Step>
         </div>
