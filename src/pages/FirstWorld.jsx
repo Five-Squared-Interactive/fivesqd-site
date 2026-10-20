@@ -96,8 +96,32 @@ const FirstWorld = () => {
             <p>
               The address your world opened at is the one to share, for example{' '}
               <code>https://worlds.worldhub.me/w/…</code>. Anyone can open it in a browser; nothing to install. Press
-              Save as My World again and the same address shows the new version.
+              Save as My World again and the same address shows the new version. Visitors who are signed in appear
+              under their own names.
             </p>
+          </Step>
+
+          <Step title="Now look at what you made">
+            <p>Your world is a web page, and you own it.</p>
+            <ul style={listStyle}>
+              <li>
+                <strong>Open the document.</strong> Next to the world is a link to the file behind it. It is short.
+                The title, the starting point, the sky, the model: all there in plain text.
+              </li>
+              <li>
+                <strong>Change something.</strong> Edit the title or move the starting point, save, and the same link
+                shows the change. (Editing on the page itself is coming; until then, change it in Blender and publish
+                again.)
+              </li>
+              <li>
+                <strong>Take it with you.</strong> Download the world's folder. Put it on any web host, your own
+                domain included, and the link works from there. Nothing you made depends on us.
+              </li>
+              <li>
+                <strong>Link it to another world.</strong> A door, a frame, a sign in your scene can open onto any
+                other world's address. That is how one world becomes part of many.
+              </li>
+            </ul>
           </Step>
 
           <Step title="Walking around">

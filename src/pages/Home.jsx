@@ -1,304 +1,126 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { DEMO_WORLD_URL, GITHUB_ORG } from '../links';
 
-const HERO_PRODUCTS = [
-  {
-    id: 'webverse', name: 'WebVerse', tagline: 'The world browser',
-    description: 'A desktop and web client for exploring digital worlds. Load any world via URL — like a web browser, but for 3D spaces.',
-    cta: 'Get WebVerse', link: 'https://webverse.fivesqd.com', external: true,
-    image: '/images/webverse-hero.webp',
-    gradient: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 100%)',
-  },
-  {
-    id: 'worldhub', name: 'WorldHub', tagline: 'Build your own worlds',
-    description: 'Host, manage, and share your worlds with zero infrastructure. Persistent storage, user management, and discovery built in.',
-    cta: 'Learn More', link: '/products/worldhub',
-    image: '/images/worldhub-hero.png',
-    bgPosition: 'center top',
-    gradient: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 100%)',
-  },
-  {
-    id: 'worldos', name: 'WorldOS', tagline: 'Server framework',
-    description: 'A modular runtime that manages execution and coordination between applications inside and across worlds.',
-    cta: 'View on GitHub', link: 'https://github.com/Five-Squared-Interactive/WorldOS', external: true,
-    image: '/images/worldos-hero.webp',
-    bgPosition: 'center top',
-    gradient: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 100%)',
-  },
-  {
-    id: 'worldkit', name: 'WorldKit', tagline: 'Developer tooling',
-    description: 'The developer toolchain for building worlds. World Builder, WorldOS, WorldSync, and starter templates.',
-    cta: 'Learn More', link: '/products/worldkit',
-    image: '/images/worldkit-hero.webp',
-    bgPosition: 'center top',
-    gradient: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 100%)',
-  },
-  {
-    id: 'gitworlds', name: 'Git Worlds', tagline: 'Forkable starter worlds',
-    description: 'Template worlds you can fork, remix, and deploy. Version-controlled, collaborative, open.',
-    cta: 'Get Started', link: '/products/gitworlds',
-    image: '/images/gitworlds-hero.webp',
-    bgPosition: 'center top',
-    gradient: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 100%)',
-  },
-];
-
-const DWELL_TIME = 5000;
-
-const HeroCarousel = () => {
-  const [active, setActive] = useState(0);
-  const [paused, setPaused] = useState(false);
-  const [reducedMotion, setReducedMotion] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setReducedMotion(mq.matches);
-    const handler = (e) => setReducedMotion(e.matches);
-    mq.addEventListener('change', handler);
-    return () => mq.removeEventListener('change', handler);
-  }, []);
-
-  const advance = useCallback(() => {
-    setActive((prev) => (prev + 1) % HERO_PRODUCTS.length);
-  }, []);
-
-  useEffect(() => {
-    if (paused || reducedMotion) return;
-    const timer = setInterval(advance, DWELL_TIME);
-    return () => clearInterval(timer);
-  }, [paused, advance, reducedMotion]);
-
-  const shouldLoad = (i) => {
-    if (i === active) return true;
-    if (i === (active + 1) % HERO_PRODUCTS.length) return true;
-    if (i === (active - 1 + HERO_PRODUCTS.length) % HERO_PRODUCTS.length) return true;
-    return false;
-  };
-
-  return (
-    <div
-      className="hero-showcase"
-      aria-roledescription="carousel"
-      aria-label="Featured products"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-      onFocus={() => setPaused(true)}
-      onBlur={() => setPaused(false)}
-    >
-      {/* Background layers — only load active + adjacent */}
-      {HERO_PRODUCTS.map((p, i) => (
-        <div
-          key={p.id}
-          className={`hero-showcase-bg ${i === active ? 'active' : ''}`}
-          style={shouldLoad(i) ? { backgroundImage: `url(${p.image})`, ...(p.bgPosition && { backgroundPosition: p.bgPosition }) } : undefined}
-        />
-      ))}
-
-      {/* Gradient overlay for active product */}
-      {HERO_PRODUCTS.map((p, i) => (
-        <div
-          key={`grad-${p.id}`}
-          className={`hero-showcase-gradient ${i === active ? 'active' : ''}`}
-          style={{ background: p.gradient }}
-        />
-      ))}
-
-      {/* Content overlay */}
-      <div className="hero-showcase-content">
-        <div className="hero-showcase-inner">
-          {HERO_PRODUCTS.map((p, i) => {
-            const Tag = p.external ? 'a' : Link;
-            const props = p.external
-              ? { href: p.link, target: '_blank', rel: 'noopener noreferrer' }
-              : { to: p.link };
-
-            return (
-              <div
-                key={p.id}
-                className={`hero-showcase-slide ${i === active ? 'active' : ''}`}
-                role="group"
-                aria-roledescription="slide"
-                aria-label={`${i + 1} of ${HERO_PRODUCTS.length}: ${p.name}`}
-                aria-hidden={i !== active}
-              >
-                <div className="hero-showcase-badge">
-                  <img src={`/images/icon-${p.id}.png`} alt="" width="32" height="32" />
-                  <span>{p.name}</span>
-                </div>
-                <p className="hero-showcase-tagline">{p.tagline}</p>
-                <p className="hero-showcase-desc">{p.description}</p>
-                {p.comingSoon ? (
-                  <span className="hero-showcase-cta coming-soon">Coming soon</span>
-                ) : (
-                  <Tag className="hero-showcase-cta" tabIndex={i === active ? 0 : -1} {...props}>{p.cta} &rarr;</Tag>
-                )}
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Dots */}
-        <div className="hero-showcase-dots" role="tablist" aria-label="Slide controls">
-          {HERO_PRODUCTS.map((p, i) => (
-            <button
-              key={p.id}
-              className={`hero-showcase-dot ${i === active ? 'active' : ''}`}
-              onClick={() => setActive(i)}
-              role="tab"
-              aria-selected={i === active}
-              aria-label={`Show ${p.name}`}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
-
+// The words are content/home.md; keep the two in step.
 const Home = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      {/* Full-bleed product showcase */}
-      <HeroCarousel />
-
-      {/* Title band */}
-      <section className="hero-title-band">
-        <div className="container">
-          <h1 className="fade-in-up">Web Wide Worlds</h1>
-          <p className="fade-in-up">
-            An open framework for building and exploring persistent 3D worlds.
+      <section className="section-hero-image">
+        <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
+          <h1 style={{ color: 'white' }}>A world is a web page.</h1>
+          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '680px', margin: '0 auto 2rem' }}>
+            Export a scene from Blender and get a link. Anyone opens it in a browser and walks
+            around, with you, on a phone or a laptop. Nothing to install, no account to visit.
           </p>
-          <div className="hero-actions fade-in-up">
-            <Link to="/products" className="btn btn-primary btn-large">Explore Products</Link>
-            <Link to="/technology" className="btn btn-secondary btn-large">See How It Works</Link>
+          <div className="hero-actions">
+            {DEMO_WORLD_URL && (
+              <a href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
+                Walk into one
+              </a>
+            )}
+            <Link to="/first-world" className={`btn ${DEMO_WORLD_URL ? 'btn-secondary' : 'btn-primary'} btn-large`}>
+              Make your own
+            </Link>
           </div>
+          {DEMO_WORLD_URL && (
+            <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.95rem', marginTop: '1rem' }}>
+              The demo is a living room exported from a Blender file. The link is the world.
+            </p>
+          )}
         </div>
       </section>
 
-      {/* Publish from Blender */}
       <section className="section section-light">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>From Blender to a Live World</h2>
-            <p className="section-subtitle">
-              Build a scene in Blender and publish it as a world anyone can walk into — one button, one link.
-            </p>
+            <h2>What makes it a page, not an upload</h2>
+            <p className="section-subtitle">Three things you can check on any published world.</p>
           </div>
-
-          <div className="gradient-steps">
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">🧊</div>
-              <h3>Build</h3>
-              <p>Make your scene in Blender, the way you already do.</p>
-            </div>
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">🧩</div>
-              <h3>Install</h3>
-              <p>Add the free Blender add-on and sign in once.</p>
-            </div>
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">🚀</div>
-              <h3>Publish</h3>
-              <p>Press Save as My World. Your world goes live and opens in the browser.</p>
-            </div>
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">🔗</div>
-              <h3>Share</h3>
-              <p>Send anyone the link. They walk in right in their browser — nothing to install.</p>
-            </div>
-          </div>
-
-          <div className="text-center" style={{ marginTop: '2rem' }}>
-            <Link to="/first-world" className="btn btn-primary">Publish your first world</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Git Worlds workflow */}
-      <section className="section">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>From Template to Live World</h2>
-            <p className="section-subtitle">
-              Git Worlds are template worlds you can fork and make your own — in five steps.
-            </p>
-          </div>
-
-          <div className="gradient-steps">
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">🌍</div>
-              <h3>Browse</h3>
-              <p>Pick a starter world from the Git Worlds gallery.</p>
-            </div>
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">🔀</div>
-              <h3>Fork</h3>
-              <p>One click to copy it to your own GitHub repo.</p>
-            </div>
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">✏️</div>
-              <h3>Edit</h3>
-              <p>Change the markup, add scripts, drop in 3D models — it's your world now.</p>
-            </div>
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">🚀</div>
-              <h3>Push</h3>
-              <p>Commit and push. Your world goes live on GitHub Pages automatically.</p>
-            </div>
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">🔗</div>
-              <h3>Share</h3>
-              <p>Send anyone the link. They open it in WebVerse — no install needed.</p>
-            </div>
-          </div>
-
-          <div className="text-center" style={{ marginTop: '2rem' }}>
-            <Link to="/products/gitworlds" className="btn btn-primary">Start from a Template</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Why it's different */}
-      <section className="section section-light">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>An Open Ecosystem</h2>
-          </div>
-
           <div className="grid grid-3">
-            <div className="card text-center">
-              <h3>Bridges, Not Walls</h3>
-              <p>Web Wide Worlds connects the tools you already use. It's not another closed platform. It's the open layer between them.</p>
-              <Link to="/technology">
-                See the Architecture
-              </Link>
+            <div className="card">
+              <h3>It is text you can read and change.</h3>
+              <p>
+                Open the document behind a world and you will find a short file: a title, where you
+                start, the light, the model it loads. Change a line and the world changes.
+              </p>
             </div>
-            <div className="card text-center">
-              <h3>Plug In Anything</h3>
-              <p>Every layer is swappable. Bring your own renderer, your own server, your own sync protocol.</p>
-              <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer">
-                View on GitHub
-              </a>
+            <div className="card">
+              <h3>It links to any other world.</h3>
+              <p>
+                A door in one world leads into another at a different address, the way one page links
+                to the next. Your room can open onto a friend's room, or onto a planet.
+              </p>
             </div>
-            <div className="card text-center">
-              <h3>Yours to Keep</h3>
-              <p>You own your worlds — the code, the data, the hosting. No one can pull the rug.</p>
-              <a href="/docs/www_whitepaper_v1.1.pdf" target="_blank" rel="noopener noreferrer">
-                Read the White Paper
-              </a>
+            <div className="card">
+              <h3>It runs anywhere you put the files.</h3>
+              <p>
+                The world is a folder. Download it and put it on any web host, and the link works from
+                there. No server of ours is needed to open it.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Ecosystem invitation */}
       <section className="section">
-        <div className="container text-center">
-          <h2>Built for Everyone</h2>
-          <p className="section-subtitle" style={{ marginBottom: '2rem' }}>
-            Web Wide Worlds is open — create worlds, bring in what you've built, or build something entirely new. The whole stack is MIT-licensed and yours to extend.
+        <div className="container">
+          <div className="text-center mb-4">
+            <h2>Make one in five minutes</h2>
+          </div>
+          <div className="gradient-steps">
+            <div className="gradient-step">
+              <div className="gradient-step-icon" aria-hidden="true">1</div>
+              <h3>Install</h3>
+              <p>Install the add-on in Blender 4.5 or newer and sign in once.</p>
+            </div>
+            <div className="gradient-step">
+              <div className="gradient-step-icon" aria-hidden="true">2</div>
+              <h3>Publish</h3>
+              <p>Press Save as My World. Your world opens in the browser.</p>
+            </div>
+            <div className="gradient-step">
+              <div className="gradient-step-icon" aria-hidden="true">3</div>
+              <h3>Share</h3>
+              <p>Send the link. People walk in on a phone or a laptop; nothing to install.</p>
+            </div>
+          </div>
+          <div className="text-center" style={{ marginTop: '2rem' }}>
+            <Link to="/first-world" className="btn btn-primary">The first-world guide</Link>
+          </div>
+          <p className="text-center" style={{ marginTop: '1.5rem', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>
+            Worlds you publish this way are hosted for you by WorldHub, and remain yours to download
+            and move.
           </p>
-          <Link to="/ecosystem" className="btn btn-primary">Join the Ecosystem</Link>
+        </div>
+      </section>
+
+      <section className="section section-light">
+        <div className="container">
+          <div className="grid grid-2">
+            <div>
+              <h2>Who this is for</h2>
+              <p>
+                For anyone with a scene and someone to show it to: a room you modelled, a building, a
+                place that no longer exists, a toy. For a group that wants a room of its own on the
+                web. For developers who want a 3D document format that is open, a client that is
+                MIT-licensed, and a sync layer that works with the engine they already have.
+              </p>
+            </div>
+            <div>
+              <h2>Everything is open</h2>
+              <p>
+                The format (VEML), the client (WebVerse), the engine under it (StraightFour), the sync
+                layer (WorldSync) and the runtime for worlds that need a server (WorldOS) are
+                MIT-licensed. Hosting is a convenience we offer, never a requirement.
+              </p>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <Link to="/technology" className="btn btn-secondary">How it works</Link>
+                <Link to="/ecosystem" className="btn btn-secondary">Build on it</Link>
+                <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">GitHub</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

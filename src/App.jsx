@@ -8,8 +8,6 @@ import './App.css';
 
 const Products = lazy(() => import('./pages/Products'));
 const WorldHub = lazy(() => import('./pages/WorldHub'));
-const WorldKit = lazy(() => import('./pages/WorldKit'));
-const GitWorlds = lazy(() => import('./pages/GitWorlds'));
 const FirstWorld = lazy(() => import('./pages/FirstWorld'));
 const Technology = lazy(() => import('./pages/Technology'));
 const Ecosystem = lazy(() => import('./pages/Ecosystem'));
@@ -34,8 +32,6 @@ export function AppShell() {
                 <Route path="/" element={<Home />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/products/worldhub" element={<WorldHub />} />
-                <Route path="/products/worldkit" element={<WorldKit />} />
-                <Route path="/products/gitworlds" element={<GitWorlds />} />
                 <Route path="/first-world" element={<FirstWorld />} />
                 <Route path="/technology" element={<Technology />} />
                 <Route path="/ecosystem" element={<Ecosystem />} />
@@ -46,8 +42,10 @@ export function AppShell() {
                 <Route path="/isemvdemo" element={<ISEMVDemo />} />
                 {/* Redirects from old routes */}
                 <Route path="/webwideworlds" element={<Navigate to="/technology" replace />} />
-                <Route path="/worldos" element={<Navigate to="/products/worldkit#worldos" replace />} />
-                <Route path="/worldsync" element={<Navigate to="/products/worldkit#worldsync" replace />} />
+                <Route path="/worldos" element={<Navigate to="/technology#worldos" replace />} />
+                <Route path="/worldsync" element={<Navigate to="/technology#worldsync" replace />} />
+                <Route path="/products/worldkit" element={<Navigate to="/products#worldkit" replace />} />
+                <Route path="/products/gitworlds" element={<Navigate to="/first-world" replace />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </PageTransition>

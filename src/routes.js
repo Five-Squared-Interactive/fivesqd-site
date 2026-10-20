@@ -11,55 +11,46 @@
  *    "looks fine" in a browser is still a dead link to them.
  *
  * Adding a page? Add its <Route> in App.jsx AND an entry here — the
- * prerenderer and the client meta stay in sync automatically.
+ * prerenderer and the client meta stay in sync automatically. The words on
+ * each page are in content/*.md.
  */
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'Open tools for building and exploring 3D worlds on the web. WebVerse, WorldHub, WorldOS, and more.';
+  'A world is a web page. Export a scene from Blender, get a link, and anyone walks in from a browser. Open format, open client, nothing to install.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [
   { path: '/', title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION },
   {
     path: '/products',
-    title: 'Products — Five Squared Interactive',
-    description: 'Explore Five Squared products: WebVerse, WorldHub, WorldOS, WorldKit, and Git Worlds.',
+    title: 'What we make — Five Squared Interactive',
+    description: 'The open stack (VEML, WebVerse, StraightFour, WorldSync, WorldOS, WorldKit, MyWorlds) and the one service, WorldHub, each as it is today.',
   },
   {
     path: '/products/worldhub',
     title: 'WorldHub — Five Squared Interactive',
-    description: 'WorldHub — managed hosting for persistent digital worlds.',
-  },
-  {
-    path: '/products/worldkit',
-    title: 'WorldKit — Five Squared Interactive',
-    description: 'WorldKit — developer tools for building worlds: WorldOS, WorldSync, editor, templates.',
+    description: 'WorldHub hosts the worlds you publish from Blender, signs you in, and lists worlds people want found. A convenience, never a requirement.',
   },
   {
     path: '/first-world',
     title: 'Your First World — Five Squared Interactive',
-    description: 'From a Blender scene to a link anyone can walk into: install the add-on, sign in, press Save as My World, share the link.',
-  },
-  {
-    path: '/products/gitworlds',
-    title: 'Git Worlds — Five Squared Interactive',
-    description: 'Git Worlds — fork a template, edit VEML, push to deploy. Build 3D worlds with just Git.',
+    description: 'From a Blender scene to a link anyone can walk into: install the add-on, sign in, press Save as My World, share the link, then look at the page you made.',
   },
   {
     path: '/technology',
-    title: 'Technology — Five Squared Interactive',
-    description: 'The architecture, standards, and components behind Web Wide Worlds.',
+    title: 'How it works — Five Squared Interactive',
+    description: 'A world is a document at a URL: the VEML file and its models, the WebVerse client that opens it, WorldSync for being there together, WorldOS when a world needs a runtime.',
   },
   {
     path: '/ecosystem',
-    title: 'Ecosystem — Five Squared Interactive',
-    description: 'The Web Wide Worlds ecosystem: how the open pieces fit together.',
+    title: 'Build on it — Five Squared Interactive',
+    description: 'Make worlds, put your own things in a world, or build the pieces yourself: everything that opens, moves or syncs a world is MIT-licensed.',
   },
   {
     path: '/about',
     title: 'About — Five Squared Interactive',
-    description: 'About Five Squared Interactive — building open tools for 3D worlds on the web.',
+    description: 'Five Squared Interactive builds the pieces that let a 3D world be a web page, owned by whoever made it.',
   },
   {
     path: '/privacy-policy',
@@ -90,8 +81,10 @@ export const ROUTES = [
  */
 export const REDIRECTS = {
   '/webwideworlds': '/technology',
-  '/worldos': '/products/worldkit#worldos',
-  '/worldsync': '/products/worldkit#worldsync',
+  '/worldos': '/technology#worldos',
+  '/worldsync': '/technology#worldsync',
+  '/products/worldkit': '/products#worldkit',
+  '/products/gitworlds': '/first-world',
 };
 
 export const ROUTE_TITLES = Object.fromEntries(ROUTES.map((r) => [r.path, r.title]));

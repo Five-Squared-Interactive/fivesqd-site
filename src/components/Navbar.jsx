@@ -2,19 +2,18 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 
 const PRODUCTS_MENU = [
-  { icon: '/images/icon-webverse.png', name: 'WebVerse', desc: 'The world browser', href: 'https://webverse.fivesqd.com', external: true },
-  { icon: '/images/icon-worldhub.png', name: 'WorldHub', desc: 'Build your own worlds', href: 'https://worldhub.me', external: true },
-  { icon: '/images/icon-worldos.png', name: 'WorldOS', desc: 'Server framework', to: '/products/worldkit#worldos' },
-  { icon: '/images/icon-worldkit.png', name: 'WorldKit', desc: 'Developer tooling', to: '/products/worldkit' },
-  { icon: '/images/icon-gitworlds.png', name: 'Git Worlds', desc: 'Forkable starter worlds', to: '/products/gitworlds' },
+  { icon: '/images/icon-webverse.png', name: 'WebVerse', desc: 'The client', to: '/products#webverse' },
+  { icon: '/images/icon-worldhub.png', name: 'WorldHub', desc: 'Hosting, sign-in, a directory', to: '/products/worldhub' },
+  { icon: '/images/icon-worldkit.png', name: 'WorldKit', desc: 'The Blender add-on', to: '/products#worldkit' },
+  { icon: '/images/icon-worldos.png', name: 'WorldOS', desc: 'The runtime, when a world needs one', to: '/products#worldos' },
 ];
 
 const TECH_MENU = [
-  { name: 'How It Works', desc: 'Architecture and the complexity gradient', to: '/technology' },
-  { name: 'VEML', desc: 'World markup language', to: '/technology#veml' },
-  { name: 'WorldSync', desc: 'Real-time multiplayer sync', to: '/products/worldkit#worldsync' },
-  { name: 'WorldOS', desc: 'Server-side plugin framework', to: '/products/worldkit#worldos' },
-  { name: 'White Paper', desc: 'Web Wide Worlds vision document', href: '/docs/www_whitepaper_v1.1.pdf', external: true },
+  { name: 'How it works', desc: 'A world is a document at a URL', to: '/technology' },
+  { name: 'VEML', desc: 'The format', to: '/technology#veml' },
+  { name: 'WorldSync', desc: 'Being there together', to: '/technology#worldsync' },
+  { name: 'WorldOS', desc: 'The runtime', to: '/technology#worldos' },
+  { name: 'White paper', desc: 'The long form (2025)', href: '/docs/www_whitepaper_v1.1.pdf', external: true },
 ];
 
 const DropdownItem = ({ item, onClose }) => {
@@ -108,7 +107,7 @@ const Navbar = () => {
               onMouseLeave={handleLeave}
             >
               <div className="navbar-link-row">
-                <Link to="/products" onClick={closeAll}>Products</Link>
+                <Link to="/products" onClick={closeAll}>What we make</Link>
                 <button
                   className="dropdown-chevron"
                   onClick={() => setOpenDropdown(openDropdown === 'products' ? null : 'products')}
@@ -128,7 +127,7 @@ const Navbar = () => {
                   ))}
                 </div>
                 <div className="dropdown-footer">
-                  <Link to="/products" onClick={closeAll}>View all products &rarr;</Link>
+                  <Link to="/products" onClick={closeAll}>Everything we make &rarr;</Link>
                 </div>
               </div>
             </li>
@@ -138,7 +137,7 @@ const Navbar = () => {
               onMouseLeave={handleLeave}
             >
               <div className="navbar-link-row">
-                <Link to="/technology" onClick={closeAll}>Technology</Link>
+                <Link to="/technology" onClick={closeAll}>How it works</Link>
                 <button
                   className="dropdown-chevron"
                   onClick={() => setOpenDropdown(openDropdown === 'technology' ? null : 'technology')}
@@ -164,7 +163,8 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li><Link to="/ecosystem" onClick={closeAll}>Ecosystem</Link></li>
+            <li><Link to="/first-world" onClick={closeAll}>Your first world</Link></li>
+            <li><Link to="/ecosystem" onClick={closeAll}>Build on it</Link></li>
             <li><Link to="/about" onClick={closeAll}>About</Link></li>
           </ul>
 
