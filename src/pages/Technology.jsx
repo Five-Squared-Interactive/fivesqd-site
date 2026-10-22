@@ -22,22 +22,22 @@ const Technology = () => {
           <div className="gradient-steps">
             <div className="gradient-step">
               <div className="gradient-step-icon" aria-hidden="true">&lt;/&gt;</div>
-              <h3>The document</h3>
+              <h2 className="pillar-title">The document</h2>
               <p>A VEML file and its glTF models, in a folder, at an address.</p>
             </div>
             <div className="gradient-step">
               <div className="gradient-step-icon" aria-hidden="true">▣</div>
-              <h3>The client</h3>
+              <h2 className="pillar-title">The client</h2>
               <p>WebVerse, a web page that opens the document at the address in its URL.</p>
             </div>
             <div className="gradient-step">
               <div className="gradient-step-icon" aria-hidden="true">⇄</div>
-              <h3>Together</h3>
+              <h2 className="pillar-title">Together</h2>
               <p>WorldSync: the clients in a world exchange what moved.</p>
             </div>
             <div className="gradient-step">
               <div className="gradient-step-icon" aria-hidden="true">⚙</div>
-              <h3>Its own logic</h3>
+              <h2 className="pillar-title">Its own logic</h2>
               <p>WorldOS, only for worlds that keep state no visitor owns.</p>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Technology = () => {
                 A world is a folder: one file in <strong>VEML</strong>, a small XML format that says
                 what is in the world and where, plus the models it refers to, in glTF, the standard
                 3D file format. That is the whole world. A line of VEML names the sky; another names
-                the model; another says where a visitor starts; another links to a different world.
+                the model; another says where a visitor starts; a door to another world is one more line.
                 Anything a client does not understand it ignores, so a world written for next year's
                 client still opens in this year's.
               </p>

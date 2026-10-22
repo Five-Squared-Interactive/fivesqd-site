@@ -34,10 +34,10 @@ const Step = ({ title, shot, children }) => (
 const FirstWorld = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="section">
-        <div className="container text-center">
-          <h1>Your First World</h1>
-          <p className="section-subtitle">From a Blender scene to a link anyone can walk into.</p>
+      <section className="page-head">
+        <div className="container">
+          <h1>Your first world</h1>
+          <p>From a Blender scene to a link anyone can walk into.</p>
         </div>
       </section>
 

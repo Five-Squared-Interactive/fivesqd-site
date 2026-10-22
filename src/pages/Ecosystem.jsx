@@ -12,7 +12,7 @@ const Ecosystem = () => {
           <p style={{ maxWidth: '700px', margin: '0 auto' }}>
             Everything that opens, moves or syncs a world is open under MIT, with the current
             generation's public release being prepared, and the format is written down as a
-            specification with a conformance suite. There are three ways in.
+            specification with a conformance suite.
           </p>
         </div>
       </section>
@@ -66,7 +66,7 @@ const Ecosystem = () => {
             </li>
             <li>The client: WebVerse, and StraightFour under it. Public release in preparation.</li>
             <li>
-              Being together: WorldSync, designed so an engine you already use can adopt it first. The
+              Being together: WorldSync, designed so an engine you already use can adopt it. The
               protocol document is being prepared for publication.
             </li>
             <li>A world with its own logic: WorldOS.</li>

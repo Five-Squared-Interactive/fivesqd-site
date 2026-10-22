@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import WorldDocument from '../components/WorldDocument';
 import WebPageAnalogy from '../components/WebPageAnalogy';
@@ -6,24 +6,15 @@ import LinkFlow from '../components/LinkFlow';
 import DoorDiagram from '../components/DoorDiagram';
 import { DEMO_WORLD_URL, GITHUB_ORG, WORLD_HERO, WORLD_CARD, WORLD_HERO_ALT } from '../links';
 
-// A frame of a world that becomes the world itself on a click: the client
-// is loaded in an iframe only then, so nothing heavy is on the page's own
-// path. Rendered only when a public demo world exists.
-const WalkIn = ({ url, poster, alt }) => {
-  const [open, setOpen] = useState(false);
-  if (open) {
-    return (
-      <div className="walkin">
-        <iframe src={url} title={alt} allow="fullscreen; xr-spatial-tracking; pointer-lock" />
-      </div>
-    );
-  }
-  return (
-    <button type="button" className="walkin walkin-poster" style={{ backgroundImage: `url(${poster})` }} onClick={() => setOpen(true)} aria-label={`Walk into ${alt}`}>
-      <span>Walk in</span>
-    </button>
-  );
-};
+// A frame of a world that opens the world itself on a click, in a new tab.
+// Not an iframe: the client's host refuses to be framed from another
+// origin (X-Frame-Options: SAMEORIGIN), so an inline embed waits on that
+// header changing. Rendered only when a public demo world exists.
+const WalkIn = ({ url, poster, alt }) => (
+  <a className="walkin walkin-poster" style={{ backgroundImage: `url(${poster})` }} href={url} target="_blank" rel="noopener noreferrer" aria-label={`Walk into ${alt}, in a new tab`}>
+    <span>Walk in</span>
+  </a>
+);
 
 // The words are content/home.md; keep the two in step.
 const Home = () => {
@@ -146,8 +137,8 @@ const Home = () => {
                 The format (VEML), the client (WebVerse), the engine under it (StraightFour), the sync
                 layer (WorldSync) and the runtime for worlds with their own logic (WorldOS) are
                 MIT-licensed. The public release of the current generation is being prepared; the
-                earlier generation is on GitHub. Hosting is a convenience we offer, never a
-                requirement.
+                earlier generation is on GitHub. Hosting is a convenience we
+                offer; the design never requires it.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Link to="/technology" className="btn btn-secondary">How it works</Link>

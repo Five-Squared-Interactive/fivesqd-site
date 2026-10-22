@@ -23,7 +23,7 @@ const About = () => {
               <h2>What we believe</h2>
               <p>
                 A world should outlive the company that helped make it. So the format is open, the
-                client is open, hosting is a convenience and never a requirement, and the design puts nothing of
+                client is open, hosting is a convenience the design never requires, and the design puts nothing of
                 ours between a link and the world it points to. A thousand worlds on our servers would
                 mean less to us than one person's world at their own address.
               </p>

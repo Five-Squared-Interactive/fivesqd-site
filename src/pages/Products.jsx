@@ -17,7 +17,7 @@ const STACK = [
     tagline: 'The client',
     image: WORLD_CARD,
     imageAlt: WORLD_HERO_ALT,
-    text: "A web page that opens any world by its address, on a phone, a laptop or a headset's browser. It is what a published link opens. A desktop version for offline and local-network use is in the works.",
+    text: "A web page that opens any world by its address, on a phone, a laptop or a headset's browser. It is what a published link opens.",
   },
   {
     id: 'straightfour',
@@ -31,7 +31,7 @@ const STACK = [
     name: 'WorldSync',
     tagline: 'Being there together',
     image: '/images/WorldSyncLogo.webp',
-    text: 'The clients in a world exchange what moved, directly for most worlds, through a server for worlds that want one. It stands alone, designed so an engine you already use can adopt it; the protocol document is being prepared for publication.',
+    text: 'The clients in a world exchange what moved, directly for most worlds, through a server for worlds that want one. Designed so an engine you already use can adopt it.',
   },
   {
     id: 'worldos',
@@ -67,7 +67,7 @@ const Piece = ({ p }) => (
         <img src={p.image} alt={p.imageAlt ?? ''} loading="lazy" />
       </div>
     )}
-    {p.glyph && <div className="logo-card-image" aria-hidden="true"><span className="card-glyph" style={{ margin: 0, fontSize: '3rem' }}>{p.glyph}</span></div>}
+    {p.glyph && <div className="logo-card-image" aria-hidden="true"><span className="card-glyph" style={{ margin: 0, fontSize: '4.5rem', lineHeight: 1 }}>{p.glyph}</span></div>}
     <h3 style={{ marginBottom: '0.25rem' }}>{p.name}</h3>
     <p style={{ opacity: 0.75, marginBottom: '0.75rem' }}>{p.tagline}</p>
     <p>{p.text}</p>

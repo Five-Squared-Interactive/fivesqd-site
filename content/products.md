@@ -21,8 +21,7 @@ physics, the scripting sandbox. You meet it only if you build a client.
 
 **WorldSync** — being there together. The clients in a world exchange what
 moved, directly for most worlds, through a server for worlds that want one.
-It stands alone, designed so an engine you already use can adopt it; the
-protocol document is being prepared for publication.
+Designed so an engine you already use can adopt it.
 
 **WorldOS** — the runtime for a world with its own logic: a score, a
 simulation, terrain people reshape, a sensor feed. Most worlds do not need

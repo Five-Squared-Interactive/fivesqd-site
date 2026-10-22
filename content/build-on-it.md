@@ -2,8 +2,7 @@
 
 Everything that opens, moves or syncs a world is open under MIT, with the
 current generation's public release being prepared, and the format is
-written down as a specification with a conformance suite. There are three
-ways in.
+written down as a specification with a conformance suite. 
 
 ## Make worlds
 
@@ -34,7 +33,7 @@ us. Build what fits and it works with everything else.
 - The client: WebVerse, and StraightFour under it. Public release in
   preparation.
 - Being together: WorldSync, designed so an engine you already use can
-  adopt it first. The protocol document is being prepared for publication.
+  adopt it. The protocol document is being prepared for publication.
 - A world with its own logic: WorldOS.
 - The earlier generation of all of it: [github.com/Five-Squared-Interactive](https://github.com/Five-Squared-Interactive).
 

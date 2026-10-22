@@ -7,7 +7,7 @@ made it.
 ## What we believe
 
 A world should outlive the company that helped make it. So the format is
-open, the client is open, hosting is a convenience and never a requirement,
+open, the client is open, hosting is a convenience the design never requires,
 and the design puts nothing of ours between a link and the world it
 points to. A
 thousand worlds on our servers would mean less to us than one person's
@@ -25,4 +25,4 @@ Five Squared Interactive is an independent studio. Small, open-source
 first, building in public. *(Founder: add your name and a line about
 yourself here if you want it on the page.)*
 
-[GitHub](https://github.com/Five-Squared-Interactive) · info@fivesquaredinteractive.com
+[GitHub (earlier generation)](https://github.com/Five-Squared-Interactive) · info@fivesquaredinteractive.com

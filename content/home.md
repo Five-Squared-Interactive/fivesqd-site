@@ -28,8 +28,8 @@ table:)*
 
 Every published world is a document like this one. It fits on a screen,
 and five parts do the work. *(Left: The Overlook, a world opened in a
-browser; once a public demo world exists, a frame that becomes the world
-itself on a click. Right: the document of another world, a living room,
+browser; once a public demo world exists, a frame that opens the world
+in a new tab on a click (the client's host refuses to be framed). Right: the document of another world, a living room,
 exactly as Blender published it, 923 bytes, with five numbered marks in the
 gutter that light up with their legend entry:)* 1 its name · 2 the backdrop
 colour · 3 where you start, and which way you face · 4 the sky that lights
@@ -80,5 +80,5 @@ The format (VEML), the client (WebVerse), the engine under it
 (StraightFour), the sync layer (WorldSync) and the runtime for worlds with
 their own logic (WorldOS) are MIT-licensed. The public release of the
 current generation is being prepared; the earlier generation is on GitHub.
-Hosting is a convenience we offer, never a requirement.
+Hosting is a convenience we offer; the design never requires it.
 [How it works](/technology) · [Build on it](/ecosystem)

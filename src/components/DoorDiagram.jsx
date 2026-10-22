@@ -35,7 +35,7 @@ const DoorDiagram = () => (
     <svg className="dd-wide" viewBox="0 0 960 240" role="img" aria-labelledby="dd-wide-title">
       <title id="dd-wide-title">{TITLE}</title>
       <Arrow id="dd-arrow-w" />
-      <World x={30} y={30} w={380} addr="https://your.site/room/" title="Your room" sub="a scene you exported" door />
+      <World x={30} y={30} w={380} addr="https://your.site/room/" title="Your room" sub="a scene you published" door />
       <line x1="416" y1="120" x2="538" y2="120" className="dd-line" markerEnd="url(#dd-arrow-w)" />
       <text x="477" y="106" textAnchor="middle" className="dd-sub">the door holds</text>
       <text x="477" y="142" textAnchor="middle" className="dd-sub">the other address</text>
@@ -46,7 +46,7 @@ const DoorDiagram = () => (
     <svg className="dd-tall" viewBox="0 0 360 500" role="img" aria-labelledby="dd-tall-title">
       <title id="dd-tall-title">{TITLE}</title>
       <Arrow id="dd-arrow-t" />
-      <World x={20} y={30} w={320} addr="https://your.site/room/" title="Your room" sub="a scene you exported" door />
+      <World x={20} y={30} w={320} addr="https://your.site/room/" title="Your room" sub="a scene you published" door />
       <line x1="180" y1="186" x2="180" y2="258" className="dd-line" markerEnd="url(#dd-arrow-t)" />
       <text x="196" y="216" className="dd-sub">the door holds</text>
       <text x="196" y="236" className="dd-sub">the other address</text>

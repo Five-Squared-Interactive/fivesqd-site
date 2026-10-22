@@ -17,7 +17,7 @@
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'A world is a web page. Export a scene from Blender, get a link, and anyone walks in from a browser. Open format, open client, nothing to install.';
+  'A world is a web page. Press Save and Publish in Blender, get a link, and anyone walks in from a browser. Open format, open client, nothing to install.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [

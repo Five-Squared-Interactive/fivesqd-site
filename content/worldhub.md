@@ -20,9 +20,11 @@ the world stays where it is.
 
 ## What it is not
 
-It is not needed to visit a world, and a world at any other address opens
-without it. It does not decide what a world may contain or do. It is the
-easy path, not the only one.
+A world does not need WorldHub to exist: a world at any other address is
+served by that address. Today the client page that opens it is served from
+WorldHub; the public release lets anyone host that too. WorldHub does not
+decide what a world may contain or do. It is the easy path, not the only
+one.
 
 ## Cost
 
