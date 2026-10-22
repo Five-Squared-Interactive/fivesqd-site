@@ -30,11 +30,11 @@ export const ROUTES = [
   {
     path: '/products/worldhub',
     title: 'WorldHub — Five Squared Interactive',
-    description: 'WorldHub hosts the worlds you publish from Blender, signs you in, and lists worlds people want found. A convenience, never a requirement.',
+    description: 'WorldHub hosts the worlds you publish from Blender, signs you in, and lists worlds people want found. A convenience the design never requires.',
   },
   {
     path: '/first-world',
-    title: 'Your First World — Five Squared Interactive',
+    title: 'Your first world — Five Squared Interactive',
     description: 'From a Blender scene to a link anyone can walk into: install the add-on, sign in, press Save as My World, share the link, then look at the page you made.',
   },
   {

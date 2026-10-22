@@ -17,27 +17,28 @@ const Technology = () => {
         </div>
       </section>
 
-      <section className="section section-light">
+      <section className="section section-light section-tight">
         <div className="container">
+          <h2 className="sr-only">The four pieces</h2>
           <div className="gradient-steps">
             <div className="gradient-step">
               <div className="gradient-step-icon" aria-hidden="true">&lt;/&gt;</div>
-              <h2 className="pillar-title">The document</h2>
+              <h3 className="pillar-title">The document</h3>
               <p>A VEML file and its glTF models, in a folder, at an address.</p>
             </div>
             <div className="gradient-step">
               <div className="gradient-step-icon" aria-hidden="true">▣</div>
-              <h2 className="pillar-title">The client</h2>
+              <h3 className="pillar-title">The client</h3>
               <p>WebVerse, a web page that opens the document at the address in its URL.</p>
             </div>
             <div className="gradient-step">
               <div className="gradient-step-icon" aria-hidden="true">⇄</div>
-              <h2 className="pillar-title">Together</h2>
+              <h3 className="pillar-title">Together</h3>
               <p>WorldSync: the clients in a world exchange what moved.</p>
             </div>
             <div className="gradient-step">
               <div className="gradient-step-icon" aria-hidden="true">⚙</div>
-              <h2 className="pillar-title">Its own logic</h2>
+              <h3 className="pillar-title">Its own logic</h3>
               <p>WorldOS, only for worlds that keep state no visitor owns.</p>
             </div>
           </div>
@@ -77,7 +78,13 @@ const Technology = () => {
           <pre className="code-example"><code>{`${CLIENT_URL}#world-url=`}<em>your world's index.veml address, URL-encoded</em></code></pre>
           <p>
             Your host serves the world, the client's host serves the client, and the two never need
-            to be the same. A world published through WorldHub is the same thing with the hosting
+            to be the same. Because the client reads the world from another origin, your host must
+            allow cross-origin reads (<code>Access-Control-Allow-Origin: *</code>): GitHub Pages
+            does; a bucket needs a CORS rule. Because the client reads the world from another origin, your host must
+            allow cross-origin reads (<code>Access-Control-Allow-Origin: *</code>): GitHub Pages
+            does; a bucket needs a CORS rule. Because the client reads the world from another origin, your host must
+            allow cross-origin reads (<code>Access-Control-Allow-Origin: *</code>): GitHub Pages
+            does; a bucket needs a CORS rule. A world published through WorldHub is the same thing with the hosting
             done for you.
           </p>
           <p>

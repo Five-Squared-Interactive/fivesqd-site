@@ -57,7 +57,7 @@ const LinkFlow = () => (
       <text x="480" y="200" textAnchor="middle" className="lf-foot">No account and no install to visit. The files are served like any page, and any host can serve them.</text>
     </svg>
 
-    <svg className="lf-tall" viewBox="0 0 360 720" role="img" aria-labelledby="lf-tall-title">
+    <svg className="lf-tall" viewBox="0 0 360 740" role="img" aria-labelledby="lf-tall-title">
       <title id="lf-tall-title">{TITLE}</title>
       <Arrow id="lf-arrow-t" />
       <g className="lf-node">
@@ -87,7 +87,8 @@ const LinkFlow = () => (
         <Devices x={124} y={556} />
         <text x="180" y="640" textAnchor="middle" className="lf-sub">a browser, any device</text>
       </g>
-      <text x="180" y="700" textAnchor="middle" className="lf-foot-small">No account and no install to visit.</text>
+      <text x="180" y="698" textAnchor="middle" className="lf-foot-small">No account and no install to visit.</text>
+      <text x="180" y="720" textAnchor="middle" className="lf-foot-small">Any host can serve the files.</text>
     </svg>
   </figure>
 );

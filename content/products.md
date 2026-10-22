@@ -14,7 +14,7 @@ the earlier documents are on GitHub.
 
 **WebVerse** — the client. A web page that opens any world by its address,
 on a phone, a laptop or a headset's browser. It is what a published link
-opens. A desktop version for offline and local-network use is in the works.
+opens.
 
 **StraightFour** — the engine under the client: rendering, loading,
 physics, the scripting sandbox. You meet it only if you build a client.
@@ -41,5 +41,5 @@ generation.
 
 **WorldHub** is the one service we run. It hosts the worlds you publish
 from Blender and signs you in (WorldHub ID); a directory of worlds people
-choose to list is coming. A world does not need WorldHub to exist or to be
-opened. [About WorldHub](/products/worldhub)
+choose to list is coming. A world does not need WorldHub to exist; today the client page that opens
+it is served from WorldHub. [About WorldHub](/products/worldhub)

@@ -78,7 +78,7 @@ nothing in `drafts/` is routed or prerendered.
 - The client's host answers `X-Frame-Options: SAMEORIGIN`, so a world
   cannot be embedded in this site; the Walk-in frame opens the client in a
   new tab. An inline embed needs the publish service to send
-  `frame-ancestors https://fivesqd.com` instead (v4-monorepo issue filed).
+  `frame-ancestors https://fivesqd.com` instead (v4-monorepo #739).
 - The add-on's File > Export > Export VEML is the earlier generation's
   exporter (entities, VEML 3); the 4.0 publish path is Save and Publish
   only. So the copy never tells a Blender user to "export the folder" to

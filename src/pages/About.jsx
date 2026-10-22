@@ -16,7 +16,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <div className="grid grid-2">
             <div>
@@ -41,7 +41,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="section section-light">
+      <section className="section">
         <div className="container text-center">
           <h2>Who we are</h2>
           <p style={{ maxWidth: '650px', margin: '0 auto 2rem' }}>

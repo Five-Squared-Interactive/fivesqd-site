@@ -2050,5 +2050,8 @@ pre.code-example {
 @media (min-width: 901px) {
   .world-pair > .world-frame { position: sticky; top: 84px; }
 }
-.gradient-step h2.pillar-title { font-size: 1.25rem; margin-bottom: .5rem; }
+.gradient-step h3.pillar-title { font-size: 1.25rem; margin-bottom: .5rem; }
+.section-tight { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.grid-2-narrow .card h3 { font-size: 1.25rem; }
+.ask-line { margin-top: 1.5rem; }
 .walkin-poster { text-decoration: none; }

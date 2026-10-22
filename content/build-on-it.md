@@ -2,7 +2,7 @@
 
 Everything that opens, moves or syncs a world is open under MIT, with the
 current generation's public release being prepared, and the format is
-written down as a specification with a conformance suite. 
+written down as a specification with a conformance suite.
 
 ## Make worlds
 
@@ -23,8 +23,8 @@ already have.
 
 You want a different client, a different editor, a host, a sync service,
 a connector. The format is open, the client and engine are open, the sync
-layer is open and standalone, and nothing in a world's address points at
-us. Build what fits and it works with everything else.
+layer is open and standalone, and a world at your own address names
+nothing of ours. Build what fits and it works with everything else.
 
 ## Where to start
 

@@ -123,7 +123,8 @@ const Products = () => {
           <p>
             <strong>WorldHub</strong> is the one service we run. It hosts the worlds you publish from
             Blender and signs you in (WorldHub ID); a directory of worlds people choose to list is
-            coming. A world does not need WorldHub to exist or to be opened.
+            coming. A world does not need WorldHub to exist; today the client page that opens it is served
+            from WorldHub.
           </p>
           <Link to="/products/worldhub" className="btn btn-primary">About WorldHub</Link>
         </div>

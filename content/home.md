@@ -44,9 +44,9 @@ scene published from Blender can stand beside its own document.
 A scene becomes a folder. The folder gets an address. The address opens
 anywhere. *(A four-box diagram: a scene (Blender, today; Save and Publish)
 → a folder (index.veml, assets/model.glb; plain files) → an address
-(https://your.site/room/; WorldHub today, or any web host) → a browser, any
-device. Underneath: "No account and no install to visit. The files are
-served like any page.")*
+(worlds.worldhub.me/w/…; hosted for you, today) → a browser, any device.
+Underneath: "No account and no install to visit. The files are served like
+any page, and any host can serve them.")*
 
 ### And worlds link to worlds
 

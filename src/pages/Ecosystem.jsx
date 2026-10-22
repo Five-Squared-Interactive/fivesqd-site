@@ -47,7 +47,7 @@ const Ecosystem = () => {
               <p>
                 You want a different client, a different editor, a host, a sync service, a connector.
                 The format is open, the client and engine are open, the sync layer is open and
-                standalone, and nothing in a world's address points at us. Build what fits and it
+                standalone, and a world at your own address names nothing of ours. Build what fits and it
                 works with everything else.
               </p>
               <Link to="/technology">How it works &rarr;</Link>
@@ -76,7 +76,7 @@ const Ecosystem = () => {
             </li>
           </ul>
           <p>
-            Ask us anything: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+            <span className="ask-line" style={{ display: 'block' }}>Ask us anything: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</span>
           </p>
         </div>
       </section>
