@@ -16,22 +16,22 @@ the earlier documents are on GitHub.
 on a phone, a laptop or a headset's browser. It is what a published link
 opens.
 
-**StraightFour** — the engine under the client: rendering, loading,
+**StraightFour** — the engine. Under the client: rendering, loading,
 physics, the scripting sandbox. You meet it only if you build a client.
 
 **WorldSync** — being there together. The clients in a world exchange what
 moved, directly for most worlds, through a server for worlds that want one.
 Designed so an engine you already use can adopt it.
 
-**WorldOS** — the runtime for a world with its own logic: a score, a
-simulation, terrain people reshape, a sensor feed. Most worlds do not need
-it.
+**WorldOS** — a world with its own logic. The runtime for a world that
+keeps a score, runs a simulation, has terrain people reshape, or listens to
+a sensor. Most worlds do not need it.
 
 **WorldKit** — the authoring tools. Today: the Blender add-on, which
 exports a scene as a world and publishes it in one press.
 
-**MyWorlds** — assembling a world in the browser, without Blender. Being
-rebuilt on the new client; not yet live.
+**MyWorlds** — assembling a world in the browser. Putting a world together
+without Blender. Being rebuilt on the new client; not yet live.
 
 All of it is MIT-licensed. The public release of the current generation is
 being prepared; the repositories on GitHub today are the earlier

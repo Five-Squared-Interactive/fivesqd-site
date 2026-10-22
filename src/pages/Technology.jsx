@@ -80,10 +80,6 @@ const Technology = () => {
             Your host serves the world, the client's host serves the client, and the two never need
             to be the same. Because the client reads the world from another origin, your host must
             allow cross-origin reads (<code>Access-Control-Allow-Origin: *</code>): GitHub Pages
-            does; a bucket needs a CORS rule. Because the client reads the world from another origin, your host must
-            allow cross-origin reads (<code>Access-Control-Allow-Origin: *</code>): GitHub Pages
-            does; a bucket needs a CORS rule. Because the client reads the world from another origin, your host must
-            allow cross-origin reads (<code>Access-Control-Allow-Origin: *</code>): GitHub Pages
             does; a bucket needs a CORS rule. A world published through WorldHub is the same thing with the hosting
             done for you.
           </p>

@@ -12,7 +12,8 @@ the last marked "only some worlds".)*
 A world is a folder: one file in **VEML**, a small XML format that says what
 is in the world and where, plus the models it refers to, in glTF, the
 standard 3D file format. That is the whole world. A line of VEML names the
-sky; another names the model; another says where a visitor starts; a door to another world is one more line. Anything a client does not understand it
+sky; another names the model; another says where a visitor starts; a door to
+another world is one more line. Anything a client does not understand it
 ignores, so a world written for next year's client still opens in this
 year's.
 
@@ -33,11 +34,8 @@ your world's `index.veml` address, URL-encoded. Your host serves the
 world, the client's host serves the client, and the two never need to be
 the same. Because the client reads the world from another origin, your
 host must allow cross-origin reads (`Access-Control-Allow-Origin: *`):
-GitHub Pages does; a bucket needs a CORS rule. Because the client reads the world from another origin, your
-host must allow cross-origin reads (`Access-Control-Allow-Origin: *`):
-GitHub Pages does; a bucket needs a CORS rule. Because the client reads the world from another origin, your
-host must allow cross-origin reads (`Access-Control-Allow-Origin: *`):
-GitHub Pages does; a bucket needs a CORS rule. A world published through WorldHub is the same thing with the
+GitHub Pages does; a bucket needs a CORS rule. A world published through
+WorldHub is the same thing with the
 hosting done for you.
 
 Getting the folder out of Blender and onto your own host is the step
