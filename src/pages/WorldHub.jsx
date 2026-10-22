@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { WORLD_HERO } from '../links';
 
 // The words are content/worldhub.md; keep the two in step.
 const WorldHub = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="section-hero-image hero-world hero-inner" style={{ backgroundImage: `url(${WORLD_HERO})` }}>
-        <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
-          <h1 style={{ color: 'white' }}>WorldHub</h1>
-          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '680px', margin: '0 auto' }}>
+      <section className="page-head">
+        <div className="container">
+          <h1>WorldHub</h1>
+          <p style={{ maxWidth: '680px', margin: '0 auto' }}>
             The service that hosts what you publish and signs you in. Run by Five Squared
             Interactive.
           </p>

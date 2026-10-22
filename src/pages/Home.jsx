@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import WorldDocument from '../components/WorldDocument';
 import WebPageAnalogy from '../components/WebPageAnalogy';
 import LinkFlow from '../components/LinkFlow';
 import DoorDiagram from '../components/DoorDiagram';
 import { DEMO_WORLD_URL, GITHUB_ORG, WORLD_HERO, WORLD_CARD, WORLD_HERO_ALT } from '../links';
+
+// A frame of a world that becomes the world itself on a click: the client
+// is loaded in an iframe only then, so nothing heavy is on the page's own
+// path. Rendered only when a public demo world exists.
+const WalkIn = ({ url, poster, alt }) => {
+  const [open, setOpen] = useState(false);
+  if (open) {
+    return (
+      <div className="walkin">
+        <iframe src={url} title={alt} allow="fullscreen; xr-spatial-tracking; pointer-lock" />
+      </div>
+    );
+  }
+  return (
+    <button type="button" className="walkin walkin-poster" style={{ backgroundImage: `url(${poster})` }} onClick={() => setOpen(true)} aria-label={`Walk into ${alt}`}>
+      <span>Walk in</span>
+    </button>
+  );
+};
 
 // The words are content/home.md; keep the two in step.
 const Home = () => {
@@ -13,10 +32,9 @@ const Home = () => {
       <section className="section-hero-image hero-world" style={{ backgroundImage: `url(${WORLD_HERO})` }}>
         <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
           <h1 style={{ color: 'white' }}>A world is a web page.</h1>
-          <p style={{ color: 'rgba(255,255,255,0.92)', maxWidth: '680px', margin: '0 auto 2rem' }}>
-            A document at an address you own. Open it in a browser and walk around, with other
-            people, on a phone, a laptop or a headset. Nothing to install. One way to make one:
-            export a scene from Blender and press Save and Publish.
+          <p className="hero-lead">
+            A document at an address you own, opened in a browser. Walk around in it with other
+            people, on a phone, a laptop or a headset. Nothing to install.
           </p>
           <div className="hero-actions">
             {DEMO_WORLD_URL && (
@@ -25,8 +43,9 @@ const Home = () => {
               </a>
             )}
             <Link to="/first-world" className={`btn ${DEMO_WORLD_URL ? 'btn-secondary' : 'btn-primary'} btn-large`}>
-              Make your own
+              Make your own from Blender
             </Link>
+            {!DEMO_WORLD_URL && <a href="#document" className="hero-scroll">See what a world is made of</a>}
           </div>
           <p className="hero-caption">The Overlook, a world opened in the client.</p>
         </div>
@@ -35,27 +54,29 @@ const Home = () => {
       <section className="section section-light">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>The same machinery as the web</h2>
-            <p className="section-subtitle">Not a metaphor. Each part of a world is the part of a web page it stands in for.</p>
+            <h2>The same parts as the web</h2>
+            <p className="section-subtitle">Each part of a world is the part of a web page it stands in for.</p>
           </div>
           <WebPageAnalogy />
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="document">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>The whole world, and the whole document</h2>
+            <h2>A world, and a world's whole document</h2>
             <p className="section-subtitle">
-              Everything the world on the left is made of is the text on the right. Five lines do the work.
+              Every published world is a document like this one. It fits on a screen, and five parts do the work.
             </p>
           </div>
           <div className="world-pair">
             <figure className="world-frame">
-              <img src={WORLD_CARD} alt={WORLD_HERO_ALT} width="800" height="426" loading="lazy" />
-              <figcaption>A world, opened in a browser.</figcaption>
+              {DEMO_WORLD_URL
+                ? <WalkIn url={DEMO_WORLD_URL} poster={WORLD_CARD} alt={WORLD_HERO_ALT} />
+                : <img src={WORLD_CARD} alt={WORLD_HERO_ALT} width="800" height="426" loading="lazy" />}
+              <figcaption>The Overlook, a world opened in a browser.</figcaption>
             </figure>
-            <WorldDocument caption="A published world's document, 923 bytes. The model is a standard glTF file. There is nothing else." />
+            <WorldDocument caption="The document of another world, a living room, exactly as Blender published it: 923 bytes, plus the two files it names, one model and one sky image." />
           </div>
         </div>
       </section>
@@ -67,46 +88,15 @@ const Home = () => {
             <p className="section-subtitle">A scene becomes a folder. The folder gets an address. The address opens anywhere.</p>
           </div>
           <LinkFlow />
-          <div className="grid grid-3" style={{ marginTop: '2rem' }}>
-            <div className="card">
-              <div className="card-glyph" aria-hidden="true">&lt;/&gt;</div>
-              <h3>You can read it.</h3>
-              <p>
-                Add <code>/index.veml</code> to any published world's address and the document opens
-                as text. It is short, and every line means something you can see.
-              </p>
-            </div>
-            <div className="card">
-              <div className="card-glyph" aria-hidden="true">▤</div>
-              <h3>It is files at an address.</h3>
-              <p>
-                A world is a folder of plain files served like any web page: no server of yours, no
-                database, no account to visit. Put the folder on any host and open it there.
-              </p>
-            </div>
-            <div className="card">
-              <div className="card-glyph" aria-hidden="true">⇄</div>
-              <h3>It links to other worlds.</h3>
-              <p>
-                A door, a sign or a frame in your scene can open onto another world's address, the
-                way one page links to the next. In Blender, a link is a field on the object.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>Worlds link to worlds</h2>
+          <div className="text-center mb-4" style={{ marginTop: '3rem' }}>
+            <h3>And worlds link to worlds</h3>
             <p className="section-subtitle">Your room can open onto a friend's. Each stays at its own address.</p>
           </div>
           <DoorDiagram />
         </div>
       </section>
 
-      <section className="section section-light">
+      <section className="section">
         <div className="container">
           <div className="text-center mb-4">
             <h2>Make one</h2>
@@ -131,14 +121,14 @@ const Home = () => {
           <div className="text-center" style={{ marginTop: '2rem' }}>
             <Link to="/first-world" className="btn btn-primary">The first-world guide</Link>
           </div>
-          <p className="text-center" style={{ marginTop: '1.5rem', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <p className="section-pair-note">
             Worlds published this way are hosted by WorldHub; the world is a document, and you
             choose who may enter.
           </p>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <div className="grid grid-2">
             <div>
@@ -146,8 +136,8 @@ const Home = () => {
               <p>
                 For anyone with a scene and someone to show it to: a room you modelled, a building, a
                 place that no longer exists, a toy. For a group that wants a room of its own on the
-                web. For developers who want an open 3D document format, an MIT-licensed client, and a
-                sync layer that works with the engine they already have.
+                web. For developers who want an open 3D document format, an open client, and a sync
+                layer designed so the engine they already have can adopt it.
               </p>
             </div>
             <div>

@@ -45,8 +45,8 @@ const LinkFlow = () => (
       <g className="lf-node">
         <rect x="528" y="40" width="200" height="120" rx="14" />
         <text x="628" y="82" textAnchor="middle" className="lf-title">An address</text>
-        <text x="628" y="110" textAnchor="middle" className="lf-mono">https://…/w/…</text>
-        <text x="628" y="136" textAnchor="middle" className="lf-sub">any web host</text>
+        <text x="628" y="110" textAnchor="middle" className="lf-mono">https://your.site/room/</text>
+        <text x="628" y="136" textAnchor="middle" className="lf-sub">WorldHub today, or any web host</text>
       </g>
       <line x1="734" y1="100" x2="776" y2="100" className="lf-line" markerEnd="url(#lf-arrow-w)" />
       <g className="lf-node">
@@ -54,7 +54,7 @@ const LinkFlow = () => (
         <Devices x={806} y={70} />
         <text x="862" y="146" textAnchor="middle" className="lf-sub">a browser, any device</text>
       </g>
-      <text x="480" y="200" textAnchor="middle" className="lf-foot">Nothing to install. Nothing of ours between the link and the world.</text>
+      <text x="480" y="200" textAnchor="middle" className="lf-foot">No account and no install to visit. The files are served like any page.</text>
     </svg>
 
     <svg className="lf-tall" viewBox="0 0 360 720" role="img" aria-labelledby="lf-tall-title">
@@ -78,8 +78,8 @@ const LinkFlow = () => (
       <g className="lf-node">
         <rect x="40" y="360" width="280" height="120" rx="14" />
         <text x="180" y="402" textAnchor="middle" className="lf-title">An address</text>
-        <text x="180" y="430" textAnchor="middle" className="lf-mono">https://…/w/…</text>
-        <text x="180" y="456" textAnchor="middle" className="lf-sub">any web host</text>
+        <text x="180" y="430" textAnchor="middle" className="lf-mono">https://your.site/room/</text>
+        <text x="180" y="456" textAnchor="middle" className="lf-sub">WorldHub today, or any web host</text>
       </g>
       <line x1="180" y1="486" x2="180" y2="524" className="lf-line" markerEnd="url(#lf-arrow-t)" />
       <g className="lf-node">
@@ -87,7 +87,7 @@ const LinkFlow = () => (
         <Devices x={124} y={556} />
         <text x="180" y="640" textAnchor="middle" className="lf-sub">a browser, any device</text>
       </g>
-      <text x="180" y="700" textAnchor="middle" className="lf-foot-small">Nothing to install. Nothing of ours in between.</text>
+      <text x="180" y="700" textAnchor="middle" className="lf-foot-small">No account and no install to visit.</text>
     </svg>
   </figure>
 );

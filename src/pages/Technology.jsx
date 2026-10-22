@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import WorldDocument from '../components/WorldDocument';
-import { WHITE_PAPER, WORLD_HERO, CLIENT_URL } from '../links';
+import { WHITE_PAPER, CLIENT_URL } from '../links';
 
 // How it works. The words are content/how-it-works.md; keep the two in step.
 const Technology = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="section-hero-image hero-world hero-inner" style={{ backgroundImage: `url(${WORLD_HERO})` }}>
-        <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
-          <h1 style={{ color: 'white' }}>How it works</h1>
-          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '700px', margin: '0 auto' }}>
+      <section className="page-head">
+        <div className="container">
+          <h1>How it works</h1>
+          <p style={{ maxWidth: '700px', margin: '0 auto' }}>
             A world is a document at a URL, the way a web page is. Four pieces open it, move it, and
             let people be in it together. A world that is only visited needs the first two.
           </p>
@@ -62,12 +62,12 @@ const Technology = () => {
                 page is served, through the same URLs, the same DNS, the same caching.
               </p>
             </div>
-            <WorldDocument caption="A published world's whole document." />
+            <WorldDocument caption="A published world's whole document, as Blender published it: 923 bytes, plus the two files it names." />
           </div>
         </div>
       </section>
 
-      <section className="section section-light" id="own-address">
+      <section className="section" id="own-address">
         <div className="container" style={{ maxWidth: '760px' }}>
           <h2>At your own address</h2>
           <p>
@@ -80,10 +80,15 @@ const Technology = () => {
             to be the same. A world published through WorldHub is the same thing with the hosting
             done for you.
           </p>
+          <p>
+            Getting the folder out of Blender and onto your own host is the step still being
+            finished: a download of the published folder is built and waits on deployment. Until
+            then, this recipe is for worlds you assemble by hand.
+          </p>
         </div>
       </section>
 
-      <section className="section " id="client">
+      <section className="section section-light" id="client">
         <div className="container" style={{ maxWidth: '760px' }}>
           <h2>The client</h2>
           <p>
@@ -140,7 +145,7 @@ const Technology = () => {
           <h2>What this adds up to</h2>
           <ul style={{ paddingLeft: '1.25rem', lineHeight: 1.8, fontSize: '1.125rem' }}>
             <li>Nothing to install to visit. The link opens in a browser.</li>
-            <li>A world at its own address opens even if we disappear.</li>
+            <li>Built to outlive us: the format is open, the client is open, and a world at its own address names nothing of ours. Today the client page is served from WorldHub; the public release removes that last dependency.</li>
             <li>An unvisited world costs nothing: it is a folder.</li>
             <li>Worlds link to worlds. The web's graph, in 3D.</li>
           </ul>

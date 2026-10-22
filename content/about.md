@@ -8,7 +8,8 @@ made it.
 
 A world should outlive the company that helped make it. So the format is
 open, the client is open, hosting is a convenience and never a requirement,
-and nothing of ours sits between a link and the world it points to. A
+and the design puts nothing of ours between a link and the world it
+points to. A
 thousand worlds on our servers would mean less to us than one person's
 world at their own address.
 

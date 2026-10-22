@@ -70,6 +70,14 @@ nothing in `drafts/` is routed or prerendered.
   in the client (`public/images/world-overlook-*.webp`, shot 2026-10-20).
   The living room, the Blender demo scene, renders magenta in the corpus
   copy (missing textures) and cannot be shown until a textured scene is
-  published. The first-world steps have `shot` slots for Blender
+  published. So the "world and document" pair on Home and How it works
+  shows The Overlook beside the LIVING ROOM's document, and the captions
+  say they are two worlds. The single most valuable deploy task is one
+  textured scene published from Blender, with a door in it: it becomes the
+  hero, the pair (its own document, link line included) and the demo link.
+- The add-on's File > Export > Export VEML is the earlier generation's
+  exporter (entities, VEML 3); the 4.0 publish path is Save and Publish
+  only. So the copy never tells a Blender user to "export the folder" to
+  their own host; it says that step waits on the published page's download. The first-world steps have `shot` slots for Blender
   screenshots nobody has taken yet. The social preview is
   `og-world-is-a-page.png`.

@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GITHUB_ORG, CONTACT_EMAIL, WORLD_HERO } from '../links';
+import { GITHUB_ORG, CONTACT_EMAIL } from '../links';
 
 // Build on it. The words are content/build-on-it.md; keep the two in step.
 const Ecosystem = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="section-hero-image hero-world hero-inner" style={{ backgroundImage: `url(${WORLD_HERO})` }}>
-        <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
-          <h1 style={{ color: 'white' }}>Build on it</h1>
-          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '700px', margin: '0 auto' }}>
-            Everything that opens, moves or syncs a world is MIT-licensed, and the format is written
-            down as a specification with a conformance suite, both being prepared for publication.
-            There are three ways in.
+      <section className="page-head">
+        <div className="container">
+          <h1>Build on it</h1>
+          <p style={{ maxWidth: '700px', margin: '0 auto' }}>
+            Everything that opens, moves or syncs a world is open under MIT, with the current
+            generation's public release being prepared, and the format is written down as a
+            specification with a conformance suite. There are three ways in.
           </p>
         </div>
       </section>
@@ -66,7 +66,7 @@ const Ecosystem = () => {
             </li>
             <li>The client: WebVerse, and StraightFour under it. Public release in preparation.</li>
             <li>
-              Being together: WorldSync, the piece an engine you already use can adopt first. The
+              Being together: WorldSync, designed so an engine you already use can adopt it first. The
               protocol document is being prepared for publication.
             </li>
             <li>A world with its own logic: WorldOS.</li>

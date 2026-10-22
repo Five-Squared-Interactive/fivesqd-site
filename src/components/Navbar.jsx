@@ -158,7 +158,7 @@ const Navbar = () => {
                 </div>
                 <div className="dropdown-footer">
                   <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer" onClick={closeAll}>
-                    View all repos on GitHub &rarr;
+                    The earlier generation on GitHub &rarr;
                   </a>
                 </div>
               </div>

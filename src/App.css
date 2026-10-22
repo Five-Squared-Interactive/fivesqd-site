@@ -1278,8 +1278,8 @@ pre.code-example {
 }
 
 .gradient-step p {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
+  font-size: 1rem;
+  color: var(--color-text);
 }
 
 /* Product Grid */
@@ -1921,7 +1921,6 @@ pre.code-example {
 }
 .doc-frame pre.code-example {
   margin: 0;
-  max-height: 426px;
   font-size: 0.78rem;
 }
 .card-glyph {
@@ -1968,9 +1967,9 @@ pre.code-example {
    in light and dark. */
 .doc-line { display: block; white-space: pre; }
 .doc-mark {
-  display: inline-block; width: 1.3em; height: 1.3em; line-height: 1.3em; margin-right: .5em;
-  border-radius: 50%; background: var(--color-primary); color: #fff; font-size: .72em;
-  text-align: center; font-weight: 700; vertical-align: middle; font-family: inherit;
+  display: inline-block; width: 1.5rem; height: 1.5rem; line-height: 1.5rem; flex: none;
+  border-radius: 50%; background: #2563eb; color: #fff; font-size: .85rem;
+  text-align: center; font-weight: 700; vertical-align: middle; font-family: Inter, system-ui, sans-serif;
 }
 .doc-mark-empty { background: transparent; }
 .doc-legend { list-style: none; padding: 0; margin: .75rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; font-size: .92rem; opacity: .9; }
@@ -1989,20 +1988,54 @@ pre.code-example {
   .analogy-head::after { content: ""; }
 }
 .linkflow, .doors { margin: 0 auto; max-width: 960px; color: var(--color-text); }
-.linkflow svg, .doors svg { width: 100%; height: auto; display: block; }
+.linkflow svg, .doors svg { width: 100%; height: auto; }
+.linkflow svg.lf-wide, .doors svg.dd-wide { display: block; }
 .lf-node rect, .dd-world rect { fill: var(--color-bg-alt); stroke: var(--color-border); stroke-width: 1.5; }
-.lf-screen { fill: var(--color-primary); opacity: .85; }
+.lf-node rect.lf-screen { fill: var(--color-primary); opacity: .85; }
 .lf-line, .dd-line { stroke: currentColor; stroke-width: 2; }
 .lf-title, .dd-title { font-size: 20px; font-weight: 700; fill: currentColor; }
 .lf-sub, .dd-sub { font-size: 14px; fill: currentColor; opacity: .75; }
 .lf-mono, .dd-addr { font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: currentColor; }
 .dd-addr { opacity: .8; }
 .lf-foot, .dd-foot { font-size: 15px; fill: currentColor; opacity: .85; }
-.dd-door { fill: var(--color-primary); opacity: .9; }
-.dd-knob { fill: #fff; }
-.lf-tall, .dd-tall { display: none; }
+.dd-world rect.dd-door { fill: var(--color-primary); opacity: .9; }
+.dd-world circle.dd-knob { fill: #fff; }
+.linkflow svg.lf-tall, .doors svg.dd-tall { display: none; }
 .lf-foot-small, .dd-foot-small { font-size: 14px; fill: currentColor; opacity: .85; }
 @media (max-width: 720px) {
-  .lf-wide, .dd-wide { display: none; }
-  .lf-tall, .dd-tall { display: block; max-width: 360px; margin: 0 auto; }
+  .linkflow svg.lf-wide, .doors svg.dd-wide { display: none; }
+  .linkflow svg.lf-tall, .doors svg.dd-tall { display: block; max-width: 360px; margin: 0 auto; }
 }
+
+/* Round-1 review fixes: the document's marks sit in a gutter and light up
+   with their legend entry; inner pages open on a typographic header
+   instead of the same world frame; primary buttons keep AA contrast in
+   dark mode; the product grid has a row of five and a row of two. */
+.doc-line { display: flex; align-items: center; gap: .6rem; padding: 0 .25rem; border-radius: .25rem; min-height: 1.45rem; }
+.doc-gutter { width: 1.5rem; flex: none; display: flex; align-items: center; }
+.doc-line .doc-mark { width: 1.3rem; height: 1.3rem; line-height: 1.3rem; font-size: .78rem; }
+.doc-text { white-space: pre; }
+.doc-line-active { background: rgba(37, 99, 235, 0.14); }
+.doc-legend li { cursor: default; border-radius: 999px; padding: .1rem .5rem .1rem .1rem; }
+.doc-legend li.is-active { background: rgba(37, 99, 235, 0.14); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 720px) {
+  .doc-text { white-space: pre-wrap; word-break: break-all; }
+}
+[data-theme="dark"] .btn-primary { background-color: #2563eb; color: #fff; }
+[data-theme="dark"] .btn-primary:hover { background-color: #1d4ed8; }
+.page-head { padding: 4.5rem 0 2.5rem; text-align: center; background: var(--color-bg-alt); border-bottom: 1px solid var(--color-border); }
+.page-head h1 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: .75rem; }
+.page-head p { max-width: 700px; margin: 0 auto; font-size: 1.15rem; color: var(--color-text-subtle); }
+.grid-5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; align-items: stretch; }
+.grid-5 .card h3 { font-size: 1.2rem; overflow-wrap: normal; word-break: keep-all; }
+.grid-5 .card { padding: 1.25rem; }
+.grid-2-narrow { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 760px; margin: 0 auto; }
+.logo-card-image img { padding: .75rem 1rem; box-sizing: border-box; }
+#webverse .logo-card-image img { padding: 0; }
+.hero-lead { color: rgba(255, 255, 255, 0.92); max-width: 640px; margin: 0 auto 2rem; font-size: 1.2rem; }
+.hero-scroll { display: inline-block; margin: .75rem 1rem 0; color: #fff; opacity: .9; text-decoration: underline; text-underline-offset: 3px; }
+.walkin { position: relative; width: 100%; aspect-ratio: 800 / 426; border-radius: 1rem; overflow: hidden; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25); background: #000 center / cover no-repeat; display: block; border: 0; padding: 0; cursor: pointer; }
+.walkin iframe { width: 100%; height: 100%; border: 0; display: block; }
+.walkin-poster span { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #2563eb; color: #fff; font-weight: 700; font-size: 1.1rem; padding: .7rem 1.4rem; border-radius: 999px; box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+.section-pair-note { text-align: center; max-width: 680px; margin: 1.5rem auto 0; opacity: .85; }

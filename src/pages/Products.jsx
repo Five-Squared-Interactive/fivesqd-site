@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GITHUB_ORG, WORLD_CARD, WORLD_HERO, WORLD_HERO_ALT } from '../links';
+import { GITHUB_ORG, WORLD_CARD, WORLD_HERO_ALT } from '../links';
 
 // The words are content/products.md; keep the two in step.
-const PIECES = [
+const STACK = [
   {
     id: 'veml',
     name: 'VEML',
@@ -31,7 +31,7 @@ const PIECES = [
     name: 'WorldSync',
     tagline: 'Being there together',
     image: '/images/WorldSyncLogo.webp',
-    text: 'The clients in a world exchange what moved, directly for most worlds, through a server for worlds that want one. It stands alone: an engine you already use can adopt it to put its users in the same room.',
+    text: 'The clients in a world exchange what moved, directly for most worlds, through a server for worlds that want one. It stands alone, designed so an engine you already use can adopt it; the protocol document is being prepared for publication.',
   },
   {
     id: 'worldos',
@@ -40,6 +40,9 @@ const PIECES = [
     image: '/images/WorldOSLogo.webp',
     text: 'The runtime for a world that keeps a score, runs a simulation, has terrain people reshape, or listens to a sensor. Most worlds do not need it.',
   },
+];
+
+const TOOLS = [
   {
     id: 'worldkit',
     name: 'WorldKit',
@@ -52,6 +55,7 @@ const PIECES = [
     id: 'myworlds',
     name: 'MyWorlds',
     tagline: 'Assembling a world in the browser',
+    glyph: '▦',
     text: 'Putting a world together without Blender. Being rebuilt on the new client; not yet live.',
   },
 ];
@@ -63,6 +67,7 @@ const Piece = ({ p }) => (
         <img src={p.image} alt={p.imageAlt ?? ''} loading="lazy" />
       </div>
     )}
+    {p.glyph && <div className="logo-card-image" aria-hidden="true"><span className="card-glyph" style={{ margin: 0, fontSize: '3rem' }}>{p.glyph}</span></div>}
     <h3 style={{ marginBottom: '0.25rem' }}>{p.name}</h3>
     <p style={{ opacity: 0.75, marginBottom: '0.75rem' }}>{p.tagline}</p>
     <p>{p.text}</p>
@@ -73,10 +78,10 @@ const Piece = ({ p }) => (
 const Products = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="section-hero-image hero-world hero-inner" style={{ backgroundImage: `url(${WORLD_HERO})` }}>
-        <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
-          <h1 style={{ color: 'white' }}>What we make</h1>
-          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '700px', margin: '0 auto' }}>
+      <section className="page-head">
+        <div className="container">
+          <h1>What we make</h1>
+          <p>
             Open pieces that fit together, and one service. Each is listed with what it is today,
             not what it will be.
           </p>
@@ -87,9 +92,10 @@ const Products = () => {
         <div className="container">
           <div className="text-center mb-4">
             <h2>The open stack</h2>
+            <p className="section-subtitle">Five pieces. A world that is only visited needs the first two.</p>
           </div>
-          <div className="grid grid-3">
-            {PIECES.map((p) => <Piece key={p.id} p={p} />)}
+          <div className="grid-5">
+            {STACK.map((p) => <Piece key={p.id} p={p} />)}
           </div>
           <p className="text-center" style={{ marginTop: '2rem', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto' }}>
             All of it is MIT-licensed. The public release of the current generation is being
@@ -100,7 +106,18 @@ const Products = () => {
         </div>
       </section>
 
-      <section className="section" id="worldhub">
+      <section className="section">
+        <div className="container">
+          <div className="text-center mb-4">
+            <h2>Making worlds</h2>
+          </div>
+          <div className="grid-2-narrow">
+            {TOOLS.map((p) => <Piece key={p.id} p={p} />)}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-light" id="worldhub">
         <div className="container" style={{ maxWidth: '760px' }}>
           <h2>The service</h2>
           <p>

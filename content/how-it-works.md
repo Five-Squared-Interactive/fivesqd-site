@@ -35,6 +35,11 @@ world, the client's host serves the client, and the two never need to be
 the same. A world published through WorldHub is the same thing with the
 hosting done for you.
 
+Getting the folder out of Blender and onto your own host is the step
+still being finished: a download of the published folder is built and
+waits on deployment. Until then, this recipe is for worlds you assemble
+by hand.
+
 ## The client
 
 **WebVerse** is the client: a web page that loads the engine and opens the
@@ -74,7 +79,9 @@ world is what it exports.
 ## What this adds up to
 
 - Nothing to install to visit. The link opens in a browser.
-- A world at its own address opens even if we disappear.
+- Built to outlive us: the format is open, the client is open, and a world
+  at its own address names nothing of ours. Today the client page is served
+  from WorldHub; the public release removes that last dependency.
 - An unvisited world costs nothing: it is a folder.
 - Worlds link to worlds. The web's graph, in 3D.
 

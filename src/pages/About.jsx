@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GITHUB_ORG, CONTACT_EMAIL, WORLD_HERO } from '../links';
+import { GITHUB_ORG, CONTACT_EMAIL } from '../links';
 
 // The words are content/about.md; keep the two in step.
 const About = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="section-hero-image hero-world hero-inner" style={{ backgroundImage: `url(${WORLD_HERO})` }}>
-        <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
-          <h1 style={{ color: 'white' }}>About Five Squared Interactive</h1>
-          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '680px', margin: '0 auto' }}>
+      <section className="page-head">
+        <div className="container">
+          <h1>About Five Squared Interactive</h1>
+          <p style={{ maxWidth: '680px', margin: '0 auto' }}>
             We build the pieces that let a 3D world be a web page: a document at an address, opened
             in a browser, linked to other worlds, and owned by whoever made it.
           </p>
@@ -23,8 +23,8 @@ const About = () => {
               <h2>What we believe</h2>
               <p>
                 A world should outlive the company that helped make it. So the format is open, the
-                client is open, hosting is a convenience and never a requirement, and nothing of ours
-                sits between a link and the world it points to. A thousand worlds on our servers would
+                client is open, hosting is a convenience and never a requirement, and the design puts nothing of
+                ours between a link and the world it points to. A thousand worlds on our servers would
                 mean less to us than one person's world at their own address.
               </p>
             </div>
