@@ -23,6 +23,18 @@ caching.
 
 *(Beside this: the living room's whole document, as text.)*
 
+## At your own address
+
+Because a world is files, it can live anywhere a web page can: your own
+domain, GitHub Pages, a bucket. Put the folder there and open it with the
+client's page pointed at it:
+
+`https://worlds.worldhub.me/webverse/index.html#world-url=` followed by
+your world's `index.veml` address, URL-encoded. Your host serves the
+world, the client's host serves the client, and the two never need to be
+the same. A world published through WorldHub is the same thing with the
+hosting done for you.
+
 ## The client
 
 **WebVerse** is the client: a web page that loads the engine and opens the

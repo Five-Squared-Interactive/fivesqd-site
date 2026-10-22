@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import WorldDocument from '../components/WorldDocument';
-import { WHITE_PAPER, WORLD_HERO } from '../links';
+import { WHITE_PAPER, WORLD_HERO, CLIENT_URL } from '../links';
 
 // How it works. The words are content/how-it-works.md; keep the two in step.
 const Technology = () => {
@@ -67,7 +67,23 @@ const Technology = () => {
         </div>
       </section>
 
-      <section className="section section-light" id="client">
+      <section className="section section-light" id="own-address">
+        <div className="container" style={{ maxWidth: '760px' }}>
+          <h2>At your own address</h2>
+          <p>
+            Because a world is files, it can live anywhere a web page can: your own domain, GitHub
+            Pages, a bucket. Put the folder there and open it with the client's page pointed at it:
+          </p>
+          <pre className="code-example"><code>{`${CLIENT_URL}#world-url=`}<em>your world's index.veml address, URL-encoded</em></code></pre>
+          <p>
+            Your host serves the world, the client's host serves the client, and the two never need
+            to be the same. A world published through WorldHub is the same thing with the hosting
+            done for you.
+          </p>
+        </div>
+      </section>
+
+      <section className="section " id="client">
         <div className="container" style={{ maxWidth: '760px' }}>
           <h2>The client</h2>
           <p>

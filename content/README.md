@@ -31,7 +31,6 @@ nothing in `drafts/` is routed or prerendered.
 | `drafts/worldos.md` | the runtime's operator template and plugin guide are public |
 | `drafts/worldsync.md` | the protocol document is published outside the private repo |
 | `drafts/webverse-desktop.md` | a desktop build is downloadable |
-| `drafts/own-address.md` | a public client address exists, so a world served from anywhere opens (`CLIENT_URL` in `src/links.js`) |
 
 ## Rules the copy keeps
 
@@ -46,9 +45,10 @@ nothing in `drafts/` is routed or prerendered.
 
 ## Facts to confirm at deploy
 
-- `{DEMO_WORLD_URL}`: a world published without sign-in, that stays up.
-  Today's only public static world is the demo-worlds living room on
-  GitHub Pages, and the client address its README gives (`/app/`) is a 404.
+- `{DEMO_WORLD_URL}`: a world published without sign-in, that stays up,
+  and worth looking at. The demo-worlds living room on GitHub Pages opens
+  through the client address (`CLIENT_URL`), but its textures are missing,
+  so it is not the first thing a visitor should see.
 - `worldhub.md` says Search lists worlds at any address: that is the new
   directory (v4-monorepo #662), live once the sites deploy from CI (#667).
   Until then www.worldhub.me is the earlier site.

@@ -6,10 +6,11 @@
 // rather than with a dead one (content/README.md, "Facts to confirm").
 export const DEMO_WORLD_URL = null;
 
-// A public client address, so a world served from anywhere opens as
-// `${CLIENT_URL}#world-url=<its index.veml>`. Null until one is deployed;
-// the own-address page (content/drafts/own-address.md) waits on it.
-export const CLIENT_URL = null;
+// The public client address: the publish host serves the client's own page
+// at /webverse/, and a world served from anywhere opens as
+// `${CLIENT_URL}#world-url=<its index.veml, URL-encoded>` (checked in real
+// Chrome, 2026-10-22, with a world on GitHub Pages).
+export const CLIENT_URL = 'https://worlds.worldhub.me/webverse/index.html';
 
 // The add-on zip is built by the sign-in site because it carries that
 // site's publishable key, which is never committed; it stays there.
