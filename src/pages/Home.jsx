@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import WorldDocument from '../components/WorldDocument';
+import WebPageAnalogy from '../components/WebPageAnalogy';
+import LinkFlow from '../components/LinkFlow';
+import DoorDiagram from '../components/DoorDiagram';
 import { DEMO_WORLD_URL, GITHUB_ORG, WORLD_HERO, WORLD_CARD, WORLD_HERO_ALT } from '../links';
 
 // The words are content/home.md; keep the two in step.
@@ -32,9 +35,19 @@ const Home = () => {
       <section className="section section-light">
         <div className="container">
           <div className="text-center mb-4">
+            <h2>The same machinery as the web</h2>
+            <p className="section-subtitle">Not a metaphor. Each part of a world is the part of a web page it stands in for.</p>
+          </div>
+          <WebPageAnalogy />
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="text-center mb-4">
             <h2>The whole world, and the whole document</h2>
             <p className="section-subtitle">
-              Everything the world on the left is made of is the text on the right.
+              Everything the world on the left is made of is the text on the right. Five lines do the work.
             </p>
           </div>
           <div className="world-pair">
@@ -42,23 +55,33 @@ const Home = () => {
               <img src={WORLD_CARD} alt={WORLD_HERO_ALT} width="800" height="426" loading="lazy" />
               <figcaption>A world, opened in a browser.</figcaption>
             </figure>
-            <WorldDocument caption="Its document: a title, a sky, where you start, the model it loads. The model is a standard glTF file. There is nothing else." />
+            <WorldDocument caption="A published world's document, 923 bytes. The model is a standard glTF file. There is nothing else." />
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>What makes it a page, not an upload</h2>
+            <h2>How a link works</h2>
+            <p className="section-subtitle">A scene becomes a folder. The folder gets an address. The address opens anywhere.</p>
           </div>
-          <div className="grid grid-3">
+          <LinkFlow />
+          <div className="grid grid-3" style={{ marginTop: '2rem' }}>
             <div className="card">
               <div className="card-glyph" aria-hidden="true">&lt;/&gt;</div>
               <h3>You can read it.</h3>
               <p>
                 Add <code>/index.veml</code> to any published world's address and the document opens
                 as text. It is short, and every line means something you can see.
+              </p>
+            </div>
+            <div className="card">
+              <div className="card-glyph" aria-hidden="true">▤</div>
+              <h3>It is files at an address.</h3>
+              <p>
+                A world is a folder of plain files served like any web page: no server of yours, no
+                database, no account to visit. Put the folder on any host and open it there.
               </p>
             </div>
             <div className="card">
@@ -69,15 +92,17 @@ const Home = () => {
                 way one page links to the next. In Blender, a link is a field on the object.
               </p>
             </div>
-            <div className="card">
-              <div className="card-glyph" aria-hidden="true">▤</div>
-              <h3>It is files at an address.</h3>
-              <p>
-                A world is a folder of plain files served like any web page: no server of yours, no
-                database, no account to visit.
-              </p>
-            </div>
           </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="text-center mb-4">
+            <h2>Worlds link to worlds</h2>
+            <p className="section-subtitle">Your room can open onto a friend's. Each stays at its own address.</p>
+          </div>
+          <DoorDiagram />
         </div>
       </section>
 

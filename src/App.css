@@ -1962,3 +1962,47 @@ pre.code-example {
 .world-pair > * { min-width: 0; }
 .doc-frame pre.code-example { max-width: 100%; }
 .logo-card-image { background: #141821; }
+
+/* The document with numbered marks, the web-page analogy, and the two
+   inline diagrams. Colours come from the page's own variables so they hold
+   in light and dark. */
+.doc-line { display: block; white-space: pre; }
+.doc-mark {
+  display: inline-block; width: 1.3em; height: 1.3em; line-height: 1.3em; margin-right: .5em;
+  border-radius: 50%; background: var(--color-primary); color: #fff; font-size: .72em;
+  text-align: center; font-weight: 700; vertical-align: middle; font-family: inherit;
+}
+.doc-mark-empty { background: transparent; }
+.doc-legend { list-style: none; padding: 0; margin: .75rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; font-size: .92rem; opacity: .9; }
+.doc-legend li { display: flex; align-items: center; gap: .4rem; }
+.analogy { max-width: 820px; margin: 0 auto; border: 1px solid var(--color-border); border-radius: 1rem; overflow: hidden; }
+.analogy-head, .analogy-row { display: grid; grid-template-columns: 1fr auto 1fr; gap: .5rem 1rem; align-items: center; padding: .8rem 1.1rem; }
+.analogy-head { background: var(--color-bg-alt); font-weight: 700; text-transform: uppercase; letter-spacing: .04em; font-size: .8rem; }
+.analogy-head span:nth-child(2) { opacity: 0; }
+.analogy-row { border-top: 1px solid var(--color-border); }
+.analogy-row .analogy-what { grid-column: 1 / -1; font-size: .92rem; opacity: .75; }
+.analogy-arrow { color: var(--color-primary); font-size: 1.1rem; }
+.analogy-world { font-weight: 600; }
+@media (min-width: 720px) {
+  .analogy-head, .analogy-row { grid-template-columns: 1.1fr auto 1.1fr 1.4fr; }
+  .analogy-row .analogy-what { grid-column: auto; }
+  .analogy-head::after { content: ""; }
+}
+.linkflow, .doors { margin: 0 auto; max-width: 960px; color: var(--color-text); }
+.linkflow svg, .doors svg { width: 100%; height: auto; display: block; }
+.lf-node rect, .dd-world rect { fill: var(--color-bg-alt); stroke: var(--color-border); stroke-width: 1.5; }
+.lf-screen { fill: var(--color-primary); opacity: .85; }
+.lf-line, .dd-line { stroke: currentColor; stroke-width: 2; }
+.lf-title, .dd-title { font-size: 20px; font-weight: 700; fill: currentColor; }
+.lf-sub, .dd-sub { font-size: 14px; fill: currentColor; opacity: .75; }
+.lf-mono, .dd-addr { font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: currentColor; }
+.dd-addr { opacity: .8; }
+.lf-foot, .dd-foot { font-size: 15px; fill: currentColor; opacity: .85; }
+.dd-door { fill: var(--color-primary); opacity: .9; }
+.dd-knob { fill: #fff; }
+.lf-tall, .dd-tall { display: none; }
+.lf-foot-small, .dd-foot-small { font-size: 14px; fill: currentColor; opacity: .85; }
+@media (max-width: 720px) {
+  .lf-wide, .dd-wide { display: none; }
+  .lf-tall, .dd-tall { display: block; max-width: 360px; margin: 0 auto; }
+}
