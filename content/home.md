@@ -7,11 +7,12 @@ exists. `[ph]` marks a fact he must supply.
 
 ## Hero (text left, recording right)
 
-**Build a place. Send a link. Meet there.**
+**From a Blender scene to a place your friends can walk into.**
 
-Publish a Blender scene as a 3D world anyone can walk into, together,
-from a phone or laptop. Nothing to install. And because a world is a web
-page, it is yours: read it, change it, link it to other worlds.
+Press Save and Publish, send the link, and people open your world on a
+phone or a laptop and meet you there. Nothing to install. And because a
+world is a web page, it is yours: read it, change it, link it to other
+worlds.
 
 [Make a world from Blender](/first-world) · [Watch it in 20 seconds](#watch)
 (becomes [Walk into one]({DEMO_WORLD_URL}) once a public world exists)
@@ -96,4 +97,4 @@ Founder: [ph: name, one line]. [About us](/about)
 
 ## Closing
 
-**Your scene, as a place people walk into.** [Make a world from Blender](/first-world)
+**Your scene, as a place people can visit.** [Make a world from Blender](/first-world)

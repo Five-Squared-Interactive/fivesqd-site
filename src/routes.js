@@ -17,7 +17,7 @@
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'Build a place. Send a link. Meet there. Publish a Blender scene as a 3D world anyone walks into together, from a phone or laptop. Nothing to install, and the world is yours: a web page.';
+  'From a Blender scene to a place your friends can walk into. Press Save and Publish, send the link, and people meet you there from a phone or laptop. Nothing to install, and the world is yours: a web page.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [
