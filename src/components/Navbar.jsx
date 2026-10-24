@@ -130,7 +130,7 @@ const Navbar = () => {
               </div>
             </li>
             <li><Link to="/about" onClick={closeAll}>About</Link></li>
-            <li className="nav-cta"><Link to="/first-world" className="btn btn-primary btn-nav" onClick={closeAll}>Make a world</Link></li>
+            <li className="nav-cta"><Link to="/first-world" className="btn btn-primary btn-nav" onClick={closeAll}>Start in Blender</Link></li>
           </ul>
 
           <button

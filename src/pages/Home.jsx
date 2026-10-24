@@ -22,7 +22,7 @@ const Home = () => {
             <h1>Your friend opens a link and is standing in the room you built.</h1>
             <p className="lead">
               Model a room in Blender, press Save and Publish, send the link. They walk around it
-              on their phone, with you. No app, nothing to install. And the room stays yours: plain
+              on their phone, with you. Nothing for them to install. And the room stays yours: plain
               files at a web address, like any page.
             </p>
             <div className="hero-actions-left">
@@ -31,7 +31,7 @@ const Home = () => {
                 : <a href="#watch" className="btn btn-primary btn-large">Watch it, 20 seconds</a>}
               <Link to="/first-world" className="btn btn-secondary btn-large">Make one from Blender</Link>
             </div>
-            <p className="hero-note">Free and open source. Nothing for visitors to install.</p>
+            <p className="hero-note">Free, open-source software. Hosting included, or use your own.</p>
           </div>
           <div className="media-figure" id="watch">
             <Slot

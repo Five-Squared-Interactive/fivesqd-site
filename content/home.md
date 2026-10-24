@@ -13,13 +13,13 @@ or recording only the founder can make; `[ph]` a fact he must supply.
 **Your friend opens a link and is standing in the room you built.**
 
 Model a room in Blender, press Save and Publish, send the link. They walk
-around it on their phone, with you. No app, nothing to install. And the
+around it on their phone, with you. Nothing for them to install. And the
 room stays yours: plain files at a web address, like any page.
 
 [Watch it, 20 seconds](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
 once a public world exists) · [Make one from Blender](/first-world)
 
-Free and open source. Nothing for visitors to install.
+Free, open-source software. Hosting included, or use your own.
 
 [slot: 20 seconds, muted, looping. Open on the payoff: a phone opens a
 link and is standing in a place; a second person walks in; they step
