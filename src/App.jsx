@@ -6,11 +6,10 @@ import PageTransition from './components/PageTransition';
 import Home from './pages/Home';
 import './App.css';
 
-const Products = lazy(() => import('./pages/Products'));
 const WorldHub = lazy(() => import('./pages/WorldHub'));
-const WorldKit = lazy(() => import('./pages/WorldKit'));
-const GitWorlds = lazy(() => import('./pages/GitWorlds'));
 const FirstWorld = lazy(() => import('./pages/FirstWorld'));
+const Architects = lazy(() => import('./pages/Architects'));
+const Builders = lazy(() => import('./pages/Builders'));
 const Technology = lazy(() => import('./pages/Technology'));
 const Ecosystem = lazy(() => import('./pages/Ecosystem'));
 const About = lazy(() => import('./pages/About'));
@@ -32,11 +31,11 @@ export function AppShell() {
             <PageTransition>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/products" element={<Products />} />
+                <Route path="/products" element={<Navigate to="/technology#stack" replace />} />
                 <Route path="/products/worldhub" element={<WorldHub />} />
-                <Route path="/products/worldkit" element={<WorldKit />} />
-                <Route path="/products/gitworlds" element={<GitWorlds />} />
                 <Route path="/first-world" element={<FirstWorld />} />
+                <Route path="/architects" element={<Architects />} />
+                <Route path="/builders" element={<Builders />} />
                 <Route path="/technology" element={<Technology />} />
                 <Route path="/ecosystem" element={<Ecosystem />} />
                 <Route path="/about" element={<About />} />
@@ -46,8 +45,10 @@ export function AppShell() {
                 <Route path="/isemvdemo" element={<ISEMVDemo />} />
                 {/* Redirects from old routes */}
                 <Route path="/webwideworlds" element={<Navigate to="/technology" replace />} />
-                <Route path="/worldos" element={<Navigate to="/products/worldkit#worldos" replace />} />
-                <Route path="/worldsync" element={<Navigate to="/products/worldkit#worldsync" replace />} />
+                <Route path="/worldos" element={<Navigate to="/technology#worldos" replace />} />
+                <Route path="/worldsync" element={<Navigate to="/technology#worldsync" replace />} />
+                <Route path="/products/worldkit" element={<Navigate to="/first-world" replace />} />
+                <Route path="/products/gitworlds" element={<Navigate to="/first-world" replace />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </PageTransition>

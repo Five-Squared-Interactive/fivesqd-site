@@ -1,110 +1,58 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
+// The words are content/worldhub.md; keep the two in step.
 const WorldHub = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      {/* Hero */}
-      <section className="section-hero">
-        <div className="container text-center">
-          <img src="/images/icon-worldhub.png" alt="WorldHub" style={{ width: '80px', height: '80px', marginBottom: '1rem' }} />
-          <h1 style={{ color: 'white' }}>WorldHub</h1>
-          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '600px', margin: '0 auto' }}>
-            Managed hosting for persistent digital worlds. Built and operated by Five Squared Interactive.
+      <section className="page-head">
+        <div className="container">
+          <h1>WorldHub</h1>
+          <p style={{ maxWidth: '680px', margin: '0 auto' }}>
+            The service that hosts what you publish and signs you in. Run by Five Squared
+            Interactive.
           </p>
         </div>
       </section>
 
-      {/* What is WorldHub */}
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
-          <div className="grid grid-2">
-            <div>
-              <h2>What is WorldHub?</h2>
+          <div className="text-center mb-4">
+            <h2>What it does</h2>
+          </div>
+          <div className="grid grid-3">
+            <div className="card">
+              <h3>Hosts your published worlds</h3>
               <p>
-                WorldHub is the hosted way to run Web Wide Worlds. It runs on the same open WorldOS
-                you can self-host — but with zero infrastructure to manage.
+                Press Save and Publish in Blender and the world is served at{' '}
+                <code>worlds.worldhub.me/w/…</code>, with nothing for you to set up. Publish again
+                and the same link shows the new version.
               </p>
-              <ul style={{ paddingLeft: '1.5rem' }}>
-                <li>Persistent world storage and hosting</li>
-                <li>User management and authentication</li>
-                <li>World discovery and sharing</li>
-                <li>MyWorlds — your managed world dashboard</li>
-              </ul>
             </div>
-            <div>
-              <div style={{
-                width: '100%',
-                height: '300px',
-                background: 'var(--color-bg-alt)',
-                borderRadius: '1rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'var(--color-text-muted)',
-                border: '2px dashed var(--color-border)',
-                fontSize: '0.9rem'
-              }}>
-                WorldHub dashboard preview coming soon
-              </div>
+            <div className="card">
+              <h3>Signs you in</h3>
+              <p>
+                WorldHub ID is the sign-in the add-on and the sites use: Google, GitHub, or a link we
+                email you. A world you publish can be open to everyone or only to the people you
+                allow; visitors who are signed in appear in a world under their own names.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="section section-light" id="pricing">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>Pricing</h2>
-            <p style={{ color: 'var(--color-text-muted)' }}>Start free. Scale when you need to.</p>
-          </div>
-
-          <div className="grid grid-3">
-            {/* Free tier */}
-            <div className="card text-center">
-              <h3>Free</h3>
-              <div className="pricing-amount">$0<span className="pricing-period">/mo</span></div>
-              <ul className="pricing-features">
-                <li>1 world</li>
-                <li>100 MB storage</li>
-                <li>Community support</li>
-              </ul>
-              <button className="btn btn-secondary" disabled aria-disabled="true">Get Started</button>
-              <p className="visually-hidden">This plan is coming soon.</p>
-            </div>
-
-            {/* Pro tier */}
-            <div className="card text-center" style={{ border: '2px solid var(--color-primary)' }}>
-              <h3>Pro</h3>
-              <div className="pricing-amount">TBD<span className="pricing-period">/mo</span></div>
-              <ul className="pricing-features">
-                <li>Unlimited worlds</li>
-                <li>10 GB storage</li>
-                <li>Priority support</li>
-              </ul>
-              <button className="btn btn-primary" disabled aria-disabled="true">Get Started</button>
-              <p className="visually-hidden">This plan is coming soon.</p>
-            </div>
-
-            {/* Ultra tier */}
-            <div className="card text-center">
-              <h3>Ultra</h3>
-              <div className="pricing-amount">TBD<span className="pricing-period">/mo</span></div>
-              <ul className="pricing-features">
-                <li>Unlimited worlds</li>
-                <li>100 GB storage</li>
-                <li>Dedicated support</li>
-              </ul>
-              <button className="btn btn-secondary" disabled aria-disabled="true">Get Started</button>
-              <p className="visually-hidden">This plan is coming soon.</p>
-            </div>
-          </div>
-
-          <div className="text-center" style={{ marginTop: '2rem' }}>
-            <p style={{ color: 'var(--color-text-muted)' }}>
-              Planet add-ons available. Pricing details coming soon.
-            </p>
-            <span className="coming-soon-badge" style={{ marginTop: '0.5rem', display: 'inline-block' }}>Coming soon</span>
+      <section className="section">
+        <div className="container" style={{ maxWidth: '760px' }}>
+          <h2>What it is not</h2>
+          <p>
+            A world does not need WorldHub to exist: a world at any other address is served by that
+            address. WorldHub does not decide what a world may contain or do. It is the easy path,
+            not the only one.
+          </p>
+          <h2 style={{ marginTop: '2.5rem' }}>Cost</h2>
+          <p>Publishing from Blender and visiting are free.</p>
+          <div style={{ marginTop: '1.5rem' }}>
+            <Link to="/first-world" className="btn btn-primary">Publish your first world</Link>
           </div>
         </div>
       </section>
