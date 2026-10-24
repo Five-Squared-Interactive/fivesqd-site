@@ -43,6 +43,25 @@ nothing in `drafts/` is routed or prerendered.
 - Placeholders in braces are filled at deploy: `{DEMO_WORLD_URL}` is a
   public world that needs no sign-in; `{ADDON_URL}` is the add-on download.
 
+## Audience (founder, 2026-10-24)
+
+Agreed order, after the founder found the drafts "very difficult to
+understand for a random person": (1) a Blender user or 3D artist with a
+scene and someone to show it to; (2) a curious person who was sent a link
+to a world and clicked through to find out what it was; then (3)
+developers who might build on the open pieces; (4) press or a partner
+trying to understand the company in two minutes. The page shows the thing
+moving before it explains what it is; the thesis ("a world is a web
+page") comes after the visitor has seen a world, not before. Every copy
+round is judged first from a publicist's point of view (what a stranger
+thinks in five seconds), then by the engineering review.
+
+Brand assets live in the founder's OneDrive, `Five Squared Interactive/`
+`Logos` and `Media` (wordmarks for WorldHub, WorldKit, WorldOS, the Five
+Squared marks, the AWE press kit, the founder bio, the June 2026
+pamphlet). There is no square WorldOS icon; `icon-worldos.png` in this
+repo was a copy of the WorldKit icon and must not be used for WorldOS.
+
 ## Facts to confirm at deploy
 
 - `{DEMO_WORLD_URL}`: a world published without sign-in, that stays up,
