@@ -12,7 +12,7 @@ Platforms change the rules, ban accounts, shut down, and years of
 building go with them. Making your own meant a game engine and a server
 to keep running. Here a world is yours: a few files at your own address,
 with your people in it, and no server to run.
-[Watch it, 20 seconds](#watch) · [Build one from Blender](/first-world)
+[See it in action](#watch) · [Build one from Blender](/first-world)
 [slot: a built world with several visitors; one walks through a door]
 
 ## Your people, in your world, without running a server.

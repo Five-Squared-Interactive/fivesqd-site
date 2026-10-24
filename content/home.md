@@ -13,7 +13,7 @@ supply.
 
 Make a place, send the link, and people walk around in it with you.
 
-[Watch it, 20 seconds](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
+[See it in action](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
 once a public world exists) · [Make one](/first-world)
 
 Free and open source.

@@ -47,7 +47,7 @@ const FirstWorld = () => {
             </p>
             <div className="hero-actions-left">
               <a href={ADDON_ZIP} className="btn btn-primary btn-large">Get the add-on</a>
-              <a href="#watch" className="btn btn-secondary btn-large">Watch it, 20 seconds</a>
+              <a href="#watch" className="btn btn-secondary btn-large">See it in action</a>
             </div>
             <p className="hero-note">Free and open source. Blender 4.5 or newer.</p>
           </div>

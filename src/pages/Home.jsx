@@ -43,7 +43,7 @@ const Home = () => {
             <div className="hero-actions-left">
               {DEMO_WORLD_URL
                 ? <a href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">Walk into one now</a>
-                : <a href="#watch" className="btn btn-primary btn-large">Watch it, 20 seconds</a>}
+                : <a href="#watch" className="btn btn-primary btn-large">See it in action</a>}
               <Link to="/first-world" className="btn btn-secondary btn-large">Make one</Link>
             </div>
             <p className="hero-note">Free and open source.</p>

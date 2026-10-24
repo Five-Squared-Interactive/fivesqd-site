@@ -20,7 +20,7 @@ const Builders = () => (
             walk in from a link. You don’t run a server.
           </p>
           <div className="hero-actions-left">
-            <a href="#watch" className="btn btn-primary btn-large">Watch it, 20 seconds</a>
+            <a href="#watch" className="btn btn-primary btn-large">See it in action</a>
             <Link to="/first-world" className="btn btn-secondary btn-large">Build one from Blender</Link>
           </div>
         </div>
