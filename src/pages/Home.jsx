@@ -36,19 +36,17 @@ const Home = () => {
       <section className="section hero-split">
         <div className="container media-row">
           <div className="media-text">
-            <p className="kicker promise">Easy 3D &middot; Instant &middot; Shared &middot; On any device</p>
-            <h1>Turn your 3D scene into a place people can walk through with you.</h1>
+            <h1>Easy 3D. Instant. Shared. On any device.</h1>
             <p className="lead">
-              Press Save and Publish in Blender, then send the link. Friends, clients or players open
-              it on a phone or laptop and walk around inside. They don{'’'}t install anything.
+              Make a place, send the link, and people walk around in it with you.
             </p>
             <div className="hero-actions-left">
               {DEMO_WORLD_URL
                 ? <a href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">Walk into one now</a>
                 : <a href="#watch" className="btn btn-primary btn-large">Watch it, 20 seconds</a>}
-              <Link to="/first-world" className="btn btn-secondary btn-large">Start in Blender</Link>
+              <Link to="/first-world" className="btn btn-secondary btn-large">Make one</Link>
             </div>
-            <p className="hero-note">Free and open source. Blender 4.5 or newer.</p>
+            <p className="hero-note">Free and open source.</p>
           </div>
           <div className="media-figure" id="watch">
             <Slot

@@ -9,19 +9,14 @@ supply.
 
 ## Hero (text left, recording right)
 
-Kicker: Easy 3D · Instant · Shared · On any device (the founder's four
-words for what we offer).
+**Easy 3D. Instant. Shared. On any device.** (the founder's four words)
 
-**Turn your 3D scene into a place people can walk through with you.**
-
-Press Save and Publish in Blender, then send the link. Friends, clients or
-players open it on a phone or laptop and walk around inside. They don't
-install anything.
+Make a place, send the link, and people walk around in it with you.
 
 [Watch it, 20 seconds](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
-once a public world exists) · [Start in Blender](/first-world)
+once a public world exists) · [Make one](/first-world)
 
-Free and open source. Blender 4.5 or newer.
+Free and open source.
 
 [slot: 20 seconds, muted, looping; open on the payoff]
 

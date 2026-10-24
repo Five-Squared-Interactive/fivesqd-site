@@ -17,7 +17,7 @@
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'Turn your 3D scene into a place people can walk through. Press Publish in Blender and send the link; friends, clients or players open it on any device and walk around with you. Nothing to install. Free and open.';
+  'Easy 3D. Instant. Shared. On any device. Make a place, send the link, and people walk around in it with you, on a phone or laptop. Free and open source.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [
