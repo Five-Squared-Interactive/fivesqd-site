@@ -1,27 +1,30 @@
 # Home
 
-Shape (founder, 2026-10-24, "think about how Steve Jobs sold products"):
-one human image of the benefit, then show it, then one confident idea per
-screen, then how easy it is, then the twist. No arguing with sceptics on
-this page; their questions are answered on How it works. `[slot]` marks a
-picture or recording only the founder can make; `[ph]` a fact he must
-supply.
+The company's page, written from the visitor's side (founder, 2026-10-24:
+the site is all of Five Squared; the add-on has its own page,
+first-world.md). One human image of the benefit, show it, one idea per
+screen, how to make one, the twist. The five-second test of 2026-10-24
+(`reviews/headline-test-2026-10-24.md`) set the first screen's words: "a
+link", "walk into", "together", never "world". `[slot]` marks a picture
+or recording only the founder can make; `[ph]` a fact he must supply.
 
 ## Hero (text left, recording right)
 
-**Send a place, not a picture.**
+**A place you can walk into, from a link.**
 
-You made a space in Blender. With one press it becomes a world your
-friends can stand in, from a phone or a laptop, by opening a link.
+Open it on your phone or laptop and you are standing inside, together
+with whoever else is there. No app. And it belongs to whoever made it:
+plain files at a web address, like any page.
 
-[Make a world from Blender](/first-world) · [Watch it, 20 seconds](#watch)
-(becomes [Walk into one]({DEMO_WORLD_URL}) once a public world exists)
+[Watch it, 20 seconds](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
+once a public world exists) · [Make one from Blender](/first-world)
 
-Free and open source. Nothing to install.
+Free and open source. Nothing for visitors to install.
 
-[slot: 20 seconds, muted, looping: a Blender scene, Save and Publish, the
-link appears, a phone opens it, a second person walks in, both step
-through a door into another world.]
+[slot: 20 seconds, muted, looping. Open on the payoff: a phone opens a
+link and is standing in a place; a second person walks in; they step
+through a door into another place; then, briefly, the Blender scene it
+came from and the Publish press.]
 
 ## It's a link. (text left, picture right)
 
@@ -48,23 +51,18 @@ world.
 [slot: three seconds, walking through a door into a different world, the
 address bar changing. Until then the door diagram stands in.]
 
-## How easy is it?
+## Make one: Today, from Blender. (picture left, text right)
 
-Three steps. The third one is sending a link.
+Install the add-on, press Save and Publish, and your scene is a link.
+Hosted for you on WorldHub, our service, or on any web host. Other ways in
+will follow; this one works now. [Make a world from Blender](/first-world)
 
-1. **Install the add-on.** Blender 4.5 or newer. Sign in once. [slot: the
-   add-on panel, cropped at 2x]
-2. **Press Save and Publish.** Your scene becomes a world at its own web
-   address and opens in your browser. [slot: the link the add-on shows]
-3. **Send the link.** That's it. People walk in. [slot: the world on a
-   phone, in a hand, both sticks showing]
-
-[The step-by-step guide](/first-world)
+[slot: the add-on panel in Blender, cropped at 2x]
 
 ## One more thing: A world is a web page.
 
-Not a figure of speech. This is the whole of a published world: one small
-text file, one model, one sky. *(Left: the published demo world [slot
+We call a place a world, and it is not a figure of speech. This is the
+whole of a published one: one small text file, one model, one sky. *(Left: the published demo world [slot
 until it exists]. Right: its whole document with five numbered marks.)*
 Caption: Its whole document, 923 bytes. Add /index.veml to any published
 world's address and read yours.

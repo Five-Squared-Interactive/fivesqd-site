@@ -1,6 +1,6 @@
 import React from 'react';
 import Slot from '../components/Slot';
-import { ADDON_ZIP } from '../links';
+import { ADDON_ZIP, WORLD_CARD } from '../links';
 
 // The first-world guide: from a Blender scene to a link anyone can walk into.
 // The words are content/first-world.md; keep the two in step. The add-on zip
@@ -35,10 +35,61 @@ const Step = ({ title, shot, shotLabel, children }) => (
 const FirstWorld = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="page-head">
+      <section className="section hero-split">
+        <div className="container media-row">
+          <div className="media-text">
+            <h1>Your Blender scene, as a link friends can walk into.</h1>
+            <p className="lead">
+              Press Save and Publish in Blender and you get a web address. Anyone who opens it walks
+              around inside, on a phone or a laptop, together with whoever else is there. Nothing
+              for them to install.
+            </p>
+            <div className="hero-actions-left">
+              <a href={ADDON_ZIP} className="btn btn-primary btn-large">Get the add-on</a>
+              <a href="#watch" className="btn btn-secondary btn-large">Watch it, 20 seconds</a>
+            </div>
+            <p className="hero-note">Free and open source. Blender 4.5 or newer.</p>
+          </div>
+          <div className="media-figure" id="watch">
+            <Slot
+              kind="video"
+              label="20 seconds, muted, looping: a Blender scene, Save and Publish, the link appears, a phone opens it, a second person walks in, both step through a door into another world."
+              poster={WORLD_CARD}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-light" id="steps">
         <div className="container">
-          <h1>Your first world</h1>
-          <p>From a Blender scene to a link anyone can walk into.</p>
+          <div className="text-center mb-4">
+            <h2>How easy is it?</h2>
+            <p className="section-subtitle">Three steps. The third one is sending a link.</p>
+          </div>
+          <div className="grid-3-steps">
+            <div className="step-tile">
+              <Slot label="The add-on panel in Blender, cropped at 2x, with Save and Publish visible." ratio="4 / 3" />
+              <h3><span className="step-n">1</span> Install the add-on</h3>
+              <p>Blender 4.5 or newer. Sign in once.</p>
+            </div>
+            <div className="step-tile">
+              <Slot label="The link that appears after Save and Publish, as the add-on shows it." ratio="4 / 3" />
+              <h3><span className="step-n">2</span> Press Save and Publish</h3>
+              <p>Your scene becomes a world at its own web address and opens in your browser.</p>
+            </div>
+            <div className="step-tile">
+              <Slot label="The same world on a phone, held in a hand, with the two sticks showing." ratio="4 / 3" />
+              <h3><span className="step-n">3</span> Send the link</h3>
+              <p>That's it. People walk in.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="page-head" id="guide">
+        <div className="container">
+          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.75rem)' }}>The full guide</h2>
+          <p>Every step, with what you will see on screen.</p>
         </div>
       </section>
 

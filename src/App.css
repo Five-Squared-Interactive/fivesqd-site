@@ -2098,8 +2098,9 @@ pre.code-example {
 .cta-band { background: var(--color-bg-alt); }
 .cta-band h2 { margin-bottom: 1.25rem; }
 .navbar-brand-name { margin-left: .6rem; font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; }
-@media (max-width: 600px) { .navbar-brand-name { display: none; } }
-.nav-cta .btn-nav { padding: .45rem 1rem; font-size: .95rem; border-radius: 999px; }
+@media (max-width: 600px) { .navbar-brand-name { font-size: .9rem; margin-left: .45rem; } }
+.nav-cta .btn-nav { padding: .45rem 1rem; font-size: .95rem; border-radius: 999px; color: #fff; }
+.nav-cta .btn-nav:hover { color: #fff; }
 .press-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1.5rem; }
 @media (max-width: 720px) { .press-grid { grid-template-columns: 1fr; } }
 .pieces-grid .card p { font-size: .95rem; }

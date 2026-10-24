@@ -5,35 +5,38 @@ import WorldDocument from '../components/WorldDocument';
 import DoorDiagram from '../components/DoorDiagram';
 import { DEMO_WORLD_URL, WORLD_CARD, WORLD_HERO_ALT } from '../links';
 
-// The words are content/home.md; keep the two in step. The shape (founder,
-// 2026-10-24, "think about how Steve Jobs sold products"): one human image
-// of the benefit, then show it, then one confident idea per screen, then
-// how easy it is, then the twist. No arguing with sceptics on this page;
-// their questions are answered on How it works. Slots mark the pictures
-// and recordings only the founder can make.
+// The words are content/home.md; keep the two in step. This is the
+// company's page, written from the visitor's side (founder, 2026-10-24:
+// the site is all of Five Squared; the add-on gets its own page). One
+// human image of the benefit, show it, one idea per screen, how to make
+// one, the twist. The five-second test of 2026-10-24 (content/reviews/)
+// set the words: "a link", "walk into", "together", never "world" in the
+// first screen. Slots mark pictures and recordings only the founder can
+// make.
 const Home = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
       <section className="section hero-split">
         <div className="container media-row">
           <div className="media-text">
-            <h1>Send a place, not a picture.</h1>
+            <h1>A place you can walk into, from a link.</h1>
             <p className="lead">
-              You made a space in Blender. With one press it becomes a world your friends can stand
-              in, from a phone or a laptop, by opening a link.
+              Open it on your phone or laptop and you are standing inside, together with whoever
+              else is there. No app. And it belongs to whoever made it: plain files at a web
+              address, like any page.
             </p>
             <div className="hero-actions-left">
-              <Link to="/first-world" className="btn btn-primary btn-large">Make a world from Blender</Link>
               {DEMO_WORLD_URL
-                ? <a href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-large">Walk into one</a>
-                : <a href="#watch" className="btn btn-secondary btn-large">Watch it, 20 seconds</a>}
+                ? <a href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">Walk into one now</a>
+                : <a href="#watch" className="btn btn-primary btn-large">Watch it, 20 seconds</a>}
+              <Link to="/first-world" className="btn btn-secondary btn-large">Make one from Blender</Link>
             </div>
-            <p className="hero-note">Free and open source. Nothing to install.</p>
+            <p className="hero-note">Free and open source. Nothing for visitors to install.</p>
           </div>
           <div className="media-figure" id="watch">
             <Slot
               kind="video"
-              label="20 seconds, muted, looping: a Blender scene, Save and Publish, the link appears, a phone opens it, a second person walks in, both step through a door into another world."
+              label="20 seconds, muted, looping. Open on the payoff: a phone opens a link and is standing in a place; a second person walks in; they step through a door into another place; then, briefly, the Blender scene it came from and the Publish press."
               poster={WORLD_CARD}
             />
           </div>
@@ -45,12 +48,12 @@ const Home = () => {
           <div className="media-text">
             <h2 className="big">It's a link.</h2>
             <p className="lead">
-              No app. No account. No download. Anyone you send it to walks in, on a phone, a laptop
-              or a headset, the moment they tap it.
+              No app. No account. No download. Anyone who has it walks in, on a phone, a laptop or a
+              headset, the moment they tap it.
             </p>
           </div>
           <div className="media-figure">
-            <Slot label="A phone in a hand: a message thread with the link, and the world open under it." ratio="4 / 3" />
+            <Slot label="A phone in a hand: a message thread with the link, and the place open under it." ratio="4 / 3" />
           </div>
         </div>
       </section>
@@ -58,13 +61,13 @@ const Home = () => {
       <section className="section big-row" id="together">
         <div className="container media-row flip">
           <div className="media-figure">
-            <Slot label="Two visitors in one world with their name labels, a phone and a laptop side by side." />
+            <Slot label="Two visitors in one place with their name labels, a phone and a laptop side by side." />
           </div>
           <div className="media-text">
             <h2 className="big">You're there together.</h2>
             <p className="lead">
               Whoever opens the link is in the room with you. Show them around. Talk. Point at
-              things. You choose who may come in.
+              things. The maker chooses who may come in.
             </p>
           </div>
         </div>
@@ -75,12 +78,12 @@ const Home = () => {
           <div className="media-text">
             <h2 className="big">It's yours.</h2>
             <p className="lead">
-              A world is a web page: a few files at an address. Host it anywhere. Change it with a
-              text editor. Put a door in it that opens onto a friend's world.
+              A place you made is a web page: a few files at an address. Host it anywhere. Change
+              it with a text editor. Put a door in it that opens onto a friend's place.
             </p>
           </div>
           <div className="media-figure">
-            <Slot label="Three seconds: walking through a door into a different world, with the address bar changing." kind="video" />
+            <Slot label="Three seconds: walking through a door into a different place, with the address bar changing." kind="video" />
             <div className="slot-standin">
               <DoorDiagram />
             </div>
@@ -88,31 +91,22 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section" id="steps">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>How easy is it?</h2>
-            <p className="section-subtitle">Three steps. The third one is sending a link.</p>
+      <section className="section big-row" id="make">
+        <div className="container media-row flip">
+          <div className="media-figure">
+            <Slot label="The add-on panel in Blender, cropped at 2x, with Save and Publish visible." ratio="4 / 3" />
           </div>
-          <div className="grid-3-steps">
-            <div className="step-tile">
-              <Slot label="The add-on panel in Blender, cropped at 2x, with Save and Publish visible." ratio="4 / 3" />
-              <h3><span className="step-n">1</span> Install the add-on</h3>
-              <p>Blender 4.5 or newer. Sign in once.</p>
+          <div className="media-text">
+            <p className="kicker">Make one</p>
+            <h2 className="big">Today, from Blender.</h2>
+            <p className="lead">
+              Install the add-on, press Save and Publish, and your scene is a link. Hosted for you
+              on WorldHub, our service, or on any web host. Other ways in will follow; this one works
+              now.
+            </p>
+            <div className="hero-actions-left">
+              <Link to="/first-world" className="btn btn-primary btn-large">Make a world from Blender</Link>
             </div>
-            <div className="step-tile">
-              <Slot label="The link that appears after Save and Publish, as the add-on shows it." ratio="4 / 3" />
-              <h3><span className="step-n">2</span> Press Save and Publish</h3>
-              <p>Your scene becomes a world at its own web address and opens in your browser.</p>
-            </div>
-            <div className="step-tile">
-              <Slot label="The same world on a phone, held in a hand, with the two sticks showing." ratio="4 / 3" />
-              <h3><span className="step-n">3</span> Send the link</h3>
-              <p>That's it. People walk in.</p>
-            </div>
-          </div>
-          <div className="text-center" style={{ marginTop: '2rem' }}>
-            <Link to="/first-world" className="btn btn-primary">The step-by-step guide</Link>
           </div>
         </div>
       </section>
@@ -123,7 +117,7 @@ const Home = () => {
             <p className="kicker">One more thing</p>
             <h2>A world is a web page.</h2>
             <p className="section-subtitle">
-              Not a figure of speech. This is the whole of a published world: one small text file, one model, one sky.
+              We call a place a world, and it is not a figure of speech. This is the whole of a published one: one small text file, one model, one sky.
             </p>
           </div>
           <div className="world-pair">
@@ -136,7 +130,7 @@ const Home = () => {
             <WorldDocument caption="Its whole document, 923 bytes. Add /index.veml to any published world's address and read yours." />
           </div>
           <p className="text-center" style={{ marginTop: '1.5rem', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>
-            Which means the world is not inside anyone's app, ours included. It links, it can be
+            Which means a world is not inside anyone's app, ours included. It links, it can be
             copied, it can be edited, and it will still open long after we are gone.{' '}
             <Link to="/technology">How it works &rarr;</Link>
           </p>

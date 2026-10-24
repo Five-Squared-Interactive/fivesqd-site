@@ -17,7 +17,7 @@
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'Send a place, not a picture. You made a space in Blender; with one press it becomes a world your friends can stand in, from a phone or a laptop, by opening a link. Free, open source, nothing to install.';
+  'A place you can walk into, from a link. Open it on your phone or laptop and you are standing inside, together with whoever else is there. No app. It belongs to whoever made it: plain files at a web address. Today, a Blender scene becomes one in one press.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [
@@ -29,8 +29,8 @@ export const ROUTES = [
   },
   {
     path: '/first-world',
-    title: 'Your first world — Five Squared Interactive',
-    description: 'From a Blender scene to a link anyone can walk into: install the add-on, sign in, press Save as My World, share the link, then look at the page you made.',
+    title: 'Make a world from Blender — Five Squared Interactive',
+    description: 'Your Blender scene, as a link friends can walk into. Install the add-on, press Save and Publish, send the link; anyone walks around inside, together, on a phone or a laptop.',
   },
   {
     path: '/technology',

@@ -1,4 +1,30 @@
-# Your first world
+# Make a world from Blender (/first-world)
+
+The add-on's own page (founder, 2026-10-24): the maker's pitch on top,
+the full guide below.
+
+## Hero (text left, recording right)
+
+**Your Blender scene, as a link friends can walk into.**
+
+Press Save and Publish in Blender and you get a web address. Anyone who
+opens it walks around inside, on a phone or a laptop, together with
+whoever else is there. Nothing for them to install.
+
+[Get the add-on](ADDON_ZIP) · [Watch it, 20 seconds](#watch)
+Free and open source. Blender 4.5 or newer.
+
+[slot: the 20-second recording]
+
+## How easy is it?
+
+Three steps. The third one is sending a link.
+1. Install the add-on. Blender 4.5 or newer. Sign in once. [slot]
+2. Press Save and Publish. Your scene becomes a world at its own web
+   address and opens in your browser. [slot]
+3. Send the link. That's it. People walk in. [slot]
+
+# The full guide
 
 From a Blender scene to a link anyone can walk into.
 
