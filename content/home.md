@@ -12,34 +12,31 @@ supply.
 
 Kicker: Easy 3D · Instant · Shared · On any device (the founder's four
 words for what we offer, 2026-10-24).
-**You built a space. Nobody can walk through it without installing
-something.**
+**Turn your 3D scene into a place people can walk through.**
 
-Send a link instead. They open it on a phone or a laptop and walk around,
-with you. Nothing for them to install. Works from Blender today. Free and
-open source.
+Press Publish in Blender and send the link. Friends, clients or players
+open it on a phone or a laptop and walk around in it with you. Nothing to
+install. Free and open.
 
 [Watch it, 20 seconds](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
-once a public world exists) · [Is it for me?](#for)
+once a public world exists) · [Who it's for](#for)
 
 [slot: 20 seconds, muted, looping; open on the payoff]
 
-## Who it is for
+## Made for
 
-Three kinds of people have this problem. Pick yours. *(Three cards, each
+Three kinds of people, three reasons. Find yours. *(Three cards, each
 a picture slot, a kicker, the pain, the fix, Read more:)*
 
-- **Architects, designers, real estate.** Clients cannot read plans. They
-  find out what they approved after it is built. → Send a private link.
-  They walk the space on their phone before it exists, with you on the
-  call. (/architects)
-- **Blender artists.** A render flattens the room you built. A game build
-  is a download nobody opens. → Press Save and Publish. Your scene is a
-  link; people walk around it on their phones. (/first-world)
-- **World builders.** Your world lives on someone else's terms. To make
-  your own you need an engine and a server. → A world at your own
-  address, people in it together, doors to other worlds. No server to
-  run. (/builders)
+- **Architects, designers, real estate.** Clients can't read plans. →
+  Send a private link. They walk the space on their phone before it's
+  built, with you on the call. (/architects)
+- **Blender artists.** A render flattens what you built. → Press Publish.
+  Your scene becomes a link, and people walk through it on their phones.
+  (/first-world)
+- **World builders.** Your world shouldn't live on someone else's terms.
+  → A world at your own address, with your people in it and doors to
+  theirs. No server to run. (/builders)
 
 ## Easy 3D. Instant. Shared. On any device.
 

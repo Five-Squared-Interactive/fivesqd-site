@@ -14,22 +14,22 @@ const AUDIENCES = [
   {
     to: '/architects',
     who: 'Architects, designers, real estate',
-    pain: 'Clients cannot read plans. They find out what they approved after it is built.',
-    fix: 'Send a private link. They walk the space on their phone before it exists, with you on the call.',
+    pain: 'Clients can’t read plans.',
+    fix: 'Send a private link. They walk the space on their phone before it’s built, with you on the call.',
     slot: 'A kitchen walkthrough on a phone, a plan on the desk behind it.',
   },
   {
     to: '/first-world',
     who: 'Blender artists',
-    pain: 'A render flattens the room you built. A game build is a download nobody opens.',
-    fix: 'Press Save and Publish. Your scene is a link; people walk around it on their phones.',
+    pain: 'A render flattens what you built.',
+    fix: 'Press Publish. Your scene becomes a link, and people walk through it on their phones.',
     slot: 'A Blender viewport and the same room open on a phone, side by side.',
   },
   {
     to: '/builders',
     who: 'World builders',
-    pain: 'Your world lives on someone else’s terms. To make your own you need an engine and a server.',
-    fix: 'A world at your own address, people in it together, doors to other worlds. No server to run.',
+    pain: 'Your world shouldn’t live on someone else’s terms.',
+    fix: 'A world at your own address, with your people in it and doors to theirs. No server to run.',
     slot: 'A group of visitors in a built world, name labels showing, a door in the background.',
   },
 ];
@@ -41,16 +41,16 @@ const Home = () => {
         <div className="container media-row">
           <div className="media-text">
             <p className="kicker promise">Easy 3D &middot; Instant &middot; Shared &middot; On any device</p>
-            <h1>You built a space. Nobody can walk through it without installing something.</h1>
+            <h1>Turn your 3D scene into a place people can walk through.</h1>
             <p className="lead">
-              Send a link instead. They open it on a phone or a laptop and walk around, with you.
-              Nothing for them to install. Works from Blender today. Free and open source.
+              Press Publish in Blender and send the link. Friends, clients or players open it on a
+              phone or a laptop and walk around in it with you. Nothing to install. Free and open.
             </p>
             <div className="hero-actions-left">
               {DEMO_WORLD_URL
                 ? <a href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">Walk into one now</a>
                 : <a href="#watch" className="btn btn-primary btn-large">Watch it, 20 seconds</a>}
-              <a href="#for" className="btn btn-secondary btn-large">Is it for me?</a>
+              <a href="#for" className="btn btn-secondary btn-large">Who it’s for</a>
             </div>
           </div>
           <div className="media-figure" id="watch">
@@ -66,8 +66,8 @@ const Home = () => {
       <section className="section section-light" id="for">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>Who it is for</h2>
-            <p className="section-subtitle">Three kinds of people have this problem. Pick yours.</p>
+            <h2>Made for</h2>
+            <p className="section-subtitle">Three kinds of people, three reasons. Find yours.</p>
           </div>
           <div className="grid-3-steps">
             {AUDIENCES.map((a) => (
@@ -87,24 +87,24 @@ const Home = () => {
         <div className="container">
           <div className="text-center mb-4">
             <h2>Easy 3D. Instant. Shared. On any device.</h2>
-            <p className="section-subtitle">The four things the other ways of showing a space do not manage at once.</p>
+            <p className="section-subtitle">The four things a render, a video or a game build can’t give you at once.</p>
           </div>
           <div className="why-grid">
             <div className="card">
               <h3>Easy.</h3>
-              <p>One press in Blender. No game engine, no server, no export settings to learn. The scene you already have becomes the place.</p>
+              <p>One press in Blender. No game engine, no server, no settings to learn. The scene you already have is the place.</p>
             </div>
             <div className="card">
               <h3>Instant.</h3>
-              <p>A link opens in seconds, like a page. Whoever taps it is inside. No app, no account, no download, no waiting for a build.</p>
+              <p>The link opens in seconds, like a page. Tap it and you’re inside. No app, no account, no download.</p>
             </div>
             <div className="card">
               <h3>Shared.</h3>
-              <p>They are in there with you. You see each other move, you talk, you point. Send it to everyone, or only to the people you name.</p>
+              <p>They’re in there with you. You see each other move, you talk, you point. Open to everyone, or only to people you name.</p>
             </div>
             <div className="card">
               <h3>On any device.</h3>
-              <p>A phone, a laptop, a headset: whatever has a browser. And the place is a few files at a web address, so it is yours to host, change and link.</p>
+              <p>A phone, a laptop, a headset: anything with a browser. And it’s a few files at a web address, so it’s yours to host, change and link.</p>
             </div>
           </div>
         </div>
@@ -113,10 +113,10 @@ const Home = () => {
       <section className="section section-light" id="document">
         <div className="container">
           <div className="text-center mb-4">
-            <p className="kicker">Why you can trust it</p>
+            <p className="kicker">Why it lasts</p>
             <h2>A world is a web page.</h2>
             <p className="section-subtitle">
-              Not a figure of speech. This is the whole of a published place: one small text file, one model, one sky. It will open long after we are gone.
+              Not a figure of speech. This is all of a published place: one small text file, one model, one sky. It’ll still open long after we’re gone.
             </p>
           </div>
           <div className="world-pair">

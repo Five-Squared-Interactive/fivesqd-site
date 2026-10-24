@@ -13,12 +13,11 @@ const Builders = () => (
       <div className="container media-row">
         <div className="media-text">
           <p className="kicker">World builders</p>
-          <h1>Your world lives on someone else's terms.</h1>
+          <h1>Your world shouldn’t live on someone else’s terms.</h1>
           <p className="lead">
-            Platforms change the rules, ban accounts, shut down, and years of building go with
-            them. Making your own meant a game engine and a server to keep running. Here a world
-            is yours: a few files at your own address, with your people in it, and no server to
-            run.
+            Platforms change the rules, ban accounts and shut down, and years of building go with
+            them. Making your own used to mean a game engine and a server to keep running. Here a
+            world is a few files at your own address, with your people in it, and no server to run.
           </p>
           <div className="hero-actions-left">
             <a href="#watch" className="btn btn-primary btn-large">Watch it, 20 seconds</a>

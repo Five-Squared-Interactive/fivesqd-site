@@ -13,11 +13,11 @@ const Architects = () => (
       <div className="container media-row">
         <div className="media-text">
           <p className="kicker">Architects, designers, real estate</p>
-          <h1>Clients cannot read plans. They find out what they approved after it is built.</h1>
+          <h1>Clients can’t read plans.</h1>
           <p className="lead">
-            Send them a private link instead. They walk the kitchen on their phone before the slab
-            is poured, with you on the call pointing at the island. Nothing for them to install,
-            no viewer licence, no file to open.
+            They find out what they approved after it’s built. Send a private link instead: they
+            walk the kitchen on their phone before the slab is poured, with you on the call pointing
+            at the island. Nothing to install, no viewer licence, no file to open.
           </p>
           <div className="hero-actions-left">
             <a href="#watch" className="btn btn-primary btn-large">Watch a client walkthrough</a>

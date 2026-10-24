@@ -39,10 +39,10 @@ const FirstWorld = () => {
         <div className="container media-row">
           <div className="media-text">
             <p className="kicker">Blender artists</p>
-            <h1>A render flattens the room you built.</h1>
+            <h1>A render flattens what you built.</h1>
             <p className="lead">
-              Send the room instead. Press Save and Publish in Blender and your scene is a link;
-              anyone who opens it walks around inside, on a phone or a laptop, together with whoever
+              Send the place instead. Press Save and Publish in Blender and your scene becomes a
+              link. Anyone who opens it walks around inside, on a phone or a laptop, with whoever
               else is there. Nothing for them to install.
             </p>
             <div className="hero-actions-left">
