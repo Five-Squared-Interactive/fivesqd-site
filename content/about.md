@@ -26,11 +26,9 @@ less to us than one person's world at their own address.
 ## How we got here
 
 We have been building open 3D worlds for the web since [ph: year]. The
-earlier WebVerse ran as a Windows program and a "Lite" viewer; the format
-went through three versions; the long form of the idea is the 2025 white
-paper, Web Wide Worlds. The current generation, rebuilt for the browser,
-publishes from Blender in one press and is being readied for public
-release; the earlier generation's code is on GitHub.
+long form of the idea is the 2025 white paper, Web Wide Worlds. Today a
+Blender scene becomes a world in one press. The code is open source under
+MIT, on GitHub.
 
 ## Press
 
@@ -52,8 +50,8 @@ requests: info@fivesquaredinteractive.com.
   published world, laptop and phone]. Logos: the Five Squared mark, the
   WebVerse mark and wordmark, the VEML mark [ph: zip].
 - **Facts.** Founded [ph: year], [ph: place] · Founder: [ph: name] · Open
-  source under MIT; earlier generation on GitHub · White paper: Web Wide
-  Worlds, 2025 · Current generation: publishing from Blender, October 2026.
+  source under MIT, on GitHub · White paper: Web Wide Worlds, 2025 ·
+  Publishing from Blender: October 2026.
 
 The founder bio in the AWE press kit (OneDrive, Media/) is the long form;
 the founder decides whether it goes here as is or shortened.

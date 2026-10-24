@@ -37,9 +37,7 @@ exports a scene as a world and publishes it in one press.
 **MyWorlds** — assembling a world in the browser. Putting a world together
 without Blender. Being rebuilt on the new client; not yet live.
 
-All of it is MIT-licensed. The public release of the current generation is
-being prepared; the repositories on GitHub today are the earlier
-generation.
+All of it is open source under MIT, on GitHub.
 
 ## The service
 

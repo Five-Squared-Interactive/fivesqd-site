@@ -88,8 +88,7 @@ folder and host it anywhere · a directory of worlds people choose to list
 ## Open
 
 The format, the page that opens worlds (WebVerse) and everything under it
-are open source under MIT. The earlier generation is on GitHub; the
-current one is being readied for release. Hosting is a convenience we
+are open source under MIT, on GitHub. Hosting is a convenience we
 offer; the design never requires it.
 
 Built by Five Squared Interactive, an independent studio, since [ph: year].

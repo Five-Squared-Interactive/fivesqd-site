@@ -10,9 +10,9 @@ const Ecosystem = () => {
         <div className="container">
           <h1>Build on it</h1>
           <p style={{ maxWidth: '700px', margin: '0 auto' }}>
-            Everything that opens, moves or syncs a world is open under MIT, with the current
-            generation's public release being prepared, and the format is written down as a
-            specification with a conformance suite.
+            Everything that opens, moves or syncs a world is open source under MIT, and the format
+            is written down as a specification with a conformance suite, both being prepared for
+            publication.
           </p>
         </div>
       </section>
@@ -71,7 +71,7 @@ const Ecosystem = () => {
             </li>
             <li>A world with its own logic: WorldOS.</li>
             <li>
-              The earlier generation of all of it:{' '}
+              The code:{' '}
               <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer">github.com/Five-Squared-Interactive</a>
             </li>
           </ul>

@@ -159,8 +159,7 @@ const Home = () => {
               <h2>Open</h2>
               <p>
                 The format, the page that opens worlds (WebVerse) and everything under it are open
-                source under MIT. The earlier generation is on GitHub; the current one is being readied
-                for release. Hosting is a convenience we offer; the design never requires it.
+                source under MIT, on GitHub. Hosting is a convenience we offer; the design never requires it.
               </p>
               <p className="founder-line">
                 Built by Five Squared Interactive, an independent studio, since <span className="ph">[year]</span>.

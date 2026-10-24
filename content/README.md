@@ -97,8 +97,11 @@ protocol document is public (founder to confirm).
 - "Open the document", "Download this world" and "Edit" do not exist on
   the published-world page yet; the copy claims only `/index.veml`, which
   is served today, and the Blender **Link** field.
-- The current generation's code is not on GitHub yet; every GitHub link is
-  labelled "earlier generation" until the public release exists.
+- Founder, 2026-10-24: the site never speaks of "earlier" or "current"
+  generations; it confuses a stranger and serves no purpose. GitHub links
+  say "GitHub". (The v4 code is not public yet; the GitHub organisation
+  holds the open code that exists. We say "open source under MIT, on
+  GitHub" and no more.)
 - The e-mail is `info@fivesquaredinteractive.com`, the one the live site uses.
 - Imagery: the hero and the WebVerse card are The Overlook, a world opened
   in the client (`public/images/world-overlook-*.webp`, shot 2026-10-20).
@@ -113,7 +116,7 @@ protocol document is public (founder to confirm).
   cannot be embedded in this site; the Walk-in frame opens the client in a
   new tab. An inline embed needs the publish service to send
   `frame-ancestors https://fivesqd.com` instead (v4-monorepo #739).
-- The add-on's File > Export > Export VEML is the earlier generation's
+- The add-on's File > Export > Export VEML is the legacy (VEML 3)
   exporter (entities, VEML 3); the 4.0 publish path is Save and Publish
   only. So the copy never tells a Blender user to "export the folder" to
   their own host; it says that step waits on the published page's download. The first-world steps have `shot` slots for Blender

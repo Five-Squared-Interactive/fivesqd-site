@@ -131,7 +131,7 @@ const Technology = () => {
         <div className="container">
           <div className="text-center mb-4">
             <h2>The pieces, by name</h2>
-            <p className="section-subtitle">Open source under MIT. The earlier generation is on GitHub; the current one is being readied for release.</p>
+            <p className="section-subtitle">Open source under MIT.</p>
           </div>
           <div className="grid-5 pieces-grid">
             {PIECES.map((p) => (
@@ -143,7 +143,7 @@ const Technology = () => {
             ))}
           </div>
           <p className="text-center" style={{ marginTop: '1.5rem' }}>
-            <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer">The earlier generation on GitHub &rarr;</a>
+            <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer">On GitHub &rarr;</a>
           </p>
         </div>
       </section>

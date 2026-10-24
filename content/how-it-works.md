@@ -81,8 +81,7 @@ world is what it exports.
 
 ## The pieces, by name
 
-Open source under MIT. The earlier generation is on GitHub; the current
-one is being readied for release. *(Six tiles with the marks:)*
+Open source under MIT. *(Six tiles with the marks:)*
 VEML, the format: the file that says what is in a world and where ·
 WebVerse, the page that opens a world; what every published link opens ·
 StraightFour, the engine under that page: rendering, physics, the script

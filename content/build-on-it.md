@@ -1,8 +1,8 @@
 # Build on it
 
-Everything that opens, moves or syncs a world is open under MIT, with the
-current generation's public release being prepared, and the format is
-written down as a specification with a conformance suite.
+Everything that opens, moves or syncs a world is open source under MIT,
+and the format is written down as a specification with a conformance
+suite, both being prepared for publication.
 
 ## Make worlds
 
@@ -35,6 +35,6 @@ nothing of ours. Build what fits and it works with everything else.
 - Being together: WorldSync, designed so an engine you already use can
   adopt it. The protocol document is being prepared for publication.
 - A world with its own logic: WorldOS.
-- The earlier generation of all of it: [github.com/Five-Squared-Interactive](https://github.com/Five-Squared-Interactive).
+- The code: [github.com/Five-Squared-Interactive](https://github.com/Five-Squared-Interactive).
 
 Ask us anything: info@fivesquaredinteractive.com.

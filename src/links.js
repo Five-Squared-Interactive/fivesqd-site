@@ -16,8 +16,8 @@ export const CLIENT_URL = 'https://worlds.worldhub.me/webverse/index.html';
 // site's publishable key, which is never committed; it stays there.
 export const ADDON_ZIP = 'https://id.worldhub.me/download/veml-blender-addon.zip';
 
-// The earlier generation's code. The current generation's public release
-// is being prepared; until it exists this link is labelled as what it is.
+// The GitHub organisation. Founder (2026-10-24): the site never speaks of
+// earlier or current generations; the link is simply GitHub.
 export const GITHUB_ORG = 'https://github.com/Five-Squared-Interactive';
 export const CONTACT_EMAIL = 'info@fivesquaredinteractive.com';
 export const WHITE_PAPER = '/docs/www_whitepaper_v1.1.pdf';
