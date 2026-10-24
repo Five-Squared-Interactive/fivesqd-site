@@ -891,6 +891,7 @@ pre.code-example {
   height: 32px;
   border-radius: 6px;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .dropdown-item-name {
