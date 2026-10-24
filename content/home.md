@@ -12,11 +12,13 @@ supply.
 
 Kicker: Easy 3D · Instant · Shared · On any device (the founder's four
 words for what we offer, 2026-10-24).
-**Turn your 3D scene into a place people can walk through.**
+**Turn your 3D scene into a place people can walk through with you.**
 
-Press Publish in Blender and send the link. Friends, clients or players
-open it on a phone or a laptop and walk around in it with you. Nothing to
-install. Free and open.
+Press Save and Publish in Blender, then send the link. Friends, clients or
+players open it on a phone or laptop and walk around inside. They don't
+install anything.
+
+Free and open source. Blender 4.5 or newer.
 
 [Watch it, 20 seconds](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
 once a public world exists) · [Who it's for](#for)
@@ -27,52 +29,49 @@ once a public world exists) · [Who it's for](#for)
 a picture slot, a kicker, the pain, the fix, Read more:)*
 
 - **Architects, designers, real estate.** Clients can't read plans. →
-  Send a private link. They walk the space on their phone before it's
-  built, with you on the call. (/architects)
-- **Blender artists.** A render flattens what you built. → Press Publish.
-  Your scene becomes a link, and people walk through it on their phones.
+  Send a private link. Your client walks the rooms on their phone before
+  it's built, and you're in there with them. (/architects)
+- **Blender artists.** A render flattens what you built. → Press Save and
+  Publish. Your scene becomes a link people walk through on their phones.
   (/first-world)
-- **World builders.** Your world shouldn't live on someone else's terms.
-  → A world at your own address, with your people in it and doors to
-  theirs. No server to run. (/builders)
+- **World builders.** Years of building, gone when someone else changes
+  the rules. → A world at its own address, with your people in it and
+  doors to theirs. You don't run a server. (/builders)
 
 ## Easy 3D. Instant. Shared. On any device.
 
 The four things the other ways of showing a space do not manage at once.
-- **Easy.** One press in Blender. No game engine, no server, no export
-  settings to learn. The scene you already have becomes the place.
-- **Instant.** A link opens in seconds, like a page. Whoever taps it is
-  inside. No app, no account, no download, no waiting for a build.
-- **Shared.** They are in there with you. You see each other move, you
-  talk, you point. Send it to everyone, or only to the people you name.
-- **On any device.** A phone, a laptop, a headset: whatever has a browser.
-  And the place is a few files at a web address, so it is yours to host,
-  change and link.
+- **Easy.** Install the add-on and press Save and Publish. The scene you
+  already have becomes the place.
+- **Instant.** Tap the link and you're inside within seconds, the way a
+  web page opens. Visitors to a public world don't install anything or
+  make an account.
+- **Shared.** They're in there with you. You see each other move and you
+  can chat. Let in everyone with the link, or only the people you name.
+- **On any device.** A phone, a laptop or a headset's browser. If it opens
+  web pages, it opens the world.
 
-## Why you can trust it: A world is a web page.
+## Why it lasts: A world is a web page.
 
-Not a figure of speech. This is the whole of a published place: one small
-text file, one model, one sky. It will open long after we are gone.
-*(The demo world [slot] beside its document with the five marks.)*
+Here is everything in a published place: one small text file, one model,
+one sky. The format is open and the files are plain, so reading a world
+never depends on us. *(The Overlook [slot] beside a different world's
+document with the five marks; the captions say so.)*
 [How it works](/technology)
 
-## Works today · Next
+## What you get
 
-Works today: publish from Blender in one press · hosted at its own
-address on WorldHub, our service, or on your host · people together in a
-place, on phones and laptops · doors between places · private places:
-only the people you name may enter.
-
-Next: a public place to walk into from this page · download your place's
-folder and host it anywhere · SketchUp in.
+Publish from Blender in one press · hosted at its own web address on
+WorldHub, our service · people together in a place, on phones and laptops
+· doors between places · private links: only the people you name get in.
 
 ## Free, and open
 
-The software is free and open source under MIT. No per-seat licence, no
-app store. Hosting is included on WorldHub, or use your own domain.
+The software is free and open source under MIT. Publishing to WorldHub,
+our hosting service, costs nothing.
 Built by Five Squared Interactive, an independent studio, since [ph: year].
 Founder: [ph: name, one line]. [About us](/about)
 
 ## Closing
 
-**Easy 3D. Instant. Shared. On any device.** [Start in Blender](/first-world)
+**Have a scene in Blender? Publish it and send the link.** [Start in Blender](/first-world)

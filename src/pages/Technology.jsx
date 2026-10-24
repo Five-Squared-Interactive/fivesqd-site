@@ -163,11 +163,6 @@ const Technology = () => {
             bucket needs a CORS rule.
           </p>
           <p>
-            Getting the folder out of Blender and onto your own host is the step still being
-            finished: a download of the published folder is built and waits on deployment. Until
-            then, this recipe is for worlds you assemble by hand.
-          </p>
-          <p>
             Want to build on the pieces, or put your own things in a world?{' '}
             <Link to="/ecosystem">Build on it &rarr;</Link>
           </p>
@@ -198,9 +193,8 @@ const Technology = () => {
           </p>
           <h3>What happens to my world if Five Squared disappears?</h3>
           <p>
-            It is files at an address, and the page that opens them is open source. A world at your
-            own address keeps working. Today that page is served from WorldHub; the public release
-            lets anyone host it.
+            It is plain files at an address, in an open format, and the page that opens them is open
+            source under MIT.
           </p>
         </div>
       </section>
@@ -210,7 +204,7 @@ const Technology = () => {
           <h2>What this adds up to</h2>
           <ul style={{ paddingLeft: '1.25rem', lineHeight: 1.8, fontSize: '1.125rem' }}>
             <li>Nothing to install to visit. The link opens in a browser.</li>
-            <li>Built to outlive us: the format is open, the page is open, and a world at its own address names nothing of ours. Today that page is served from WorldHub; the public release removes that last dependency.</li>
+            <li>Built to outlive us: the format is open, the page is open, and a world is plain files at an address.</li>
             <li>An unvisited world costs nothing: it is a folder.</li>
             <li>Worlds link to worlds. The web's graph, in 3D.</li>
           </ul>

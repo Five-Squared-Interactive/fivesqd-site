@@ -64,14 +64,13 @@ const FirstWorld = () => {
       <section className="section section-light" id="steps">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>How easy is it?</h2>
-            <p className="section-subtitle">Three steps. The third one is sending a link.</p>
+            <h2>Three steps from your scene to a link</h2>
           </div>
           <div className="grid-3-steps">
             <div className="step-tile">
               <Slot label="The add-on panel in Blender, cropped at 2x, with Save and Publish visible." ratio="4 / 3" />
               <h3><span className="step-n">1</span> Install the add-on</h3>
-              <p>Blender 4.5 or newer. Sign in once.</p>
+              <p>Blender 4.5 or newer. Sign in once with Google, GitHub or an emailed link.</p>
             </div>
             <div className="step-tile">
               <Slot label="The link that appears after Save and Publish, as the add-on shows it." ratio="4 / 3" />
@@ -81,7 +80,7 @@ const FirstWorld = () => {
             <div className="step-tile">
               <Slot label="The same world on a phone, held in a hand, with the two sticks showing." ratio="4 / 3" />
               <h3><span className="step-n">3</span> Send the link</h3>
-              <p>That's it. People walk in.</p>
+              <p>Paste it in a message. Whoever taps it walks in.</p>
             </div>
           </div>
         </div>
@@ -191,8 +190,7 @@ const FirstWorld = () => {
               </li>
               <li>
                 <strong>Change it.</strong> Change the scene in Blender and press Save and Publish again; the same
-                address shows the new version. (Editing the document on the page itself, and downloading the folder
-                to host it elsewhere, are coming.)
+                address shows the new version.
               </li>
             </ul>
           </Step>

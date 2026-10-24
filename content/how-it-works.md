@@ -38,11 +38,6 @@ GitHub Pages does; a bucket needs a CORS rule. A world published through
 WorldHub is the same thing with the
 hosting done for you.
 
-Getting the folder out of Blender and onto your own host is the step
-still being finished: a download of the published folder is built and
-waits on deployment. Until then, this recipe is for worlds you assemble
-by hand.
-
 ## The client
 
 **WebVerse** is the client: a web page that loads the engine and opens the
@@ -105,17 +100,15 @@ the authoring tools; today the Blender add-on.
   build is a download that runs on one kind of computer and cannot link
   to anything. A world is the place itself, at an address, with the people
   you sent it to inside it.
-- **What happens to my world if Five Squared disappears?** It is files at
-  an address, and the page that opens them is open source. A world at
-  your own address keeps working. Today that page is served from WorldHub;
-  the public release lets anyone host it.
+- **What happens to my world if Five Squared disappears?** It is plain
+  files at an address, in an open format, and the page that opens them is
+  open source under MIT.
 
 ## What this adds up to
 
 - Nothing to install to visit. The link opens in a browser.
-- Built to outlive us: the format is open, the client is open, and a world
-  at its own address names nothing of ours. Today the client page is served
-  from WorldHub; the public release removes that last dependency.
+- Built to outlive us: the format is open, the page is open, and a world
+  is plain files at an address.
 - An unvisited world costs nothing: it is a folder.
 - Worlds link to worlds. The web's graph, in 3D.
 

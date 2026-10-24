@@ -1,8 +1,8 @@
 # Build on it
 
 Everything that opens, moves or syncs a world is open source under MIT,
-and the format is written down as a specification with a conformance
-suite, both being prepared for publication.
+and the
+format is a written specification with a conformance suite.
 
 ## Make worlds
 
@@ -28,12 +28,11 @@ nothing of ours. Build what fits and it works with everything else.
 
 ## Where to start
 
-- The format: VEML. The 4.0 specification and its conformance suite are
-  being prepared for publication; the earlier documents are on GitHub.
-- The client: WebVerse, and StraightFour under it. Public release in
-  preparation.
+- The format: VEML, a written specification with a conformance suite; the
+  earlier documents are on GitHub.
+- The page that opens worlds: WebVerse, and StraightFour under it.
 - Being together: WorldSync, designed so an engine you already use can
-  adopt it. The protocol document is being prepared for publication.
+  adopt it.
 - A world with its own logic: WorldOS.
 - The code: [github.com/Five-Squared-Interactive](https://github.com/Five-Squared-Interactive).
 

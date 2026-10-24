@@ -15,27 +15,25 @@ Nothing for them to install, no viewer licence, no file to open.
 [slot: 20 seconds, a client opens a link on a phone and walks through a
 kitchen; the designer points at the island]
 
-## A listing is photos. A buyer still has to drive out.
+## Buyers walk every room before they book the viewing.
 
 Put a walkthrough link on the listing. They go through every room on the
 train, and the ones who book a viewing already want it. The link is
 private if you want it to be: only the people you name may enter.
 [slot: a phone showing a listing walkthrough beside the photo gallery]
 
-## No viewer to buy, no seat to license.
+## Free to use, and your client just opens a link.
 
-The software is free and open source. Hosting is included on our
-service, or put the files on your own domain so the link carries your
-name. There is no app for the client to install and no account for them
-to make.
+The software is free and open source, and hosting on WorldHub, our
+service, costs nothing. Your client opens the link in their phone's
+browser. For a private link they sign in once, and only the people you
+named get in.
 [slot: the Only People I Allow box with two client addresses]
 
-## What works today, and what does not yet
+## What you get
 
-Today: from Blender, one press publishes a model as a walkable place at a
-link · models from SketchUp, Revit or Rhino come into Blender as glTF or
-FBX first; a direct SketchUp path is next · private links: name who may
-enter · phones, laptops and headsets, in the browser.
-Next: measurements and annotations inside the walkthrough · downloading
-the folder to host on your own domain without our service.
+From Blender, one press publishes a model as a walkable place at a link ·
+models from SketchUp, Revit or Rhino come in through Blender as glTF or
+FBX · private links: visitors sign in, and only the people you name get
+in · phones, laptops and headsets, in the browser.
 [The step-by-step guide](/first-world)

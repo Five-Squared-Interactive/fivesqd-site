@@ -14,15 +14,11 @@ Google, GitHub, or a link we email you. A world you publish can be open to
 everyone or only to the people you allow; visitors who are signed in appear
 in a world under their own names.
 
-**Will list worlds.** A directory of worlds people choose to list, at any
-address, ours or not, is coming to www.worldhub.me. A listing is a link;
-the world stays where it is.
 
 ## What it is not
 
 A world does not need WorldHub to exist: a world at any other address is
-served by that address. Today the client page that opens it is served from
-WorldHub; the public release lets anyone host that too. WorldHub does not
+served by that address. WorldHub does not
 decide what a world may contain or do. It is the easy path, not the only
 one.
 

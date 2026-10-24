@@ -54,6 +54,14 @@ accent, from the Five Squared mark: indigo #4f46e5 (hover #4338ca; dark
 mode #a5b4fc on text, buttons stay #4f46e5). Corners 8px; no pills. The
 WebVerse site shares the type and accent on its dark palette.
 
+## Say what it enables (founder, 2026-10-24)
+
+"Talking about what you can't do doesn't belong. This should be about what
+our tooling enables." No "not yet", "coming", "next" or "today … until"
+on any page. What is unbuilt is simply absent; what is built is stated
+exactly. The honesty rule stays: never claim what the code cannot do. The
+list of held-back facts below is for us, not for the pages.
+
 ## Burning problems, three audiences (founder, 2026-10-24)
 
 "We are showing cool technology instead of showing how we solve burning

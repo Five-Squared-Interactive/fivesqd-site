@@ -100,6 +100,4 @@ Your world is a web page.
   up to it in your world and you step into theirs. That is how one world
   becomes part of many.
 - **Change it.** Change the scene in Blender and press Save and Publish
-  again; the same address shows the new version. *(Editing the document on
-  the page itself, and downloading the folder to host it elsewhere, are
-  coming.)*
+  again; the same address shows the new version.

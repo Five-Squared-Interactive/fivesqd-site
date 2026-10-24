@@ -37,13 +37,6 @@ const WorldHub = () => {
                 allow; visitors who are signed in appear in a world under their own names.
               </p>
             </div>
-            <div className="card">
-              <h3>Will list worlds</h3>
-              <p>
-                A directory of worlds people choose to list, at any address, ours or not, is coming
-                to www.worldhub.me. A listing is a link; the world stays where it is.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -53,9 +46,8 @@ const WorldHub = () => {
           <h2>What it is not</h2>
           <p>
             A world does not need WorldHub to exist: a world at any other address is served by that
-            address. Today the client page that opens it is served from WorldHub; the public release
-            lets anyone host that too. WorldHub does not decide what a world may contain or do. It is
-            the easy path, not the only one.
+            address. WorldHub does not decide what a world may contain or do. It is the easy path,
+            not the only one.
           </p>
           <h2 style={{ marginTop: '2.5rem' }}>Cost</h2>
           <p>Publishing from Blender and visiting are free.</p>

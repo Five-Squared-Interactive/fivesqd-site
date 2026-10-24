@@ -11,8 +11,7 @@ const Ecosystem = () => {
           <h1>Build on it</h1>
           <p style={{ maxWidth: '700px', margin: '0 auto' }}>
             Everything that opens, moves or syncs a world is open source under MIT, and the format
-            is written down as a specification with a conformance suite, both being prepared for
-            publication.
+            is a written specification with a conformance suite.
           </p>
         </div>
       </section>
@@ -61,13 +60,12 @@ const Ecosystem = () => {
           <h2>Where to start</h2>
           <ul style={{ paddingLeft: '1.25rem', lineHeight: 1.8, fontSize: '1.125rem' }}>
             <li>
-              The format: VEML. The 4.0 specification and its conformance suite are being prepared
-              for publication; the earlier documents are on GitHub.
+              The format: VEML, a written specification with a conformance suite; the earlier
+              documents are on GitHub.
             </li>
-            <li>The client: WebVerse, and StraightFour under it. Public release in preparation.</li>
+            <li>The page that opens worlds: WebVerse, and StraightFour under it.</li>
             <li>
-              Being together: WorldSync, designed so an engine you already use can adopt it. The
-              protocol document is being prepared for publication.
+              Being together: WorldSync, designed so an engine you already use can adopt it.
             </li>
             <li>A world with its own logic: WorldOS.</li>
             <li>
