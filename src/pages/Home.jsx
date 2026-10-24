@@ -19,11 +19,11 @@ const Home = () => {
       <section className="section hero-split">
         <div className="container media-row">
           <div className="media-text">
-            <h1>Let people stand in what you made.</h1>
+            <h1>Your friend opens a link and is standing in the room you built.</h1>
             <p className="lead">
-              Send a link. Your friend opens it on their phone and is inside the room you built,
-              with you. No app, nothing to install. And the place stays yours: plain files at a web
-              address, like any page.
+              Model a room in Blender, press Save and Publish, send the link. They walk around it
+              on their phone, with you. No app, nothing to install. And the room stays yours: plain
+              files at a web address, like any page.
             </p>
             <div className="hero-actions-left">
               {DEMO_WORLD_URL

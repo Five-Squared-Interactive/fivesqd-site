@@ -17,7 +17,7 @@
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'Let people stand in what you made. Send a link; your friend opens it on their phone and is inside the room you built, with you. No app, nothing to install. The place stays yours: plain files at a web address.';
+  'Your friend opens a link and is standing in the room you built. Model a room in Blender, press Save and Publish, send the link; they walk around it on their phone, with you. No app, nothing to install, and the room stays yours.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [

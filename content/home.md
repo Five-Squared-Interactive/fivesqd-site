@@ -10,11 +10,11 @@ or recording only the founder can make; `[ph]` a fact he must supply.
 
 ## Hero (text left, recording right)
 
-**Let people stand in what you made.**
+**Your friend opens a link and is standing in the room you built.**
 
-Send a link. Your friend opens it on their phone and is inside the room
-you built, with you. No app, nothing to install. And the place stays
-yours: plain files at a web address, like any page.
+Model a room in Blender, press Save and Publish, send the link. They walk
+around it on their phone, with you. No app, nothing to install. And the
+room stays yours: plain files at a web address, like any page.
 
 [Watch it, 20 seconds](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
 once a public world exists) · [Make one from Blender](/first-world)
