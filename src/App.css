@@ -2120,3 +2120,4 @@ pre.code-example {
 .why-grid.three { grid-template-columns: repeat(3, 1fr); max-width: 1100px; }
 @media (max-width: 900px) { .why-grid.three { grid-template-columns: 1fr; } }
 .media-text .kicker { margin-bottom: .75rem; }
+.kicker.promise { font-size: .95rem; letter-spacing: .06em; }

@@ -40,6 +40,7 @@ const Home = () => {
       <section className="section hero-split">
         <div className="container media-row">
           <div className="media-text">
+            <p className="kicker promise">Easy 3D &middot; Instant &middot; Shared &middot; On any device</p>
             <h1>You built a space. Nobody can walk through it without installing something.</h1>
             <p className="lead">
               Send a link instead. They open it on a phone or a laptop and walk around, with you.
@@ -85,21 +86,25 @@ const Home = () => {
       <section className="section" id="why">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>Why a link</h2>
-            <p className="section-subtitle">Three things the other ways of showing a space cannot do.</p>
+            <h2>Easy 3D. Instant. Shared. On any device.</h2>
+            <p className="section-subtitle">The four things the other ways of showing a space do not manage at once.</p>
           </div>
-          <div className="why-grid three">
+          <div className="why-grid">
             <div className="card">
-              <h3>They open it like any link.</h3>
-              <p>Group chat, email, a listing page. Whoever taps it is inside, on a phone, a laptop or a headset. No app, no account, no download.</p>
+              <h3>Easy.</h3>
+              <p>One press in Blender. No game engine, no server, no export settings to learn. The scene you already have becomes the place.</p>
             </div>
             <div className="card">
-              <h3>You are in there with them.</h3>
-              <p>A picture of a room is not the room. They feel the scale and the light, and you stand next to them and point. You choose who may come in.</p>
+              <h3>Instant.</h3>
+              <p>A link opens in seconds, like a page. Whoever taps it is inside. No app, no account, no download, no waiting for a build.</p>
             </div>
             <div className="card">
-              <h3>Nobody owns it but you.</h3>
-              <p>A place is a few files at a web address. Host it with us or anywhere else. Change it. Put a door in it to another place. No platform can take it down.</p>
+              <h3>Shared.</h3>
+              <p>They are in there with you. You see each other move, you talk, you point. Send it to everyone, or only to the people you name.</p>
+            </div>
+            <div className="card">
+              <h3>On any device.</h3>
+              <p>A phone, a laptop, a headset: whatever has a browser. And the place is a few files at a web address, so it is yours to host, change and link.</p>
             </div>
           </div>
         </div>
@@ -165,7 +170,7 @@ const Home = () => {
 
       <section className="section cta-band">
         <div className="container text-center">
-          <h2>Send a link, not a render.</h2>
+          <h2>Easy 3D. Instant. Shared. On any device.</h2>
           <Link to="/first-world" className="btn btn-primary btn-large">Start in Blender</Link>
         </div>
       </section>

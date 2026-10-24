@@ -17,7 +17,7 @@
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'You built a space. Nobody can walk through it without installing something. Send a link instead: they open it on a phone and walk around, with you. Works from Blender today. Free and open source.';
+  'Easy 3D, instant, shared, on any device. You built a space; send a link and they walk through it on a phone or laptop, with you, nothing to install. Works from Blender today. Free and open source.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [

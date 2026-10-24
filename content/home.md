@@ -10,6 +10,8 @@ supply.
 
 ## Hero (text left, recording right)
 
+Kicker: Easy 3D · Instant · Shared · On any device (the founder's four
+words for what we offer, 2026-10-24).
 **You built a space. Nobody can walk through it without installing
 something.**
 
@@ -39,18 +41,18 @@ a picture slot, a kicker, the pain, the fix, Read more:)*
   address, people in it together, doors to other worlds. No server to
   run. (/builders)
 
-## Why a link
+## Easy 3D. Instant. Shared. On any device.
 
-Three things the other ways of showing a space cannot do.
-- **They open it like any link.** Group chat, email, a listing page.
-  Whoever taps it is inside, on a phone, a laptop or a headset. No app,
-  no account, no download.
-- **You are in there with them.** A picture of a room is not the room.
-  They feel the scale and the light, and you stand next to them and
-  point. You choose who may come in.
-- **Nobody owns it but you.** A place is a few files at a web address.
-  Host it with us or anywhere else. Change it. Put a door in it to
-  another place. No platform can take it down.
+The four things the other ways of showing a space do not manage at once.
+- **Easy.** One press in Blender. No game engine, no server, no export
+  settings to learn. The scene you already have becomes the place.
+- **Instant.** A link opens in seconds, like a page. Whoever taps it is
+  inside. No app, no account, no download, no waiting for a build.
+- **Shared.** They are in there with you. You see each other move, you
+  talk, you point. Send it to everyone, or only to the people you name.
+- **On any device.** A phone, a laptop, a headset: whatever has a browser.
+  And the place is a few files at a web address, so it is yours to host,
+  change and link.
 
 ## Why you can trust it: A world is a web page.
 
@@ -78,4 +80,4 @@ Founder: [ph: name, one line]. [About us](/about)
 
 ## Closing
 
-**Send a link, not a render.** [Start in Blender](/first-world)
+**Easy 3D. Instant. Shared. On any device.** [Start in Blender](/first-world)
