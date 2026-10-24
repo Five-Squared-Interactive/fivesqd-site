@@ -17,11 +17,21 @@
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'Your friend opens a link and is standing in the room you built. Model a room in Blender, press Save and Publish, send the link; they walk around it on their phone, with you. No app, nothing to install, and the room stays yours.';
+  'You built a space. Nobody can walk through it without installing something. Send a link instead: they open it on a phone and walk around, with you. Works from Blender today. Free and open source.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [
   { path: '/', title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION },
+  {
+    path: '/architects',
+    title: 'For architects, designers and real estate — Five Squared Interactive',
+    description: 'Clients cannot read plans. Send a private link instead: they walk the space on their phone before it is built, with you on the call. Nothing to install, no viewer licence.',
+  },
+  {
+    path: '/builders',
+    title: 'For world builders — Five Squared Interactive',
+    description: 'Your world lives on someone else\'s terms. Here it is yours: files at your own address, your people in it together, doors to other worlds, no server to run.',
+  },
   {
     path: '/products/worldhub',
     title: 'WorldHub — Five Squared Interactive',
@@ -29,7 +39,7 @@ export const ROUTES = [
   },
   {
     path: '/first-world',
-    title: 'Make a world from Blender — Five Squared Interactive',
+    title: 'For Blender artists — Five Squared Interactive',
     description: 'Your Blender scene, as a link friends can walk into. Install the add-on, press Save and Publish, send the link; anyone walks around inside, together, on a phone or a laptop.',
   },
   {

@@ -97,6 +97,9 @@ const Navbar = () => {
           </Link>
 
           <ul id="navbar-menu" className={`navbar-nav ${isMenuOpen ? 'active' : ''}`}>
+            <li><Link to="/architects" onClick={closeAll}>Architects</Link></li>
+            <li><Link to="/first-world" onClick={closeAll}>Blender artists</Link></li>
+            <li><Link to="/builders" onClick={closeAll}>World builders</Link></li>
             <li
               className="navbar-dropdown-wrapper"
               onMouseEnter={() => handleEnter('technology')}

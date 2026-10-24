@@ -38,11 +38,12 @@ const FirstWorld = () => {
       <section className="section hero-split">
         <div className="container media-row">
           <div className="media-text">
-            <h1>Your Blender scene, as a link friends can walk into.</h1>
+            <p className="kicker">Blender artists</p>
+            <h1>A render flattens the room you built.</h1>
             <p className="lead">
-              Press Save and Publish in Blender and you get a web address. Anyone who opens it walks
-              around inside, on a phone or a laptop, together with whoever else is there. Nothing
-              for them to install.
+              Send the room instead. Press Save and Publish in Blender and your scene is a link;
+              anyone who opens it walks around inside, on a phone or a laptop, together with whoever
+              else is there. Nothing for them to install.
             </p>
             <div className="hero-actions-left">
               <a href={ADDON_ZIP} className="btn btn-primary btn-large">Get the add-on</a>

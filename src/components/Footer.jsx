@@ -22,14 +22,16 @@ const Footer = React.memo(() => {
               style={{ width: '48px', height: '48px', borderRadius: '10px', marginBottom: '1rem' }}
             />
             <h3>Five Squared Interactive</h3>
-            <p>Your friend opens a link and is standing in the room you built. We make the open pieces that turn a 3D scene into a place friends can walk into from a link, and WorldHub to host what you publish.</p>
+            <p>Send a link, not a render. We make the free, open software that turns a 3D scene into a place people walk through from a link, and WorldHub to host what you publish.</p>
           </div>
 
           <div className="footer-section">
             <h3>Explore</h3>
             <div className="footer-columns">
               <div className="footer-column">
-                <Link to="/first-world">Make a world</Link>
+                <Link to="/architects">Architects and real estate</Link>
+                <Link to="/first-world">Blender artists</Link>
+                <Link to="/builders">World builders</Link>
                 <Link to="/technology">How it works</Link>
                 <Link to="/products/worldhub">WorldHub</Link>
                 <Link to="/ecosystem">Build on it</Link>

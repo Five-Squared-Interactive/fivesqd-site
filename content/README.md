@@ -43,6 +43,18 @@ nothing in `drafts/` is routed or prerendered.
 - Placeholders in braces are filled at deploy: `{DEMO_WORLD_URL}` is a
   public world that needs no sign-in; `{ADDON_URL}` is the add-on download.
 
+## Burning problems, three audiences (founder, 2026-10-24)
+
+"We are showing cool technology instead of showing how we solve burning
+problems." Three audiences: Blender modellers; architecture and real
+estate; people who want to make multiplayer worlds. The home names the
+pain they share (nobody can walk through the space you built without
+installing something), shows the fix once, and sends each to a page in
+their own words: architects.md, first-world.md, builders.md. Each page
+leads with the pain, shows the fix, says what it costs, and lists what
+works today and what does not yet. The idea ("a world is a web page") is
+the reason to trust us, not the opener.
+
 ## Meet people where they are (founder, 2026-10-24)
 
 "We need to meet people where they are at rather than making them care

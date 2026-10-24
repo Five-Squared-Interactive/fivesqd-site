@@ -5,11 +5,13 @@ the full guide below.
 
 ## Hero (text left, recording right)
 
-**Your Blender scene, as a link friends can walk into.**
+Kicker: Blender artists.
+**A render flattens the room you built.**
 
-Press Save and Publish in Blender and you get a web address. Anyone who
-opens it walks around inside, on a phone or a laptop, together with
-whoever else is there. Nothing for them to install.
+Send the room instead. Press Save and Publish in Blender and your scene
+is a link; anyone who opens it walks around inside, on a phone or a
+laptop, together with whoever else is there. Nothing for them to
+install.
 
 [Get the add-on](ADDON_ZIP) · [Watch it, 20 seconds](#watch)
 Free and open source. Blender 4.5 or newer.

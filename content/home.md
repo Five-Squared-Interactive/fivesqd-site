@@ -1,97 +1,81 @@
 # Home
 
-The company's page, written from the visitor's side (founder, 2026-10-24:
-the site is all of Five Squared; the add-on has its own page,
-first-world.md). One human image of the benefit, show it, one idea per
-screen, how to make one, the twist. The five-second test of 2026-10-24
-(`reviews/headline-test-2026-10-24.md`) set the first screen's words: "a
-link", "walk into", "together", never "world". `[slot]` marks a picture
-or recording only the founder can make; `[ph]` a fact he must supply.
+Founder, 2026-10-24: "we are showing cool technology instead of showing
+how we solve burning problems", and there are three audiences (Blender
+modellers; architecture and real estate; people who want to make
+multiplayer worlds). So the home names the pain they share, shows the fix
+once, and sends each person to a page in their own words. `[slot]` marks
+a picture or recording only the founder can make; `[ph]` a fact he must
+supply.
 
 ## Hero (text left, recording right)
 
-**Your friend opens a link and is standing in the room you built.**
+**You built a space. Nobody can walk through it without installing
+something.**
 
-Model a room in Blender, press Save and Publish, send the link. They walk
-around it on their phone, with you. Nothing for them to install. And the
-room stays yours: plain files at a web address, like any page.
+Send a link instead. They open it on a phone or a laptop and walk around,
+with you. Nothing for them to install. Works from Blender today. Free and
+open source.
 
 [Watch it, 20 seconds](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
-once a public world exists) · [Make one from Blender](/first-world)
+once a public world exists) · [Is it for me?](#for)
 
-Free, open-source software. Hosting included, or use your own.
+[slot: 20 seconds, muted, looping; open on the payoff]
 
-[slot: 20 seconds, muted, looping. Open on the payoff: a phone opens a
-link and is standing in a place; a second person walks in; they step
-through a door into another place; then, briefly, the Blender scene it
-came from and the Publish press.]
+## Who it is for
 
-## Send it like any link. (text left, picture right)
+Three kinds of people have this problem. Pick yours. *(Three cards, each
+a picture slot, a kicker, the pain, the fix, Read more:)*
 
-Drop it in the group chat, a message, an email. Whoever taps it is
-inside, on a phone, a laptop or a headset. No app, no account, no
-download, so the moment is not lost to "install this first".
+- **Architects, designers, real estate.** Clients cannot read plans. They
+  find out what they approved after it is built. → Send a private link.
+  They walk the space on their phone before it exists, with you on the
+  call. (/architects)
+- **Blender artists.** A render flattens the room you built. A game build
+  is a download nobody opens. → Press Save and Publish. Your scene is a
+  link; people walk around it on their phones. (/first-world)
+- **World builders.** Your world lives on someone else's terms. To make
+  your own you need an engine and a server. → A world at your own
+  address, people in it together, doors to other worlds. No server to
+  run. (/builders)
 
-[slot: a phone in a hand: a message thread with the link, and the world
-open under it]
+## Why a link
 
-## Be there with them. (picture left, text right)
+Three things the other ways of showing a space cannot do.
+- **They open it like any link.** Group chat, email, a listing page.
+  Whoever taps it is inside, on a phone, a laptop or a headset. No app,
+  no account, no download.
+- **You are in there with them.** A picture of a room is not the room.
+  They feel the scale and the light, and you stand next to them and
+  point. You choose who may come in.
+- **Nobody owns it but you.** A place is a few files at a web address.
+  Host it with us or anywhere else. Change it. Put a door in it to
+  another place. No platform can take it down.
 
-A picture of a room is not the room. When someone opens your link, they
-feel the scale and the light, and you are standing next to them to show
-them around. You choose who may come in.
+## Why you can trust it: A world is a web page.
 
-[slot: two visitors in one world with their name labels, phone and laptop
-side by side]
+Not a figure of speech. This is the whole of a published place: one small
+text file, one model, one sky. It will open long after we are gone.
+*(The demo world [slot] beside its document with the five marks.)*
+[How it works](/technology)
 
-## Nobody owns it but you. (text left, clip right)
+## Works today · Next
 
-No platform holds your work. A place you made is a web page: a few files
-at an address. Host it anywhere, change it with a text editor, and put a
-door in it that opens onto a friend's place.
+Works today: publish from Blender in one press · hosted at its own
+address on WorldHub, our service, or on your host · people together in a
+place, on phones and laptops · doors between places · private places:
+only the people you name may enter.
 
-[slot: three seconds, walking through a door into a different world, the
-address bar changing. Until then the door diagram stands in.]
+Next: a public place to walk into from this page · download your place's
+folder and host it anywhere · SketchUp in.
 
-## Make one: Today, from Blender. (picture left, text right)
+## Free, and open
 
-Install the add-on, press Save and Publish, and your scene is a link.
-Hosted for you on WorldHub, our service, or on any web host. Other ways in
-will follow; this one works now. [Make a world from Blender](/first-world)
-
-[slot: the add-on panel in Blender, cropped at 2x]
-
-## One more thing: A world is a web page.
-
-We call a place a world, and it is not a figure of speech. This is the
-whole of a published one: one small text file, one model, one sky. *(Left: the published demo world [slot
-until it exists]. Right: its whole document with five numbered marks.)*
-Caption: Its whole document, 923 bytes. Add /index.veml to any published
-world's address and read yours.
-
-Which means the world is not inside anyone's app, ours included. It
-links, it can be copied, it can be edited, and it will still open long
-after we are gone. [How it works](/technology)
-
-## Live today · Next
-
-Live today: publish a world from Blender in one press · hosted for you at
-its own address on WorldHub, our service · people together in a world, on
-phones and laptops · doors between worlds · sign in once; choose who may
-enter.
-
-Next: a public world to walk into from this page · download your world's
-folder and host it anywhere · a directory of worlds people choose to list.
-
-## Open
-
-The format, the page that opens worlds (WebVerse) and everything under it
-are open source under MIT, on GitHub. Hosting is a convenience we offer;
-the design never requires it.
-
+The software is free and open source under MIT. No per-seat licence, no
+app store. Hosting is included on WorldHub, or use your own domain.
 Built by Five Squared Interactive, an independent studio, since [ph: year].
 Founder: [ph: name, one line]. [About us](/about)
 
 ## Closing
 
-**Your scene. Their phone. Same room.** [Make a world from Blender](/first-world)
+**Send a link, not a render.** [Start in Blender](/first-world)

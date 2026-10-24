@@ -8,6 +8,8 @@ import './App.css';
 
 const WorldHub = lazy(() => import('./pages/WorldHub'));
 const FirstWorld = lazy(() => import('./pages/FirstWorld'));
+const Architects = lazy(() => import('./pages/Architects'));
+const Builders = lazy(() => import('./pages/Builders'));
 const Technology = lazy(() => import('./pages/Technology'));
 const Ecosystem = lazy(() => import('./pages/Ecosystem'));
 const About = lazy(() => import('./pages/About'));
@@ -32,6 +34,8 @@ export function AppShell() {
                 <Route path="/products" element={<Navigate to="/technology#stack" replace />} />
                 <Route path="/products/worldhub" element={<WorldHub />} />
                 <Route path="/first-world" element={<FirstWorld />} />
+                <Route path="/architects" element={<Architects />} />
+                <Route path="/builders" element={<Builders />} />
                 <Route path="/technology" element={<Technology />} />
                 <Route path="/ecosystem" element={<Ecosystem />} />
                 <Route path="/about" element={<About />} />
