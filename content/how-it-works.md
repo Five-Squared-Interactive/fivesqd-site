@@ -89,6 +89,27 @@ sandbox · WorldSync, being there together: the visitors' pages exchange
 what moved · WorldOS, for the few worlds with their own logic · WorldKit,
 the authoring tools; today the Blender add-on.
 
+## Questions people ask
+
+- **Hasn't 3D on the web been tried?** Yes, in the nineties, when it
+  needed a plugin and a computer that could not keep up. Today a phone
+  renders a world in the browser with nothing installed, and a world is
+  one press away from a Blender scene. The technology stopped being the
+  problem; the plain path from a scene to a link was what was missing.
+- **Is this the metaverse?** No. The metaverse pitch wanted everyone to
+  move in somewhere. We want a place to be as easy to make and share as a
+  web page: you send it, people visit, they leave. No shared substrate, no
+  land, no company that every world must pass through, including ours.
+- **Why not a render, a spinning model, or a game build?** A render is a
+  picture. A model viewer spins an object; nobody stands in it. A game
+  build is a download that runs on one kind of computer and cannot link
+  to anything. A world is the place itself, at an address, with the people
+  you sent it to inside it.
+- **What happens to my world if Five Squared disappears?** It is files at
+  an address, and the page that opens them is open source. A world at
+  your own address keeps working. Today that page is served from WorldHub;
+  the public release lets anyone host it.
+
 ## What this adds up to
 
 - Nothing to install to visit. The link opens in a browser.

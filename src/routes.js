@@ -17,7 +17,7 @@
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'From a Blender scene to a place your friends can walk into. Press Save and Publish, send the link, and people meet you there from a phone or laptop. Nothing to install, and the world is yours: a web page.';
+  'Send a place, not a picture. You made a space in Blender; with one press it becomes a world your friends can stand in, from a phone or a laptop, by opening a link. Free, open source, nothing to install.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [

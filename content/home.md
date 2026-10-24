@@ -1,99 +1,97 @@
 # Home
 
-Order per the publicist review of 2026-10-24 (`reviews/`): show the thing,
-then say what it is. `[slot]` marks a picture or recording only the
-founder can make; the page shows a labelled placeholder there until it
-exists. `[ph]` marks a fact he must supply.
+Shape (founder, 2026-10-24, "think about how Steve Jobs sold products"):
+one human image of the benefit, then show it, then one confident idea per
+screen, then how easy it is, then the twist. No arguing with sceptics on
+this page; their questions are answered on How it works. `[slot]` marks a
+picture or recording only the founder can make; `[ph]` a fact he must
+supply.
 
 ## Hero (text left, recording right)
 
-**From a Blender scene to a place your friends can walk into.**
+**Send a place, not a picture.**
 
-Press Save and Publish, send the link, and people open your world on a
-phone or a laptop and meet you there. Nothing to install. And because a
-world is a web page, it is yours: read it, change it, link it to other
-worlds.
+You made a space in Blender. With one press it becomes a world your
+friends can stand in, from a phone or a laptop, by opening a link.
 
-[Make a world from Blender](/first-world) · [Watch it in 20 seconds](#watch)
+[Make a world from Blender](/first-world) · [Watch it, 20 seconds](#watch)
 (becomes [Walk into one]({DEMO_WORLD_URL}) once a public world exists)
 
-Free and open source. Hosted for you on WorldHub, our service, or on any
-web host.
+Free and open source. Nothing to install.
 
 [slot: 20 seconds, muted, looping: a Blender scene, Save and Publish, the
 link appears, a phone opens it, a second person walks in, both step
 through a door into another world.]
 
-## Three steps
+## It's a link. (text left, picture right)
 
-From a scene on your screen to a place your friends are standing in.
+No app. No account. No download. Anyone you send it to walks in, on a
+phone, a laptop or a headset, the moment they tap it.
 
-1. **Install the add-on.** Blender 4.5 or newer. Sign in once with a
-   WorldHub ID. [slot: the add-on panel, cropped at 2x]
-2. **Press Save and Publish.** Your scene becomes a world at its own web
-   address and opens in your browser. [slot: the link the add-on shows]
-3. **Send the link.** People walk in from a phone or a laptop. Nothing to
-   install. [slot: the world on a phone, in a hand, both sticks showing]
+[slot: a phone in a hand: a message thread with the link, and the world
+open under it]
 
-[The step-by-step guide](/first-world)
+## You're there together. (picture left, text right)
 
-## Walk in together (picture left, text right)
+Whoever opens the link is in the room with you. Show them around. Talk.
+Point at things. You choose who may come in.
 
 [slot: two visitors in one world with their name labels, phone and laptop
 side by side]
 
-Whoever opens the link is there with you. You see each other move and you
-can talk. On a phone, the left stick walks and the right one looks; on a
-laptop, the usual keys.
+## It's yours. (text left, clip right)
 
-You choose who may enter when you publish: everyone with the link, or
-only the people you name.
-
-## Worlds link to worlds (text left, clip right)
-
-A door, a sign or a frame in your scene can open onto a friend's world,
-the way one web page links to the next. In Blender, a door is a field on
-the object: the other world's address.
-
-Each world stays at its own address. Nobody owns the map.
+A world is a web page: a few files at an address. Host it anywhere.
+Change it with a text editor. Put a door in it that opens onto a friend's
+world.
 
 [slot: three seconds, walking through a door into a different world, the
 address bar changing. Until then the door diagram stands in.]
 
-## A world is a web page
+## How easy is it?
 
-That is not a figure of speech. A world is a small text file and the
-models it names, at a web address, like any page.
+Three steps. The third one is sending a link.
 
-*(Left: the published demo world [slot until it exists]. Right: its whole
-document with five numbered marks that light up with the legend.)*
-Caption: Its whole document: 923 bytes, plus one model and one sky image.
-Add /index.veml to any published world's address and read yours.
+1. **Install the add-on.** Blender 4.5 or newer. Sign in once. [slot: the
+   add-on panel, cropped at 2x]
+2. **Press Save and Publish.** Your scene becomes a world at its own web
+   address and opens in your browser. [slot: the link the add-on shows]
+3. **Send the link.** That's it. People walk in. [slot: the world on a
+   phone, in a hand, both sticks showing]
 
-| An HTML file ⇄ A VEML file | A link to another page ⇄ A door to another world | View source ⇄ Add /index.veml |
+[The step-by-step guide](/first-world)
 
-[How it works, in full](/technology)
+## One more thing: A world is a web page.
+
+Not a figure of speech. This is the whole of a published world: one small
+text file, one model, one sky. *(Left: the published demo world [slot
+until it exists]. Right: its whole document with five numbered marks.)*
+Caption: Its whole document, 923 bytes. Add /index.veml to any published
+world's address and read yours.
+
+Which means the world is not inside anyone's app, ours included. It
+links, it can be copied, it can be edited, and it will still open long
+after we are gone. [How it works](/technology)
 
 ## Live today · Next
 
 Live today: publish a world from Blender in one press · hosted for you at
-its own address on WorldHub · people together in a world, on phones and
-laptops · doors between worlds · sign in with a WorldHub ID; choose who
-may enter.
+its own address on WorldHub, our service · people together in a world, on
+phones and laptops · doors between worlds · sign in once; choose who may
+enter.
 
 Next: a public world to walk into from this page · download your world's
-folder and host it anywhere · a directory of worlds people choose to list
-· the VEML 4.0 specification, published.
+folder and host it anywhere · a directory of worlds people choose to list.
 
 ## Open
 
 The format, the page that opens worlds (WebVerse) and everything under it
-are open source under MIT, on GitHub. Hosting is a convenience we
-offer; the design never requires it.
+are open source under MIT, on GitHub. Hosting is a convenience we offer;
+the design never requires it.
 
 Built by Five Squared Interactive, an independent studio, since [ph: year].
 Founder: [ph: name, one line]. [About us](/about)
 
 ## Closing
 
-**Your scene, as a place people can visit.** [Make a world from Blender](/first-world)
+**Your scene. Their phone. Same room.** [Make a world from Blender](/first-world)

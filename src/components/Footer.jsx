@@ -22,7 +22,7 @@ const Footer = React.memo(() => {
               style={{ width: '48px', height: '48px', borderRadius: '10px', marginBottom: '1rem' }}
             />
             <h3>Five Squared Interactive</h3>
-            <p>We make the open pieces that turn a 3D scene into a web page people walk into, and WorldHub to host what you publish.</p>
+            <p>Send a place, not a picture. We make the open pieces that turn a 3D scene into a world your friends can stand in, and WorldHub to host what you publish.</p>
           </div>
 
           <div className="footer-section">

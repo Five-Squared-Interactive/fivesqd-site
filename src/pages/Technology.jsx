@@ -174,6 +174,37 @@ const Technology = () => {
         </div>
       </section>
 
+      <section className="section section-light" id="questions">
+        <div className="container" style={{ maxWidth: '760px' }}>
+          <h2>Questions people ask</h2>
+          <h3>Hasn't 3D on the web been tried?</h3>
+          <p>
+            Yes, in the nineties, when it needed a plugin and a computer that could not keep up.
+            Today a phone renders a world in the browser with nothing installed, and a world is one
+            press away from a Blender scene. The technology stopped being the problem; the plain path
+            from a scene to a link was what was missing.
+          </p>
+          <h3>Is this the metaverse?</h3>
+          <p>
+            No. The metaverse pitch wanted everyone to move in somewhere. We want a place to be as
+            easy to make and share as a web page: you send it, people visit, they leave. No shared
+            substrate, no land, no company that every world must pass through, including ours.
+          </p>
+          <h3>Why not a render, a spinning model, or a game build?</h3>
+          <p>
+            A render is a picture. A model viewer spins an object; nobody stands in it. A game build
+            is a download that runs on one kind of computer and cannot link to anything. A world is
+            the place itself, at an address, with the people you sent it to inside it.
+          </p>
+          <h3>What happens to my world if Five Squared disappears?</h3>
+          <p>
+            It is files at an address, and the page that opens them is open source. A world at your
+            own address keeps working. Today that page is served from WorldHub; the public release
+            lets anyone host it.
+          </p>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container" style={{ maxWidth: '760px' }}>
           <h2>What this adds up to</h2>
