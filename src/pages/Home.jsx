@@ -123,7 +123,7 @@ const Home = () => {
             <figure className="world-frame">
               {DEMO_WORLD_URL
                 ? <a className="walkin walkin-poster" style={{ backgroundImage: `url(${WORLD_CARD})` }} href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" aria-label={`Walk into ${WORLD_HERO_ALT}, in a new tab`}><span>Walk in</span></a>
-                : <Slot label="The published demo world, the same one whose document is shown beside it." poster={WORLD_CARD} ratio="800 / 426" />}
+                : <Slot label="A published world, walkable from this page." poster={WORLD_CARD} ratio="800 / 426" />}
               <figcaption>A world, opened in a browser (The Overlook).</figcaption>
             </figure>
             <WorldDocument caption="A different world’s whole document, 923 bytes. Add /index.veml to any published world’s address and read yours." />
