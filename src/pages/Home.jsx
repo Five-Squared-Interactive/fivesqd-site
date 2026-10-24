@@ -66,8 +66,7 @@ const Home = () => {
       <section className="section section-light" id="for">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>Made for</h2>
-            <p className="section-subtitle">Three kinds of people, three reasons. Find yours.</p>
+            <h2>Who it’s for</h2>
           </div>
           <div className="grid-3-steps">
             {AUDIENCES.map((a) => (

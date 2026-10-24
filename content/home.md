@@ -23,9 +23,7 @@ once a public world exists) · [Who it's for](#for)
 
 [slot: 20 seconds, muted, looping; open on the payoff]
 
-## Made for
-
-Three kinds of people, three reasons. Find yours. *(Three cards, each
+## Who it's for *(Three cards, each
 a picture slot, a kicker, the pain, the fix, Read more:)*
 
 - **Architects, designers, real estate.** Clients can't read plans. →
