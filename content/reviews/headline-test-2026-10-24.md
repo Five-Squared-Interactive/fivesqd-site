@@ -31,3 +31,19 @@ uses "A place you can walk into, from a link." with "together", "no app"
 and ownership in the subhead, and "world" kept out of the first screen.
 The other fixes (phone header name, one Make a world, "nothing for
 visitors to install") are in.
+
+## Round two (motive-led lines), same five personas
+
+| Headline | Makers | Stranger | Meets them where they are |
+|---|---|---|---|
+| E. Let people stand in what you made. | 8 | 6 | 8 |
+| F. Your friend opens a link and is standing in the room you built. | 6 | 9 | 7 |
+| G. Meet your friends inside the place you made. | 4 | 4 | 5 |
+| B. Your Blender scene, as a link friends can walk into. | 8 | 7 | 6 |
+
+The reviewer recommended E; the founder had already called E too vague,
+so F is live, with a subhead that no longer echoes it (model, press,
+send; they walk around it on their phone, with you). Taken from the
+round: the nav button no longer says "world" ("Start in Blender");
+"nothing for them to install"; G's social register is out. Open: "Your
+friend" costs the archviz reader, who sends to clients.
