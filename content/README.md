@@ -43,6 +43,17 @@ nothing in `drafts/` is routed or prerendered.
 - Placeholders in braces are filled at deploy: `{DEMO_WORLD_URL}` is a
   public world that needs no sign-in; `{ADDON_URL}` is the add-on download.
 
+## Brand (founder, 2026-10-24, brand interview)
+
+Feel: plain, trustworthy, warm. Reference: Obsidian (product first, plain
+words, ownership as the point). Light, with a dark mode. Type: Bricolage
+Grotesque for headlines (character without noise), Source Sans 3 for
+body and interface, Inter as fallback. Neutrals with a slight warm bias
+(#fdfcfa / #f6f4ef, text #1f1d1a), not pure white and not cream. One
+accent, from the Five Squared mark: indigo #4f46e5 (hover #4338ca; dark
+mode #a5b4fc on text, buttons stay #4f46e5). Corners 8px; no pills. The
+WebVerse site shares the type and accent on its dark palette.
+
 ## Burning problems, three audiences (founder, 2026-10-24)
 
 "We are showing cool technology instead of showing how we solve burning
