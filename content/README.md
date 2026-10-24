@@ -62,6 +62,21 @@ Squared marks, the AWE press kit, the founder bio, the June 2026
 pamphlet). There is no square WorldOS icon; `icon-worldos.png` in this
 repo was a copy of the WorldKit icon and must not be used for WorldOS.
 
+## Placeholders (2026-10-24)
+
+The pages carry labelled placeholder slots (`src/components/Slot.jsx`,
+`[slot]` in these files) for every picture or recording only the founder
+can make, and `[ph]` spans for facts only he can supply (his name, photo,
+the year, the place). They exist so he can judge the shape before the
+assets exist. `npm run build` prints how many slots remain; a page with a
+slot on it is never deployed.
+
+Nav since 2026-10-24: Make a world · How it works · About, plus a Make a
+world button. "What we make" is gone (/products forwards to How it
+works, which lists the pieces by name); "Build on it" stays a page
+linked from How it works but is out of the nav until a spec, repo or
+protocol document is public (founder to confirm).
+
 ## Facts to confirm at deploy
 
 - `{DEMO_WORLD_URL}`: a world published without sign-in, that stays up,

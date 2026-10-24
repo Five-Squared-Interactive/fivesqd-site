@@ -38,6 +38,7 @@ if (!template.includes('<div id="root"></div>')) {
 
 const escapeAttr = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
+let slotCount = 0;
 function withMeta(html, { title, description, url }) {
   const t = escapeAttr(title);
   const d = escapeAttr(description);
@@ -69,6 +70,7 @@ for (const route of ROUTES) {
       throw new Error(`suspiciously small render (${appHtml.length} chars)`);
     }
     let html = withMeta(template, { ...route, url });
+    slotCount += (html.match(/data-slot/g) || []).length;
     html = html.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
     const out = outPathFor(route.path);
     mkdirSync(dirname(out), { recursive: true });
@@ -109,4 +111,5 @@ if (failures > 0) {
   console.error(`prerender: ${failures} route(s) failed — refusing to ship a partial site`);
   process.exit(1);
 }
-console.log(`prerender: OK — ${ROUTES.length} routes + ${Object.keys(REDIRECTS).length} redirects`);
+if (slotCount) console.log(`prerender: ${slotCount} placeholder slot(s) still on the pages — not for deploy`);
+  console.log(`prerender: OK — ${ROUTES.length} routes + ${Object.keys(REDIRECTS).length} redirects`);

@@ -17,16 +17,11 @@
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'A world is a web page. Press Save and Publish in Blender, get a link, and anyone walks in from a browser. Open format, open client, nothing to install.';
+  'Build a place. Send a link. Meet there. Publish a Blender scene as a 3D world anyone walks into together, from a phone or laptop. Nothing to install, and the world is yours: a web page.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [
   { path: '/', title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION },
-  {
-    path: '/products',
-    title: 'What we make — Five Squared Interactive',
-    description: 'The open stack (VEML, WebVerse, StraightFour, WorldSync, WorldOS, WorldKit, MyWorlds) and the one service, WorldHub, each as it is today.',
-  },
   {
     path: '/products/worldhub',
     title: 'WorldHub — Five Squared Interactive',
@@ -40,7 +35,7 @@ export const ROUTES = [
   {
     path: '/technology',
     title: 'How it works — Five Squared Interactive',
-    description: 'A world is a document at a URL: the VEML file and its models, the WebVerse client that opens it, WorldSync for being there together, WorldOS when a world needs a runtime.',
+    description: 'A world is files at a web address: the VEML file and its models, the WebVerse page that opens it, WorldSync for being there together, WorldOS for the few worlds with their own logic.',
   },
   {
     path: '/ecosystem',
@@ -83,7 +78,8 @@ export const REDIRECTS = {
   '/webwideworlds': '/technology',
   '/worldos': '/technology#worldos',
   '/worldsync': '/technology#worldsync',
-  '/products/worldkit': '/products#worldkit',
+  '/products': '/technology#stack',
+  '/products/worldkit': '/first-world',
   '/products/gitworlds': '/first-world',
 };
 

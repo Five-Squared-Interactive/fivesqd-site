@@ -1,152 +1,180 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Slot from '../components/Slot';
 import WorldDocument from '../components/WorldDocument';
-import WebPageAnalogy from '../components/WebPageAnalogy';
-import LinkFlow from '../components/LinkFlow';
 import DoorDiagram from '../components/DoorDiagram';
-import { DEMO_WORLD_URL, GITHUB_ORG, WORLD_HERO, WORLD_CARD, WORLD_HERO_ALT } from '../links';
+import { DEMO_WORLD_URL, WORLD_CARD, WORLD_HERO_ALT } from '../links';
 
-// A frame of a world that opens the world itself on a click, in a new tab.
-// Not an iframe: the client's host refuses to be framed from another
-// origin (X-Frame-Options: SAMEORIGIN), so an inline embed waits on that
-// header changing. Rendered only when a public demo world exists.
-const WalkIn = ({ url, poster, alt }) => (
-  <a className="walkin walkin-poster" style={{ backgroundImage: `url(${poster})` }} href={url} target="_blank" rel="noopener noreferrer" aria-label={`Walk into ${alt}, in a new tab`}>
-    <span>Walk in</span>
-  </a>
-);
-
-// The words are content/home.md; keep the two in step.
+// The words are content/home.md; keep the two in step. The order follows
+// the publicist review of 2026-10-24 (content/reviews/): show the thing,
+// then say what it is. Slots mark the pictures and recordings only the
+// founder can make.
 const Home = () => {
   return (
     <div style={{ paddingTop: '60px' }}>
-      <section className="section-hero-image hero-world" style={{ backgroundImage: `url(${WORLD_HERO})` }}>
-        <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
-          <h1 style={{ color: 'white' }}>A world is a web page.</h1>
-          <p className="hero-lead">
-            A document at an address you own, opened in a browser. Walk around in it with other
-            people, on a phone, a laptop or a headset. Nothing to install.
-          </p>
-          <div className="hero-actions">
-            {DEMO_WORLD_URL && (
-              <a href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
-                Walk into one
-              </a>
-            )}
-            <Link to="/first-world" className={`btn ${DEMO_WORLD_URL ? 'btn-secondary' : 'btn-primary'} btn-large`}>
-              Make your own from Blender
-            </Link>
-            {!DEMO_WORLD_URL && <a href="#document" className="hero-scroll">See what a world is made of</a>}
+      <section className="section hero-split">
+        <div className="container media-row">
+          <div className="media-text">
+            <h1>Build a place. Send a link. Meet there.</h1>
+            <p className="lead">
+              Publish a Blender scene as a 3D world anyone can walk into, together, from a phone or
+              laptop. Nothing to install. And because a world is a web page, it is yours: read it,
+              change it, link it to other worlds.
+            </p>
+            <div className="hero-actions-left">
+              <Link to="/first-world" className="btn btn-primary btn-large">Make a world from Blender</Link>
+              {DEMO_WORLD_URL
+                ? <a href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-large">Walk into one</a>
+                : <a href="#watch" className="btn btn-secondary btn-large">Watch it in 20 seconds</a>}
+            </div>
+            <p className="hero-note">Free and open source. Hosted for you on WorldHub, our service, or on any web host.</p>
           </div>
-          <p className="hero-caption">The Overlook, a world opened in the client.</p>
+          <div className="media-figure" id="watch">
+            <Slot
+              kind="video"
+              label="20 seconds, muted, looping: a Blender scene, Save and Publish, the link appears, a phone opens it, a second person walks in, both step through a door into another world."
+              poster={WORLD_CARD}
+            />
+          </div>
         </div>
       </section>
 
-      <section className="section section-light">
+      <section className="section section-light" id="steps">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>The same parts as the web</h2>
-            <p className="section-subtitle">Each part of a world is the part of a web page it stands in for.</p>
+            <h2>Three steps</h2>
+            <p className="section-subtitle">From a scene on your screen to a place your friends are standing in.</p>
           </div>
-          <WebPageAnalogy />
+          <div className="grid-3-steps">
+            <div className="step-tile">
+              <Slot label="The add-on panel in Blender, cropped at 2x, with Save and Publish visible." ratio="4 / 3" />
+              <h3><span className="step-n">1</span> Install the add-on</h3>
+              <p>Blender 4.5 or newer. Sign in once with a WorldHub ID.</p>
+            </div>
+            <div className="step-tile">
+              <Slot label="The link that appears after Save and Publish, as the add-on shows it." ratio="4 / 3" />
+              <h3><span className="step-n">2</span> Press Save and Publish</h3>
+              <p>Your scene becomes a world at its own web address and opens in your browser.</p>
+            </div>
+            <div className="step-tile">
+              <Slot label="The same world on a phone, held in a hand, with the two sticks showing." ratio="4 / 3" />
+              <h3><span className="step-n">3</span> Send the link</h3>
+              <p>People walk in from a phone or a laptop. Nothing to install.</p>
+            </div>
+          </div>
+          <div className="text-center" style={{ marginTop: '2rem' }}>
+            <Link to="/first-world" className="btn btn-primary">The step-by-step guide</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="together">
+        <div className="container media-row flip">
+          <div className="media-figure">
+            <Slot label="Two visitors in one world with their name labels, on a phone and a laptop side by side." />
+          </div>
+          <div className="media-text">
+            <h2>Walk in together</h2>
+            <p>
+              Whoever opens the link is there with you. You see each other move and you can talk.
+              On a phone, the left stick walks and the right one looks; on a laptop, the usual keys.
+            </p>
+            <p>
+              You choose who may enter when you publish: everyone with the link, or only the people
+              you name.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-light" id="doors">
+        <div className="container media-row">
+          <div className="media-text">
+            <h2>Worlds link to worlds</h2>
+            <p>
+              A door, a sign or a frame in your scene can open onto a friend's world, the way one web
+              page links to the next. In Blender, a door is a field on the object: the other world's
+              address.
+            </p>
+            <p>Each world stays at its own address. Nobody owns the map.</p>
+          </div>
+          <div className="media-figure">
+            <Slot label="Three seconds: walking through a door into a different world, with the address bar changing." kind="video" />
+            <div className="slot-standin">
+              <DoorDiagram />
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="section" id="document">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>A world, and a world's whole document</h2>
+            <h2>A world is a web page</h2>
             <p className="section-subtitle">
-              Every published world is a document like this one. It fits on a screen, and five parts do the work.
+              That is not a figure of speech. A world is a small text file and the models it names, at a web address, like any page.
             </p>
           </div>
           <div className="world-pair">
             <figure className="world-frame">
               {DEMO_WORLD_URL
-                ? <WalkIn url={DEMO_WORLD_URL} poster={WORLD_CARD} alt={WORLD_HERO_ALT} />
-                : <img src={WORLD_CARD} alt={WORLD_HERO_ALT} width="800" height="426" loading="lazy" />}
-              <figcaption>The Overlook, a world opened in a browser.</figcaption>
+                ? <a className="walkin walkin-poster" style={{ backgroundImage: `url(${WORLD_CARD})` }} href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" aria-label={`Walk into ${WORLD_HERO_ALT}, in a new tab`}><span>Walk in</span></a>
+                : <Slot label="The published demo world, the same one whose document is shown beside it." poster={WORLD_CARD} ratio="800 / 426" />}
+              <figcaption>A world, opened in a browser.</figcaption>
             </figure>
-            <WorldDocument caption="The document of another world, a living room, exactly as Blender published it: 923 bytes, plus the two files it names, one model and one sky image." />
+            <WorldDocument caption="Its whole document: 923 bytes, plus one model and one sky image. Add /index.veml to any published world's address and read yours." />
           </div>
-        </div>
-      </section>
-
-      <section className="section section-light">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>How a link works</h2>
-            <p className="section-subtitle">A scene becomes a folder. The folder gets an address. The address opens anywhere.</p>
+          <div className="analogy-mini">
+            <div><span>An HTML file</span><span aria-hidden="true">⇄</span><strong>A VEML file</strong></div>
+            <div><span>A link to another page</span><span aria-hidden="true">⇄</span><strong>A door to another world</strong></div>
+            <div><span>View source</span><span aria-hidden="true">⇄</span><strong>Add /index.veml</strong></div>
           </div>
-          <LinkFlow />
-          <div className="text-center mb-4" style={{ marginTop: '3rem' }}>
-            <h3>And worlds link to worlds</h3>
-            <p className="section-subtitle">Your room can open onto a friend's. Each stays at its own address.</p>
-          </div>
-          <DoorDiagram />
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>Make one</h2>
-          </div>
-          <div className="gradient-steps">
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">1</div>
-              <h3>Install</h3>
-              <p>Install the add-on in Blender 4.5 or newer and sign in once.</p>
-            </div>
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">2</div>
-              <h3>Publish</h3>
-              <p>In the Save as My World box, press Save and Publish. Your world opens in the browser.</p>
-            </div>
-            <div className="gradient-step">
-              <div className="gradient-step-icon" aria-hidden="true">3</div>
-              <h3>Share</h3>
-              <p>Send the link. People walk in on a phone or a laptop; nothing to install.</p>
-            </div>
-          </div>
-          <div className="text-center" style={{ marginTop: '2rem' }}>
-            <Link to="/first-world" className="btn btn-primary">The first-world guide</Link>
-          </div>
-          <p className="section-pair-note">
-            Worlds published this way are hosted by WorldHub; the world is a document, and you
-            choose who may enter.
+          <p className="text-center" style={{ marginTop: '1.25rem' }}>
+            <Link to="/technology">How it works, in full &rarr;</Link>
           </p>
         </div>
       </section>
 
-      <section className="section section-light">
+      <section className="section section-light" id="proof">
         <div className="container">
           <div className="grid grid-2">
             <div>
-              <h2>Who this is for</h2>
-              <p>
-                For anyone with a scene and someone to show it to: a room you modelled, a building, a
-                place that no longer exists, a toy. For a group that wants a room of its own on the
-                web. For developers who want an open 3D document format, an open client, and a sync
-                layer designed so the engine they already have can adopt it.
-              </p>
+              <h2>Live today</h2>
+              <ul className="live-list">
+                <li>Publish a world from Blender in one press</li>
+                <li>Hosted for you at its own address on WorldHub</li>
+                <li>People together in a world, on phones and laptops</li>
+                <li>Doors between worlds</li>
+                <li>Sign in with a WorldHub ID; choose who may enter</li>
+              </ul>
+              <h3 style={{ marginTop: '1.5rem' }}>Next</h3>
+              <ul className="live-list next">
+                <li>A public world to walk into from this page</li>
+                <li>Download your world's folder and host it anywhere</li>
+                <li>A directory of worlds people choose to list</li>
+                <li>The VEML 4.0 specification, published</li>
+              </ul>
             </div>
             <div>
               <h2>Open</h2>
               <p>
-                The format (VEML), the client (WebVerse), the engine under it (StraightFour), the sync
-                layer (WorldSync) and the runtime for worlds with their own logic (WorldOS) are
-                MIT-licensed. The public release of the current generation is being prepared; the
-                earlier generation is on GitHub. Hosting is a convenience we
-                offer; the design never requires it.
+                The format, the page that opens worlds (WebVerse) and everything under it are open
+                source under MIT. The earlier generation is on GitHub; the current one is being readied
+                for release. Hosting is a convenience we offer; the design never requires it.
               </p>
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <Link to="/technology" className="btn btn-secondary">How it works</Link>
-                <Link to="/ecosystem" className="btn btn-secondary">Build on it</Link>
-                <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Earlier generation on GitHub</a>
-              </div>
+              <p className="founder-line">
+                Built by Five Squared Interactive, an independent studio, since <span className="ph">[year]</span>.
+                Founder: <span className="ph">[name, one line]</span>. <Link to="/about">About us &rarr;</Link>
+              </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="section cta-band">
+        <div className="container text-center">
+          <h2>Your scene, as a place people walk into.</h2>
+          <Link to="/first-world" className="btn btn-primary btn-large">Make a world from Blender</Link>
         </div>
       </section>
     </div>

@@ -23,7 +23,7 @@ caching.
 
 *(Beside this: the living room's whole document, as text.)*
 
-## At your own address
+## For developers: a world at your own address
 
 Because a world is files, it can live anywhere a web page can: your own
 domain, GitHub Pages, a bucket. Put the folder there and open it with the
@@ -78,6 +78,17 @@ URL.
 Blender add-on, which exports a scene as a world and publishes it in one
 press. The export is one way: Blender stays the editor of the scene, the
 world is what it exports.
+
+## The pieces, by name
+
+Open source under MIT. The earlier generation is on GitHub; the current
+one is being readied for release. *(Six tiles with the marks:)*
+VEML, the format: the file that says what is in a world and where ·
+WebVerse, the page that opens a world; what every published link opens ·
+StraightFour, the engine under that page: rendering, physics, the script
+sandbox · WorldSync, being there together: the visitors' pages exchange
+what moved · WorldOS, for the few worlds with their own logic · WorldKit,
+the authoring tools; today the Blender add-on.
 
 ## What this adds up to
 

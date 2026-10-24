@@ -1,4 +1,5 @@
 import React from 'react';
+import Slot from '../components/Slot';
 import { ADDON_ZIP } from '../links';
 
 // The first-world guide: from a Blender scene to a link anyone can walk into.
@@ -23,10 +24,10 @@ const kbd = {
 };
 const K = ({ children }) => <kbd style={kbd}>{children}</kbd>;
 
-const Step = ({ title, shot, children }) => (
+const Step = ({ title, shot, shotLabel, children }) => (
   <div className="card step-card" style={{ marginBottom: '1.5rem', textAlign: 'left' }}>
     <h2 style={{ marginTop: 0, fontSize: '1.5rem' }}>{title}</h2>
-    {shot && <img className="step-shot" src={shot.src} alt={shot.alt} loading="lazy" />}
+    {shot ? <img className="step-shot" src={shot.src} alt={shot.alt} loading="lazy" /> : shotLabel ? <Slot label={shotLabel} className="step-slot" /> : null}
     {children}
   </div>
 );
@@ -57,7 +58,7 @@ const FirstWorld = () => {
             </ul>
           </Step>
 
-          <Step title="2. Install the add-on">
+          <Step title="2. Install the add-on" shotLabel="Blender's Add-ons list with the VEML add-on ticked.">
             <ol style={listStyle}>
               <li>In Blender: <strong>Edit → Preferences → Add-ons</strong>.</li>
               <li>
@@ -69,7 +70,7 @@ const FirstWorld = () => {
             <p>Already had an older version? Remove it first, then install this one.</p>
           </Step>
 
-          <Step title="3. Sign in once">
+          <Step title="3. Sign in once" shotLabel="The add-on's Sign In button, and the browser tab it opens.">
             <p>
               In the add-on's preferences, press <strong>Sign In</strong>. Your browser opens WorldHub; sign in with
               Google, GitHub, or a link we email you, and Blender picks it up on its own. You stay signed in; there is
@@ -77,7 +78,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="4. Publish">
+          <Step title="4. Publish" shotLabel="The Save as My World box with Save and Publish, cropped at 2x.">
             <p>
               Save your .blend file, then open the <strong>Scene</strong> tab of the Properties editor and find the{' '}
               <strong>VEML World</strong> panel. In its <strong>Save as My World</strong> box, press{' '}
@@ -91,7 +92,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="5. Who may enter">
+          <Step title="5. Who may enter" shotLabel="The Everyone / Only People I Allow choice with a viewers list.">
             <p>
               In the same box, <strong>Everyone</strong> lets anyone with the link in. <strong>Only People I Allow</strong>{' '}
               asks visitors to sign in and admits the people on your list. Visitors who are signed in appear under
@@ -99,7 +100,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="6. Share">
+          <Step title="6. Share" shotLabel="The world open in a browser tab, address bar visible.">
             <p>
               The address your world opened at is the one to share, for example{' '}
               <code>https://worlds.worldhub.me/w/…</code>. Anyone can open it in a browser; nothing to install. Press
@@ -107,7 +108,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="Walking around">
+          <Step title="Walking around" shotLabel="The world on a phone, held in a hand, both sticks showing.">
             <ul style={listStyle}>
               <li>Click in the world to look around with the mouse; <K>Esc</K> gives the mouse back.</li>
               <li>

@@ -6,7 +6,6 @@ import PageTransition from './components/PageTransition';
 import Home from './pages/Home';
 import './App.css';
 
-const Products = lazy(() => import('./pages/Products'));
 const WorldHub = lazy(() => import('./pages/WorldHub'));
 const FirstWorld = lazy(() => import('./pages/FirstWorld'));
 const Technology = lazy(() => import('./pages/Technology'));
@@ -30,7 +29,7 @@ export function AppShell() {
             <PageTransition>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/products" element={<Products />} />
+                <Route path="/products" element={<Navigate to="/technology#stack" replace />} />
                 <Route path="/products/worldhub" element={<WorldHub />} />
                 <Route path="/first-world" element={<FirstWorld />} />
                 <Route path="/technology" element={<Technology />} />
@@ -44,7 +43,7 @@ export function AppShell() {
                 <Route path="/webwideworlds" element={<Navigate to="/technology" replace />} />
                 <Route path="/worldos" element={<Navigate to="/technology#worldos" replace />} />
                 <Route path="/worldsync" element={<Navigate to="/technology#worldsync" replace />} />
-                <Route path="/products/worldkit" element={<Navigate to="/products#worldkit" replace />} />
+                <Route path="/products/worldkit" element={<Navigate to="/first-world" replace />} />
                 <Route path="/products/gitworlds" element={<Navigate to="/first-world" replace />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>

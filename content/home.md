@@ -1,84 +1,99 @@
 # Home
 
-## Hero (over a frame of a real world; today The Overlook, a world opened in the client)
+Order per the publicist review of 2026-10-24 (`reviews/`): show the thing,
+then say what it is. `[slot]` marks a picture or recording only the
+founder can make; the page shows a labelled placeholder there until it
+exists. `[ph]` marks a fact he must supply.
 
-**A world is a web page.**
+## Hero (text left, recording right)
 
-A document at an address you own, opened in a browser. Walk around in it
-with other people, on a phone, a laptop or a headset. Nothing to install.
+**Build a place. Send a link. Meet there.**
 
-[Walk into one]({DEMO_WORLD_URL}) · [Make your own from Blender](/first-world)
-· (until a demo world exists: "See what a world is made of", a link down
-the page)
+Publish a Blender scene as a 3D world anyone can walk into, together,
+from a phone or laptop. Nothing to install. And because a world is a web
+page, it is yours: read it, change it, link it to other worlds.
 
-## The same parts as the web
+[Make a world from Blender](/first-world) · [Watch it in 20 seconds](#watch)
+(becomes [Walk into one]({DEMO_WORLD_URL}) once a public world exists)
 
-Each part of a world is the part of a web page it stands in for. *(A
-table:)*
+Free and open source. Hosted for you on WorldHub, our service, or on any
+web host.
 
-| A web page | A world | |
-|---|---|---|
-| An HTML file | A VEML file | says what is there and where |
-| A browser | A browser, running WebVerse (itself a page) | opens it from its address |
-| A web server | The same web server | serves the files, nothing added |
-| A link to another page | A door to another world | joins one address to the next |
-| View source | Add /index.veml to the address | the whole thing, as text |
+[slot: 20 seconds, muted, looping: a Blender scene, Save and Publish, the
+link appears, a phone opens it, a second person walks in, both step
+through a door into another world.]
 
-## A world, and a world's whole document
+## Three steps
 
-Every published world is a document like this one. It fits on a screen,
-and five parts do the work. *(Left: The Overlook, a world opened in a
-browser; once a public demo world exists, a frame that opens the world
-in a new tab on a click (the client's host refuses to be framed). Right: the document of another world, a living room,
-exactly as Blender published it, 923 bytes, with five numbered marks in the
-gutter that light up with their legend entry:)* 1 its name · 2 the backdrop
-colour · 3 where you start, and which way you face · 4 the sky that lights
-it, and how bright · 5 the model, a standard glTF file. Plus the two files
-it names, one model and one sky image.
+From a scene on your screen to a place your friends are standing in.
 
-The two are different worlds, and the captions say so, until a textured
-scene published from Blender can stand beside its own document.
+1. **Install the add-on.** Blender 4.5 or newer. Sign in once with a
+   WorldHub ID. [slot: the add-on panel, cropped at 2x]
+2. **Press Save and Publish.** Your scene becomes a world at its own web
+   address and opens in your browser. [slot: the link the add-on shows]
+3. **Send the link.** People walk in from a phone or a laptop. Nothing to
+   install. [slot: the world on a phone, in a hand, both sticks showing]
 
-## How a link works
+[The step-by-step guide](/first-world)
 
-A scene becomes a folder. The folder gets an address. The address opens
-anywhere. *(A four-box diagram: a scene (Blender, today; Save and Publish)
-→ a folder (index.veml, assets/model.glb; plain files) → an address
-(worlds.worldhub.me/w/…; hosted for you, today) → a browser, any device.
-Underneath: "No account and no install to visit. The files are served like
-any page, and any host can serve them.")*
+## Walk in together (picture left, text right)
 
-### And worlds link to worlds
+[slot: two visitors in one world with their name labels, phone and laptop
+side by side]
 
-Your room can open onto a friend's. Each stays at its own address. *(Two
-worlds drawn at two addresses, https://your.site/room/ and
-https://a-friend.example/garden/, a door in the first only, a one-way arrow
-labelled "the door holds the other address". Underneath: "In Blender, a
-door is a field on the object. They link back only if they add a door of
-their own.")*
+Whoever opens the link is there with you. You see each other move and you
+can talk. On a phone, the left stick walks and the right one looks; on a
+laptop, the usual keys.
 
-## Make one
+You choose who may enter when you publish: everyone with the link, or
+only the people you name.
 
-1. Install the add-on in Blender 4.5 or newer and sign in once.
-2. In the Save as My World box, press **Save and Publish**.
-3. Send the link.
+## Worlds link to worlds (text left, clip right)
 
-[The first-world guide](/first-world). Worlds published this way are
-hosted by WorldHub; the world is a document, and you choose who may enter.
+A door, a sign or a frame in your scene can open onto a friend's world,
+the way one web page links to the next. In Blender, a door is a field on
+the object: the other world's address.
 
-## Who this is for
+Each world stays at its own address. Nobody owns the map.
 
-For anyone with a scene and someone to show it to: a room you modelled, a
-building, a place that no longer exists, a toy. For a group that wants a
-room of its own on the web. For developers who want an open 3D document
-format, an open client, and a sync layer designed so the engine they
-already have can adopt it.
+[slot: three seconds, walking through a door into a different world, the
+address bar changing. Until then the door diagram stands in.]
+
+## A world is a web page
+
+That is not a figure of speech. A world is a small text file and the
+models it names, at a web address, like any page.
+
+*(Left: the published demo world [slot until it exists]. Right: its whole
+document with five numbered marks that light up with the legend.)*
+Caption: Its whole document: 923 bytes, plus one model and one sky image.
+Add /index.veml to any published world's address and read yours.
+
+| An HTML file ⇄ A VEML file | A link to another page ⇄ A door to another world | View source ⇄ Add /index.veml |
+
+[How it works, in full](/technology)
+
+## Live today · Next
+
+Live today: publish a world from Blender in one press · hosted for you at
+its own address on WorldHub · people together in a world, on phones and
+laptops · doors between worlds · sign in with a WorldHub ID; choose who
+may enter.
+
+Next: a public world to walk into from this page · download your world's
+folder and host it anywhere · a directory of worlds people choose to list
+· the VEML 4.0 specification, published.
 
 ## Open
 
-The format (VEML), the client (WebVerse), the engine under it
-(StraightFour), the sync layer (WorldSync) and the runtime for worlds with
-their own logic (WorldOS) are MIT-licensed. The public release of the
-current generation is being prepared; the earlier generation is on GitHub.
-Hosting is a convenience we offer; the design never requires it.
-[How it works](/technology) · [Build on it](/ecosystem)
+The format, the page that opens worlds (WebVerse) and everything under it
+are open source under MIT. The earlier generation is on GitHub; the
+current one is being readied for release. Hosting is a convenience we
+offer; the design never requires it.
+
+Built by Five Squared Interactive, an independent studio, since [ph: year].
+Founder: [ph: name, one line]. [About us](/about)
+
+## Closing
+
+**Your scene, as a place people walk into.** [Make a world from Blender](/first-world)

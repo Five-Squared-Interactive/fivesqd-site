@@ -1,17 +1,13 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 
-const PRODUCTS_MENU = [
-  { icon: '/images/icon-webverse.png', name: 'WebVerse', desc: 'The client', to: '/products#webverse' },
-  { icon: '/images/icon-worldhub.png', name: 'WorldHub', desc: 'Hosting, sign-in, a directory', to: '/products/worldhub' },
-  { icon: '/images/icon-worldkit.png', name: 'WorldKit', desc: 'The Blender add-on', to: '/products#worldkit' },
-];
-
 const TECH_MENU = [
-  { name: 'How it works', desc: 'A world is a document at a URL', to: '/technology' },
-  { name: 'VEML', desc: 'The format', to: '/technology#veml' },
-  { name: 'WorldSync', desc: 'Being there together', to: '/technology#worldsync' },
-  { name: 'WorldOS', desc: 'The runtime', to: '/technology#worldos' },
+  { name: 'How it works', desc: 'A world is files at a web address', to: '/technology' },
+  { icon: '/images/icon-webverse.png', name: 'WebVerse', desc: 'The page that opens a world', to: '/technology#client' },
+  { icon: '/images/icon-worldhub.png', name: 'WorldHub', desc: 'Hosting and sign-in, our service', to: '/products/worldhub' },
+  { icon: '/images/icon-worldkit.png', name: 'The Blender add-on', desc: 'Publish a scene in one press', to: '/first-world' },
+  { name: 'The pieces, by name', desc: 'VEML, StraightFour, WorldSync, WorldOS', to: '/technology#stack' },
+  { name: 'For developers', desc: 'Your own address; build on it', to: '/technology#own-address' },
   { name: 'White paper', desc: 'The long form (2025)', href: '/docs/www_whitepaper_v1.1.pdf', external: true },
 ];
 
@@ -97,39 +93,11 @@ const Navbar = () => {
               height="36"
               style={{ display: 'block', borderRadius: '8px' }}
             />
+            <span className="navbar-brand-name">Five Squared Interactive</span>
           </Link>
 
           <ul id="navbar-menu" className={`navbar-nav ${isMenuOpen ? 'active' : ''}`}>
-            <li
-              className="navbar-dropdown-wrapper"
-              onMouseEnter={() => handleEnter('products')}
-              onMouseLeave={handleLeave}
-            >
-              <div className="navbar-link-row">
-                <Link to="/products" onClick={closeAll}>What we make</Link>
-                <button
-                  className="dropdown-chevron"
-                  onClick={() => setOpenDropdown(openDropdown === 'products' ? null : 'products')}
-                  aria-label="Expand What we make menu"
-                  aria-expanded={openDropdown === 'products'}
-                  aria-haspopup="true"
-                >
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6l4 4 4-4" />
-                  </svg>
-                </button>
-              </div>
-              <div className={`navbar-dropdown ${openDropdown === 'products' ? 'open' : ''}`} role="menu">
-                <div className="dropdown-grid">
-                  {PRODUCTS_MENU.map((item) => (
-                    <DropdownItem key={item.name} item={item} onClose={closeAll} />
-                  ))}
-                </div>
-                <div className="dropdown-footer">
-                  <Link to="/products" onClick={closeAll}>Everything we make &rarr;</Link>
-                </div>
-              </div>
-            </li>
+            <li><Link to="/first-world" onClick={closeAll}>Make a world</Link></li>
             <li
               className="navbar-dropdown-wrapper"
               onMouseEnter={() => handleEnter('technology')}
@@ -150,7 +118,7 @@ const Navbar = () => {
                 </button>
               </div>
               <div className={`navbar-dropdown ${openDropdown === 'technology' ? 'open' : ''}`} role="menu">
-                <div className="dropdown-grid dropdown-grid-narrow">
+                <div className="dropdown-grid">
                   {TECH_MENU.map((item) => (
                     <DropdownItem key={item.name} item={item} onClose={closeAll} />
                   ))}
@@ -162,9 +130,8 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li><Link to="/first-world" onClick={closeAll}>Your first world</Link></li>
-            <li><Link to="/ecosystem" onClick={closeAll}>Build on it</Link></li>
             <li><Link to="/about" onClick={closeAll}>About</Link></li>
+            <li className="nav-cta"><Link to="/first-world" className="btn btn-primary btn-nav" onClick={closeAll}>Make a world</Link></li>
           </ul>
 
           <button

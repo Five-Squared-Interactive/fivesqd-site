@@ -22,19 +22,19 @@ const Footer = React.memo(() => {
               style={{ width: '48px', height: '48px', borderRadius: '10px', marginBottom: '1rem' }}
             />
             <h3>Five Squared Interactive</h3>
-            <p>A world is a web page. We build the open pieces that make it one, and WorldHub to host what you publish.</p>
+            <p>Build a place. Send a link. Meet there. We make the open pieces that turn a 3D scene into a web page people walk into, and WorldHub to host what you publish.</p>
           </div>
 
           <div className="footer-section">
             <h3>Explore</h3>
             <div className="footer-columns">
               <div className="footer-column">
-                <Link to="/first-world">Your first world</Link>
-                <Link to="/products">What we make</Link>
-                <Link to="/products/worldhub">WorldHub</Link>
+                <Link to="/first-world">Make a world</Link>
                 <Link to="/technology">How it works</Link>
+                <Link to="/products/worldhub">WorldHub</Link>
                 <Link to="/ecosystem">Build on it</Link>
                 <Link to="/about">About</Link>
+                <Link to="/about#press">Press</Link>
               </div>
               <div className="footer-column">
                 <a href="https://webverse.fivesqd.com" target="_blank" rel="noopener noreferrer">WebVerse</a>

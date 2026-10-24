@@ -1,3 +1,7 @@
+> 2026-10-24: this page no longer exists on the site. /products forwards
+> to /technology#stack, which lists the pieces by name with one line each
+> (see how-it-works.md). Kept for the words.
+
 # What we make
 
 Open pieces that fit together, and one service. Each is listed with what
