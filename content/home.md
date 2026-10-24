@@ -10,11 +10,11 @@ or recording only the founder can make; `[ph]` a fact he must supply.
 
 ## Hero (text left, recording right)
 
-**A place you can walk into, from a link.**
+**Let people stand in what you made.**
 
-Open it on your phone or laptop and you are standing inside, together
-with whoever else is there. No app. And it belongs to whoever made it:
-plain files at a web address, like any page.
+Send a link. Your friend opens it on their phone and is inside the room
+you built, with you. No app, nothing to install. And the place stays
+yours: plain files at a web address, like any page.
 
 [Watch it, 20 seconds](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
 once a public world exists) · [Make one from Blender](/first-world)
@@ -26,27 +26,29 @@ link and is standing in a place; a second person walks in; they step
 through a door into another place; then, briefly, the Blender scene it
 came from and the Publish press.]
 
-## It's a link. (text left, picture right)
+## Send it like any link. (text left, picture right)
 
-No app. No account. No download. Anyone you send it to walks in, on a
-phone, a laptop or a headset, the moment they tap it.
+Drop it in the group chat, a message, an email. Whoever taps it is
+inside, on a phone, a laptop or a headset. No app, no account, no
+download, so the moment is not lost to "install this first".
 
 [slot: a phone in a hand: a message thread with the link, and the world
 open under it]
 
-## You're there together. (picture left, text right)
+## Be there with them. (picture left, text right)
 
-Whoever opens the link is in the room with you. Show them around. Talk.
-Point at things. You choose who may come in.
+A picture of a room is not the room. When someone opens your link, they
+feel the scale and the light, and you are standing next to them to show
+them around. You choose who may come in.
 
 [slot: two visitors in one world with their name labels, phone and laptop
 side by side]
 
-## It's yours. (text left, clip right)
+## Nobody owns it but you. (text left, clip right)
 
-A world is a web page: a few files at an address. Host it anywhere.
-Change it with a text editor. Put a door in it that opens onto a friend's
-world.
+No platform holds your work. A place you made is a web page: a few files
+at an address. Host it anywhere, change it with a text editor, and put a
+door in it that opens onto a friend's place.
 
 [slot: three seconds, walking through a door into a different world, the
 address bar changing. Until then the door diagram stands in.]

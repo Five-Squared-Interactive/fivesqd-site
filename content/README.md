@@ -43,6 +43,16 @@ nothing in `drafts/` is routed or prerendered.
 - Placeholders in braces are filled at deploy: `{DEMO_WORLD_URL}` is a
   public world that needs no sign-in; `{ADDON_URL}` is the add-on download.
 
+## Meet people where they are (founder, 2026-10-24)
+
+"We need to meet people where they are at rather than making them care
+about things they don't." Nobody wants a link, a format or a world; they
+want to show someone the place they made and have them feel it, or to be
+somewhere with a friend. Every headline names that motive; the mechanism
+(a link, no app, plain files) is the reason it works and comes second.
+A line that sells the mechanism ("a world is a web page", "a place you
+can walk into, from a link") is a draft, not a headline.
+
 ## Audience (founder, 2026-10-24)
 
 Agreed order, after the founder found the drafts "very difficult to

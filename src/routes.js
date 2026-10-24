@@ -17,7 +17,7 @@
 
 const DEFAULT_TITLE = 'Five Squared Interactive';
 const DEFAULT_DESCRIPTION =
-  'A place you can walk into, from a link. Open it on your phone or laptop and you are standing inside, together with whoever else is there. No app. It belongs to whoever made it: plain files at a web address. Today, a Blender scene becomes one in one press.';
+  'Let people stand in what you made. Send a link; your friend opens it on their phone and is inside the room you built, with you. No app, nothing to install. The place stays yours: plain files at a web address.';
 
 /** Content routes: prerendered to `<path>/index.html` with this metadata. */
 export const ROUTES = [
