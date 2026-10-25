@@ -13,8 +13,8 @@ supply.
 
 Make a place, send the link, and people walk around in it with you.
 
-[See it in action](#watch) (becomes [Walk into one now]({DEMO_WORLD_URL})
-once a public world exists) · [Make one](/first-world)
+[Walk into one now]({DEMO_WORLD_URL}: the loft, published 2026-10-25) ·
+[Make one](/first-world)
 
 Free and open source.
 
@@ -50,7 +50,7 @@ Three cards, each a picture slot, the thing in one line, how in one line,
 
 Here is everything in a published place: one small text file, one model,
 one sky. The format is open and the files are plain, so reading a world
-never depends on us. *(The Overlook [slot] beside a different world's
+never depends on us. *(The loft, walkable, beside a different world's
 document with the five marks; the captions say so.)*
 [How it works](/technology)
 

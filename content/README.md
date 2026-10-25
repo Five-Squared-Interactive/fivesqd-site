@@ -144,15 +144,14 @@ protocol document is public (founder to confirm).
   holds the open code that exists. We say "open source under MIT, on
   GitHub" and no more.)
 - The e-mail is `info@fivesquaredinteractive.com`, the one the live site uses.
-- Imagery: the hero and the WebVerse card are The Overlook, a world opened
-  in the client (`public/images/world-overlook-*.webp`, shot 2026-10-20).
-  The living room, the Blender demo scene, renders magenta in the corpus
-  copy (missing textures) and cannot be shown until a textured scene is
-  published. So the "world and document" pair on Home and How it works
-  shows The Overlook beside the LIVING ROOM's document, and the captions
-  say they are two worlds. The single most valuable deploy task is one
-  textured scene published from Blender, with a door in it: it becomes the
-  hero, the pair (its own document, link line included) and the demo link.
+- Imagery: the hero and the WebVerse card are the loft, a textured scene
+  the founder published from Blender with Save and Publish on 2026-10-25
+  (`public/images/world-loft-*.webp`, shot headless the same day), and
+  `DEMO_WORLD_URL` is its address, so "Walk into one now" and "Walk in"
+  open it. The "world and document" pair on Home still shows the loft
+  beside the LIVING ROOM's document, and the captions say they are two
+  worlds; showing the loft's own document (787 bytes, one model, one sky)
+  is the next step. A door in the demo world is still wanted.
 - The client's host answers `X-Frame-Options: SAMEORIGIN`, so a world
   cannot be embedded in this site; the Walk-in frame opens the client in a
   new tab. An inline embed needs the publish service to send
