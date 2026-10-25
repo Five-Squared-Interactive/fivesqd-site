@@ -1,20 +1,14 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 
-const PRODUCTS_MENU = [
-  { icon: '/images/icon-webverse.png', name: 'WebVerse', desc: 'The world browser', href: 'https://webverse.fivesqd.com', external: true },
-  { icon: '/images/icon-worldhub.png', name: 'WorldHub', desc: 'Build your own worlds', href: 'https://worldhub.me', external: true },
-  { icon: '/images/icon-worldos.png', name: 'WorldOS', desc: 'Server framework', to: '/products/worldkit#worldos' },
-  { icon: '/images/icon-worldkit.png', name: 'WorldKit', desc: 'Developer tooling', to: '/products/worldkit' },
-  { icon: '/images/icon-gitworlds.png', name: 'Git Worlds', desc: 'Forkable starter worlds', to: '/products/gitworlds' },
-];
-
 const TECH_MENU = [
-  { name: 'How It Works', desc: 'Architecture and the complexity gradient', to: '/technology' },
-  { name: 'VEML', desc: 'World markup language', to: '/technology#veml' },
-  { name: 'WorldSync', desc: 'Real-time multiplayer sync', to: '/products/worldkit#worldsync' },
-  { name: 'WorldOS', desc: 'Server-side plugin framework', to: '/products/worldkit#worldos' },
-  { name: 'White Paper', desc: 'Web Wide Worlds vision document', href: '/docs/www_whitepaper_v1.1.pdf', external: true },
+  { name: 'How it works', desc: 'A world is files at a web address', to: '/technology' },
+  { icon: '/images/icon-webverse.png', name: 'WebVerse', desc: 'The page that opens a world', to: '/technology#client' },
+  { icon: '/images/icon-worldhub.png', name: 'WorldHub', desc: 'Hosting and sign-in, our service', to: '/products/worldhub' },
+  { icon: '/images/icon-worldkit.png', name: 'The Blender add-on', desc: 'Publish a scene in one press', to: '/first-world' },
+  { name: 'The pieces, by name', desc: 'VEML, StraightFour, WorldSync, WorldOS', to: '/technology#stack' },
+  { name: 'For developers', desc: 'Your own address; build on it', to: '/technology#own-address' },
+  { name: 'White paper', desc: 'The long form (2025)', href: '/docs/www_whitepaper_v1.1.pdf', external: true },
 ];
 
 const DropdownItem = ({ item, onClose }) => {
@@ -99,50 +93,24 @@ const Navbar = () => {
               height="36"
               style={{ display: 'block', borderRadius: '8px' }}
             />
+            <span className="navbar-brand-name">Five Squared Interactive</span>
           </Link>
 
           <ul id="navbar-menu" className={`navbar-nav ${isMenuOpen ? 'active' : ''}`}>
-            <li
-              className="navbar-dropdown-wrapper"
-              onMouseEnter={() => handleEnter('products')}
-              onMouseLeave={handleLeave}
-            >
-              <div className="navbar-link-row">
-                <Link to="/products" onClick={closeAll}>Products</Link>
-                <button
-                  className="dropdown-chevron"
-                  onClick={() => setOpenDropdown(openDropdown === 'products' ? null : 'products')}
-                  aria-label="Expand Products menu"
-                  aria-expanded={openDropdown === 'products'}
-                  aria-haspopup="true"
-                >
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6l4 4 4-4" />
-                  </svg>
-                </button>
-              </div>
-              <div className={`navbar-dropdown ${openDropdown === 'products' ? 'open' : ''}`} role="menu">
-                <div className="dropdown-grid">
-                  {PRODUCTS_MENU.map((item) => (
-                    <DropdownItem key={item.name} item={item} onClose={closeAll} />
-                  ))}
-                </div>
-                <div className="dropdown-footer">
-                  <Link to="/products" onClick={closeAll}>View all products &rarr;</Link>
-                </div>
-              </div>
-            </li>
+            <li><Link to="/architects" onClick={closeAll}>Architects</Link></li>
+            <li><Link to="/first-world" onClick={closeAll}>Blender artists</Link></li>
+            <li><Link to="/builders" onClick={closeAll}>World builders</Link></li>
             <li
               className="navbar-dropdown-wrapper"
               onMouseEnter={() => handleEnter('technology')}
               onMouseLeave={handleLeave}
             >
               <div className="navbar-link-row">
-                <Link to="/technology" onClick={closeAll}>Technology</Link>
+                <Link to="/technology" onClick={closeAll}>How it works</Link>
                 <button
                   className="dropdown-chevron"
                   onClick={() => setOpenDropdown(openDropdown === 'technology' ? null : 'technology')}
-                  aria-label="Expand Technology menu"
+                  aria-label="Expand How it works menu"
                   aria-expanded={openDropdown === 'technology'}
                   aria-haspopup="true"
                 >
@@ -152,20 +120,20 @@ const Navbar = () => {
                 </button>
               </div>
               <div className={`navbar-dropdown ${openDropdown === 'technology' ? 'open' : ''}`} role="menu">
-                <div className="dropdown-grid dropdown-grid-narrow">
+                <div className="dropdown-grid">
                   {TECH_MENU.map((item) => (
                     <DropdownItem key={item.name} item={item} onClose={closeAll} />
                   ))}
                 </div>
                 <div className="dropdown-footer">
                   <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer" onClick={closeAll}>
-                    View all repos on GitHub &rarr;
+                    GitHub &rarr;
                   </a>
                 </div>
               </div>
             </li>
-            <li><Link to="/ecosystem" onClick={closeAll}>Ecosystem</Link></li>
             <li><Link to="/about" onClick={closeAll}>About</Link></li>
+            <li className="nav-cta"><Link to="/first-world" className="btn btn-primary btn-nav" onClick={closeAll}>Start in Blender</Link></li>
           </ul>
 
           <button
