@@ -131,9 +131,17 @@ protocol document is public (founder to confirm).
   the way: live since 2026-10-25 (a visitor asking the rendezvous for a
   room is handed Cloudflare TURN credentials; checked from outside).
 - The add-on's panel: the box is **Save as My World**, the button in it is
-  **Save and Publish**, and the box offers **Everyone** or **Only People I
-  Allow** with a viewers list (checked in the shipped zip's
-  `veml_scene_panel.py`). The copy says exactly that.
+  **Save and Publish**, and the box has one tick, **Only People I Allow**,
+  off by default; ticking it shows an **Allowed Viewers** field for email
+  addresses. There is no "Everyone" control (checked 2026-11-11 in the
+  shipped zip's `veml_scene_panel.py` and `veml_scene_properties.py`, and
+  on the monorepo's main). The copy says exactly that.
+- Signed-in visitors appear under their own names: the publish service's
+  world page looks a verified visitor's display name up once at sign-in
+  and hands it to the page as `visitor-name`
+  (`services/worldhub-publish/src/server.ts`, `VisitorNameLookup`). The
+  client alone shows no trace of this, so check the service before cutting
+  the claim.
 - Phone controls are two sticks (left moves, right looks), not a drag; the
   client's own hint is the source.
 - The published world's page has a "What is this?" box with three links,

@@ -143,7 +143,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="5. Who may enter" shotLabel="The Everyone / Only People I Allow choice with a viewers list.">
+          <Step title="5. Who may enter" shotLabel="The Only People I Allow tick, with the Allowed Viewers field it reveals.">
             <p>
               Leave <strong>Only People I Allow</strong> unticked and anyone with the link gets in. Tick it, and
               visitors are asked to sign in; the people on your <strong>Allowed Viewers</strong> list get in, nobody
