@@ -6,7 +6,6 @@ pictures only the founder can make.
 
 ## Hero
 
-Kicker: World builders.
 **Years of building, gone when someone else changes the rules.**
 Platforms change the rules, ban accounts, shut down, and years of
 building go with them. Making your own meant a game engine and a server

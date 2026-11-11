@@ -12,7 +12,6 @@ const Architects = () => (
     <section className="section hero-split">
       <div className="container media-row">
         <div className="media-text">
-          <p className="kicker">Architects, designers, real estate</p>
           <h1>Clients can’t read plans.</h1>
           <p className="lead">
             They find out what they approved once it’s built. Send a private link instead. They

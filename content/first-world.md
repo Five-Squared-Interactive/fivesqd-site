@@ -5,7 +5,6 @@ the full guide below.
 
 ## Hero (text left, recording right)
 
-Kicker: Blender artists.
 **A render flattens the room you built.**
 
 Send the room instead. Press Save and Publish in Blender and your scene

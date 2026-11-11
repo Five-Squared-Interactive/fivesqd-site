@@ -5,7 +5,6 @@ today. `[slot]` marks pictures only the founder can make.
 
 ## Hero
 
-Kicker: Architects, designers, real estate.
 **Clients cannot read plans. They find out what they approved after it is
 built.**
 Send them a private link instead. They walk the kitchen on their phone

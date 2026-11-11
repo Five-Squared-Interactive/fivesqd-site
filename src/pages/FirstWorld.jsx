@@ -38,7 +38,6 @@ const FirstWorld = () => {
       <section className="section hero-split">
         <div className="container media-row">
           <div className="media-text">
-            <p className="kicker">Blender artists</p>
             <h1>A render flattens what you built.</h1>
             <p className="lead">
               Send the place instead. Press Save and Publish in Blender and your scene becomes a

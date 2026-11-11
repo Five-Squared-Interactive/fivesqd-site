@@ -12,7 +12,6 @@ const Builders = () => (
     <section className="section hero-split">
       <div className="container media-row">
         <div className="media-text">
-          <p className="kicker">World builders</p>
           <h1>Years of building, gone when someone else changes the rules.</h1>
           <p className="lead">
             Making your own world used to mean a game engine and a server to keep running. Here a
