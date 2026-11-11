@@ -73,35 +73,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section" id="steps">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>From a Blender scene to a link</h2>
-          </div>
-          <div className="grid-3-steps">
-            <div className="step-tile">
-              <Slot label="The add-on panel in Blender, cropped at 2x, with Save and Publish visible." ratio="4 / 3" />
-              <h3><span className="step-n">1</span> Install the add-on</h3>
-              <p>Blender 4.5 or newer. Sign in once with Google, GitHub or an emailed link.</p>
-            </div>
-            <div className="step-tile">
-              <Slot label="The link that appears after Save and Publish, as the add-on shows it." ratio="4 / 3" />
-              <h3><span className="step-n">2</span> Press Save and Publish</h3>
-              <p>Your scene becomes a world at its own web address and opens in your browser.</p>
-            </div>
-            <div className="step-tile">
-              <Slot label="The same world on a phone, held in a hand, with the two sticks showing." ratio="4 / 3" />
-              <h3><span className="step-n">3</span> Send the link</h3>
-              <p>Paste it in a message. Whoever taps it walks in. Let in everyone, or only the people you name.</p>
-            </div>
-          </div>
-          <div className="text-center" style={{ marginTop: '2rem' }}>
-            <Link to="/first-world" className="btn btn-primary">The full guide</Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-light" id="document">
+      <section className="section" id="document">
         <div className="container">
           <div className="text-center mb-4">
             <h2>A world is a web page.</h2>
@@ -124,13 +96,13 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section" id="open">
+      <section className="section section-light" id="open">
         <div className="container" style={{ maxWidth: '760px' }}>
           <h2>Free, and open</h2>
           <p>
             The software is free and open source under MIT. Publishing to WorldHub, our hosting
-            service, costs nothing. Worlds are hosted at their own web address, people are in them
-            together on phones and laptops, and doors lead between them.
+            service, costs nothing. Every world lives at its own web address, and a door in one world
+            can lead into another.
           </p>
           <p className="founder-line">
             Built by Five Squared Interactive, an independent studio, since <span className="ph">[year]</span>.
@@ -141,7 +113,7 @@ const Home = () => {
 
       <section className="section cta-band">
         <div className="container text-center">
-          <h2>Have a scene in Blender? Publish it and send the link.</h2>
+          <h2>Have a 3D scene? Publish it and send the link.</h2>
           <Link to="/first-world" className="btn btn-primary btn-large">Start in Blender</Link>
         </div>
       </section>
