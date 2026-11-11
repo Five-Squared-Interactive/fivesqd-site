@@ -69,9 +69,10 @@ scene's camera.
 
 ## Who may enter
 
-In the same box, **Everyone** lets anyone with the link in. **Only People
-I Allow** asks visitors to sign in and admits the people on your list.
-Visitors who are signed in appear under their own names.
+Leave **Only People I Allow** unticked and anyone with the link gets in.
+Tick it, and visitors are asked to sign in; the people on your **Allowed
+Viewers** list get in, nobody else. Visitors who are signed in appear
+under their own names.
 
 ## Share
 
@@ -85,16 +86,19 @@ new version.
 Click in the world to look around with the mouse; Esc gives the mouse back.
 W A S D to move, Space to jump. F to fly, where the world allows it: Space
 up, Shift down. H shows these again. On a phone or tablet: the left stick
-moves, the right stick looks, and the Jump, Chat and Fly buttons sit above
-them.
+moves, the right stick looks, Jump and Fly sit above the right stick, and
+Chat is at the top.
 
 ## Now look at what you made
 
 Your world is a web page.
 
-- **Read it.** Add `/index.veml` to your world's address and the document
-  opens as text: the title, the starting point, the sky, the model. That is
-  the whole world.
+- **Read it.** In the corner of your world's page, **What is this?** opens
+  to three links: **Open the document** shows the text behind the world
+  (its title, where you start, the sky, the model; that is the whole
+  world), **Download this world** hands you its files as one zip, and
+  **Make your own** brings people here. Or add `/index.veml` to the
+  address yourself.
 - **Link it to another world.** Select an object in Blender, open its VEML
   Entity panel, and put another world's address in the **Link** field. Walk
   up to it in your world and you step into theirs. That is how one world

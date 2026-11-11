@@ -145,9 +145,9 @@ const FirstWorld = () => {
 
           <Step title="5. Who may enter" shotLabel="The Everyone / Only People I Allow choice with a viewers list.">
             <p>
-              In the same box, <strong>Everyone</strong> lets anyone with the link in. <strong>Only People I Allow</strong>{' '}
-              asks visitors to sign in and admits the people on your list. Visitors who are signed in appear under
-              their own names.
+              Leave <strong>Only People I Allow</strong> unticked and anyone with the link gets in. Tick it, and
+              visitors are asked to sign in; the people on your <strong>Allowed Viewers</strong> list get in, nobody
+              else. Visitors who are signed in appear under their own names.
             </p>
           </Step>
 
@@ -170,8 +170,8 @@ const FirstWorld = () => {
               </li>
               <li><K>H</K> shows these again.</li>
               <li>
-                On a phone or tablet: the left stick moves, the right stick looks, and the Jump, Chat and Fly buttons
-                sit above them.
+                On a phone or tablet: the left stick moves, the right stick looks, <strong>Jump</strong> and{' '}
+                <strong>Fly</strong> sit above the right stick, and <strong>Chat</strong> is at the top.
               </li>
             </ul>
           </Step>
@@ -180,8 +180,11 @@ const FirstWorld = () => {
             <p>Your world is a web page.</p>
             <ul style={listStyle}>
               <li>
-                <strong>Read it.</strong> Add <code>/index.veml</code> to your world's address and the document opens
-                as text: the title, the starting point, the sky, the model. That is the whole world.
+                <strong>Read it.</strong> In the corner of your world's page, <strong>What is this?</strong> opens to
+                three links: <strong>Open the document</strong> shows the text behind the world (its title, where you
+                start, the sky, the model; that is the whole world), <strong>Download this world</strong> hands you
+                its files as one zip, and <strong>Make your own</strong> brings people here. Or add{' '}
+                <code>/index.veml</code> to the address yourself.
               </li>
               <li>
                 <strong>Link it to another world.</strong> Select an object in Blender, open its VEML Entity panel,

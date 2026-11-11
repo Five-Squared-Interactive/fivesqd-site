@@ -114,9 +114,9 @@ const Home = () => {
               {DEMO_WORLD_URL
                 ? <a className="walkin walkin-poster" style={{ backgroundImage: `url(${WORLD_CARD})` }} href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" aria-label={`Walk into ${WORLD_HERO_ALT}, in a new tab`}><span>Walk in</span></a>
                 : <Slot label="A published world, walkable from this page." poster={WORLD_CARD} ratio="800 / 426" />}
-              <figcaption>A world, opened in a browser: the loft. Walk in.</figcaption>
+              <figcaption>The loft, opened in a browser. Walk in.</figcaption>
             </figure>
-            <WorldDocument caption={'A different world’s whole document, 923 bytes. Add /index.veml to any published world’s address and read yours.'} />
+            <WorldDocument caption={'The loft’s whole document, 787 bytes. Add /index.veml to any published world’s address and read it.'} />
           </div>
           <p className="text-center" style={{ marginTop: '1.5rem' }}>
             <Link to="/technology">How it works &rarr;</Link>

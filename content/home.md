@@ -50,8 +50,9 @@ Three cards, each a picture slot, the thing in one line, how in one line,
 
 Here is everything in a published place: one small text file, one model,
 one sky. The format is open and the files are plain, so reading a world
-never depends on us. *(The loft, walkable, beside a different world's
-document with the five marks; the captions say so.)*
+never depends on us. *(The loft, walkable, beside the loft's own
+document, 787 bytes, with the five marks: its name, the room, the sky,
+where you start, the model.)*
 [How it works](/technology)
 
 ## Free, and open

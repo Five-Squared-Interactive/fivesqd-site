@@ -125,19 +125,22 @@ protocol document is public (founder to confirm).
   through the client address (`CLIENT_URL`), but its textures are missing,
   so it is not the first thing a visitor should see.
 - `worldhub.md` says Search lists worlds at any address: that is the new
-  directory (v4-monorepo #662), live once the sites deploy from CI (#667).
-  Until then www.worldhub.me is the earlier site.
+  directory (v4-monorepo #662), live at www.worldhub.me from S3 since
+  2026-11-02; the sign-in site followed on 2026-11-11.
 - `how-it-works.md` says a relay forwards bytes where a network stands in
-  the way: merged, live once the TURN key is on the box (#683).
+  the way: live since 2026-10-25 (a visitor asking the rendezvous for a
+  room is handed Cloudflare TURN credentials; checked from outside).
 - The add-on's panel: the box is **Save as My World**, the button in it is
   **Save and Publish**, and the box offers **Everyone** or **Only People I
   Allow** with a viewers list (checked in the shipped zip's
   `veml_scene_panel.py`). The copy says exactly that.
 - Phone controls are two sticks (left moves, right looks), not a drag; the
   client's own hint is the source.
-- "Open the document", "Download this world" and "Edit" do not exist on
-  the published-world page yet; the copy claims only `/index.veml`, which
-  is served today, and the Blender **Link** field.
+- The published world's page has a "What is this?" box with three links,
+  live since 2026-10-25: **Open the document**, **Download this world**
+  (the world's files as one zip) and **Make your own** (to /first-world).
+  There is no "Edit"; the guide names the three and the Blender **Link**
+  field, nothing more. The box can be closed; it returns on the next visit.
 - Founder, 2026-10-24: the site never speaks of "earlier" or "current"
   generations; it confuses a stranger and serves no purpose. GitHub links
   say "GitHub". (The v4 code is not public yet; the GitHub organisation
@@ -148,10 +151,10 @@ protocol document is public (founder to confirm).
   the founder published from Blender with Save and Publish on 2026-10-25
   (`public/images/world-loft-*.webp`, shot headless the same day), and
   `DEMO_WORLD_URL` is its address, so "Walk into one now" and "Walk in"
-  open it. The "world and document" pair on Home still shows the loft
-  beside the LIVING ROOM's document, and the captions say they are two
-  worlds; showing the loft's own document (787 bytes, one model, one sky)
-  is the next step. A door in the demo world is still wanted.
+  open it. The "world and document" pair on Home shows the loft beside
+  the loft's own document (787 bytes, fetched from its address on
+  2026-11-11: a title, the room, one sky, one entry point, one model), so
+  the pair is one world. A door in the demo world is still wanted.
 - The client's host answers `X-Frame-Options: SAMEORIGIN`, so a world
   cannot be embedded in this site; the Walk-in frame opens the client in a
   new tab. An inline embed needs the publish service to send
