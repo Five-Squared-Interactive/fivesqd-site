@@ -1,4 +1,8 @@
-# For architects, designers and real estate (/architects)
+# A private link for a client (/private-link; /architects forwards here)
+
+Named by what it shows, never by who it is for (founder, 2026-11-11). The
+examples are a designer's kitchen and a listing; the page has no audience
+label.
 
 Problem first, in their words; the fix shown; what it costs; what works
 today. `[slot]` marks pictures only the founder can make.

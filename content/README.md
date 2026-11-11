@@ -11,6 +11,8 @@ nothing in `drafts/` is routed or prerendered.
 |---|---|---|
 | `home.md` | `/` | the product carousel and the Git Worlds flow |
 | `first-world.md` | `/first-world` | the same guide, with what to do once the world is up |
+| `architects.md` | `/private-link` | nothing; `/architects` forwards here since 2026-11-11 |
+| `builders.md` | `/doors` | nothing; `/builders` forwards here since 2026-11-11 |
 | `how-it-works.md` | `/technology` | the Technology page (git-push diagram, MQTT) |
 | `products.md` | `/products` | the five-card product list |
 | `worldhub.md` | `/products/worldhub` | the hosting pitch and the pricing table |
@@ -112,11 +114,16 @@ the year, the place). They exist so he can judge the shape before the
 assets exist. `npm run build` prints how many slots remain; a page with a
 slot on it is never deployed.
 
-Nav since 2026-10-24: Make a world · How it works · About, plus a Make a
-world button. "What we make" is gone (/products forwards to How it
-works, which lists the pieces by name); "Build on it" stays a page
-linked from How it works but is out of the nav until a spec, repo or
-protocol document is public (founder to confirm).
+Nav since 2026-11-11: Make a world · WorldHub · How it works · About, plus
+a Get the add-on button (the zip). It is made of the product's parts; the
+audience items (Architects, Blender artists, World builders) that stood
+there for two weeks are gone, with their kickers and page titles, after
+the founder: "overtly having architects, blender artists ... tells me that
+you are not supplied with the correct skills to do this right." The three
+pages are named by what they show. "What we make" is gone (/products
+forwards to How it works, which lists the pieces by name); "Build on it"
+stays a page linked from How it works and the footer but is out of the nav
+until a spec, repo or protocol document is public (founder to confirm).
 
 ## Facts to confirm at deploy
 

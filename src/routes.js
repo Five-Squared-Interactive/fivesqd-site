@@ -23,13 +23,13 @@ const DEFAULT_DESCRIPTION =
 export const ROUTES = [
   { path: '/', title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION },
   {
-    path: '/architects',
-    title: 'For architects, designers and real estate — Five Squared Interactive',
+    path: '/private-link',
+    title: 'A private link for a client — Five Squared Interactive',
     description: 'Clients cannot read plans. Send a private link instead: they walk the space on their phone before it is built, with you on the call. Nothing to install, no viewer licence.',
   },
   {
-    path: '/builders',
-    title: 'For world builders — Five Squared Interactive',
+    path: '/doors',
+    title: 'A world your friends meet in — Five Squared Interactive',
     description: 'Your world lives on someone else\'s terms. Here it is yours: files at your own address, your people in it together, doors to other worlds, no server to run.',
   },
   {
@@ -39,7 +39,7 @@ export const ROUTES = [
   },
   {
     path: '/first-world',
-    title: 'For Blender artists — Five Squared Interactive',
+    title: 'Make a world from Blender — Five Squared Interactive',
     description: 'Your Blender scene, as a link friends can walk into. Install the add-on, press Save and Publish, send the link; anyone walks around inside, together, on a phone or a laptop.',
   },
   {
@@ -85,6 +85,8 @@ export const ROUTES = [
  * a sent link is never allowed to rot into a 404.
  */
 export const REDIRECTS = {
+  '/architects': '/private-link',
+  '/builders': '/doors',
   '/webwideworlds': '/technology',
   '/worldos': '/technology#worldos',
   '/worldsync': '/technology#worldsync',

@@ -26,20 +26,23 @@ const Footer = React.memo(() => {
           </div>
 
           <div className="footer-section">
-            <h3>Explore</h3>
+            <h3>Make</h3>
             <div className="footer-columns">
               <div className="footer-column">
-                <Link to="/architects">Architects and real estate</Link>
-                <Link to="/first-world">Blender artists</Link>
-                <Link to="/builders">World builders</Link>
+                <Link to="/first-world">Make a world from Blender</Link>
+                <Link to="/private-link">A private link for a client</Link>
+                <Link to="/doors">A world your friends meet in</Link>
+              </div>
+            </div>
+            <h3 className="footer-h3-gap">The pieces</h3>
+            <div className="footer-columns">
+              <div className="footer-column">
                 <Link to="/technology">How it works</Link>
+                <a href="https://webverse.fivesqd.com" target="_blank" rel="noopener noreferrer">WebVerse</a>
                 <Link to="/products/worldhub">WorldHub</Link>
                 <Link to="/ecosystem">Build on it</Link>
-                <Link to="/about">About</Link>
-                <Link to="/about#press">Press</Link>
               </div>
               <div className="footer-column">
-                <a href="https://webverse.fivesqd.com" target="_blank" rel="noopener noreferrer">WebVerse</a>
                 <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="/docs/www_whitepaper_v1.1.pdf" target="_blank" rel="noopener noreferrer">White Paper</a>
               </div>
@@ -47,7 +50,13 @@ const Footer = React.memo(() => {
           </div>
 
           <div className="footer-section">
-            <h3>Contact</h3>
+            <h3>Company</h3>
+            <div className="footer-columns">
+              <div className="footer-column">
+                <Link to="/about">About</Link>
+                <Link to="/about#press">Press</Link>
+              </div>
+            </div>
             <a href="mailto:info@fivesquaredinteractive.com">info@fivesquaredinteractive.com</a>
             <button
               className="theme-toggle-footer"

@@ -34,8 +34,8 @@ export function AppShell() {
                 <Route path="/products" element={<Navigate to="/technology#stack" replace />} />
                 <Route path="/products/worldhub" element={<WorldHub />} />
                 <Route path="/first-world" element={<FirstWorld />} />
-                <Route path="/architects" element={<Architects />} />
-                <Route path="/builders" element={<Builders />} />
+                <Route path="/private-link" element={<Architects />} />
+                <Route path="/doors" element={<Builders />} />
                 <Route path="/technology" element={<Technology />} />
                 <Route path="/ecosystem" element={<Ecosystem />} />
                 <Route path="/about" element={<About />} />
@@ -44,6 +44,8 @@ export function AppShell() {
                 <Route path="/isemv2025" element={<ISEMV2025 />} />
                 <Route path="/isemvdemo" element={<ISEMVDemo />} />
                 {/* Redirects from old routes */}
+                <Route path="/architects" element={<Navigate to="/private-link" replace />} />
+                <Route path="/builders" element={<Navigate to="/doors" replace />} />
                 <Route path="/webwideworlds" element={<Navigate to="/technology" replace />} />
                 <Route path="/worldos" element={<Navigate to="/technology#worldos" replace />} />
                 <Route path="/worldsync" element={<Navigate to="/technology#worldsync" replace />} />

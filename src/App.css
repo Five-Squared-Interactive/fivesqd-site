@@ -2049,7 +2049,8 @@ pre.code-example {
 .hero-scroll { display: inline-block; margin: .75rem 1rem 0; color: #fff; opacity: .9; text-decoration: underline; text-underline-offset: 3px; }
 .walkin { position: relative; width: 100%; aspect-ratio: 800 / 426; border-radius: 1rem; overflow: hidden; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25); background: #000 center / cover no-repeat; display: block; border: 0; padding: 0; cursor: pointer; }
 .walkin iframe { width: 100%; height: 100%; border: 0; display: block; }
-.walkin-poster span { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #4f46e5; color: #fff; font-weight: 700; font-size: 1.1rem; padding: .7rem 1.4rem; border-radius: 999px; box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+.walkin-poster span { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #4f46e5; color: #fff; font-weight: 700; font-size: 1.1rem; padding: .7rem 1.4rem; border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+.walkin-poster:hover span { background: #4338ca; }
 .section-pair-note { text-align: center; max-width: 680px; margin: 1.5rem auto 0; opacity: .85; }
 
 /* Round 2: the picture stays in view while the document scrolls beside it;
@@ -2127,3 +2128,19 @@ pre.code-example {
 @media (max-width: 900px) { .why-grid.three { grid-template-columns: 1fr; } }
 .media-text .kicker { margin-bottom: .75rem; }
 .kicker.promise { font-size: .95rem; letter-spacing: .06em; }
+
+/* Home: one section per thing you can do, picture beside it. */
+.feature-row .media-text h2.feature-title { font-size: clamp(1.75rem, 3.2vw, 2.5rem); line-height: 1.1; margin-bottom: 1rem; }
+.feature-row .media-text .lead { margin-bottom: 1rem; }
+.feature-row .media-text p:last-child { margin-bottom: 0; }
+.feature-row .media-text a:not(.btn) { font-weight: 600; }
+.world-wide { margin: 0 auto; max-width: 1000px; }
+.world-wide .walkin { aspect-ratio: 16 / 9; }
+.world-wide figcaption { text-align: center; margin-top: .75rem; color: var(--color-text-muted); font-size: .95rem; }
+.closing-cards { max-width: 1000px; margin: 0 auto; }
+.closing-card { text-decoration: none; color: inherit; display: block; }
+.closing-card h3 { font-size: 1.2rem; margin: 0 0 .4rem; color: var(--color-primary); }
+.closing-card p { margin: 0; color: var(--color-text-subtle); }
+.closing-card:hover { transform: translateY(-2px); }
+.founder-line.text-center { max-width: 720px; margin: 2rem auto 0; }
+.footer-h3-gap { margin-top: 1.25rem; }

@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import { ADDON_ZIP } from '../links';
 
+// The nav is made of the product's parts, never of the people it is for
+// (founder, 2026-11-11): Make a world, WorldHub, How it works, About, and
+// a button that says what you get.
 const TECH_MENU = [
   { name: 'How it works', desc: 'A world is files at a web address', to: '/technology' },
   { icon: '/images/icon-webverse.png', name: 'WebVerse', desc: 'The page that opens a world', to: '/technology#client' },
@@ -97,9 +101,8 @@ const Navbar = () => {
           </Link>
 
           <ul id="navbar-menu" className={`navbar-nav ${isMenuOpen ? 'active' : ''}`}>
-            <li><Link to="/architects" onClick={closeAll}>Architects</Link></li>
-            <li><Link to="/first-world" onClick={closeAll}>Blender artists</Link></li>
-            <li><Link to="/builders" onClick={closeAll}>World builders</Link></li>
+            <li><Link to="/first-world" onClick={closeAll}>Make a world</Link></li>
+            <li><Link to="/products/worldhub" onClick={closeAll}>WorldHub</Link></li>
             <li
               className="navbar-dropdown-wrapper"
               onMouseEnter={() => handleEnter('technology')}
@@ -133,7 +136,7 @@ const Navbar = () => {
               </div>
             </li>
             <li><Link to="/about" onClick={closeAll}>About</Link></li>
-            <li className="nav-cta"><Link to="/first-world" className="btn btn-primary btn-nav" onClick={closeAll}>Start in Blender</Link></li>
+            <li className="nav-cta"><a href={ADDON_ZIP} className="btn btn-primary btn-nav" onClick={closeAll}>Get the add-on</a></li>
           </ul>
 
           <button

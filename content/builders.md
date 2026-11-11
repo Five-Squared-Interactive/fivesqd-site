@@ -1,4 +1,6 @@
-# For world builders (/builders)
+# A world your friends meet in (/doors; /builders forwards here)
+
+Named by what it shows, never by who it is for (founder, 2026-11-11).
 
 People who want a world of their own, with other people in it. Problem
 first, in their words; the fix shown; what works today. `[slot]` marks
