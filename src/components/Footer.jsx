@@ -18,11 +18,11 @@ const Footer = React.memo(() => {
           <div className="footer-section">
             <img
               src="/images/fivesquared-gradient.png"
-              alt="Five Squared Interactive"
-              style={{ width: '48px', height: '48px', borderRadius: '10px', marginBottom: '1rem' }}
+              alt=""
+              style={{ width: '48px', height: '48px', borderRadius: '8px', marginBottom: '1rem' }}
             />
             <h3>Five Squared Interactive</h3>
-            <p>We make the free, open software that turns a 3D scene into a place people can walk through from a link, and WorldHub to host what you publish.</p>
+            <p>We make the software that turns a 3D scene into a place people can walk through from a link, and WorldHub to host what you publish.</p>
           </div>
 
           <div className="footer-section">
@@ -38,13 +38,13 @@ const Footer = React.memo(() => {
             <div className="footer-columns">
               <div className="footer-column">
                 <Link to="/technology">How it works</Link>
-                <a href="https://webverse.fivesqd.com" target="_blank" rel="noopener noreferrer">WebVerse</a>
+                <Link to="/technology#client">WebVerse</Link>
                 <Link to="/products/worldhub">WorldHub</Link>
                 <Link to="/ecosystem">Build on it</Link>
               </div>
               <div className="footer-column">
                 <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="/docs/www_whitepaper_v1.1.pdf" target="_blank" rel="noopener noreferrer">White Paper</a>
+                <a href="/docs/www_whitepaper_v1.1.pdf" target="_blank" rel="noopener noreferrer">White paper</a>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ const Footer = React.memo(() => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {YEAR} Five Squared Interactive. All Rights Reserved.</p>
+          <p>&copy; {YEAR} Five Squared Interactive.</p>
           <div className="footer-legal-links">
             <Link to="/privacy-policy">Privacy Policy</Link>
             <span> | </span>

@@ -37,7 +37,7 @@ addresses]
 ## What you get
 
 - From Blender: one press publishes a model as a walkable place at a link.
-- Models from SketchUp, Revit or Rhino come in through Blender as glTF or FBX.
+- Models from SketchUp, Revit or Rhino come in through Blender's own importers.
 - Private links: visitors sign in, and only the people you name get in.
 - Phones, laptops and headsets, in the browser.
 

@@ -26,7 +26,6 @@ const DropdownItem = ({ item, onClose }) => {
       <div>
         <span className="dropdown-item-name">
           {item.name}
-          {item.comingSoon && <span className="dropdown-soon">Soon</span>}
           {item.external && (
             <svg className="dropdown-external-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
               <path d="M4.5 1.5H10.5V7.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -91,7 +90,7 @@ const Navbar = () => {
           <Link to="/" className="navbar-brand" onClick={closeAll}>
             <img
               src="/images/fivesquared-gradient.png"
-              alt="Five Squared Interactive"
+              alt=""
               width="36"
               height="36"
               style={{ display: 'block', borderRadius: '8px' }}

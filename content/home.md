@@ -34,10 +34,11 @@ install for visitors.
 tab. Caption: The loft, published from Blender and opened in a browser.
 Click it and walk around.)*
 
-## Everyone with the link is in there with you.
+## Whoever opens the link is in there with you.
 
-You see each other move and you can type to each other. Walk them to the
-window and they come and look.
+You see each other move and you can type to each other. The visitors'
+browsers connect to each other, so nothing of yours has to stay switched
+on.
 
 [slot: the loft with two visitors in it, their names over their heads: a
 frame from the recording]
@@ -82,10 +83,12 @@ its name, the room, the sky, where you start, the model.)*
 
 ## Closing (three cards, then one line)
 
-- **Get the add-on.** For Blender 4.5 or newer. Free. ({ADDON_URL}: the
-  latest GitHub release)
+- **Get the add-on.** For Blender 4.5 or newer. ({ADDON_URL}: the latest
+  GitHub release)
 - **Walk into the loft.** The world on this page, in a new tab. ({DEMO_WORLD_URL})
-- **GitHub.** Open source under MIT.
+- **GitHub.** The code, under MIT.
+
+(The card titles are not headings; the row has no heading of its own.)
 
 The software is free and open source under MIT, and hosting on WorldHub,
 our service, costs nothing. Built by Five Squared Interactive since

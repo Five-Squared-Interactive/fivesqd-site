@@ -154,6 +154,16 @@ until a spec, repo or protocol document is public (founder to confirm).
   the claim.
 - Phone controls are two sticks (left moves, right looks), not a drag; the
   client's own hint is the source.
+- "Phones, laptops and headsets": the page that opens a world has a VR
+  entry (`apps/webverse/src/xr/`: enterVrButton, immersiveSession,
+  vrLocomotion, vrPointer on main), so being in a world together on a
+  headset is supportable. In a headset the chat is read-only
+  (`messages/vrMessagesHud.ts`: "sending from a headset is not supported
+  yet"), so the copy never says you can chat from a headset.
+- "Models from SketchUp, Revit or Rhino come in through Blender's own
+  importers": a claim about Blender's importers (glTF, FBX, OBJ and the
+  rest), not about the publish path, which exports whatever the Blender
+  scene holds. The copy stops there; it does not say "as glTF or FBX".
 - The published world's page has a "What is this?" box with three links,
   live since 2026-10-25: **Open the document**, **Download this world**
   (the world's files as one zip) and **Make your own** (to /first-world).

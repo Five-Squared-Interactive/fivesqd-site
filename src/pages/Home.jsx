@@ -85,10 +85,10 @@ const Home = () => {
 
       <Feature
         id="together"
-        title="Everyone with the link is in there with you."
+        title="Whoever opens the link is in there with you."
         figure={<Slot label="The loft with two visitors in it, their names over their heads: a frame from the recording." ratio="4 / 3" />}
       >
-        You see each other move and you can type to each other. Walk them to the window and they come and look.
+        You see each other move and you can type to each other. The visitors’ browsers connect to each other, so nothing of yours has to stay switched on.
       </Feature>
 
       <Feature
@@ -147,18 +147,18 @@ const Home = () => {
         <div className="container">
           <div className="grid-3-steps closing-cards">
             <a href={ADDON_ZIP} className="card closing-card">
-              <h3>Get the add-on</h3>
-              <p>For Blender 4.5 or newer. Free.</p>
+              <span className="closing-title">Get the add-on</span>
+              <p>For Blender 4.5 or newer.</p>
             </a>
             {DEMO_WORLD_URL && (
               <a href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" className="card closing-card">
-                <h3>Walk into the loft</h3>
+                <span className="closing-title">Walk into the loft</span>
                 <p>The world on this page, in a new tab.</p>
               </a>
             )}
             <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer" className="card closing-card">
-              <h3>GitHub</h3>
-              <p>Open source under MIT.</p>
+              <span className="closing-title">GitHub</span>
+              <p>The code, under MIT.</p>
             </a>
           </div>
           <p className="founder-line text-center">

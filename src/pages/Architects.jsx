@@ -66,7 +66,7 @@ const Architects = () => (
         <h2>What you get</h2>
         <ul className="live-list">
           <li>From Blender: one press publishes a model as a walkable place at a link.</li>
-          <li>Models from SketchUp, Revit or Rhino come in through Blender as glTF or FBX.</li>
+          <li>Models from SketchUp, Revit or Rhino come in through Blender’s own importers.</li>
           <li>Private links: visitors sign in, and only the people you name get in.</li>
           <li>Phones, laptops and headsets, in the browser.</li>
         </ul>

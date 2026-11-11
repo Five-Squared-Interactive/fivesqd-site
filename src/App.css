@@ -14,8 +14,8 @@
   --color-border: rgba(0, 0, 0, 0.1);
   --color-navbar-bg: rgba(255, 255, 255, 0.1);
   --color-navbar-border: rgba(255, 255, 255, 0.2);
-  --color-footer-bg: #1f2937;
-  --color-footer-text: #d1d5db;
+  --color-footer-bg: #1f1d1a;
+  --color-footer-text: #d6d2ca;
   --color-footer-muted: #9ca3af;
   --color-footer-border: #374151;
   --color-accordion-bg: rgba(0, 0, 0, 0.03);
@@ -46,8 +46,8 @@
   --color-border: rgba(255, 255, 255, 0.1);
   --color-navbar-bg: rgba(15, 23, 42, 0.8);
   --color-navbar-border: rgba(255, 255, 255, 0.1);
-  --color-footer-bg: #020617;
-  --color-footer-text: #94a3b8;
+  --color-footer-bg: #141311;
+  --color-footer-text: #a8a39a;
   --color-footer-muted: #7b8da4;
   --color-footer-border: #1e293b;
   --color-accordion-bg: rgba(30, 41, 59, 0.5);
@@ -974,6 +974,7 @@ pre.code-example {
   color: white;
 }
 
+.footer-columns:has(> :only-child) { grid-template-columns: 1fr; }
 .footer-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1030,6 +1031,7 @@ pre.code-example {
 
 .theme-toggle-footer {
   display: inline-block;
+  font-family: inherit;
   margin-top: 1rem;
   padding: 0;
   background: none;
@@ -1929,7 +1931,10 @@ pre.code-example {
 .doc-frame pre.code-example {
   margin: 0;
   font-size: 0.78rem;
+  white-space: pre;
+  overflow-x: auto;
 }
+.doc-frame pre.code-example code { white-space: inherit; }
 .card-glyph {
   font-size: 2rem;
   line-height: 1;
@@ -2139,7 +2144,7 @@ pre.code-example {
 .world-wide figcaption { text-align: center; margin-top: .75rem; color: var(--color-text-muted); font-size: .95rem; }
 .closing-cards { max-width: 1000px; margin: 0 auto; }
 .closing-card { text-decoration: none; color: inherit; display: block; }
-.closing-card h3 { font-size: 1.2rem; margin: 0 0 .4rem; color: var(--color-primary); }
+.closing-card .closing-title { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; margin: 0 0 .4rem; color: var(--color-primary); }
 .closing-card p { margin: 0; color: var(--color-text-subtle); }
 .closing-card:hover { transform: translateY(-2px); }
 .founder-line.text-center { max-width: 720px; margin: 2rem auto 0; }
