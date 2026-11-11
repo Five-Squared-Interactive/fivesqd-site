@@ -12,11 +12,10 @@ const Builders = () => (
     <section className="section hero-split">
       <div className="container media-row">
         <div className="media-text">
-          <h1>Years of building, gone when someone else changes the rules.</h1>
+          <h1>A world of your own, with your friends in it.</h1>
           <p className="lead">
-            Making your own world used to mean a game engine and a server to keep running. Here a
-            world is a few plain files at its own web address, hosted on WorldHub, and your people
-            walk in from a link. You don’t run a server.
+            Your world is a few plain files at its own web address. Your people walk in from a
+            link, and a door in it leads to other worlds. You don’t run a server.
           </p>
           <div className="hero-actions-left">
             <a href="#watch" className="btn btn-primary btn-large">See it in action</a>
@@ -24,7 +23,7 @@ const Builders = () => (
           </div>
         </div>
         <div className="media-figure" id="watch">
-          <Slot kind="video" label="20 seconds: a built world with several visitors; one walks through a door into a different world; the address bar changes." poster={WORLD_CARD} />
+          <Slot kind="video" label="A built world with several visitors; one taps a door and is in a different world; the address bar changes." poster={WORLD_CARD} />
         </div>
       </div>
     </section>
@@ -55,7 +54,7 @@ const Builders = () => (
           </p>
         </div>
         <div className="media-figure">
-          <Slot label="Three seconds: walking through a door into a different world, with the address bar changing." kind="video" />
+          <Slot label="A door lit up, a tap, and a different world with the address bar changed." kind="video" />
         </div>
       </div>
     </section>

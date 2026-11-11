@@ -24,7 +24,7 @@ const Architects = () => (
           </div>
         </div>
         <div className="media-figure" id="watch">
-          <Slot kind="video" label="20 seconds: a client opens a link on a phone and walks through a kitchen; the designer's cursor points at the island; the client turns to the window." poster={WORLD_CARD} />
+          <Slot kind="video" label="A client opens a link on a phone and walks through a kitchen; the designer walks to the island and the client follows; the client turns to the window." poster={WORLD_CARD} />
         </div>
       </div>
     </section>

@@ -2,28 +2,28 @@
 
 Named by what it shows, never by who it is for (founder, 2026-11-11). The
 examples are a designer's kitchen and a listing; the page has no audience
-label.
-
-Problem first, in their words; the fix shown; what it costs; what works
-today. `[slot]` marks pictures only the founder can make.
+label or kicker. Problem first, in their words; the fix shown; what it
+costs; what works today. `[slot]` marks pictures only the founder can make.
+This file is the words twin of `src/pages/Architects.jsx`; keep them in step.
 
 ## Hero
 
-**Clients cannot read plans. They find out what they approved after it is
-built.**
-Send them a private link instead. They walk the kitchen on their phone
-before the slab is poured, with you on the call pointing at the island.
-Nothing for them to install, no viewer licence, no file to open.
+**Clients can't read plans.**
+They find out what they approved once it's built. Send a private link
+instead. They walk the kitchen on their phone before the slab is poured,
+and you're in there with them. There's nothing for them to install.
 [Watch a client walkthrough](#watch) · [Start from Blender](/first-world)
-[slot: 20 seconds, a client opens a link on a phone and walks through a
-kitchen; the designer points at the island]
+[slot, recording: a client opens a link on a phone and walks through a
+kitchen; the designer walks to the island and the client follows; the
+client turns to the window]
 
 ## Buyers walk every room before they book the viewing.
 
-Put a walkthrough link on the listing. They go through every room on the
-train, and the ones who book a viewing already want it. The link is
-private if you want it to be: only the people you name may enter.
-[slot: a phone showing a listing walkthrough beside the photo gallery]
+Put a walkthrough link on a new-build or off-plan listing. Buyers go
+through every room on the train, so the ones who book a viewing already
+know the layout. Make the link private and only the people you name get in.
+[slot: a phone showing a listing walkthrough, next to the same property's
+photo gallery]
 
 ## Free to use, and your client just opens a link.
 
@@ -31,12 +31,14 @@ The software is free and open source, and hosting on WorldHub, our
 service, costs nothing. Your client opens the link in their phone's
 browser. For a private link they sign in once, and only the people you
 named get in.
-[slot: the Only People I Allow box with two client addresses]
+[slot: the Only People I Allow box in the add-on, with two client email
+addresses]
 
 ## What you get
 
-From Blender, one press publishes a model as a walkable place at a link ·
-models from SketchUp, Revit or Rhino come in through Blender as glTF or
-FBX · private links: visitors sign in, and only the people you name get
-in · phones, laptops and headsets, in the browser.
+- From Blender: one press publishes a model as a walkable place at a link.
+- Models from SketchUp, Revit or Rhino come in through Blender as glTF or FBX.
+- Private links: visitors sign in, and only the people you name get in.
+- Phones, laptops and headsets, in the browser.
+
 [The step-by-step guide](/first-world)

@@ -13,9 +13,11 @@ export const DEMO_WORLD_URL = 'https://worlds.worldhub.me/w/w_jpR9xNJ0pb9q';
 // Chrome, 2026-10-22, with a world on GitHub Pages).
 export const CLIENT_URL = 'https://worlds.worldhub.me/webverse/index.html';
 
-// The add-on zip is built by the sign-in site because it carries that
-// site's publishable key, which is never committed; it stays there.
-export const ADDON_ZIP = 'https://id.worldhub.me/download/veml-blender-addon.zip';
+// The add-on is downloaded from its GitHub repository's releases (founder,
+// 2026-11-11: never from the sign-in site). The "latest" link always hands
+// out the newest release's zip, so a new release needs no site change.
+export const ADDON_REPO = 'https://github.com/Five-Squared-Interactive/WorldKit-VEML-Blender-Plugin';
+export const ADDON_ZIP = `${ADDON_REPO}/releases/latest/download/veml-blender-addon.zip`;
 
 // The GitHub organisation. Founder (2026-10-24): the site never speaks of
 // earlier or current generations; the link is simply GitHub.

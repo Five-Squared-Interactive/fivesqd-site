@@ -43,14 +43,16 @@ nothing in `drafts/` is routed or prerendered.
   (with WorldHub ID, Search and MyWorlds as its features). Nothing else.
 - A claim comes with a link that proves it, or it waits in `drafts/`.
 - Placeholders in braces are filled at deploy: `{DEMO_WORLD_URL}` is a
-  public world that needs no sign-in; `{ADDON_URL}` is the add-on download.
+  public world that needs no sign-in; `{ADDON_URL}` is the add-on download,
+  the latest release of the WorldKit-VEML-Blender-Plugin repository on
+  GitHub (founder, 2026-11-11: never the sign-in site).
 
 ## Brand (founder, 2026-10-24, brand interview)
 
 Feel: plain, trustworthy, warm. Reference: Obsidian (product first, plain
-words, ownership as the point). Light, with a dark mode. Type: Bricolage
-Grotesque for headlines (character without noise), Source Sans 3 for
-body and interface, Inter as fallback. Neutrals with a slight warm bias
+words, ownership as the point). Light, with a dark mode. Type: Inter for
+headlines (since 2026-11-11; Bricolage Grotesque's "f" looked odd to the
+founder), Source Sans 3 for body and interface. Neutrals with a slight warm bias
 (#fdfcfa / #f6f4ef, text #1f1d1a), not pure white and not cream. One
 accent, from the Five Squared mark: indigo #4f46e5 (hover #4338ca; dark
 mode #a5b4fc on text, buttons stay #4f46e5). Corners 8px; no pills. The
@@ -114,8 +116,9 @@ the year, the place). They exist so he can judge the shape before the
 assets exist. `npm run build` prints how many slots remain; a page with a
 slot on it is never deployed.
 
-Nav since 2026-11-11: Make a world · WorldHub · How it works · About, plus
-a Get the add-on button (the zip). It is made of the product's parts; the
+Nav since 2026-11-11: WorldHub · How it works · About, plus a Make a world
+button to the guide (a Get the add-on button that downloaded the zip
+"doesn't seem right", founder). It is made of the product's parts; the
 audience items (Architects, Blender artists, World builders) that stood
 there for two weeks are gone, with their kickers and page titles, after
 the founder: "overtly having architects, blender artists ... tells me that

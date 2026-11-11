@@ -117,9 +117,9 @@ const Home = () => {
         light
         title="Put a door in it."
         link={<p><Link to="/doors">A world your friends meet in &rarr;</Link></p>}
-        figure={<Slot kind="video" label="Friends in a world; one walks through a door into another world, and the address bar changes." ratio="4 / 3" />}
+        figure={<Slot kind="video" label="Friends in a world; one taps a door and is in another world, and the address bar changes." ratio="4 / 3" />}
       >
-        A door in your world opens onto another world at its own address, the way a page links to the next. It is the Link field on an object in Blender. Your people meet in your world and wander out of it.
+        A door in your world opens onto another world at its own address, the way a page links to the next. It is the Link field on an object in Blender. Your people meet in your world and tap their way out of it.
       </Feature>
 
       <section className="section" id="document">

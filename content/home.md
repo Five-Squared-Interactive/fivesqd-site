@@ -65,11 +65,11 @@ walkthrough on a phone beside it]
 
 A door in your world opens onto another world at its own address, the way
 a page links to the next. It is the Link field on an object in Blender.
-Your people meet in your world and wander out of it.
+Your people meet in your world and tap their way out of it.
 [A world your friends meet in](/doors)
 
-[slot, recording: friends in a world; one walks through a door into
-another world, and the address bar changes]
+[slot, recording: friends in a world; one taps a door and is in another
+world, and the address bar changes]
 
 ## It's yours.
 
@@ -82,7 +82,8 @@ its name, the room, the sky, where you start, the model.)*
 
 ## Closing (three cards, then one line)
 
-- **Get the add-on.** For Blender 4.5 or newer. Free. ({ADDON_URL})
+- **Get the add-on.** For Blender 4.5 or newer. Free. ({ADDON_URL}: the
+  latest GitHub release)
 - **Walk into the loft.** The world on this page, in a new tab. ({DEMO_WORLD_URL})
 - **GitHub.** Open source under MIT.
 

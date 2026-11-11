@@ -4,8 +4,7 @@ import { ADDON_ZIP, WORLD_CARD } from '../links';
 
 // The first-world guide: from a Blender scene to a link anyone can walk into.
 // The words are content/first-world.md; keep the two in step. The add-on zip
-// is built by the sign-in site (it carries that site's publishable key,
-// never committed), so the link points there.
+// is the latest release of its GitHub repository (ADDON_ZIP in links.js).
 //
 // Each step has room for a screenshot (the `shot` slot): the Add-ons list,
 // the Sign In button, the Save as My World box, the Entry Point tick, the
@@ -26,7 +25,7 @@ const K = ({ children }) => <kbd style={kbd}>{children}</kbd>;
 
 const Step = ({ title, shot, shotLabel, children }) => (
   <div className="card step-card" style={{ marginBottom: '1.5rem', textAlign: 'left' }}>
-    <h2 style={{ marginTop: 0, fontSize: '1.5rem' }}>{title}</h2>
+    <h3 style={{ marginTop: 0, fontSize: '1.5rem' }}>{title}</h3>
     {shot ? <img className="step-shot" src={shot.src} alt={shot.alt} loading="lazy" /> : shotLabel ? <Slot label={shotLabel} className="step-slot" /> : null}
     {children}
   </div>
@@ -53,7 +52,7 @@ const FirstWorld = () => {
           <div className="media-figure" id="watch">
             <Slot
               kind="video"
-              label="20 seconds, muted, looping: a Blender scene, Save and Publish, the link appears, a phone opens it, a second person walks in, both step through a door into another world."
+              label="Muted, looping: a Blender scene, Save and Publish, the link appears, a phone opens it, a second person walks in, one taps a door and both are in another world."
               poster={WORLD_CARD}
             />
           </div>
@@ -94,7 +93,7 @@ const FirstWorld = () => {
 
       <section className="section section-light">
         <div className="container" style={{ maxWidth: '760px' }}>
-          <Step title="1. What you need">
+          <Step title="What you need">
             <ul style={listStyle}>
               <li>
                 Blender 4.5 or newer, free from{' '}
@@ -108,7 +107,7 @@ const FirstWorld = () => {
             </ul>
           </Step>
 
-          <Step title="2. Install the add-on" shotLabel="Blender's Add-ons list with the VEML add-on ticked.">
+          <Step title="Install the add-on" shotLabel="Blender's Add-ons list with the VEML add-on ticked.">
             <ol style={listStyle}>
               <li>In Blender: <strong>Edit → Preferences → Add-ons</strong>.</li>
               <li>
@@ -120,7 +119,7 @@ const FirstWorld = () => {
             <p>Already had an older version? Remove it first, then install this one.</p>
           </Step>
 
-          <Step title="3. Sign in once" shotLabel="The add-on's Sign In button, and the browser tab it opens.">
+          <Step title="Sign in once" shotLabel="The add-on's Sign In button, and the browser tab it opens.">
             <p>
               In the add-on's preferences, press <strong>Sign In</strong>. Your browser opens WorldHub; sign in with
               Google, GitHub, or a link we email you, and Blender picks it up on its own. You stay signed in; there is
@@ -128,7 +127,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="4. Publish" shotLabel="The Save as My World box with Save and Publish, cropped at 2x.">
+          <Step title="Publish" shotLabel="The Save as My World box with Save and Publish, cropped at 2x.">
             <p>
               Save your .blend file, then open the <strong>Scene</strong> tab of the Properties editor and find the{' '}
               <strong>VEML World</strong> panel. In its <strong>Save as My World</strong> box, press{' '}
@@ -142,7 +141,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="5. Who may enter" shotLabel="The Only People I Allow tick, with the Allowed Viewers field it reveals.">
+          <Step title="Who may enter" shotLabel="The Only People I Allow tick, with the Allowed Viewers field it reveals.">
             <p>
               Leave <strong>Only People I Allow</strong> unticked and anyone with the link gets in. Tick it, and
               visitors are asked to sign in; the people on your <strong>Allowed Viewers</strong> list get in, nobody
@@ -150,7 +149,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="6. Share" shotLabel="The world open in a browser tab, address bar visible.">
+          <Step title="Share" shotLabel="The world open in a browser tab, address bar visible.">
             <p>
               The address your world opened at is the one to share, for example{' '}
               <code>https://worlds.worldhub.me/w/…</code>. Anyone can open it in a browser; nothing to install. Press
@@ -187,8 +186,9 @@ const FirstWorld = () => {
               </li>
               <li>
                 <strong>Link it to another world.</strong> Select an object in Blender, open its VEML Entity panel,
-                and put another world's address in the <strong>Link</strong> field. Walk up to it in your world and
-                you step into theirs. That is how one world becomes part of many.
+                and put another world's address in the <strong>Link</strong> field. In your world it lights up when
+                you look at it; click it, or tap it on a phone, and you step into theirs. That is how one world
+                becomes part of many.
               </li>
               <li>
                 <strong>Change it.</strong> Change the scene in Blender and press Save and Publish again; the same
