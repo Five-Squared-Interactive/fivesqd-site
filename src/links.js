@@ -27,7 +27,9 @@ export const WORLDHUB_URL = 'https://www.worldhub.me/';
 // earlier or current generations; the link is simply GitHub.
 export const GITHUB_ORG = 'https://github.com/Five-Squared-Interactive';
 export const CONTACT_EMAIL = 'info@fivesquaredinteractive.com';
-export const WHITE_PAPER = '/docs/www_whitepaper_v1.1.pdf';
+// Version 2.0, 12 November 2026, the founder's edit of the reviewed draft;
+// 1.1 (June 2026) stays in docs/ so links already sent keep working.
+export const WHITE_PAPER = '/docs/www_whitepaper_v2.0.pdf';
 
 // A frame of the demo world opened in a browser, for the pages' imagery:
 // the loft, shot headless at 1600 by 900 on the day it was published.

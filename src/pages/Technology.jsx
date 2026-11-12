@@ -207,9 +207,8 @@ const Technology = () => {
             <li>Worlds link to worlds. The web's graph, in 3D.</li>
           </ul>
           <p>
-            The long form is in the white paper (2025):{' '}
-            <a href={WHITE_PAPER} target="_blank" rel="noopener noreferrer">Web Wide Worlds</a>. Some
-            of its details predate the current page; the principles are the same.
+            The long form is in the white paper, version 2.0 (November 2026):{' '}
+            <a href={WHITE_PAPER} target="_blank" rel="noopener noreferrer">Web Wide Worlds</a>.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
             <Link to="/first-world" className="btn btn-primary">Make a world</Link>

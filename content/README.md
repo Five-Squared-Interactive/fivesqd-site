@@ -175,6 +175,12 @@ until a spec, repo or protocol document is public (founder to confirm).
   holds the open code that exists. We say "open source under MIT, on
   GitHub" and no more.)
 - The e-mail is `info@fivesquaredinteractive.com`, the one the live site uses.
+- The white paper is version 2.0, 12 November 2026
+  (`public/docs/www_whitepaper_v2.0.pdf`; `WHITE_PAPER` in `src/links.js`),
+  the founder's edit of a reviewed draft; the source is in the company
+  OneDrive's Papers folder. 1.1 stays in `docs/` so sent links keep
+  working. The paper says in its abstract what is live and writes the
+  rest as design; the site may cite it but never claims more than it does.
 - Imagery: the hero and the WebVerse card are the loft, a textured scene
   the founder published from Blender with Save and Publish on 2026-10-25
   (`public/images/world-loft-*.webp`, shot headless the same day), and

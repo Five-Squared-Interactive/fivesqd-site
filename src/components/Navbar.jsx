@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import { WHITE_PAPER } from '../links';
 
 // The nav is made of the product's parts, never of the people it is for
 // (founder, 2026-11-11): WorldHub, How it works, About, and one button,
@@ -11,7 +12,7 @@ const TECH_MENU = [
   { icon: '/images/icon-worldkit.png', name: 'The Blender add-on', desc: 'Publish a scene in one press', to: '/first-world' },
   { name: 'The pieces, by name', desc: 'VEML, StraightFour, WorldSync, WorldOS', to: '/technology#stack' },
   { name: 'Your own address', desc: 'Host a world anywhere; build on the pieces', to: '/technology#own-address' },
-  { name: 'White paper', desc: 'The long form (2025)', href: '/docs/www_whitepaper_v1.1.pdf', external: true },
+  { name: 'White paper', desc: 'The long form, version 2.0 (2026)', href: WHITE_PAPER, external: true },
 ];
 
 const DropdownItem = ({ item, onClose }) => {

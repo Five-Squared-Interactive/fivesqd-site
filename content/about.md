@@ -36,7 +36,7 @@ less to us than one person's world at their own address.
 ## How we got here
 
 We have been building open 3D worlds for the web since 2019. The
-long form of the idea is the 2025 white paper, Web Wide Worlds. Today a
+long form of the idea is the white paper, Web Wide Worlds. Today a
 Blender scene becomes a world in one press. The code is open source under
 MIT, on GitHub.
 
@@ -60,7 +60,8 @@ requests: info@fivesquaredinteractive.com.
   published world, laptop and phone]. Logos: the Five Squared mark, the
   WebVerse mark and wordmark, the VEML mark [ph: zip].
 - **Facts.** Founded 2019, [ph: place] · Founder: Dylan Baker · Open
-  source under MIT, on GitHub · White paper: Web Wide Worlds, 2025 ·
+  source under MIT, on GitHub · White paper: Web Wide Worlds, version 2.0,
+  November 2026 ·
   Publishing from Blender: October 2026.
 
 The founder bio in the AWE press kit (OneDrive, Media/) is the long form;

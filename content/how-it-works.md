@@ -144,6 +144,7 @@ Want to build on the pieces, or put your own things in a world?
 - An unvisited world costs nothing: it is a folder.
 - Worlds link to worlds. The web's graph, in 3D.
 
-The long form is in the white paper (2025): [Web Wide Worlds](/docs/www_whitepaper_v1.1.pdf).
-Some of its details predate the current page; the principles are the
-same. [Make a world](/first-world) · [Build on it](/ecosystem)
+The long form is in the white paper, version 2.0 (November 2026):
+[Web Wide Worlds](/docs/www_whitepaper_v2.0.pdf). *(1.1 stays in docs/ so
+sent links keep working; the "predates the current page" caveat went with
+it.)* [Make a world](/first-world) · [Build on it](/ecosystem)

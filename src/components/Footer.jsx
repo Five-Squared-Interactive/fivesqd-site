@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import { WHITE_PAPER } from '../links';
 
 const YEAR = new Date().getFullYear();
 
@@ -44,7 +45,7 @@ const Footer = React.memo(() => {
               </div>
               <div className="footer-column">
                 <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="/docs/www_whitepaper_v1.1.pdf" target="_blank" rel="noopener noreferrer">White paper</a>
+                <a href={WHITE_PAPER} target="_blank" rel="noopener noreferrer">White paper</a>
               </div>
             </div>
           </div>

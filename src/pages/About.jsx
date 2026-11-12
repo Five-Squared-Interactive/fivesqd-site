@@ -58,7 +58,7 @@ const About = () => {
           <h2 style={{ marginTop: '2.5rem' }}>How we got here</h2>
           <p>
             We have been building open 3D worlds for the web since 2019. The
-            long form of the idea is the 2025 white paper,{' '}
+            long form of the idea is the white paper,{' '}
             <a href={WHITE_PAPER} target="_blank" rel="noopener noreferrer">Web Wide Worlds</a>. Today a
             Blender scene becomes a world in one press. The code is open source under MIT, on{' '}
             <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer">GitHub</a>.
@@ -97,7 +97,7 @@ const About = () => {
                 <li>Founded 2019, <span className="ph">[place]</span></li>
                 <li>Founder: Dylan Baker</li>
                 <li>Open source under MIT, on GitHub</li>
-                <li>White paper: Web Wide Worlds, 2025</li>
+                <li>White paper: Web Wide Worlds, version 2.0, November 2026</li>
                 <li>Publishing from Blender: October 2026</li>
               </ul>
             </div>
