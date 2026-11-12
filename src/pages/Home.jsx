@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Slot from '../components/Slot';
 import WorldDocument from '../components/WorldDocument';
-import { DEMO_WORLD_URL, WORLDHUB_URL, WORLD_CARD, WORLD_HERO, WORLD_HERO_ALT } from '../links';
+import { DEMO_WORLD_URL, WORLDHUB_URL, WORLD_CARD, WORLD_ROOM, WORLD_TOGETHER, WORLD_HERO_ALT } from '../links';
 
 // The words are content/home.md; keep the two in step. The home page says
 // one thing: making a good shared world is easy. Eight one-line sections,
@@ -17,7 +17,7 @@ const WalkIn = ({ children }) =>
   DEMO_WORLD_URL ? (
     <a
       className="walkin walkin-poster"
-      style={{ backgroundImage: `url(${WORLD_HERO})` }}
+      style={{ backgroundImage: `url(${WORLD_ROOM})` }}
       href={DEMO_WORLD_URL}
       target="_blank"
       rel="noopener noreferrer"
@@ -91,7 +91,7 @@ const Home = () => {
         id="together"
         light
         title="Together, from the start."
-        figure={<Slot label="Two visitors in a world, their names over their heads: a frame from the recording." ratio="4 / 3" />}
+        figure={<img className="feature-photo" src={WORLD_TOGETHER} alt="Inside the loft, a second visitor stands in the entry hall with their name shown over their head" width="1600" height="780" loading="lazy" />}
       >
         Whoever opens the link is in there with you.
       </Feature>

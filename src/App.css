@@ -2155,3 +2155,5 @@ pre.code-example {
 .founder-line.text-center { max-width: 720px; margin: 2rem auto 0; }
 .footer-h3-gap { margin-top: 1.25rem; }
 .founder-photo { display: block; width: 100%; height: auto; border-radius: 8px; }
+.feature-photo { display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18); }
+.walkin { aspect-ratio: 1600 / 780; }

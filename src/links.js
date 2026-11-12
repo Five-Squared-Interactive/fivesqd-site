@@ -34,5 +34,11 @@ export const WHITE_PAPER = '/docs/www_whitepaper_v2.0.pdf';
 // A frame of the demo world opened in a browser, for the pages' imagery:
 // the loft, shot headless at 1600 by 900 on the day it was published.
 export const WORLD_HERO = '/images/world-loft-hero.webp';
+// The loft's living room from inside, shot headless on 2026-11-12 with the
+// page's own controls cropped off; the frame the home page's walk-in uses.
+export const WORLD_ROOM = '/images/world-loft-room.webp';
+// The same world with a second visitor standing in the entry hall, their
+// name over their head: two headless visitors, shot from the first's eyes.
+export const WORLD_TOGETHER = '/images/loft-two-visitors.webp';
 export const WORLD_CARD = '/images/world-loft-card.webp';
 export const WORLD_HERO_ALT = 'A loft with a long window over sunlit hills, a sofa and bar stools: a world opened in a browser';
