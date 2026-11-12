@@ -6,10 +6,10 @@ import { ADDON_ZIP, WORLD_CARD } from '../links';
 // The words are content/first-world.md; keep the two in step. The add-on zip
 // is the latest release of its GitHub repository (ADDON_ZIP in links.js).
 //
-// Each step has room for a screenshot (the `shot` slot): the Add-ons list,
-// the Sign In button, the Save as My World box, the Entry Point tick, the
-// Link field, the world in a browser tab. They do not exist yet; when they
-// do, pass `shot={{ src, alt }}` and nothing else changes.
+// Each step has room for a screenshot (`shot={{ src, alt }}`, or a `shotLabel`
+// slot until one exists). The Blender ones were taken on 2026-11-12 from the
+// loft scene with a script that switched the panels and scrolled; two slots
+// remain, the browser tab with its address bar and the phone with both sticks.
 const listStyle = { paddingLeft: '1.25rem', margin: '0 0 1rem', lineHeight: 1.7, fontSize: '1.125rem' };
 const kbd = {
   display: 'inline-block',
@@ -66,7 +66,7 @@ const FirstWorld = () => {
           </div>
           <div className="grid-3-steps">
             <div className="step-tile">
-              <Slot label="The add-on panel in Blender, cropped at 2x, with Save and Publish visible." ratio="4 / 3" />
+              <img className="feature-photo" src="/images/blender-save-as-my-world.webp" alt="The Save as My World box in Blender with the Save and Publish button" width="1400" height="723" loading="lazy" />
               <h3><span className="step-n">1</span> Install the add-on</h3>
               <p>Blender 4.5 or newer. Sign in once with Google, GitHub or an emailed link.</p>
             </div>
@@ -107,7 +107,7 @@ const FirstWorld = () => {
             </ul>
           </Step>
 
-          <Step title="Install the add-on" shotLabel="Blender's Add-ons list with the VEML add-on ticked.">
+          <Step title="Install the add-on" shot={{ src: '/images/blender-addons-list.webp', alt: "Blender's Preferences, Add-ons, filtered to VEML: the VEML Import/Export add-on, ticked" }}>
             <ol style={listStyle}>
               <li>In Blender: <strong>Edit → Preferences → Add-ons</strong>.</li>
               <li>
@@ -119,7 +119,7 @@ const FirstWorld = () => {
             <p>Already had an older version? Remove it first, then install this one.</p>
           </Step>
 
-          <Step title="Sign in once" shotLabel="The add-on's Sign In button, and the browser tab it opens.">
+          <Step title="Sign in once" shot={{ src: '/images/blender-sign-in.webp', alt: "The add-on's preferences in Blender, with the Sign In and Sign Out buttons" }}>
             <p>
               In the add-on's preferences, press <strong>Sign In</strong>. Your browser opens WorldHub; sign in with
               Google, GitHub, or a link we email you, and Blender picks it up on its own. You stay signed in; there is
@@ -127,7 +127,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="Publish" shotLabel="The Save as My World box with Save and Publish, cropped at 2x.">
+          <Step title="Publish" shot={{ src: '/images/blender-save-as-my-world.webp', alt: 'The Save as My World box in the Scene tab, with the Save and Publish button' }}>
             <p>
               Save your .blend file, then open the <strong>Scene</strong> tab of the Properties editor and find the{' '}
               <strong>VEML World</strong> panel. In its <strong>Save as My World</strong> box, press{' '}
@@ -139,9 +139,10 @@ const FirstWorld = () => {
               <strong>VEML Entry Point</strong> in the <strong>VEML Entity</strong> panel. Otherwise they start at the
               scene's camera.
             </p>
+            <img className="step-shot" src="/images/blender-entry-point.webp" alt="An object's VEML Entity panel with VEML Entry Point ticked" loading="lazy" />
           </Step>
 
-          <Step title="Who may enter" shotLabel="The Only People I Allow tick, with the Allowed Viewers field it reveals.">
+          <Step title="Who may enter" shot={{ src: '/images/blender-only-people-i-allow.webp', alt: 'The Save as My World box with Only People I Allow ticked and two addresses in Allowed Viewers' }}>
             <p>
               Leave <strong>Only People I Allow</strong> unticked and anyone with the link gets in. Tick it, and
               visitors are asked to sign in; the people on your <strong>Allowed Viewers</strong> list get in, nobody
@@ -189,6 +190,7 @@ const FirstWorld = () => {
                 and put another world's address in the <strong>Link</strong> field. In your world it lights up when
                 you look at it; click it, or tap it on a phone, and you step into theirs. That is how one world
                 becomes part of many.
+                <img className="step-shot" src="/images/blender-link-field.webp" alt="An object's VEML Entity panel with the Portal section and its Link field" loading="lazy" />
               </li>
               <li>
                 <strong>Change it.</strong> Change the scene in Blender and press Save and Publish again; the same

@@ -175,6 +175,16 @@ until a spec, repo or protocol document is public (founder to confirm).
   holds the open code that exists. We say "open source under MIT, on
   GitHub" and no more.)
 - The e-mail is `info@fivesquaredinteractive.com`, the one the live site uses.
+- Pictures made on 2026-11-12 without the founder: the loft from inside
+  and a second visitor with their name label, shot headless with two
+  visitors in the world (the second takes about half a minute to appear;
+  the phone view never finishes loading headless, so the phone picture
+  needs a real phone); the six Blender panels, shot by a script that
+  opened the loft scene in Blender 4.5, filtered the Properties editor to
+  VEML, scrolled in steps and screenshotted the area, with tooltips off
+  and nothing saved (Only People I Allow ticked and two example viewers
+  for the shot only). Scripts: the session scratchpad's `loftshots.cjs`
+  and `blendershots.py`.
 - The white paper is version 2.0, 12 November 2026
   (`public/docs/www_whitepaper_v2.0.pdf`; `WHITE_PAPER` in `src/links.js`),
   the founder's edit of a reviewed draft; the source is in the company

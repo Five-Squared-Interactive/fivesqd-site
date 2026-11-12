@@ -25,8 +25,8 @@ and both are in another world]
 
 Three tiles, each with a picture slot:
 1. **Install the add-on.** Blender 4.5 or newer. Sign in once with Google,
-   GitHub or an emailed link. [slot: the add-on panel in Blender, cropped
-   at 2x, with Save and Publish visible]
+   GitHub or an emailed link. *(Picture: the Save as My World box with
+   Save and Publish, the same screenshot the Publish step uses.)*
 2. **Press Save and Publish.** Your scene becomes a world at its own web
    address and opens in your browser. [slot: the link that appears after
    Save and Publish, as the add-on shows it]
@@ -37,9 +37,12 @@ Three tiles, each with a picture slot:
 ## The full guide
 
 Every step, with what you will see on screen. The steps carry no numbers
-of their own; the three tiles above are the numbering. Each step wants a
-screenshot (`shot` slots); none exist yet, and the founder's machine is
-where they come from.
+of their own; the three tiles above are the numbering. The Blender
+screenshots (Add-ons list, Sign In, Save as My World, Only People I Allow
+with two example viewers, VEML Entry Point, the Link field) were taken on
+2026-11-12 from the loft scene in Blender 4.5 by a script that switched
+the panels and scrolled; the browser-tab and phone pictures are still
+slots.
 
 ### What you need
 
