@@ -13,11 +13,19 @@ const Arrow = ({ id }) => (
   </defs>
 );
 
+// A laptop and a phone, drawn: a screen on a hinge over a base with a
+// keyboard line, and a phone with its speaker slit and home bar.
 const Devices = ({ x, y }) => (
-  <>
-    <rect x={x} y={y} width="70" height="46" rx="5" className="lf-screen" />
-    <rect x={x + 82} y={y - 6} width="30" height="56" rx="5" className="lf-screen" />
-  </>
+  <g className="lf-devices">
+    <rect x={x} y={y} width="70" height="44" rx="4" className="lf-shell" />
+    <rect x={x + 4} y={y + 4} width="62" height="34" rx="2" className="lf-screen" />
+    <path d={`M ${x - 6} ${y + 44} h 82 l 4 6 h -90 z`} className="lf-shell" />
+    <line x1={x + 27} y1={y + 47} x2={x + 43} y2={y + 47} className="lf-detail" />
+    <rect x={x + 84} y={y - 6} width="30" height="56" rx="6" className="lf-shell" />
+    <rect x={x + 87} y={y} width="24" height="42" rx="2" className="lf-screen" />
+    <line x1={x + 95} y1={y - 3} x2={x + 103} y2={y - 3} className="lf-detail" />
+    <line x1={x + 93} y1={y + 46.5} x2={x + 105} y2={y + 46.5} className="lf-detail" />
+  </g>
 );
 
 const TITLE = 'A scene becomes a folder of files, the folder gets an address, and the address opens in a browser on any device';
@@ -30,8 +38,8 @@ const LinkFlow = () => (
       <g className="lf-node">
         <rect x="20" y="40" width="200" height="120" rx="14" />
         <text x="120" y="88" textAnchor="middle" className="lf-title">A scene</text>
-        <text x="120" y="114" textAnchor="middle" className="lf-sub">Blender, today</text>
-        <text x="120" y="136" textAnchor="middle" className="lf-sub">Save and Publish</text>
+        <text x="120" y="114" textAnchor="middle" className="lf-sub">in the tool you already use</text>
+        <text x="120" y="136" textAnchor="middle" className="lf-sub">exported, one way</text>
       </g>
       <line x1="226" y1="100" x2="268" y2="100" className="lf-line" markerEnd="url(#lf-arrow-w)" />
       <g className="lf-node">
@@ -63,8 +71,8 @@ const LinkFlow = () => (
       <g className="lf-node">
         <rect x="40" y="10" width="280" height="120" rx="14" />
         <text x="180" y="58" textAnchor="middle" className="lf-title">A scene</text>
-        <text x="180" y="84" textAnchor="middle" className="lf-sub">Blender, today</text>
-        <text x="180" y="106" textAnchor="middle" className="lf-sub">Save and Publish</text>
+        <text x="180" y="84" textAnchor="middle" className="lf-sub">in the tool you already use</text>
+        <text x="180" y="106" textAnchor="middle" className="lf-sub">exported, one way</text>
       </g>
       <line x1="180" y1="136" x2="180" y2="174" className="lf-line" markerEnd="url(#lf-arrow-t)" />
       <g className="lf-node">

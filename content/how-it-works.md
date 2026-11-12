@@ -1,78 +1,98 @@
-# How it works
+# How it works (/technology)
 
-A world is a document at a URL, the way a web page is. Four pieces open
-it, move it, and let people be in it together. A world that is only
-visited needs the first two.
+This file is the words twin of `src/pages/Technology.jsx`; keep them in
+step. The page absorbed the former "What we make" page (2026-10-24): a
+visitor meets each piece where it does its job, and the product names
+are labels, not a grid. Founder, 2026-11-12: this page is about the
+technology, not Blender; nothing on it implies leaving your editor or
+your existing worlds behind, and WorldOS is described as what it is.
 
-*(A row of four steps with icons: Document → Client → Together → Runtime,
-the last marked "only some worlds".)*
+## Head
 
-## The document
+**How it works.** A world is a set of files at a web address, the way a
+web page is. A page opens it; the visitors' pages talk to each other; a
+door leads to the next world. It is built so you can share the worlds you
+already have and make new ones with the tools you already use.
 
-A world is a folder: one file in **VEML**, a small XML format that says what
-is in the world and where, plus the models it refers to, in glTF, the
-standard 3D file format. That is the whole world. A line of VEML names the
-sky; another names the model; another says where a visitor starts; a door to
-another world is one more line. Anything a client does not understand it
-ignores, so a world written for next year's client still opens in this
-year's.
+## The same parts as the web
+
+Each part of a world is the part of a web page it stands in for. *(The
+table: an HTML file / a VEML file; a browser / a browser running WebVerse,
+itself a page; a web server / the same web server; a link / a door; view
+source / add /index.veml to the address.)*
+
+## The file
+
+A world is a folder: one small text file in **VEML** (to a world what HTML
+is to a page) that says what is in the world and where, plus the 3D
+models it refers to in glTF, the standard model file that 3D tools already
+export. That is the whole world. One line names the sky, one the model,
+one says where a visitor starts, and a door to another world is one more
+line.
 
 Because the world is files, it has no server of its own. It is served the
-way a web page is served, through the same URLs, the same DNS, the same
-caching.
+way a web page is served, through the same addresses and the same hosts.
+A world written for next year's WebVerse still opens in this year's,
+because anything the page does not understand it leaves alone.
 
-*(Beside this: the living room's whole document, as text.)*
+*(Beside this: the loft's whole document, 787 bytes, plus the two files it
+names.)*
 
-## For developers: a world at your own address
+## How a link works
 
-Because a world is files, it can live anywhere a web page can: your own
-domain, GitHub Pages, a bucket. Put the folder there and open it with the
-client's page pointed at it:
+A scene becomes a folder. The folder gets an address. The address opens
+anywhere. *(The drawing: A scene, in the tool you already use, exported
+one way → A folder, index.veml and assets/model.glb, plain files → An
+address, worlds.worldhub.me/w/…, hosted for you today → a browser, any
+device, drawn as a laptop and a phone. Foot: no account and no install to
+visit; the files are served like any page, and any host can serve them.)*
 
-`https://worlds.worldhub.me/webverse/index.html#world-url=` followed by
-your world's `index.veml` address, URL-encoded. Your host serves the
-world, the client's host serves the client, and the two never need to be
-the same. Because the client reads the world from another origin, your
-host must allow cross-origin reads (`Access-Control-Allow-Origin: *`):
-GitHub Pages does; a bucket needs a CORS rule. A world published through
-WorldHub is the same thing with the
-hosting done for you.
+## The page that opens it
 
-## The client
-
-**WebVerse** is the client: a web page that loads the engine and opens the
-world at the address in its URL. The browser supplies the rest: the back
-button, history, bookmarks, the address bar. It runs on a phone, a laptop
-and a headset's browser, and it is what a published world's link opens.
-
-Under the client is **StraightFour**, the engine: rendering, loading,
-physics, the scripting sandbox. You meet it only if you build a client of
-your own.
+**WebVerse** is a web page that loads a 3D engine and opens the world at
+the address in its link. The browser supplies the rest: the back button,
+history, bookmarks, the address bar. It runs on a phone, a laptop and a
+headset's browser, and it is what a published world's link opens. Under
+it is **StraightFour**, the engine: rendering, loading, physics, and a
+sandbox that keeps a world's scripts away from your device and your data.
+You meet the engine only if you build a page of your own.
 
 ## Being there together
 
-When two people open the same world, their clients find each other and
-exchange what moved, through **WorldSync**. The clients talk to each other
+When two people open the same world, their pages find each other and
+exchange what moved, through **WorldSync**. They talk to each other
 directly; a small introduction service, ours by default, only helps them
-find each other and holds nothing afterwards. The world itself is
-unchanged; the files are still the source of truth. *(When a network keeps
-two visitors apart, a relay forwards their bytes; it is built and goes live
-with its key.)*
+find each other and keeps nothing afterwards. The world's files are
+untouched. WorldSync is ours and the default, not the only choice: the
+world's file names its sync service and the protocol it speaks, so a
+world can name another, and the page uses the first one it understands.
+*(Source: the VEML schema's synchronization-service element, with its
+required `type`; declarations sharing an id form a fallback group.)*
 
-## A world with its own logic
+## Worlds with state of their own
 
-Some worlds keep a score, run a simulation, reshape their terrain, or
-listen to a sensor: things no single visitor owns. Those run on
-**WorldOS**, a small runtime of plugins that the world's document names.
-Most worlds do not need it, and a world that does is still a document at a
-URL.
+Some worlds have state that no visitor's page can own: things placed by
+many people that stay placed, a world edited while people are in it, a
+world that other systems feed. **WorldOS** is the runtime that owns that
+state. It is the one authority over what is where, plugins give the world
+what it does, and every tool that touches the world, the page that opens
+it, an editor, a terminal, asks it the same way. It writes the world back
+out as files, so a world with WorldOS is still a world at an address.
+Most worlds do not need it. *(Source: docs/design/worldos-design.md §1 in
+the monorepo. Founder, 2026-11-12: the earlier "a score, a simulation,
+live terrain" was wrong for WorldOS.)*
 
-## Making worlds
+## Making worlds with the tools you already use
 
-**WorldKit** is the name for the tools that produce the files: today the
-Blender add-on, which exports a scene as a world and publishes it in one
-press. The export is one way: Blender stays the editor of the scene, the
-world is what it exports.
+Nothing here asks you to leave your editor or abandon the worlds you
+have. A world is exported from the tool you already work in, and that
+tool stays the editor: the export is one way, the world is what comes
+out. **WorldKit** is the name for those exporters. The first is the
+Blender add-on, which publishes a scene in one press, and models from
+SketchUp, Revit, Rhino or a game engine come through Blender's own
+importers. Worlds published this way are hosted on **WorldHub**, the one
+service we run; it also signs you in and lets you choose who may enter.
+[About WorldHub](/products/worldhub)
 
 ## The pieces, by name
 
@@ -81,16 +101,33 @@ VEML, the format: the file that says what is in a world and where ·
 WebVerse, the page that opens a world; what every published link opens ·
 StraightFour, the engine under that page: rendering, physics, the script
 sandbox · WorldSync, being there together: the visitors' pages exchange
-what moved · WorldOS, for the few worlds with their own logic · WorldKit,
-the authoring tools; today the Blender add-on.
+what moved · WorldOS, the runtime for worlds with live, shared state that
+something must own · WorldKit, the exporters: worlds from the tools you
+already use, starting with Blender.
+[On GitHub]({GITHUB_ORG})
+
+## For developers: a world at your own address
+
+Because a world is files, it can live anywhere a web page can: your own
+domain, GitHub Pages, a bucket. Put the folder there and open it with
+WebVerse pointed at it:
+
+`https://worlds.worldhub.me/webverse/index.html#world-url=` followed by
+your world's `index.veml` address, URL-encoded. Your host serves the
+world, the page's host serves the page, and the two never need to be the
+same. *(The cross-origin header a host must send is a fact for the
+developer guide, not this page; it is in content/README.md.)*
+Want to build on the pieces, or put your own things in a world?
+[Build on it](/ecosystem)
 
 ## Questions people ask
 
 - **Hasn't 3D on the web been tried?** Yes, in the nineties, when it
   needed a plugin and a computer that could not keep up. Today a phone
   renders a world in the browser with nothing installed, and a world is
-  one press away from a Blender scene. The technology stopped being the
-  problem; the plain path from a scene to a link was what was missing.
+  one export away from a scene in a tool you already use. The technology
+  stopped being the problem; the plain path from a scene to a link was
+  what was missing.
 - **Is this the metaverse?** No. The metaverse pitch wanted everyone to
   move in somewhere. We want a place to be as easy to make and share as a
   web page: you send it, people visit, they leave. No shared substrate, no
@@ -113,5 +150,5 @@ the authoring tools; today the Blender add-on.
 - Worlds link to worlds. The web's graph, in 3D.
 
 The long form is in the white paper (2025): [Web Wide Worlds](/docs/www_whitepaper_v1.1.pdf).
-Some of its details predate the current client; the principles are the
-same.
+Some of its details predate the current page; the principles are the
+same. [Make a world](/first-world) · [Build on it](/ecosystem)

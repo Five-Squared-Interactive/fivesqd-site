@@ -14,8 +14,8 @@ const PIECES = [
   { id: 'webverse', name: 'WebVerse', job: 'The page that opens a world. It is what every published link opens.', image: WORLD_CARD, imageAlt: WORLD_HERO_ALT },
   { id: 'straightfour', name: 'StraightFour', job: 'The engine under that page: rendering, physics, the script sandbox.', image: '/images/StraightFourLogo.webp' },
   { id: 'worldsync', name: 'WorldSync', job: "Being there together: the visitors' pages exchange what moved.", image: '/images/WorldSyncLogo.webp' },
-  { id: 'worldos', name: 'WorldOS', job: 'For the few worlds with their own logic: a score, a simulation, live terrain.', image: '/images/WorldOSLogo.webp' },
-  { id: 'worldkit', name: 'WorldKit', job: 'The authoring tools. Today: the Blender add-on.', image: '/images/icon-worldkit.png' },
+  { id: 'worldos', name: 'WorldOS', job: 'The runtime for worlds with live, shared state that something must own.', image: '/images/WorldOSLogo.webp' },
+  { id: 'worldkit', name: 'WorldKit', job: 'The exporters: worlds from the tools you already use, starting with Blender.', image: '/images/icon-worldkit.png' },
 ];
 
 const Technology = () => {
@@ -26,7 +26,8 @@ const Technology = () => {
           <h1>How it works</h1>
           <p>
             A world is a set of files at a web address, the way a web page is. A page opens it; the
-            visitors' pages talk to each other; a door leads to the next world.
+            visitors' pages talk to each other; a door leads to the next world. It is built so you
+            can share the worlds you already have and make new ones with the tools you already use.
           </p>
         </div>
       </section>
@@ -49,7 +50,7 @@ const Technology = () => {
               <p>
                 A world is a folder: one small text file in <strong>VEML</strong> (to a world what HTML
                 is to a page) that says what is in the world and where, plus the 3D models it refers to
-                in glTF, the standard model file Blender already exports. That is the whole world. One
+                in glTF, the standard model file that 3D tools already export. That is the whole world. One
                 line names the sky, one the model, one says where a visitor starts, and a door to
                 another world is one more line.
               </p>
@@ -60,7 +61,7 @@ const Technology = () => {
                 understand it leaves alone.
               </p>
             </div>
-            <WorldDocument caption="A published world's whole file, as Blender wrote it: 923 bytes, plus the two files it names." />
+            <WorldDocument caption="A published world's whole file: 787 bytes, plus the two files it names." />
           </div>
         </div>
       </section>
@@ -96,30 +97,37 @@ const Technology = () => {
             When two people open the same world, their pages find each other and exchange what
             moved, through <strong>WorldSync</strong>. They talk to each other directly; a small
             introduction service, ours by default, only helps them find each other and keeps nothing
-            afterwards. The world's files are untouched.
+            afterwards. The world's files are untouched. WorldSync is ours and the default, not the
+            only choice: the world's file names its sync service and the protocol it speaks, so a
+            world can name another, and the page uses the first one it understands.
           </p>
         </div>
       </section>
 
       <section className="section" id="worldos">
         <div className="container" style={{ maxWidth: '760px' }}>
-          <h2>Worlds with their own logic</h2>
+          <h2>Worlds with state of their own</h2>
           <p>
-            A few worlds keep a score, run a simulation, reshape their terrain, or listen to a sensor:
-            things no single visitor owns. Those run on <strong>WorldOS</strong>, a small runtime of
-            plugins that the world's file names. Most worlds do not need it, and a world that does is
-            still files at an address.
+            Some worlds have state that no visitor's page can own: things placed by many people that
+            stay placed, a world edited while people are in it, a world that other systems feed.{' '}
+            <strong>WorldOS</strong> is the runtime that owns that state. It is the one authority over
+            what is where, plugins give the world what it does, and every tool that touches the world,
+            the page that opens it, an editor, a terminal, asks it the same way. It writes the world
+            back out as files, so a world with WorldOS is still a world at an address. Most worlds do
+            not need it.
           </p>
         </div>
       </section>
 
       <section className="section section-light" id="worldkit">
         <div className="container" style={{ maxWidth: '760px' }}>
-          <h2>Making worlds</h2>
+          <h2>Making worlds with the tools you already use</h2>
           <p>
-            <strong>WorldKit</strong> is the name for the tools that produce the files: today the
-            Blender add-on, which exports a scene as a world and publishes it in one press. The
-            export is one way: Blender stays the editor of the scene, the world is what it exports.
+            Nothing here asks you to leave your editor or abandon the worlds you have. A world is
+            exported from the tool you already work in, and that tool stays the editor: the export is
+            one way, the world is what comes out. <strong>WorldKit</strong> is the name for those
+            exporters. The first is the Blender add-on, which publishes a scene in one press, and
+            models from SketchUp, Revit, Rhino or a game engine come through Blender's own importers.
             Worlds published this way are hosted on <strong>WorldHub</strong>, the one service we
             run; it also signs you in and lets you choose who may enter.{' '}
             <Link to="/products/worldhub">About WorldHub &rarr;</Link>
@@ -158,9 +166,7 @@ const Technology = () => {
           <pre className="code-example"><code>{`${CLIENT_URL}#world-url=`}<em>your world's index.veml address, URL-encoded</em></code></pre>
           <p>
             Your host serves the world, the page's host serves the page, and the two never need to
-            be the same. Because the page reads the world from another origin, your host must allow
-            cross-origin reads (<code>Access-Control-Allow-Origin: *</code>): GitHub Pages does; a
-            bucket needs a CORS rule.
+            be the same.
           </p>
           <p>
             Want to build on the pieces, or put your own things in a world?{' '}
@@ -176,8 +182,8 @@ const Technology = () => {
           <p>
             Yes, in the nineties, when it needed a plugin and a computer that could not keep up.
             Today a phone renders a world in the browser with nothing installed, and a world is one
-            press away from a Blender scene. The technology stopped being the problem; the plain path
-            from a scene to a link was what was missing.
+            export away from a scene in a tool you already use. The technology stopped being the
+            problem; the plain path from a scene to a link was what was missing.
           </p>
           <h3>Is this the metaverse?</h3>
           <p>

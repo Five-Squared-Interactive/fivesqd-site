@@ -183,6 +183,11 @@ until a spec, repo or protocol document is public (founder to confirm).
   the loft's own document (787 bytes, fetched from its address on
   2026-11-11: a title, the room, one sky, one entry point, one model), so
   the pair is one world. A door in the demo world is still wanted.
+- A world served from your own host must allow cross-origin reads
+  (`Access-Control-Allow-Origin: *`; GitHub Pages does, a bucket needs a
+  CORS rule). True, and kept here for the developer guide; the founder
+  took it off How it works on 2026-11-12 as a detail that page does not
+  need.
 - The client's host answers `X-Frame-Options: SAMEORIGIN`, so a world
   cannot be embedded in this site; the Walk-in frame opens the client in a
   new tab. An inline embed needs the publish service to send

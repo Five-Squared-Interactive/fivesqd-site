@@ -77,6 +77,7 @@ Attributes (founder, 2026-10-24): **plain, trustworthy, warm.** Reference: Obsid
 - **Warm:** people and verbs of experience (meet, show, wander, point); friends, clients, your people. Not: cute, exclamation marks, jokes.
 Tone by context: marketing pages warm and plain; the first-world guide exact (real button names); How it works precise; errors and status pages matter-of-fact.
 Brand words: a world is a web page (the thesis; use after the reader has seen a world). Never use: earlier generation, metaverse, immersive.
+**The standing promise (founder, 2026-11-12):** "Web Wide Worlds is designed to make it easy for you to share worlds you already have and make world experiences with the tools you already use." Nobody is asked to ditch their worlds or their tools; Blender is the first exporter, not the product, and the home page and How it works say so somewhere a stranger will read it.
 `[NEED: three lines of the founder's own writing to anchor the voice]`
 
 ## Proof Points

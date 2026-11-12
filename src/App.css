@@ -2007,7 +2007,9 @@ pre.code-example {
 .linkflow svg, .doors svg { width: 100%; height: auto; }
 .linkflow svg.lf-wide, .doors svg.dd-wide { display: block; }
 .lf-node rect, .dd-world rect { fill: var(--color-bg-alt); stroke: var(--color-border); stroke-width: 1.5; }
-.lf-node rect.lf-screen { fill: var(--color-primary); opacity: .85; }
+.lf-node .lf-shell { fill: var(--color-bg); stroke: currentColor; stroke-width: 1.5; }
+.lf-node .lf-screen { fill: var(--color-primary); opacity: .85; stroke: none; }
+.lf-node .lf-detail { stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; opacity: .7; }
 .lf-line, .dd-line { stroke: currentColor; stroke-width: 2; }
 .lf-title, .dd-title { font-size: 20px; font-weight: 700; fill: currentColor; }
 .lf-sub, .dd-sub { font-size: 14px; fill: var(--color-text-subtle); }
