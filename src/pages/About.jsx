@@ -27,7 +27,13 @@ const About = () => {
           <div className="media-text">
             <h2>Who we are</h2>
             <p>
-              <strong><span className="ph">[Founder's name]</span></strong>, founder. <span className="ph">[One line in his own words: where he is, what he did before, why this.]</span>
+              <strong>Dylan Baker</strong>, founder, is the architect of Web Wide Worlds, a framework for
+              modular 3D spaces and accessible world-building on the open web. His work includes WorldHub
+              and WebVerse, and bridging games like Minecraft and Cities: Skylines 2 into Web Wide Worlds,
+              enabling new interactions with existing creations. His background spans computer networking,
+              embedded systems and 3D visualization, with experience leading spacecraft flight software
+              development at NASA’s Goddard Space Flight Center and serving as lead architect of an XR
+              platform for aerospace engineering and scientific visualization.
             </p>
             <p>
               Five Squared Interactive is one person and the people who build with him. Small,
@@ -89,7 +95,7 @@ const About = () => {
               <h3>Facts</h3>
               <ul className="live-list">
                 <li>Founded <span className="ph">[year]</span>, <span className="ph">[place]</span></li>
-                <li>Founder: <span className="ph">[name]</span></li>
+                <li>Founder: Dylan Baker</li>
                 <li>Open source under MIT, on GitHub</li>
                 <li>White paper: Web Wide Worlds, 2025</li>
                 <li>Publishing from Blender: October 2026</li>

@@ -8,8 +8,17 @@ worlds, and owned by whoever made it.
 
 [slot: the founder, a square photograph in daylight]
 
-**[ph: Founder's name]**, founder. [ph: one line in his own words: where
-he is, what he did before, why this.]
+**Dylan Baker**, founder, is the architect of Web Wide Worlds, a
+framework for modular 3D spaces and accessible world-building on the open
+web. His work includes WorldHub and WebVerse, and bridging games like
+Minecraft and Cities: Skylines 2 into Web Wide Worlds, enabling new
+interactions with existing creations. His background spans computer
+networking, embedded systems and 3D visualization, with experience
+leading spacecraft flight software development at NASA's Goddard Space
+Flight Center and serving as lead architect of an XR platform for
+aerospace engineering and scientific visualization. *(His AWE USA 2026
+speaker bio, founder 2026-11-12; "platforms like Minecraft" became
+"games like", since the site never says platform.)*
 
 Five Squared Interactive is one person and the people who build with him.
 Small, open-source first, building in public since [ph: year].
@@ -49,7 +58,7 @@ requests: info@fivesquaredinteractive.com.
 - **Pictures.** [slot: three to five high-resolution screenshots of a
   published world, laptop and phone]. Logos: the Five Squared mark, the
   WebVerse mark and wordmark, the VEML mark [ph: zip].
-- **Facts.** Founded [ph: year], [ph: place] · Founder: [ph: name] · Open
+- **Facts.** Founded [ph: year], [ph: place] · Founder: Dylan Baker · Open
   source under MIT, on GitHub · White paper: Web Wide Worlds, 2025 ·
   Publishing from Blender: October 2026.
 
