@@ -109,7 +109,7 @@ const Technology = () => {
             Some worlds have shared state that has to live somewhere: things people place that stay
             placed, a world edited while others are in it, a world fed by other systems.{' '}
             <strong>WorldOS</strong> is the runtime that holds it, with plugins for what the world
-            does. A world with WorldOS is still files at an address, and most worlds do not need it.
+            does. A world with WorldOS is still files at an address.
           </p>
         </div>
       </section>

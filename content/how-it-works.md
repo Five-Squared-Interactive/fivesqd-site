@@ -73,7 +73,8 @@ Some worlds have shared state that has to live somewhere: things people
 place that stay placed, a world edited while others are in it, a world
 fed by other systems. **WorldOS** is the runtime that holds it, with
 plugins for what the world does. A world with WorldOS is still files at
-an address, and most worlds do not need it. *(Source:
+an address. *(Founder, 2026-11-12: "most worlds do not need it" is not
+needed. Source:
 docs/design/worldos-design.md §1 in the monorepo. Founder, 2026-11-12:
 "a score, a simulation, live terrain" was wrong for WorldOS, and the
 first rewrite was "too wordy".)*
