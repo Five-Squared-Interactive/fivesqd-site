@@ -151,8 +151,7 @@ const Home = () => {
             </Link>
           </div>
           <p className="founder-line text-center">
-            The software is free and open source under MIT, and hosting on WorldHub, our service, costs nothing.
-            Built by Five Squared Interactive since <span className="ph">[year]</span>, founded by <span className="ph">[name]</span>. <Link to="/about">About &rarr;</Link>
+            The software is free and open source under MIT, and hosting on WorldHub, our service, costs nothing. <Link to="/about">About &rarr;</Link>
           </p>
         </div>
       </section>

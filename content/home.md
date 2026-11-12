@@ -78,8 +78,9 @@ picture; no second loft frame.)*
 - **Make a world.** From your scene to a link, step by step. (/first-world)
 
 The software is free and open source under MIT, and hosting on WorldHub,
-our service, costs nothing. Built by Five Squared Interactive since
-[ph: year], founded by [ph: name]. [About](/about)
+our service, costs nothing. [About](/about) *(Founder, 2026-11-12: the
+"built since [year], founded by [name]" line was unnecessary; the About
+page carries that.)*
 
 ## What this replaced (2026-11-12)
 
