@@ -35,8 +35,8 @@ about to become a world]
 
 ## Open the link. You're there.
 
-On a phone or a laptop, in the browser. Nothing for your visitors to
-install.
+On a phone, a laptop or in VR, in the browser. Nothing for your visitors
+to install.
 *(The loft frame, click to walk in, the same size as the other pictures.)*
 
 ## Together, from the start.

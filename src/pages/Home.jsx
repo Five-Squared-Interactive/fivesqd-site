@@ -84,7 +84,7 @@ const Home = () => {
         title="Open the link. You’re there."
         figure={<WalkIn>Walk into the loft</WalkIn>}
       >
-        On a phone or a laptop, in the browser. Nothing for your visitors to install.
+        On a phone, a laptop or in VR, in the browser. Nothing for your visitors to install.
       </Feature>
 
       <Feature
