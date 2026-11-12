@@ -19,6 +19,10 @@ export const CLIENT_URL = 'https://worlds.worldhub.me/webverse/index.html';
 export const ADDON_REPO = 'https://github.com/Five-Squared-Interactive/WorldKit-VEML-Blender-Plugin';
 export const ADDON_ZIP = `${ADDON_REPO}/releases/latest/download/veml-blender-addon.zip`;
 
+// WorldHub's front page: the directory of published worlds at any address
+// (live from S3 since 2026-11-02).
+export const WORLDHUB_URL = 'https://www.worldhub.me/';
+
 // The GitHub organisation. Founder (2026-10-24): the site never speaks of
 // earlier or current generations; the link is simply GitHub.
 export const GITHUB_ORG = 'https://github.com/Five-Squared-Interactive';

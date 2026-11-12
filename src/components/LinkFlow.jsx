@@ -13,18 +13,23 @@ const Arrow = ({ id }) => (
   </defs>
 );
 
-// A laptop and a phone, drawn: a screen on a hinge over a base with a
-// keyboard line, and a phone with its speaker slit and home bar.
+// A laptop, a phone and a headset, drawn: a screen over a base with a
+// keyboard line; a phone with its speaker slit and home bar; a headset
+// as a visor with a nose cut-out and a strap. 136 units wide in all.
 const Devices = ({ x, y }) => (
   <g className="lf-devices">
-    <rect x={x} y={y} width="70" height="44" rx="4" className="lf-shell" />
-    <rect x={x + 4} y={y + 4} width="62" height="34" rx="2" className="lf-screen" />
-    <path d={`M ${x - 6} ${y + 44} h 82 l 4 6 h -90 z`} className="lf-shell" />
-    <line x1={x + 27} y1={y + 47} x2={x + 43} y2={y + 47} className="lf-detail" />
-    <rect x={x + 84} y={y - 6} width="30" height="56" rx="6" className="lf-shell" />
-    <rect x={x + 87} y={y} width="24" height="42" rx="2" className="lf-screen" />
-    <line x1={x + 95} y1={y - 3} x2={x + 103} y2={y - 3} className="lf-detail" />
-    <line x1={x + 93} y1={y + 46.5} x2={x + 105} y2={y + 46.5} className="lf-detail" />
+    <rect x={x} y={y + 2} width="56" height="36" rx="4" className="lf-shell" />
+    <rect x={x + 4} y={y + 6} width="48" height="28" rx="2" className="lf-screen" />
+    <path d={`M ${x - 6} ${y + 38} h 68 l 4 6 h -76 z`} className="lf-shell" />
+    <line x1={x + 21} y1={y + 41} x2={x + 35} y2={y + 41} className="lf-detail" />
+    <rect x={x + 70} y={y - 4} width="24" height="48" rx="5" className="lf-shell" />
+    <rect x={x + 73} y={y + 1} width="18" height="36" rx="2" className="lf-screen" />
+    <line x1={x + 79} y1={y - 1.5} x2={x + 85} y2={y - 1.5} className="lf-detail" />
+    <line x1={x + 77} y1={y + 40.5} x2={x + 87} y2={y + 40.5} className="lf-detail" />
+    <path d={`M ${x + 104} ${y + 12} q 0 -5 5 -5 h 32 q 5 0 5 5 v 16 q 0 5 -5 5 h -8 q -3 0 -5 -3 l -3 -4 l -3 4 q -2 3 -5 3 h -8 q -5 0 -5 -5 z`} className="lf-shell" />
+    <rect x={x + 108} y={y + 11} width="34" height="12" rx="2" className="lf-screen" />
+    <path d={`M ${x + 104} ${y + 17} q -8 -2 -8 3 q 0 5 8 3`} className="lf-detail" fill="none" />
+    <path d={`M ${x + 146} ${y + 17} q 8 -2 8 3 q 0 5 -8 3`} className="lf-detail" fill="none" />
   </g>
 );
 
@@ -56,11 +61,11 @@ const LinkFlow = () => (
         <text x="628" y="110" textAnchor="middle" className="lf-mono">worlds.worldhub.me/w/…</text>
         <text x="628" y="136" textAnchor="middle" className="lf-sub">hosted for you, today</text>
       </g>
-      <line x1="734" y1="100" x2="776" y2="100" className="lf-line" markerEnd="url(#lf-arrow-w)" />
+      <line x1="734" y1="100" x2="764" y2="100" className="lf-line" markerEnd="url(#lf-arrow-w)" />
       <g className="lf-node">
-        <rect x="782" y="40" width="160" height="120" rx="14" />
-        <Devices x={806} y={70} />
-        <text x="862" y="146" textAnchor="middle" className="lf-sub">a browser, any device</text>
+        <rect x="770" y="40" width="180" height="120" rx="14" />
+        <Devices x={786} y={72} />
+        <text x="860" y="146" textAnchor="middle" className="lf-sub">a browser, any device</text>
       </g>
       <text x="480" y="200" textAnchor="middle" className="lf-foot">No account and no install to visit. The files are served like any page, and any host can serve them.</text>
     </svg>
@@ -92,7 +97,7 @@ const LinkFlow = () => (
       <line x1="180" y1="486" x2="180" y2="524" className="lf-line" markerEnd="url(#lf-arrow-t)" />
       <g className="lf-node">
         <rect x="40" y="530" width="280" height="130" rx="14" />
-        <Devices x={124} y={556} />
+        <Devices x={98} y={560} />
         <text x="180" y="640" textAnchor="middle" className="lf-sub">a browser, any device</text>
       </g>
       <text x="180" y="698" textAnchor="middle" className="lf-foot-small">No account and no install to visit.</text>

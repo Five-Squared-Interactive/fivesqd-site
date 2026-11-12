@@ -1,14 +1,16 @@
 # Home
 
-Founder, 2026-11-11: one home page in the shape of a product site, modelled
-on Obsidian's. The thing moving first, then one section for each thing you
-can do with a picture of it, the mechanism ("a world is a web page") only
-after the visitor has seen the thing six times, and a closing row of three
-cards. Nobody is labelled by who they are: no audience names in the nav,
-headings, kickers or cards; the audiences choose the examples in the
-captions (Blender, then a client's kitchen, then friends meeting). Not a
-sales pitch; nothing about what is not built. `[slot]` marks a picture or
-recording only the founder can make; `[ph]` a fact he must supply.
+Founder, 2026-11-12: the home page says one thing, that making a good
+shared world is easy, and it says it the way a product site does: one line
+per section with the picture it needs. No button names, field names or
+mechanics on it ("we are describing nitty gritty things that makes it
+sound complicated"); nobody labelled by who they are; Blender is one of
+the tools you already use, not the subject ("the home page is solely
+focused on the blender plugin"); the loft once, at the same size as the
+other pictures ("too much weight on the loft when it isn't that
+impressive"). `[slot]` marks a picture or recording only the founder can
+make; `[ph]` a fact he must supply. This file is the words twin of
+`src/pages/Home.jsx`; keep them in step.
 
 ## Hero (text left, recording right)
 
@@ -16,92 +18,79 @@ recording only the founder can make; `[ph]` a fact he must supply.
 
 Make a place, send the link, and people walk around in it with you.
 
-[Walk into one now]({DEMO_WORLD_URL}: the loft, published 2026-10-25) ·
-[Make one](/first-world)
+[Walk into one now]({DEMO_WORLD_URL}: the loft) · [Make one](/first-world)
 
 Free and open source.
 
-[slot: muted, looping; open on the payoff: a phone opens a link and is
-standing in a room; a second person walks in; then, briefly, the Blender
-scene it came from and the Save and Publish press]
+[slot, recording: muted, looping; open on the payoff: a phone opens a link
+and is standing in a room; a second person walks in; then, briefly, the
+scene it came from and the one press that published it]
 
-## Open the link and you're in the room.
+## Share the worlds you already have.
 
-On a phone or a laptop, in the browser you already have. Nothing to
-install for visitors.
+Bring a scene from the tools you already use. Nothing to relearn, nothing
+to rebuild.
+[slot: three scenes in three tools people already use, side by side, each
+about to become a world]
 
-*(The loft, full width, the real frame we have; click opens it in a new
-tab. Caption: The loft, published from Blender and opened in a browser.
-Click it and walk around.)*
+## Open the link. You're there.
 
-## Whoever opens the link is in there with you.
+On a phone or a laptop, in the browser. Nothing for your visitors to
+install.
+*(The loft frame, click to walk in, the same size as the other pictures.)*
 
-You see each other move and you can type to each other. The visitors'
-browsers connect to each other, so nothing of yours has to stay switched
-on.
+## Together, from the start.
 
-[slot: the loft with two visitors in it, their names over their heads: a
-frame from the recording]
+Whoever opens the link is in there with you.
+[slot: two visitors in a world, their names over their heads: a frame from
+the recording]
 
-## Press Save and Publish. Your scene is a link.
+## Make it, send it.
 
-Install the add-on and sign in once. From then on, one press puts your
-scene at its own web address and opens it in your browser. Send the
-address. [Make a world from Blender](/first-world)
+From a scene to a link in one press. Paste it anywhere people read.
+[slot: the moment the link appears after one press, with the scene behind
+it]
 
-[slot: the Save as My World box in Blender with the Save and Publish
-button, cropped at 2x]
+## Private when you want.
 
-## Choose who may enter.
+Only the people you name get in.
+[slot: a kitchen walkthrough on a phone, a client's hand holding it, a plan
+on the desk behind]
 
-Tick Only People I Allow and name them. They sign in once; nobody else
-gets in. A client can walk the kitchen on their phone before the slab is
-poured, and you're in there with them.
-[A private link for a client](/private-link)
+## Worlds lead to worlds.
 
-[slot: the Only People I Allow tick with two viewers listed, and a kitchen
-walkthrough on a phone beside it]
-
-## Put a door in it.
-
-A door in your world opens onto another world at its own address, the way
-a page links to the next. It is the Link field on an object in Blender.
-Your people meet in your world and step out of it into others.
-[A world your friends meet in](/doors)
-
-[slot, recording: friends in a world; one taps a door and is in another
-world, and the address bar changes]
+A door from your world into someone else's, the way pages link to pages.
+[slot, recording: someone walks up to a door in one world and comes out in
+another; the address bar changes]
 
 ## It's yours.
 
-Here is everything in a published place: one small text file, one model,
-one sky. The format is open and the files are plain, so your world can
-live on any web host, and reading it never depends on us. *(The loft,
-walkable, beside the loft's own document, 787 bytes, with the five marks:
-its name, the room, the sky, where you start, the model.)*
+Plain files at your own address, in an open format, on any host you like.
 [How it works](/technology)
+*(The loft's whole document, 787 bytes, with the five marks, as the
+picture; no second loft frame.)*
 
 ## Closing (three cards, then one line)
 
-- **Get the add-on.** For Blender 4.5 or newer. ({ADDON_URL}: the latest
-  GitHub release)
-- **Walk into the loft.** The world on this page, in a new tab. ({DEMO_WORLD_URL})
-- **GitHub.** The code, under MIT.
-
-(The card titles are not headings; the row has no heading of its own.)
+- **Walk into a world.** The loft, in a new tab. ({DEMO_WORLD_URL})
+- **Find worlds on WorldHub.** Worlds people have published, at any
+  address. (https://www.worldhub.me)
+- **Make a world.** From your scene to a link, step by step. (/first-world)
 
 The software is free and open source under MIT, and hosting on WorldHub,
 our service, costs nothing. Built by Five Squared Interactive since
 [ph: year], founded by [ph: name]. [About](/about)
 
-## What this replaced (2026-11-11)
+## What this replaced (2026-11-12)
 
-The three audience cards (each led to a page called Architects, Blender
-artists or World builders), the "Free, and open" prose block (its facts
-are in the closing line) and the "Have a 3D scene?" band (the closing
-cards replace it). Founder, 2026-11-11, on the audience names in the nav:
-"overtly having architects, blender artists ... tells me that you are not
-supplied with the correct skills to do this right." The three pages stay,
-named by what they show: Make a world from Blender (/first-world), A
-private link for a client (/private-link, was /architects), A world your
-friends meet in (/doors, was /builders). The old addresses forward.
+The 2026-11-11 page: "Open the link and you're in the room" (full-width
+loft), "Whoever opens the link is in there with you" (with a sentence
+about visitors' browsers connecting), "Press Save and Publish. Your scene
+is a link" (install, sign in once, one press, send the address), "Choose
+who may enter" (the tick by name, the kitchen before the slab is poured),
+"Put a door in it" (the Link field on an object in Blender), the loft
+beside its document, and cards Get the add-on / Walk into the loft /
+GitHub. Founder: too low level for the home page, three times; "people
+already understand what synchronization is without you describing it";
+"Nothing to install for visitors" clunky. The facts those lines carried
+live on /first-world and /technology.

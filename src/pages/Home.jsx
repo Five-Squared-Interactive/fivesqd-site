@@ -2,19 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Slot from '../components/Slot';
 import WorldDocument from '../components/WorldDocument';
-import { ADDON_ZIP, DEMO_WORLD_URL, GITHUB_ORG, WORLD_CARD, WORLD_HERO, WORLD_HERO_ALT } from '../links';
+import { DEMO_WORLD_URL, WORLDHUB_URL, WORLD_CARD, WORLD_HERO, WORLD_HERO_ALT } from '../links';
 
-// The words are content/home.md; keep the two in step. One home page in
-// the shape of a product site: the thing moving, then one section for
-// each thing you can do with a picture of it, the mechanism last, and a
-// closing row of three cards. Nobody is labelled by who they are; the
-// audiences choose the examples in the captions. Slots mark pictures and
-// recordings only the founder can make.
+// The words are content/home.md; keep the two in step. The home page says
+// one thing: making a good shared world is easy. Eight one-line sections,
+// each with the picture it needs, and no button names, field names or
+// mechanics anywhere on it (founder, 2026-11-12: "we are describing
+// nitty gritty things that makes it sound complicated"). Nobody is
+// labelled by who they are; Blender is one of the tools you already use,
+// not the subject. The loft appears once, at the same size as the other
+// pictures. Slots mark pictures and recordings only the founder can make.
 
-const WalkIn = ({ className = '', children }) =>
+const WalkIn = ({ children }) =>
   DEMO_WORLD_URL ? (
     <a
-      className={`walkin walkin-poster ${className}`.trim()}
+      className="walkin walkin-poster"
       style={{ backgroundImage: `url(${WORLD_HERO})` }}
       href={DEMO_WORLD_URL}
       target="_blank"
@@ -24,16 +26,15 @@ const WalkIn = ({ className = '', children }) =>
       <span>{children || 'Walk in'}</span>
     </a>
   ) : (
-    <Slot label="A published world, walkable from this page." poster={WORLD_CARD} ratio="800 / 426" className={className} />
+    <Slot label="A published world, walkable from this page." poster={WORLD_CARD} ratio="800 / 426" />
   );
 
-const Feature = ({ id, flip, light, title, children, link, figure }) => (
+const Feature = ({ id, flip, light, title, children, figure }) => (
   <section className={`section feature-row ${light ? 'section-light' : ''}`.trim()} id={id}>
     <div className={`container media-row ${flip ? 'flip' : ''}`.trim()}>
       <div className="media-text">
         <h2 className="feature-title">{title}</h2>
         <p className="lead">{children}</p>
-        {link}
       </div>
       <div className="media-figure">{figure}</div>
     </div>
@@ -61,105 +62,93 @@ const Home = () => {
           <div className="media-figure" id="watch">
             <Slot
               kind="video"
-              label="Muted, looping. Open on the payoff: a phone opens a link and is standing in a room; a second person walks in; then, briefly, the Blender scene it came from and the Save and Publish press."
+              label="Muted, looping. Open on the payoff: a phone opens a link and is standing in a room; a second person walks in; then, briefly, the scene it came from and the one press that published it."
               poster={WORLD_CARD}
             />
           </div>
         </div>
       </section>
 
-      <section className="section section-light" id="walk-in">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>Open the link and you’re in the room.</h2>
-            <p className="section-subtitle">
-              On a phone or a laptop, in the browser you already have. Nothing to install for visitors.
-            </p>
-          </div>
-          <figure className="world-wide">
-            <WalkIn>Walk into the loft</WalkIn>
-            <figcaption>The loft, published from Blender and opened in a browser. Click it and walk around.</figcaption>
-          </figure>
-        </div>
-      </section>
+      <Feature
+        id="your-worlds"
+        light
+        title="Share the worlds you already have."
+        figure={<Slot label="Three scenes in three tools people already use, side by side, each about to become a world." ratio="4 / 3" />}
+      >
+        Bring a scene from the tools you already use. Nothing to relearn, nothing to rebuild.
+      </Feature>
+
+      <Feature
+        id="walk-in"
+        flip
+        title="Open the link. You’re there."
+        figure={<WalkIn>Walk into the loft</WalkIn>}
+      >
+        On a phone or a laptop, in the browser. Nothing for your visitors to install.
+      </Feature>
 
       <Feature
         id="together"
-        title="Whoever opens the link is in there with you."
-        figure={<Slot label="The loft with two visitors in it, their names over their heads: a frame from the recording." ratio="4 / 3" />}
+        light
+        title="Together, from the start."
+        figure={<Slot label="Two visitors in a world, their names over their heads: a frame from the recording." ratio="4 / 3" />}
       >
-        You see each other move and you can type to each other. The visitors’ browsers connect to each other, so nothing of yours has to stay switched on.
+        Whoever opens the link is in there with you.
       </Feature>
 
       <Feature
         id="publish"
         flip
-        light
-        title="Press Save and Publish. Your scene is a link."
-        link={<p><Link to="/first-world">Make a world from Blender &rarr;</Link></p>}
-        figure={<Slot label="The Save as My World box in Blender with the Save and Publish button, cropped at 2x." ratio="4 / 3" />}
+        title="Make it, send it."
+        figure={<Slot label="The moment the link appears after one press, with the scene behind it." ratio="4 / 3" />}
       >
-        Install the add-on and sign in once. From then on, one press puts your scene at its own web address and opens it in your browser. Send the address.
+        From a scene to a link in one press. Paste it anywhere people read.
       </Feature>
 
       <Feature
-        id="who-may-enter"
-        title="Choose who may enter."
-        link={<p><Link to="/private-link">A private link for a client &rarr;</Link></p>}
-        figure={<Slot label="The Only People I Allow tick with two viewers listed, and a kitchen walkthrough on a phone beside it." ratio="4 / 3" />}
+        id="private"
+        light
+        title="Private when you want."
+        figure={<Slot label="A kitchen walkthrough on a phone, a client's hand holding it, a plan on the desk behind." ratio="4 / 3" />}
       >
-        Tick Only People I Allow and name them. They sign in once; nobody else gets in. A client can walk the kitchen on their phone before the slab is poured, and you’re in there with them.
+        Only the people you name get in.
       </Feature>
 
       <Feature
         id="doors"
         flip
-        light
-        title="Put a door in it."
-        link={<p><Link to="/doors">A world your friends meet in &rarr;</Link></p>}
-        figure={<Slot kind="video" label="Friends in a world; one taps a door and is in another world, and the address bar changes." ratio="4 / 3" />}
+        title="Worlds lead to worlds."
+        figure={<Slot kind="video" label="Someone walks up to a door in one world and comes out in another; the address bar changes." ratio="4 / 3" />}
       >
-        A door in your world opens onto another world at its own address, the way a page links to the next. It is the Link field on an object in Blender. Your people meet in your world and step out of it into others.
+        A door from your world into someone else’s, the way pages link to pages.
       </Feature>
 
-      <section className="section" id="document">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>It’s yours.</h2>
-            <p className="section-subtitle">
-              Here is everything in a published place: one small text file, one model, one sky. The format is open and the files are plain, so your world can live on any web host, and reading it never depends on us.
-            </p>
-          </div>
-          <div className="world-pair">
-            <figure className="world-frame">
-              <WalkIn />
-              <figcaption>The loft, opened in a browser. Walk in.</figcaption>
-            </figure>
-            <WorldDocument caption={'The loft’s whole document, 787 bytes. Add /index.veml to any published world’s address and read it.'} />
-          </div>
-          <p className="text-center" style={{ marginTop: '1.5rem' }}>
-            <Link to="/technology">How it works &rarr;</Link>
-          </p>
-        </div>
-      </section>
+      <Feature
+        id="yours"
+        light
+        title="It’s yours."
+        figure={<WorldDocument caption={'A whole world, 787 bytes. Add /index.veml to any published world’s address and read it.'} />}
+      >
+        Plain files at your own address, in an open format, on any host you like. <Link to="/technology">How it works &rarr;</Link>
+      </Feature>
 
-      <section className="section section-light" id="start">
+      <section className="section" id="start">
         <div className="container">
           <div className="grid-3-steps closing-cards">
-            <a href={ADDON_ZIP} className="card closing-card">
-              <span className="closing-title">Get the add-on</span>
-              <p>For Blender 4.5 or newer.</p>
-            </a>
             {DEMO_WORLD_URL && (
               <a href={DEMO_WORLD_URL} target="_blank" rel="noopener noreferrer" className="card closing-card">
-                <span className="closing-title">Walk into the loft</span>
-                <p>The world on this page, in a new tab.</p>
+                <span className="closing-title">Walk into a world</span>
+                <p>The loft, in a new tab.</p>
               </a>
             )}
-            <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer" className="card closing-card">
-              <span className="closing-title">GitHub</span>
-              <p>The code, under MIT.</p>
+            <a href={WORLDHUB_URL} target="_blank" rel="noopener noreferrer" className="card closing-card">
+              <span className="closing-title">Find worlds on WorldHub</span>
+              <p>Worlds people have published, at any address.</p>
             </a>
+            <Link to="/first-world" className="card closing-card">
+              <span className="closing-title">Make a world</span>
+              <p>From your scene to a link, step by step.</p>
+            </Link>
           </div>
           <p className="founder-line text-center">
             The software is free and open source under MIT, and hosting on WorldHub, our service, costs nothing.

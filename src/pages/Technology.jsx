@@ -94,12 +94,10 @@ const Technology = () => {
         <div className="container" style={{ maxWidth: '760px' }}>
           <h2>Being there together</h2>
           <p>
-            When two people open the same world, their pages find each other and exchange what
-            moved, through <strong>WorldSync</strong>. They talk to each other directly; a small
-            introduction service, ours by default, only helps them find each other and keeps nothing
-            afterwards. The world's files are untouched. WorldSync is ours and the default, not the
-            only choice: the world's file names its sync service and the protocol it speaks, so a
-            world can name another, and the page uses the first one it understands.
+            When two people open the same world, their pages find each other and share what moved,
+            through <strong>WorldSync</strong>. Nothing passes through us but the introduction, and
+            the world's files are untouched. WorldSync is the default, not a requirement: a world can
+            name a different sync protocol in its file.
           </p>
         </div>
       </section>
@@ -108,13 +106,10 @@ const Technology = () => {
         <div className="container" style={{ maxWidth: '760px' }}>
           <h2>Worlds with state of their own</h2>
           <p>
-            Some worlds have state that no visitor's page can own: things placed by many people that
-            stay placed, a world edited while people are in it, a world that other systems feed.{' '}
-            <strong>WorldOS</strong> is the runtime that owns that state. It is the one authority over
-            what is where, plugins give the world what it does, and every tool that touches the world,
-            the page that opens it, an editor, a terminal, asks it the same way. It writes the world
-            back out as files, so a world with WorldOS is still a world at an address. Most worlds do
-            not need it.
+            Some worlds have shared state that has to live somewhere: things people place that stay
+            placed, a world edited while others are in it, a world fed by other systems.{' '}
+            <strong>WorldOS</strong> is the runtime that holds it, with plugins for what the world
+            does. A world with WorldOS is still files at an address, and most worlds do not need it.
           </p>
         </div>
       </section>
@@ -123,14 +118,11 @@ const Technology = () => {
         <div className="container" style={{ maxWidth: '760px' }}>
           <h2>Making worlds with the tools you already use</h2>
           <p>
-            Nothing here asks you to leave your editor or abandon the worlds you have. A world is
-            exported from the tool you already work in, and that tool stays the editor: the export is
-            one way, the world is what comes out. <strong>WorldKit</strong> is the name for those
-            exporters. The first is the Blender add-on, which publishes a scene in one press, and
-            models from SketchUp, Revit, Rhino or a game engine come through Blender's own importers.
-            Worlds published this way are hosted on <strong>WorldHub</strong>, the one service we
-            run; it also signs you in and lets you choose who may enter.{' '}
-            <Link to="/products/worldhub">About WorldHub &rarr;</Link>
+            Keep your editor and the worlds you have. <strong>WorldKit</strong> is the set of
+            exporters that turn a scene into a world from the tool you already work in. The first is
+            the Blender add-on; models from other tools come in through Blender. Published worlds are
+            hosted on <strong>WorldHub</strong>, our one service, which also signs you in and lets you
+            choose who may enter. <Link to="/products/worldhub">About WorldHub &rarr;</Link>
           </p>
         </div>
       </section>
