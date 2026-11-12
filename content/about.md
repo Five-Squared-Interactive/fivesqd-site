@@ -6,7 +6,8 @@ worlds, and owned by whoever made it.
 
 ## Who we are (photo left, text right)
 
-[slot: the founder, a square photograph in daylight]
+*(The founder's photo from his AWE USA 2026 speaker page,
+`public/images/dylan-baker.jpg`, 800 by 800; founder, 2026-11-12.)*
 
 **Dylan Baker**, founder, is the architect of Web Wide Worlds, a
 framework for modular 3D spaces and accessible world-building on the open
@@ -21,7 +22,7 @@ speaker bio, founder 2026-11-12; "platforms like Minecraft" became
 "games like", since the site never says platform.)*
 
 Five Squared Interactive is one person and the people who build with him.
-Small, open-source first, building in public since [ph: year].
+Small, open-source first, building in public since 2019.
 [Get in touch](mailto:info@fivesquaredinteractive.com)
 
 ## What we believe
@@ -34,7 +35,7 @@ less to us than one person's world at their own address.
 
 ## How we got here
 
-We have been building open 3D worlds for the web since [ph: year]. The
+We have been building open 3D worlds for the web since 2019. The
 long form of the idea is the 2025 white paper, Web Wide Worlds. Today a
 Blender scene becomes a world in one press. The code is open source under
 MIT, on GitHub.
@@ -58,7 +59,7 @@ requests: info@fivesquaredinteractive.com.
 - **Pictures.** [slot: three to five high-resolution screenshots of a
   published world, laptop and phone]. Logos: the Five Squared mark, the
   WebVerse mark and wordmark, the VEML mark [ph: zip].
-- **Facts.** Founded [ph: year], [ph: place] · Founder: Dylan Baker · Open
+- **Facts.** Founded 2019, [ph: place] · Founder: Dylan Baker · Open
   source under MIT, on GitHub · White paper: Web Wide Worlds, 2025 ·
   Publishing from Blender: October 2026.
 

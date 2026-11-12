@@ -22,7 +22,7 @@ const About = () => {
       <section className="section section-light">
         <div className="container media-row">
           <div className="media-figure media-figure-narrow">
-            <Slot label="The founder. A photograph, square, in daylight." ratio="1 / 1" />
+            <img className="founder-photo" src="/images/dylan-baker.jpg" alt="Dylan Baker" width="800" height="800" loading="lazy" />
           </div>
           <div className="media-text">
             <h2>Who we are</h2>
@@ -37,7 +37,7 @@ const About = () => {
             </p>
             <p>
               Five Squared Interactive is one person and the people who build with him. Small,
-              open-source first, building in public since <span className="ph">[year]</span>.
+              open-source first, building in public since 2019.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <a href={`mailto:${CONTACT_EMAIL}`} className="btn btn-primary">Get in touch</a>
@@ -57,7 +57,7 @@ const About = () => {
           </p>
           <h2 style={{ marginTop: '2.5rem' }}>How we got here</h2>
           <p>
-            We have been building open 3D worlds for the web since <span className="ph">[year]</span>. The
+            We have been building open 3D worlds for the web since 2019. The
             long form of the idea is the 2025 white paper,{' '}
             <a href={WHITE_PAPER} target="_blank" rel="noopener noreferrer">Web Wide Worlds</a>. Today a
             Blender scene becomes a world in one press. The code is open source under MIT, on{' '}
@@ -94,7 +94,7 @@ const About = () => {
             <div className="card">
               <h3>Facts</h3>
               <ul className="live-list">
-                <li>Founded <span className="ph">[year]</span>, <span className="ph">[place]</span></li>
+                <li>Founded 2019, <span className="ph">[place]</span></li>
                 <li>Founder: Dylan Baker</li>
                 <li>Open source under MIT, on GitHub</li>
                 <li>White paper: Web Wide Worlds, 2025</li>
