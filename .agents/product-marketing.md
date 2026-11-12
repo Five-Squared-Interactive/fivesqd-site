@@ -78,7 +78,11 @@ Attributes (founder, 2026-10-24): **plain, trustworthy, warm.** Reference: Obsid
 Tone by context: marketing pages warm and plain; the first-world guide exact (real button names); How it works precise; errors and status pages matter-of-fact.
 Brand words: a world is a web page (the thesis; use after the reader has seen a world). Never use: earlier generation, metaverse, immersive.
 **The standing promise (founder, 2026-11-12):** "Web Wide Worlds is designed to make it easy for you to share worlds you already have and make world experiences with the tools you already use." Nobody is asked to ditch their worlds or their tools; Blender is the first exporter, not the product, and the home page and How it works say so somewhere a stranger will read it.
-`[NEED: three lines of the founder's own writing to anchor the voice]`
+**The founder's own writing (white paper 2.1 edits, 2026-11-12), the voice sample for long-form:**
+- "A world is a set of files at a web address, much like a web page. Anyone can open a public world in a browser without installing an application or creating an account. People share it by sending a link."
+- "A persistent world does not necessarily need a process running around the clock. It needs somewhere to store its state. Much of the cost of hosting persistent worlds comes from treating those two requirements as if they were the same."
+- "The limits matter. Independence means that the content can survive and the code can be forked. It does not mean that software will maintain itself indefinitely."
+What his edits did to my draft: measured and complete sentences over clipped ones ("much like a web page", "without installing an application or creating an account"); "creator" and "creators" rather than "maker"; "shell" named plainly; hedged where the fact is a design ("should", "can", "is intended to"); American spelling (center); he uses em dashes in long-form, which stays a no on the site. The site's short copy stays short; long-form (papers, About, How it works) follows this register.
 
 ## Proof Points
 - Publishing from Blender in one press: live, October 2026.
