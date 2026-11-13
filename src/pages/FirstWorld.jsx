@@ -65,7 +65,7 @@ const FirstWorld = () => {
           </div>
           <div className="grid-3-steps">
             <div className="step-tile">
-              <img className="tile-img" src="/images/blender-addons-list.webp" alt="Blender's Add-ons list with the VEML add-on ticked" width="1400" height="675" loading="lazy" />
+              <img className="tile-img" src="/images/blender-addons-list.webp" alt="Blender's Add-ons list with the VEML add-on ticked" width="1400" height="660" loading="lazy" />
               <h3><span className="step-n">1</span> Install the add-on</h3>
               <p>Blender 4.5 or newer. Sign in once with Google, GitHub or an emailed link.</p>
             </div>

@@ -10,7 +10,7 @@ This file is the words twin of `src/pages/Builders.jsx`; keep them in step.
 
 **A world of your own, with your friends in it.**
 Your world is a few plain files at its own web address. Your people walk
-in from a link, and a door in it leads to other worlds. You don't run a
+in from a link, and a door in it points to other worlds. You don't run a
 server.
 [Explore worlds on WorldHub](https://www.worldhub.me/) · [Build one from Blender](/first-world)
 *(Recording: the same loop as the home page, `public/video/hero-2026-11-13d.webm`;

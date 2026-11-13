@@ -103,7 +103,7 @@ const Home = () => {
         id="publish"
         flip
         title="Make it, send it."
-        figure={<img className="feature-photo" src="/images/blender-link-appears.webp" alt="The Save as My World box in Blender after one press, with the world's address filled in" width="1400" height="807" loading="lazy" />}
+        figure={<img className="feature-photo" src="/images/loft-link-in-browser.webp" alt="The loft open in a browser tab, its address in the address bar: the link that one press made" width="1400" height="780" loading="lazy" />}
       >
         From a scene to a link in one press. Paste it anywhere people read.
       </Feature>

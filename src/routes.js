@@ -30,7 +30,7 @@ export const ROUTES = [
   {
     path: '/doors',
     title: 'A world your friends meet in - Five Squared Interactive',
-    description: 'A world of your own at its own web address. Your people walk in from a link, doors lead to other worlds, and you do not run a server.',
+    description: 'A world of your own at its own web address. Your people walk in from a link, doors point to other worlds, and you do not run a server.',
   },
   {
     path: '/products/worldhub',

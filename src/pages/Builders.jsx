@@ -14,7 +14,7 @@ const Builders = () => (
           <h1>A world of your own, with your friends in it.</h1>
           <p className="lead">
             Your world is a few plain files at its own web address. Your people walk in from a
-            link, and a door in it leads to other worlds. You don’t run a server.
+            link, and a door in it points to other worlds. You don’t run a server.
           </p>
           <div className="hero-actions-left">
             <a href={WORLDHUB_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">Explore worlds on WorldHub</a>

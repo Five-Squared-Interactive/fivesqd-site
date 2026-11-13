@@ -188,7 +188,9 @@ until a spec, repo or protocol document is public (founder to confirm).
   VEML, scrolled in steps and screenshotted the area, with tooltips off
   and nothing saved (Only People I Allow ticked and two example viewers
   for the shot only). Scripts: the session scratchpad's `loftshots.cjs`
-  and `blendershots.py`.
+  and `blendershots.py`. `loft-link-in-browser.webp` (Home, "Make it,
+  send it") is the top 1400 by 780 of `loft-browser-tab.webp`, the loft
+  in a Chrome guest window with its address showing, captured 2026-11-13.
 - The white paper is version 2.0, 12 November 2026
   (`public/docs/www_whitepaper_v2.0.pdf`; `WHITE_PAPER` in `src/links.js`),
   the founder's edit of a reviewed draft; the source is in the company

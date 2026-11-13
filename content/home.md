@@ -59,8 +59,12 @@ anonymous visitor, so the copy says "a name", never "their name".)*
 ## Make it, send it.
 
 From a scene to a link in one press. Paste it anywhere people read.
-*(Picture: the Save as My World box after one press, World Address filled
-in; the station's panel, shot 2026-11-13.)*
+*(Picture: the loft in a browser tab with its address in the address
+bar, `loft-link-in-browser.webp`, the top of the guide's Share picture.
+Review, 2026-11-13: the Save as My World box here and the Only People I
+Allow box in the next section were the same dark panel twice in a row at
+phone width; the press itself is in the recording, so this section shows
+the link it made.)*
 
 ## Private when you want.
 

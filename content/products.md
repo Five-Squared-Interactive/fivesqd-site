@@ -1,6 +1,9 @@
 > 2026-10-24: this page no longer exists on the site. /products forwards
 > to /technology#stack, which lists the pieces by name with one line each
-> (see how-it-works.md). Kept for the words.
+> (see how-it-works.md). Kept for the words, which are SUPERSEDED: the
+> WorldOS line below ("keeps a score, runs a simulation") is the wording
+> the founder rejected on 2026-11-12; how-it-works.md has the current one.
+> Copy nothing from this file.
 
 # What we make
 

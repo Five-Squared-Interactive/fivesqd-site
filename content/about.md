@@ -51,7 +51,7 @@ requests: info@fivesquaredinteractive.com.
 - **In a paragraph.** A world made with Five Squared's tools is a small
   text file and the 3D models it names, served from an ordinary web
   address. Anyone with the link walks in from a browser and meets whoever
-  else is there; a door in one world can open onto another, the way pages
+  else is there; a door in one world can point to another, the way pages
   link. Today a Blender user publishes a scene as a world in one press,
   hosted on the company's WorldHub service or on any web host. The format
   (VEML) and the page that opens worlds (WebVerse) are open source under
