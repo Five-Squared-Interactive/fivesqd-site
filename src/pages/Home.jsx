@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Slot from '../components/Slot';
 import WorldDocument from '../components/WorldDocument';
-import { DEMO_WORLD_URL, WORLDHUB_URL, WORLD_CARD, WORLD_ROOM, WORLD_TOGETHER, WORLD_HERO_ALT } from '../links';
+import { DEMO_WORLD_URL, WORLDHUB_URL, WORLD_CARD, HERO_POSTER, WORLD_ROOM, WORLD_TOGETHER, WORLD_HERO_ALT } from '../links';
 
 // The words are content/home.md; keep the two in step. The home page says
 // one thing: making a good shared world is easy. Eight one-line sections,
@@ -63,7 +63,7 @@ const Home = () => {
             <p className="hero-note">Free and open source.</p>
           </div>
           <div className="media-figure" id="watch">
-            <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
+            <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={HERO_POSTER} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
               <source src="/video/hero-2026-11-13d.webm" type="video/webm" />
               <source src="/video/hero-2026-11-13d.mp4" type="video/mp4" />
             </video>
@@ -78,7 +78,7 @@ const Home = () => {
         figure={<img className="feature-photo" src="/images/station-hall.webp" alt="A subway station hall, a model made elsewhere and published as a world without changing it" width="1600" height="780" loading="lazy" />}
         credit={<>“Subway station” by <a href="https://skfb.ly/pByQU" target="_blank" rel="noopener noreferrer">Pasha</a>, CC BY 4.0, published as a world unchanged.</>}
       >
-        Bring a scene from the tools you already use. Nothing to relearn, nothing to rebuild.
+        Bring a scene from the tools you already use. It comes in as it is.
       </Feature>
 
       <Feature
@@ -94,7 +94,7 @@ const Home = () => {
         id="together"
         light
         title="Together, from the start."
-        figure={<img className="feature-photo" src={WORLD_TOGETHER} alt="Inside the loft, a second visitor stands in the entry hall with their name shown over their head" width="1600" height="780" loading="lazy" />}
+        figure={<img className="feature-photo" src={WORLD_TOGETHER} alt="Inside the loft, a second visitor stands in the entry hall with a name over their head" width="1600" height="780" loading="lazy" />}
       >
         Whoever opens the link is in there with you.
       </Feature>

@@ -226,6 +226,7 @@ until a spec, repo or protocol document is public (founder to confirm).
 - The add-on's File > Export > Export VEML is the legacy (VEML 3)
   exporter (entities, VEML 3); the 4.0 publish path is Save and Publish
   only. So the copy never tells a Blender user to "export the folder" to
-  their own host; it says that step waits on the published page's download. The first-world steps have `shot` slots for Blender
-  screenshots nobody has taken yet. The social preview is
+  their own host; it says that step waits on the published page's download. Every first-world step has its Blender
+  screenshot (taken 2026-11-12 and 2026-11-13; the Add-ons list is cropped
+  to the list itself, below Blender's own warning row). The social preview is
   `og-world-is-a-page.png`.

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { WORLD_CARD, WORLDHUB_URL } from '../links';
+import { HERO_POSTER, WORLDHUB_URL } from '../links';
 
 // For people who want to make a world of their own, with other people in
 // it. The words are content/builders.md; keep the two in step. Problem
@@ -22,7 +22,7 @@ const Builders = () => (
           </div>
         </div>
         <div className="media-figure" id="watch">
-          <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
+          <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={HERO_POSTER} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
             <source src="/video/hero-2026-11-13d.webm" type="video/webm" />
             <source src="/video/hero-2026-11-13d.mp4" type="video/mp4" />
           </video>
@@ -33,7 +33,7 @@ const Builders = () => (
     <section className="section section-light big-row">
       <div className="container media-row flip">
         <div className="media-figure">
-          <img className="feature-photo" src="/images/loft-two-visitors.webp" alt="Inside the loft, a second visitor stands in the entry hall with their name shown over their head" width="1600" height="780" loading="lazy" />
+          <img className="feature-photo" src="/images/loft-two-visitors.webp" alt="Inside the loft, a second visitor stands in the entry hall with a name over their head" width="1600" height="780" loading="lazy" />
         </div>
         <div className="media-text">
           <h2 className="big">Your people, in your world, without running a server.</h2>

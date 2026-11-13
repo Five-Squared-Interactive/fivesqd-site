@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { WORLD_CARD, WORLDHUB_URL } from '../links';
+import { HERO_POSTER, WORLDHUB_URL } from '../links';
 
 // For architects, interior and landscape designers, and real estate. The
 // words are content/architects.md; keep the two in step. Problem first,
@@ -23,7 +23,7 @@ const Architects = () => (
           </div>
         </div>
         <div className="media-figure" id="watch">
-          <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
+          <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={HERO_POSTER} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
             <source src="/video/hero-2026-11-13d.webm" type="video/webm" />
             <source src="/video/hero-2026-11-13d.mp4" type="video/mp4" />
           </video>

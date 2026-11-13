@@ -1934,8 +1934,8 @@ pre.code-example {
 .doc-frame pre.code-example {
   margin: 0;
   font-size: 0.78rem;
-  white-space: pre;
-  overflow-x: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 .doc-frame pre.code-example code { white-space: inherit; }
 .card-glyph {
@@ -2032,7 +2032,7 @@ pre.code-example {
 .doc-line { display: flex; align-items: center; gap: .6rem; padding: 0 .25rem; border-radius: .25rem; min-height: 1.45rem; }
 .doc-gutter { width: 1.5rem; flex: none; display: flex; align-items: center; }
 .doc-line .doc-mark { width: 1.3rem; height: 1.3rem; line-height: 1.3rem; font-size: .78rem; }
-.doc-text { white-space: pre; }
+.doc-text { white-space: pre-wrap; overflow-wrap: anywhere; min-width: 0; }
 .doc-line-active { background: rgba(79, 70, 229, 0.12); }
 .doc-legend li { cursor: default; border-radius: 8px; padding: .1rem .5rem .1rem .1rem; }
 .doc-legend li.is-active { background: rgba(79, 70, 229, 0.12); }

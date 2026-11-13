@@ -1,6 +1,6 @@
 import React from 'react';
 import Slot from '../components/Slot';
-import { ADDON_ZIP, WORLD_CARD, WORLDHUB_URL } from '../links';
+import { ADDON_ZIP, HERO_POSTER, WORLDHUB_URL } from '../links';
 
 // The first-world guide: from a Blender scene to a link anyone can walk into.
 // The words are content/first-world.md; keep the two in step. The add-on zip
@@ -50,7 +50,7 @@ const FirstWorld = () => {
             <p className="hero-note">Free and open source. Blender 4.5 or newer.</p>
           </div>
           <div className="media-figure" id="watch">
-            <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
+            <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={HERO_POSTER} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
               <source src="/video/hero-2026-11-13d.webm" type="video/webm" />
               <source src="/video/hero-2026-11-13d.mp4" type="video/mp4" />
             </video>
@@ -65,7 +65,7 @@ const FirstWorld = () => {
           </div>
           <div className="grid-3-steps">
             <div className="step-tile">
-              <img className="tile-img" src="/images/blender-addons-list.webp" alt="Blender's Add-ons list with the VEML add-on ticked" width="1400" height="784" loading="lazy" />
+              <img className="tile-img" src="/images/blender-addons-list.webp" alt="Blender's Add-ons list with the VEML add-on ticked" width="1400" height="675" loading="lazy" />
               <h3><span className="step-n">1</span> Install the add-on</h3>
               <p>Blender 4.5 or newer. Sign in once with Google, GitHub or an emailed link.</p>
             </div>

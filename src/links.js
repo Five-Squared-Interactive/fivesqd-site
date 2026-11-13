@@ -45,4 +45,7 @@ export const WORLD_ROOM = '/images/world-loft-room.webp';
 // name over their head: two headless visitors, shot from the first's eyes.
 export const WORLD_TOGETHER = '/images/loft-two-visitors.webp';
 export const WORLD_CARD = '/images/world-loft-card.webp';
+// The first frame of the hero recording, the same 16:9 shape as the video,
+// so the poster and the first frame are one picture.
+export const HERO_POSTER = '/images/hero-poster.webp';
 export const WORLD_HERO_ALT = 'A loft with a long window over sunlit hills, a sofa and bar stools: a world opened in a browser';

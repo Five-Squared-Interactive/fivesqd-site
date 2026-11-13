@@ -23,7 +23,9 @@ Make a place, send the link, and people walk around in it with you.
 Free and open source.
 
 *(Recording, muted and looping, `public/video/hero-2026-11-13d.webm`
-with an mp4 beside it; the file name carries its date so a replacement
+with an mp4 beside it and its first frame as the poster,
+`hero-poster.webp`, so the still and the moving picture are the same
+shape; the file name carries its date so a replacement
 is never served stale from a browser's cache: a phone standing in the loft as a second visitor walks in,
 then the one press in Blender that published it, then the browser
 opening the world. A 23-second draft assembled on 2026-11-13 from the
@@ -33,8 +35,9 @@ replaced when he records a better one.)*
 
 ## Share the worlds you already have.
 
-Bring a scene from the tools you already use. Nothing to relearn, nothing
-to rebuild.
+Bring a scene from the tools you already use. It comes in as it is.
+*(Review, 2026-11-13: "Nothing to relearn, nothing to rebuild" was the
+third "nothing to…" on the page.)*
 *(Picture: the subway station's hall, `station-hall.webp`: a model made
 elsewhere, brought into Blender and published unchanged. A credit line
 under the picture: "Subway station" by Pasha, CC BY 4.0, with the
@@ -49,8 +52,9 @@ to install.
 ## Together, from the start.
 
 Whoever opens the link is in there with you.
-[slot: two visitors in a world, their names over their heads: a frame from
-the recording]
+*(Picture: a second visitor in the loft's hall with a name over their
+head, `loft-two-visitors.webp`. The name is the one the world gives an
+anonymous visitor, so the copy says "a name", never "their name".)*
 
 ## Make it, send it.
 
@@ -80,7 +84,9 @@ whose link names the station; the clip through it waits for v4-monorepo
 Plain files at your own address, in an open format, on any host you like.
 [How it works](/technology)
 *(The loft's whole document, 1,119 bytes since the door went in on
-2026-11-13, with six marks, as the picture; no second loft frame.)*
+2026-11-13, with six marks, as the picture; no second loft frame. Its
+caption, word for word: "A whole world, with a door in it: 1,119 bytes.
+Add /index.veml to any published world's address and read it.")*
 
 ## Closing (three cards, then one line)
 

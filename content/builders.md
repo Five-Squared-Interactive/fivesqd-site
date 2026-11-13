@@ -21,8 +21,9 @@ the door clip waits for v4-monorepo #873.)*
 Whoever opens the link is in the world with everyone else there at that
 moment. You see each other move and you can chat. The visitors' browsers
 connect to each other, so nothing of yours has to stay switched on.
-*(Picture: a second visitor in the loft's hall with their name over their
-head, `loft-two-visitors.webp`.)*
+*(Picture: a second visitor in the loft's hall with a name over their
+head, `loft-two-visitors.webp`; the name is the one the world gives an
+anonymous visitor.)*
 
 ## Put a door in your world that points to a friend's.
 
