@@ -28,8 +28,8 @@ Three tiles, each with a picture slot:
    GitHub or an emailed link. *(Picture: the Save as My World box with
    Save and Publish, the same screenshot the Publish step uses.)*
 2. **Press Save and Publish.** Your scene becomes a world at its own web
-   address and opens in your browser. [slot: the link that appears after
-   Save and Publish, as the add-on shows it]
+   address and opens in your browser. *(Picture: the box after the press,
+   World Address filled in.)*
 3. **Send the link.** Paste it in a message. Whoever taps it walks in.
    [slot: the same world on a phone, held in a hand, with the two sticks
    showing]

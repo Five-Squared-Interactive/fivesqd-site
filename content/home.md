@@ -48,8 +48,8 @@ the recording]
 ## Make it, send it.
 
 From a scene to a link in one press. Paste it anywhere people read.
-[slot: the moment the link appears after one press, with the scene behind
-it]
+*(Picture: the Save as My World box after one press, World Address filled
+in; the station's panel, shot 2026-11-13.)*
 
 ## Private when you want.
 

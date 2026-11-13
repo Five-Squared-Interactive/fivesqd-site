@@ -71,7 +71,7 @@ const FirstWorld = () => {
               <p>Blender 4.5 or newer. Sign in once with Google, GitHub or an emailed link.</p>
             </div>
             <div className="step-tile">
-              <Slot label="The link that appears after Save and Publish, as the add-on shows it." ratio="4 / 3" />
+              <img className="feature-photo" src="/images/blender-link-appears.webp" alt="The Save as My World box after Save and Publish, with the World Address filled in" width="1400" height="807" loading="lazy" />
               <h3><span className="step-n">2</span> Press Save and Publish</h3>
               <p>Your scene becomes a world at its own web address and opens in your browser.</p>
             </div>
