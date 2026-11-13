@@ -56,10 +56,13 @@ requests: info@fivesquaredinteractive.com.
   hosted on the company's WorldHub service or on any web host. The format
   (VEML) and the page that opens worlds (WebVerse) are open source under
   MIT.
-- **Pictures.** [slot: three to five high-resolution screenshots of a
-  published world, laptop and phone]. Logos: the Five Squared mark, the
-  WebVerse mark and wordmark, the VEML mark [ph: zip].
-- **Facts.** Founded 2019, [ph: place] · Founder: Dylan Baker · Open
+- **Pictures.** Five links to the site's own full-size pictures: the loft
+  opened in a browser, the loft in a browser tab with the address bar, two
+  visitors in the loft with one named, the loft on a phone, a door between
+  two worlds. Logos: the Five Squared mark, the WebVerse mark and wordmark,
+  the VEML mark, by email on request (the founder, 2026-11-13: no zip yet,
+  and no place named).
+- **Facts.** Founded 2019 · Founder: Dylan Baker · Open
   source under MIT, on GitHub · White paper: Web Wide Worlds, version 2.0,
   November 2026 ·
   Publishing from Blender: October 2026.

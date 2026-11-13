@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Slot from '../components/Slot';
 import { GITHUB_ORG, CONTACT_EMAIL, WHITE_PAPER } from '../links';
 
 // The words are content/about.md; keep the two in step. The founder's
@@ -88,13 +87,19 @@ const About = () => {
             </div>
             <div className="card">
               <h3>Pictures</h3>
-              <Slot label="Three to five high-resolution screenshots of a published world, on a laptop and a phone." ratio="16 / 9" />
-              <p style={{ marginTop: '.75rem' }}>Logos: the Five Squared mark, the WebVerse mark and wordmark, the VEML mark. <span className="ph">[zip to come]</span></p>
+              <ul className="live-list">
+                <li><a href="/images/world-loft-room.webp" target="_blank" rel="noopener noreferrer">The loft, opened in a browser</a> (1600 by 780)</li>
+                <li><a href="/images/loft-browser-tab.webp" target="_blank" rel="noopener noreferrer">The loft in a browser tab, address bar showing</a> (1400 by 1165)</li>
+                <li><a href="/images/loft-two-visitors.webp" target="_blank" rel="noopener noreferrer">Two visitors in the loft, one named</a> (1600 by 780)</li>
+                <li><a href="/images/loft-phone.webp" target="_blank" rel="noopener noreferrer">The loft on a phone</a> (780 by 1688)</li>
+                <li><a href="/images/station-door.webp" target="_blank" rel="noopener noreferrer">A door between two worlds</a> (1600 by 780)</li>
+              </ul>
+              <p style={{ marginTop: '.75rem' }}>Logos: the Five Squared mark, the WebVerse mark and wordmark, the VEML mark, by email on request.</p>
             </div>
             <div className="card">
               <h3>Facts</h3>
               <ul className="live-list">
-                <li>Founded 2019, <span className="ph">[place]</span></li>
+                <li>Founded 2019</li>
                 <li>Founder: Dylan Baker</li>
                 <li>Open source under MIT, on GitHub</li>
                 <li>White paper: Web Wide Worlds, version 2.0, November 2026</li>
