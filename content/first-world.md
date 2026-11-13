@@ -31,8 +31,8 @@ Three tiles, each with a picture slot:
    address and opens in your browser. *(Picture: the box after the press,
    World Address filled in.)*
 3. **Send the link.** Paste it in a message. Whoever taps it walks in.
-   [slot: the same world on a phone, held in a hand, with the two sticks
-   showing]
+   *(Picture: the loft at phone size with the two sticks, the same
+   screenshot the Walking around step uses.)*
 
 ## The full guide
 

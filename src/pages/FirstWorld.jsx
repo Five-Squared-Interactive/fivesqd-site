@@ -76,7 +76,7 @@ const FirstWorld = () => {
               <p>Your scene becomes a world at its own web address and opens in your browser.</p>
             </div>
             <div className="step-tile">
-              <Slot label="The same world on a phone, held in a hand, with the two sticks showing." ratio="4 / 3" />
+              <img className="tile-portrait" src="/images/loft-phone.webp" alt="The loft on a phone screen, with the two sticks" width="780" height="1688" loading="lazy" />
               <h3><span className="step-n">3</span> Send the link</h3>
               <p>Paste it in a message. Whoever taps it walks in.</p>
             </div>
