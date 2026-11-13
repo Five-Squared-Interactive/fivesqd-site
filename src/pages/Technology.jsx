@@ -130,7 +130,7 @@ const Technology = () => {
       <section className="section" id="stack">
         <div className="container">
           <div className="text-center mb-4">
-            <h2>The pieces, by name</h2>
+            <h2>What it is made of</h2>
             <p className="section-subtitle">Open source under MIT.</p>
           </div>
           <div className="grid-5 pieces-grid">

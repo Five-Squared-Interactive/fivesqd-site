@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { WORLD_CARD } from '../links';
+import { WORLD_CARD, WORLDHUB_URL } from '../links';
 
 // For people who want to make a world of their own, with other people in
 // it. The words are content/builders.md; keep the two in step. Problem
@@ -17,7 +17,7 @@ const Builders = () => (
             link, and a door in it leads to other worlds. You don’t run a server.
           </p>
           <div className="hero-actions-left">
-            <a href="#watch" className="btn btn-primary btn-large">See it in action</a>
+            <a href={WORLDHUB_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">Explore worlds on WorldHub</a>
             <Link to="/first-world" className="btn btn-secondary btn-large">Build one from Blender</Link>
           </div>
         </div>

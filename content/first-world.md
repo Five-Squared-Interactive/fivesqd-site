@@ -14,7 +14,9 @@ Send the place instead. Press Save and Publish in Blender and your scene
 becomes a link. Anyone who opens it walks around inside, on a phone or a
 laptop, with whoever else is there. Nothing for them to install.
 
-[Get the add-on]({ADDON_URL}) · [See it in action](#watch)
+[Get the add-on]({ADDON_URL}) · [Explore worlds on WorldHub](https://www.worldhub.me/)
+*(Founder, 2026-11-13: "See it in action" became "Explore worlds on
+WorldHub" everywhere.)*
 Free and open source. Blender 4.5 or newer.
 
 *(Recording: the same loop as the home page, `public/video/hero-2026-11-13c.webm`;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Slot from '../components/Slot';
-import { ADDON_ZIP, WORLD_CARD } from '../links';
+import { ADDON_ZIP, WORLD_CARD, WORLDHUB_URL } from '../links';
 
 // The first-world guide: from a Blender scene to a link anyone can walk into.
 // The words are content/first-world.md; keep the two in step. The add-on zip
@@ -45,7 +45,7 @@ const FirstWorld = () => {
             </p>
             <div className="hero-actions-left">
               <a href={ADDON_ZIP} className="btn btn-primary btn-large">Get the add-on</a>
-              <a href="#watch" className="btn btn-secondary btn-large">See it in action</a>
+              <a href={WORLDHUB_URL} target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-large">Explore worlds on WorldHub</a>
             </div>
             <p className="hero-note">Free and open source. Blender 4.5 or newer.</p>
           </div>

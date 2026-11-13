@@ -89,7 +89,9 @@ service, which also signs you in and lets you choose who may enter.
 [About WorldHub](/products/worldhub) *(Founder, 2026-11-12: the first
 rewrite was "too wordy".)*
 
-## The pieces, by name
+## What it is made of
+
+*(Founder, 2026-11-13: "The pieces, by name" was awkward.)*
 
 Open source under MIT. *(Six tiles with the marks:)*
 VEML, the format: the file that says what is in a world and where ·

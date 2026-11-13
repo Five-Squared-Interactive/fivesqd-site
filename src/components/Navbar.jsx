@@ -10,7 +10,7 @@ const TECH_MENU = [
   { icon: '/images/icon-webverse.png', name: 'WebVerse', desc: 'The page that opens a world', to: '/technology#client' },
   { icon: '/images/icon-worldhub.png', name: 'WorldHub', desc: 'Hosting and sign-in, our service', to: '/products/worldhub' },
   { icon: '/images/icon-worldkit.png', name: 'The Blender add-on', desc: 'Publish a scene in one press', to: '/first-world' },
-  { name: 'The pieces, by name', desc: 'VEML, StraightFour, WorldSync, WorldOS', to: '/technology#stack' },
+  { name: 'What it is made of', desc: 'VEML, StraightFour, WorldSync, WorldOS', to: '/technology#stack' },
   { name: 'Your own address', desc: 'Host a world anywhere; build on the pieces', to: '/technology#own-address' },
   { name: 'White paper', desc: 'The long form, version 2.0 (2026)', href: WHITE_PAPER, external: true },
 ];
