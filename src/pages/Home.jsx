@@ -72,7 +72,7 @@ const Home = () => {
         id="your-worlds"
         light
         title="Share the worlds you already have."
-        figure={<Slot label="Three scenes in three tools people already use, side by side, each about to become a world." ratio="4 / 3" />}
+        figure={<img className="feature-photo" src="/images/station-hall.webp" alt="A subway station hall, a model made elsewhere and published as a world without changing it" width="1600" height="780" loading="lazy" />}
       >
         Bring a scene from the tools you already use. Nothing to relearn, nothing to rebuild.
       </Feature>
@@ -117,7 +117,7 @@ const Home = () => {
         id="doors"
         flip
         title="Worlds lead to worlds."
-        figure={<Slot kind="video" label="Someone walks up to a door in one world and comes out in another; the address bar changes." ratio="4 / 3" />}
+        figure={<img className="feature-photo" src="/images/station-door.webp" alt="A subway station hall with a door standing in it that leads to the loft" width="1600" height="780" loading="lazy" />}
       >
         A door from your world into someone else’s, the way pages link to pages.
       </Feature>

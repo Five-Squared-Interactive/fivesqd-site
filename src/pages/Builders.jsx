@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Slot from '../components/Slot';
 import { WORLD_CARD } from '../links';
 
 // For people who want to make a world of their own, with other people in
@@ -23,7 +22,10 @@ const Builders = () => (
           </div>
         </div>
         <div className="media-figure" id="watch">
-          <Slot kind="video" label="A built world with several visitors; one taps a door and is in a different world; the address bar changes." poster={WORLD_CARD} />
+          <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
+            <source src="/video/hero-2026-11-13c.webm" type="video/webm" />
+            <source src="/video/hero-2026-11-13c.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>
@@ -31,7 +33,7 @@ const Builders = () => (
     <section className="section section-light big-row">
       <div className="container media-row flip">
         <div className="media-figure">
-          <Slot label="A group of visitors in a built world, name labels showing, a door in the background." />
+          <img className="feature-photo" src="/images/loft-two-visitors.webp" alt="Inside the loft, a second visitor stands in the entry hall with their name shown over their head" width="1600" height="780" loading="lazy" />
         </div>
         <div className="media-text">
           <h2 className="big">Your people, in your world, without running a server.</h2>
@@ -54,7 +56,7 @@ const Builders = () => (
           </p>
         </div>
         <div className="media-figure">
-          <Slot label="A door lit up, a tap, and a different world with the address bar changed." kind="video" />
+          <img className="feature-photo" src="/images/station-door.webp" alt="A subway station hall with a door standing in it that leads to the loft" width="1600" height="780" loading="lazy" />
         </div>
       </div>
     </section>

@@ -35,8 +35,9 @@ replaced when he records a better one.)*
 
 Bring a scene from the tools you already use. Nothing to relearn, nothing
 to rebuild.
-[slot: three scenes in three tools people already use, side by side, each
-about to become a world]
+*(Picture: the subway station's hall, `station-hall.webp`: a model made
+elsewhere, brought into Blender and published unchanged, the CC BY
+"Subway station" by Pasha, credited in the station's CREDITS.md.)*
 
 ## Open the link. You're there.
 
@@ -66,8 +67,9 @@ viewport on the founder's machine.)*
 ## Worlds lead to worlds.
 
 A door from your world into someone else's, the way pages link to pages.
-[slot, recording: someone walks up to a door in one world and comes out in
-another; the address bar changes]
+*(Picture: the subway station's hall with the door to the loft standing in
+it, `station-door.webp`; the clip through it waits for v4-monorepo #873,
+since today the door opens an empty world.)*
 
 ## It's yours.
 

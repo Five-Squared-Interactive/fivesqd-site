@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Slot from '../components/Slot';
 import { WORLD_CARD } from '../links';
 
 // For architects, interior and landscape designers, and real estate. The
@@ -24,7 +23,10 @@ const Architects = () => (
           </div>
         </div>
         <div className="media-figure" id="watch">
-          <Slot kind="video" label="A client opens a link on a phone and walks through a kitchen; the designer walks to the island and the client follows; the client turns to the window." poster={WORLD_CARD} />
+          <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
+            <source src="/video/hero-2026-11-13c.webm" type="video/webm" />
+            <source src="/video/hero-2026-11-13c.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>
@@ -32,7 +34,7 @@ const Architects = () => (
     <section className="section section-light big-row">
       <div className="container media-row flip">
         <div className="media-figure">
-          <Slot label="A phone showing a listing walkthrough, next to the same property's photo gallery." ratio="4 / 3" />
+          <img className="feature-photo feature-photo-phone" src="/images/loft-phone-kitchen.webp" alt="The loft's kitchen on a phone screen: the island, the sink and the pendant lights, with the two sticks" width="780" height="1688" loading="lazy" />
         </div>
         <div className="media-text">
           <h2 className="big">Buyers walk every room before they book the viewing.</h2>
@@ -56,7 +58,7 @@ const Architects = () => (
           </p>
         </div>
         <div className="media-figure">
-          <Slot label="The Only People I Allow box in the add-on, with two client email addresses." ratio="4 / 3" />
+          <img className="feature-photo" src="/images/blender-only-people-i-allow.webp" alt="The Save as My World box with Only People I Allow ticked and two addresses in Allowed Viewers" width="1400" height="801" loading="lazy" />
         </div>
       </div>
     </section>

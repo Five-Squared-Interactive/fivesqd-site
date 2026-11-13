@@ -13,23 +13,23 @@ Your world is a few plain files at its own web address. Your people walk
 in from a link, and a door in it leads to other worlds. You don't run a
 server.
 [See it in action](#watch) · [Build one from Blender](/first-world)
-[slot, recording: a built world with several visitors; one taps a door and
-is in a different world; the address bar changes]
+*(Recording: the same loop as the home page, `public/video/hero-2026-11-13c.webm`;
+the door clip waits for v4-monorepo #873.)*
 
 ## Your people, in your world, without running a server.
 
 Whoever opens the link is in the world with everyone else there at that
 moment. You see each other move and you can chat. The visitors' browsers
 connect to each other, so nothing of yours has to stay switched on.
-[slot: a group of visitors in a built world, name labels showing, a door
-in the background]
+*(Picture: a second visitor in the loft's hall with their name over their
+head, `loft-two-visitors.webp`.)*
 
 ## Put a door in your world that opens onto a friend's.
 
 A door can open onto a friend's world at its own address, the way one
 page links to the next. Each world's own file says where its doors lead.
-[slot, recording: a door lit up, a tap, and a different world with the
-address bar changed]
+*(Picture: the subway station's hall with the door to the loft standing in
+it, `station-door.webp`; the clip through it waits for #873.)*
 
 ## What you get
 
