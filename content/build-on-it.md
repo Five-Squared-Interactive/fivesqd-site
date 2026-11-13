@@ -29,8 +29,10 @@ nothing of ours. Build what fits and it works with everything else.
 
 ## Where to start
 
-- The format: VEML, a written specification with a conformance suite; the
-  earlier documents are on GitHub.
+- The format: VEML, a written specification with a conformance suite,
+  [on GitHub](https://github.com/Five-Squared-Interactive/VEML).
+  *(Founder, 2026-11-13: the current spec goes on GitHub; the site never
+  says "the earlier documents are on GitHub".)*
 - The page that opens worlds: WebVerse, and StraightFour under it.
 - Being together: WorldSync, designed so an engine you already use can
   adopt it.

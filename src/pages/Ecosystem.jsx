@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GITHUB_ORG, CONTACT_EMAIL } from '../links';
+import { GITHUB_ORG, CONTACT_EMAIL, VEML_SPEC } from '../links';
 
 // Build on it. The words are content/build-on-it.md; keep the two in step.
 const Ecosystem = () => {
@@ -61,8 +61,8 @@ const Ecosystem = () => {
           <h2>Where to start</h2>
           <ul style={{ paddingLeft: '1.25rem', lineHeight: 1.8, fontSize: '1.125rem' }}>
             <li>
-              The format: VEML, a written specification with a conformance suite; the earlier
-              documents are on GitHub.
+              The format: VEML, a written specification with a conformance suite,{' '}
+              <a href={VEML_SPEC} target="_blank" rel="noopener noreferrer">on GitHub</a>.
             </li>
             <li>The page that opens worlds: WebVerse, and StraightFour under it.</li>
             <li>
