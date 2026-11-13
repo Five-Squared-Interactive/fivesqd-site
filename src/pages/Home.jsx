@@ -109,7 +109,7 @@ const Home = () => {
         id="private"
         light
         title="Private when you want."
-        figure={<Slot label="A kitchen walkthrough on a phone, a client's hand holding it, a plan on the desk behind." ratio="4 / 3" />}
+        figure={<img className="feature-photo feature-photo-phone" src="/images/loft-phone-kitchen.webp" alt="The loft's kitchen on a phone screen: the island, the sink and the pendant lights, with the two sticks" width="780" height="1688" loading="lazy" />}
       >
         Only the people you name get in.
       </Feature>

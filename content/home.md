@@ -54,8 +54,9 @@ in; the station's panel, shot 2026-11-13.)*
 ## Private when you want.
 
 Only the people you name get in.
-[slot: a kitchen walkthrough on a phone, a client's hand holding it, a plan
-on the desk behind]
+*(Picture: the loft's kitchen at phone size, island, sink and pendants,
+with the two sticks; taken on 2026-11-13 in Chrome with a phone's
+viewport on the founder's machine.)*
 
 ## Worlds lead to worlds.
 
