@@ -61,7 +61,7 @@ const Technology = () => {
                 understand it leaves alone.
               </p>
             </div>
-            <WorldDocument caption="A published world's whole file: 787 bytes, plus the two files it names." />
+            <WorldDocument caption="A published world's whole file, door included: 1,119 bytes, plus the three files it names." />
           </div>
         </div>
       </section>

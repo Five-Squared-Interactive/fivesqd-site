@@ -196,9 +196,17 @@ until a spec, repo or protocol document is public (founder to confirm).
   (`public/images/world-loft-*.webp`, shot headless the same day), and
   `DEMO_WORLD_URL` is its address, so "Walk into one now" and "Walk in"
   open it. The "world and document" pair on Home shows the loft beside
-  the loft's own document (787 bytes, fetched from its address on
-  2026-11-11: a title, the room, one sky, one entry point, one model), so
-  the pair is one world. A door in the demo world is still wanted.
+  the loft's own document (1,119 bytes, fetched from its address on
+  2026-11-13: a title, the room, one sky, one entry point, one model, and
+  a door whose link leads to the subway station), so the pair is one
+  world. The loft was republished on 2026-11-13 at
+  `w_K1GfSfHUdMIv` with its front door linked to the station
+  (`w_cVo42GFe5Tm3`, the CC BY "Subway station" by Pasha, with a door
+  back); the October address `w_jpR9xNJ0pb9q` belongs to the founder's
+  pre-migration identity and cannot be updated, so it stays as it was.
+  Today the door opens an empty world because the client fetches the
+  station's page as its document (v4-monorepo #873); the door clip waits
+  for that fix, and the site does not claim the door works until it does.
 - A world served from your own host must allow cross-origin reads
   (`Access-Control-Allow-Origin: *`; GitHub Pages does, a bucket needs a
   CORS rule). True, and kept here for the developer guide; the founder

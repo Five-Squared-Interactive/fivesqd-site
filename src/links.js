@@ -5,7 +5,11 @@
 // loft, published from Blender with Save and Publish on 2026-10-25. Set it
 // to null and every page that uses it renders without the link rather
 // than with a dead one.
-export const DEMO_WORLD_URL = 'https://worlds.worldhub.me/w/w_jpR9xNJ0pb9q';
+// Republished 2026-11-13 at a new address with a door to the subway station
+// (the October address belongs to the founder's pre-migration identity and
+// cannot be updated; v4-monorepo #873). The old address still serves the
+// old loft.
+export const DEMO_WORLD_URL = 'https://worlds.worldhub.me/w/w_K1GfSfHUdMIv';
 
 // The public client address: the publish host serves the client's own page
 // at /webverse/, and a world served from anywhere opens as

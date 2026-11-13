@@ -35,8 +35,8 @@ way a web page is served, through the same addresses and the same hosts.
 A world written for next year's WebVerse still opens in this year's,
 because anything the page does not understand it leaves alone.
 
-*(Beside this: the loft's whole document, 787 bytes, plus the two files it
-names.)*
+*(Beside this: the loft's whole document, door included, 1,119 bytes, plus
+the three files it names.)*
 
 ## How a link works
 

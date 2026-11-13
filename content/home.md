@@ -67,8 +67,8 @@ another; the address bar changes]
 
 Plain files at your own address, in an open format, on any host you like.
 [How it works](/technology)
-*(The loft's whole document, 787 bytes, with the five marks, as the
-picture; no second loft frame.)*
+*(The loft's whole document, 1,119 bytes since the door went in on
+2026-11-13, with six marks, as the picture; no second loft frame.)*
 
 ## Closing (three cards, then one line)
 

@@ -127,7 +127,7 @@ const Home = () => {
         id="yours"
         light
         title="It’s yours."
-        figure={<WorldDocument caption={'A whole world, 787 bytes. Add /index.veml to any published world’s address and read it.'} />}
+        figure={<WorldDocument caption={'A whole world, with a door in it: 1,119 bytes. Add /index.veml to any published world’s address and read it.'} />}
       >
         Plain files at your own address, in an open format, on any host you like. <Link to="/technology">How it works &rarr;</Link>
       </Feature>
