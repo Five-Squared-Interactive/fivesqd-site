@@ -95,7 +95,8 @@ const Technology = () => {
           <h2>Being there together</h2>
           <p>
             When two people open the same world, their pages find each other and share what moved,
-            through <strong>WorldSync</strong>. Nothing passes through us but the introduction, and
+            through <strong>WorldSync</strong>. Nothing passes through us but the introduction and,
+            where a network blocks a direct connection, a relay that forwards bytes it cannot read;
             the world's files are untouched. WorldSync is the default, not a requirement: a world can
             name a different sync protocol in its file.
           </p>

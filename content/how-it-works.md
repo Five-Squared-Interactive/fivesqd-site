@@ -61,7 +61,8 @@ You meet the engine only if you build a page of your own.
 
 When two people open the same world, their pages find each other and
 share what moved, through **WorldSync**. Nothing passes through us but
-the introduction, and the world's files are untouched. WorldSync is the
+the introduction and, where a network blocks a direct connection, a relay
+that forwards bytes it cannot read; the world's files are untouched. WorldSync is the
 default, not a requirement: a world can name a different sync protocol in
 its file. *(Founder, 2026-11-12: the longer version was "too clunky".
 Source: the VEML schema's synchronization-service element, with its

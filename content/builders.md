@@ -13,7 +13,7 @@ Your world is a few plain files at its own web address. Your people walk
 in from a link, and a door in it leads to other worlds. You don't run a
 server.
 [Explore worlds on WorldHub](https://www.worldhub.me/) · [Build one from Blender](/first-world)
-*(Recording: the same loop as the home page, `public/video/hero-2026-11-13c.webm`;
+*(Recording: the same loop as the home page, `public/video/hero-2026-11-13d.webm`;
 the door clip waits for v4-monorepo #873.)*
 
 ## Your people, in your world, without running a server.
@@ -24,12 +24,14 @@ connect to each other, so nothing of yours has to stay switched on.
 *(Picture: a second visitor in the loft's hall with their name over their
 head, `loft-two-visitors.webp`.)*
 
-## Put a door in your world that opens onto a friend's.
+## Put a door in your world that points to a friend's.
 
-A door can open onto a friend's world at its own address, the way one
-page links to the next. Each world's own file says where its doors lead.
-*(Picture: the subway station's hall with the door to the loft standing in
-it, `station-door.webp`; the clip through it waits for #873.)*
+A door in your world names a friend's world at its own address, the way
+one page links to the next. Each world's own file says where its doors
+lead.
+*(Picture: the loft's front door at the end of its hall, `loft-door.webp`;
+the clip through it waits for #873, and the copy says a door "names" a
+friend's world.)*
 
 ## What you get
 

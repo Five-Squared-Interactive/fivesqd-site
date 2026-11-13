@@ -12,8 +12,8 @@ This file is the words twin of `src/pages/Architects.jsx`; keep them in step.
 They find out what they approved once it's built. Send a private link
 instead. They walk the kitchen on their phone before the slab is poured,
 and you're in there with them. There's nothing for them to install.
-[Watch a client walkthrough](#watch) · [Start from Blender](/first-world)
-*(Recording: the same loop as the home page, `public/video/hero-2026-11-13c.webm`;
+[Explore worlds on WorldHub](https://www.worldhub.me/) · [Start from Blender](/first-world)
+*(Recording: the same loop as the home page, `public/video/hero-2026-11-13d.webm`;
 a client-walkthrough recording of its own can replace it.)*
 
 ## Buyers walk every room before they book the viewing.
@@ -35,7 +35,8 @@ two example viewers, `blender-only-people-i-allow.webp`.)*
 ## What you get
 
 - From Blender: one press publishes a model as a walkable place at a link.
-- Models from SketchUp, Revit or Rhino come in through Blender's own importers.
+- Models from SketchUp, Revit or Rhino come in as the files those tools
+  export, such as FBX or OBJ, opened in Blender.
 - Private links: visitors sign in, and only the people you name get in.
 - Phones, laptops and headsets, in the browser.
 

@@ -51,8 +51,8 @@ const FirstWorld = () => {
           </div>
           <div className="media-figure" id="watch">
             <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
-              <source src="/video/hero-2026-11-13c.webm" type="video/webm" />
-              <source src="/video/hero-2026-11-13c.mp4" type="video/mp4" />
+              <source src="/video/hero-2026-11-13d.webm" type="video/webm" />
+              <source src="/video/hero-2026-11-13d.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -65,7 +65,7 @@ const FirstWorld = () => {
           </div>
           <div className="grid-3-steps">
             <div className="step-tile">
-              <img className="tile-img" src="/images/blender-save-as-my-world.webp" alt="The Save as My World box in Blender with the Save and Publish button" width="1400" height="723" loading="lazy" />
+              <img className="tile-img" src="/images/blender-addons-list.webp" alt="Blender's Add-ons list with the VEML add-on ticked" width="1400" height="784" loading="lazy" />
               <h3><span className="step-n">1</span> Install the add-on</h3>
               <p>Blender 4.5 or newer. Sign in once with Google, GitHub or an emailed link.</p>
             </div>
@@ -169,7 +169,7 @@ const FirstWorld = () => {
               <li><K>H</K> shows these again.</li>
               <li>
                 On a phone or tablet: the left stick moves, the right stick looks, <strong>Jump</strong> and{' '}
-                <strong>Fly</strong> sit above the right stick, and <strong>Chat</strong> is at the top.
+                <strong>Fly</strong> sit above the right stick, and <strong>Chat</strong> above the left.
               </li>
             </ul>
           </Step>
@@ -187,8 +187,7 @@ const FirstWorld = () => {
               <li>
                 <strong>Link it to another world.</strong> Select an object in Blender, open its VEML Entity panel,
                 and put another world's address in the <strong>Link</strong> field. In your world it lights up when
-                you look at it; click it, or tap it on a phone, and you step into theirs. That is how one world
-                becomes part of many.
+                you look at it and shows where it leads. That is how one world becomes part of many.
                 <img className="step-shot" src="/images/blender-link-field.webp" alt="An object's VEML Entity panel with the Portal section and its Link field" loading="lazy" />
               </li>
               <li>

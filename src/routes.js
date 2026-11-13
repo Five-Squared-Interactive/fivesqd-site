@@ -35,7 +35,7 @@ export const ROUTES = [
   {
     path: '/products/worldhub',
     title: 'WorldHub - Five Squared Interactive',
-    description: 'WorldHub hosts the worlds you publish from Blender, signs you in, and lists worlds people want found. A convenience the design never requires.',
+    description: 'WorldHub hosts the worlds you publish from Blender and signs you in. A convenience the design never requires: a world can live at any address.',
   },
   {
     path: '/first-world',
@@ -45,7 +45,7 @@ export const ROUTES = [
   {
     path: '/technology',
     title: 'How it works - Five Squared Interactive',
-    description: 'A world is files at a web address: the VEML file and its models, the WebVerse page that opens it, WorldSync for being there together, WorldOS for the few worlds with their own logic.',
+    description: 'A world is files at a web address: the VEML file and its models, the WebVerse page that opens it, WorldSync for being there together, WorldOS for worlds with shared state of their own.',
   },
   {
     path: '/ecosystem',

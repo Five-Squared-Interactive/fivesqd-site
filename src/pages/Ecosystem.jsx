@@ -35,17 +35,18 @@ const Ecosystem = () => {
               <h3>Put your own things in a world</h3>
               <p>
                 You have models, data, a game, a simulation. A world's document can load your glTF,
-                script behaviour in JavaScript inside the client's sandbox, and link to anything at a
-                URL. A world that keeps a score or listens to a sensor can run on WorldOS, with plugins
-                that talk to the systems you already have.
+                script behaviour in JavaScript inside WebVerse's sandbox, and link to anything at a
+                URL. A world with shared state of its own, things people place that stay placed or a
+                world fed by other systems, can run on WorldOS, with plugins that talk to the systems
+                you already have.
               </p>
               <Link to="/technology#worldos">WorldOS, in brief &rarr;</Link>
             </div>
             <div className="card">
               <h3>Build the pieces yourself</h3>
               <p>
-                You want a different client, a different editor, a host, a sync service, a connector.
-                The format is open, the client and engine are open, the sync layer is open and
+                You want a different page to open worlds, a different editor, a host, a sync service, a
+                connector. The format is open, WebVerse and the engine are open, the sync layer is open and
                 standalone, and a world at your own address names nothing of ours. Build what fits and it
                 works with everything else.
               </p>
@@ -67,7 +68,7 @@ const Ecosystem = () => {
             <li>
               Being together: WorldSync, designed so an engine you already use can adopt it.
             </li>
-            <li>A world with its own logic: WorldOS.</li>
+            <li>A world with shared state of its own: WorldOS.</li>
             <li>
               The code:{' '}
               <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer">github.com/Five-Squared-Interactive</a>

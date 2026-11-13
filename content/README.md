@@ -134,12 +134,16 @@ until a spec, repo or protocol document is public (founder to confirm).
   and worth looking at. The demo-worlds living room on GitHub Pages opens
   through the client address (`CLIENT_URL`), but its textures are missing,
   so it is not the first thing a visitor should see.
-- `worldhub.md` says Search lists worlds at any address: that is the new
-  directory (v4-monorepo #662), live at www.worldhub.me from S3 since
-  2026-11-02; the sign-in site followed on 2026-11-11.
-- `how-it-works.md` says a relay forwards bytes where a network stands in
-  the way: live since 2026-10-25 (a visitor asking the rendezvous for a
-  room is handed Cloudflare TURN credentials; checked from outside).
+- The directory at www.worldhub.me lists worlds at any address
+  (v4-monorepo #662), live from S3 since 2026-11-02; the sign-in site
+  followed on 2026-11-11. The home page's closing card and the "Explore
+  worlds on WorldHub" buttons link to it; the WorldHub page itself no
+  longer has a Search section, and its description says so.
+- A relay forwards bytes where a network blocks a direct connection: live
+  since 2026-10-25 (a visitor asking the rendezvous for a room is handed
+  Cloudflare TURN credentials; checked from outside). How it works says
+  so beside the introduction service; the relay cannot read what it
+  forwards.
 - The add-on's panel: the box is **Save as My World**, the button in it is
   **Save and Publish**, and the box has one tick, **Only People I Allow**,
   off by default; ticking it shows an **Allowed Viewers** field for email
@@ -206,7 +210,10 @@ until a spec, repo or protocol document is public (founder to confirm).
   pre-migration identity and cannot be updated, so it stays as it was.
   Today the door opens an empty world because the client fetches the
   station's page as its document (v4-monorepo #873); the door clip waits
-  for that fix, and the site does not claim the door works until it does.
+  for that fix, and until then the copy says a door "names" or "shows
+  where it leads", never that you step through (review of 2026-11-13).
+- The subway station is the CC BY 4.0 "Subway station" by Pasha
+  (https://skfb.ly/pByQU); every page that shows it carries the credit.
 - A world served from your own host must allow cross-origin reads
   (`Access-Control-Allow-Origin: *`; GitHub Pages does, a bucket needs a
   CORS rule). True, and kept here for the developer guide; the founder

@@ -29,14 +29,17 @@ const WalkIn = ({ children }) =>
     <Slot label="A published world, walkable from this page." poster={WORLD_CARD} ratio="800 / 426" />
   );
 
-const Feature = ({ id, flip, light, title, children, figure }) => (
+const Feature = ({ id, flip, light, title, children, figure, credit }) => (
   <section className={`section feature-row ${light ? 'section-light' : ''}`.trim()} id={id}>
     <div className={`container media-row ${flip ? 'flip' : ''}`.trim()}>
       <div className="media-text">
         <h2 className="feature-title">{title}</h2>
         <p className="lead">{children}</p>
       </div>
-      <div className="media-figure">{figure}</div>
+      <div className="media-figure">
+        {figure}
+        {credit && <p className="figure-credit">{credit}</p>}
+      </div>
     </div>
   </section>
 );
@@ -61,8 +64,8 @@ const Home = () => {
           </div>
           <div className="media-figure" id="watch">
             <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
-              <source src="/video/hero-2026-11-13c.webm" type="video/webm" />
-              <source src="/video/hero-2026-11-13c.mp4" type="video/mp4" />
+              <source src="/video/hero-2026-11-13d.webm" type="video/webm" />
+              <source src="/video/hero-2026-11-13d.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -73,6 +76,7 @@ const Home = () => {
         light
         title="Share the worlds you already have."
         figure={<img className="feature-photo" src="/images/station-hall.webp" alt="A subway station hall, a model made elsewhere and published as a world without changing it" width="1600" height="780" loading="lazy" />}
+        credit={<>“Subway station” by <a href="https://skfb.ly/pByQU" target="_blank" rel="noopener noreferrer">Pasha</a>, CC BY 4.0, published as a world unchanged.</>}
       >
         Bring a scene from the tools you already use. Nothing to relearn, nothing to rebuild.
       </Feature>
@@ -108,7 +112,7 @@ const Home = () => {
         id="private"
         light
         title="Private when you want."
-        figure={<img className="feature-photo feature-photo-phone" src="/images/loft-phone-kitchen.webp" alt="The loft's kitchen on a phone screen: the island, the sink and the pendant lights, with the two sticks" width="780" height="1688" loading="lazy" />}
+        figure={<img className="feature-photo" src="/images/blender-only-people-i-allow.webp" alt="The Save as My World box with Only People I Allow ticked and two addresses in Allowed Viewers" width="1400" height="801" loading="lazy" />}
       >
         Only the people you name get in.
       </Feature>
@@ -117,9 +121,9 @@ const Home = () => {
         id="doors"
         flip
         title="Worlds lead to worlds."
-        figure={<img className="feature-photo" src="/images/station-door.webp" alt="A subway station hall with a door standing in it that leads to the loft" width="1600" height="780" loading="lazy" />}
+        figure={<img className="feature-photo" src="/images/loft-door.webp" alt="The loft's front door at the end of its hall; its link names the subway station" width="1600" height="780" loading="lazy" />}
       >
-        A door from your world into someone else’s, the way pages link to pages.
+        A door in your world names someone else’s, at its own address, the way pages link to pages.
       </Feature>
 
       <Feature

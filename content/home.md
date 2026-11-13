@@ -22,11 +22,11 @@ Make a place, send the link, and people walk around in it with you.
 
 Free and open source.
 
-*(Recording, muted and looping, `public/video/hero-2026-11-13c.webm`
+*(Recording, muted and looping, `public/video/hero-2026-11-13d.webm`
 with an mp4 beside it; the file name carries its date so a replacement
 is never served stale from a browser's cache: a phone standing in the loft as a second visitor walks in,
 then the one press in Blender that published it, then the browser
-opening the world. A 37-second draft assembled on 2026-11-13 from the
+opening the world. A 23-second draft assembled on 2026-11-13 from the
 founder's press and a phone-sized Chrome on his machine; the master is
 `Media/site-2026-11/hero-draft.mp4` in the company OneDrive, to be
 replaced when he records a better one.)*
@@ -36,8 +36,9 @@ replaced when he records a better one.)*
 Bring a scene from the tools you already use. Nothing to relearn, nothing
 to rebuild.
 *(Picture: the subway station's hall, `station-hall.webp`: a model made
-elsewhere, brought into Blender and published unchanged, the CC BY
-"Subway station" by Pasha, credited in the station's CREDITS.md.)*
+elsewhere, brought into Blender and published unchanged. A credit line
+under the picture: "Subway station" by Pasha, CC BY 4.0, with the
+Sketchfab link.)*
 
 ## Open the link. You're there.
 
@@ -60,16 +61,19 @@ in; the station's panel, shot 2026-11-13.)*
 ## Private when you want.
 
 Only the people you name get in.
-*(Picture: the loft's kitchen at phone size, island, sink and pendants,
-with the two sticks; taken on 2026-11-13 in Chrome with a phone's
-viewport on the founder's machine.)*
+*(Picture: the Save as My World box with Only People I Allow ticked and
+two example viewers, `blender-only-people-i-allow.webp`; the kitchen on a
+phone showed anonymous visitors, the opposite of the claim, so it moved
+to the private-link page.)*
 
 ## Worlds lead to worlds.
 
-A door from your world into someone else's, the way pages link to pages.
-*(Picture: the subway station's hall with the door to the loft standing in
-it, `station-door.webp`; the clip through it waits for v4-monorepo #873,
-since today the door opens an empty world.)*
+A door in your world names someone else's, at its own address, the way
+pages link to pages.
+*(Picture: the loft's front door at the end of its hall, `loft-door.webp`,
+whose link names the station; the clip through it waits for v4-monorepo
+#873, since today the door opens an empty world, and the copy says
+"names", never "step through".)*
 
 ## It's yours.
 

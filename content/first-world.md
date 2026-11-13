@@ -19,15 +19,15 @@ laptop, with whoever else is there. Nothing for them to install.
 WorldHub" everywhere.)*
 Free and open source. Blender 4.5 or newer.
 
-*(Recording: the same loop as the home page, `public/video/hero-2026-11-13c.webm`;
+*(Recording: the same loop as the home page, `public/video/hero-2026-11-13d.webm`;
 the door part waits for v4-monorepo #873.)*
 
 ## Three steps from your scene to a link
 
 Three tiles, each with a picture slot:
 1. **Install the add-on.** Blender 4.5 or newer. Sign in once with Google,
-   GitHub or an emailed link. *(Picture: the Save as My World box with
-   Save and Publish, the same screenshot the Publish step uses.)*
+   GitHub or an emailed link. *(Picture: the Add-ons list with the VEML
+   add-on ticked, the same screenshot the Install step uses.)*
 2. **Press Save and Publish.** Your scene becomes a world at its own web
    address and opens in your browser. *(Picture: the box after the press,
    World Address filled in.)*
@@ -112,8 +112,8 @@ touch on the founder's machine.)*
 - F to fly, where the world allows it: Space up, Shift down.
 - H shows these again.
 - On a phone or tablet: the left stick moves, the right stick looks,
-  **Jump** and **Fly** sit above the right stick, and **Chat** is at the
-  top.
+  **Jump** and **Fly** sit above the right stick, and **Chat** above the
+  left.
 
 ### Now look at what you made
 
@@ -127,8 +127,8 @@ Your world is a web page.
   address yourself.
 - **Link it to another world.** Select an object in Blender, open its VEML
   Entity panel, and put another world's address in the **Link** field. In
-  your world it lights up when you look at it; click it, or tap it on a
-  phone, and you step into theirs. That is how one world becomes part of
-  many.
+  your world it lights up when you look at it and shows where it leads.
+  That is how one world becomes part of many. *(Stepping through waits
+  for v4-monorepo #873; the copy does not claim it.)*
 - **Change it.** Change the scene in Blender and press Save and Publish
   again; the same address shows the new version.

@@ -58,8 +58,8 @@ requests: info@fivesquaredinteractive.com.
   MIT.
 - **Pictures.** Five links to the site's own full-size pictures: the loft
   opened in a browser, the loft in a browser tab with the address bar, two
-  visitors in the loft with one named, the loft on a phone, a door between
-  two worlds. Logos: the Five Squared mark, the WebVerse mark and wordmark,
+  visitors in the loft with one named, the loft on a phone, the loft's
+  front door (a door to another world). Logos: the Five Squared mark, the WebVerse mark and wordmark,
   the VEML mark, by email on request (the founder, 2026-11-13: no zip yet,
   and no place named).
 - **Facts.** Founded 2019 · Founder: Dylan Baker · Open

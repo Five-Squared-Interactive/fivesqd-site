@@ -92,7 +92,7 @@ const About = () => {
                 <li><a href="/images/loft-browser-tab.webp" target="_blank" rel="noopener noreferrer">The loft in a browser tab, address bar showing</a> (1400 by 1165)</li>
                 <li><a href="/images/loft-two-visitors.webp" target="_blank" rel="noopener noreferrer">Two visitors in the loft, one named</a> (1600 by 780)</li>
                 <li><a href="/images/loft-phone.webp" target="_blank" rel="noopener noreferrer">The loft on a phone</a> (780 by 1688)</li>
-                <li><a href="/images/station-door.webp" target="_blank" rel="noopener noreferrer">A door between two worlds</a> (1600 by 780)</li>
+                <li><a href="/images/loft-door.webp" target="_blank" rel="noopener noreferrer">The loft's front door, a door to another world</a> (1600 by 780)</li>
               </ul>
               <p style={{ marginTop: '.75rem' }}>Logos: the Five Squared mark, the WebVerse mark and wordmark, the VEML mark, by email on request.</p>
             </div>

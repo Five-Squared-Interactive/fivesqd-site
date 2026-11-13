@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { WORLD_CARD } from '../links';
+import { WORLD_CARD, WORLDHUB_URL } from '../links';
 
 // For architects, interior and landscape designers, and real estate. The
 // words are content/architects.md; keep the two in step. Problem first,
@@ -18,14 +18,14 @@ const Architects = () => (
             them. There’s nothing for them to install.
           </p>
           <div className="hero-actions-left">
-            <a href="#watch" className="btn btn-primary btn-large">Watch a client walkthrough</a>
+            <a href={WORLDHUB_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">Explore worlds on WorldHub</a>
             <Link to="/first-world" className="btn btn-secondary btn-large">Start from Blender</Link>
           </div>
         </div>
         <div className="media-figure" id="watch">
           <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
-            <source src="/video/hero-2026-11-13c.webm" type="video/webm" />
-            <source src="/video/hero-2026-11-13c.mp4" type="video/mp4" />
+            <source src="/video/hero-2026-11-13d.webm" type="video/webm" />
+            <source src="/video/hero-2026-11-13d.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -68,7 +68,7 @@ const Architects = () => (
         <h2>What you get</h2>
         <ul className="live-list">
           <li>From Blender: one press publishes a model as a walkable place at a link.</li>
-          <li>Models from SketchUp, Revit or Rhino come in through Blender’s own importers.</li>
+          <li>Models from SketchUp, Revit or Rhino come in as the files those tools export, such as FBX or OBJ, opened in Blender.</li>
           <li>Private links: visitors sign in, and only the people you name get in.</li>
           <li>Phones, laptops and headsets, in the browser.</li>
         </ul>

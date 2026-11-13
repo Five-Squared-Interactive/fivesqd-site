@@ -23,8 +23,8 @@ const Builders = () => (
         </div>
         <div className="media-figure" id="watch">
           <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
-            <source src="/video/hero-2026-11-13c.webm" type="video/webm" />
-            <source src="/video/hero-2026-11-13c.mp4" type="video/mp4" />
+            <source src="/video/hero-2026-11-13d.webm" type="video/webm" />
+            <source src="/video/hero-2026-11-13d.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -49,14 +49,14 @@ const Builders = () => (
     <section className="section big-row">
       <div className="container media-row">
         <div className="media-text">
-          <h2 className="big">Put a door in your world that opens onto a friend’s.</h2>
+          <h2 className="big">Put a door in your world that points to a friend’s.</h2>
           <p className="lead">
-            A door can open onto a friend’s world at its own address, the way one page links to
+            A door in your world names a friend’s world at its own address, the way one page links to
             the next. Each world’s own file says where its doors lead.
           </p>
         </div>
         <div className="media-figure">
-          <img className="feature-photo" src="/images/station-door.webp" alt="A subway station hall with a door standing in it that leads to the loft" width="1600" height="780" loading="lazy" />
+          <img className="feature-photo" src="/images/loft-door.webp" alt="The loft's front door at the end of its hall; its link names the subway station" width="1600" height="780" loading="lazy" />
         </div>
       </div>
     </section>
