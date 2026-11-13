@@ -66,17 +66,17 @@ const FirstWorld = () => {
           </div>
           <div className="grid-3-steps">
             <div className="step-tile">
-              <img className="feature-photo" src="/images/blender-save-as-my-world.webp" alt="The Save as My World box in Blender with the Save and Publish button" width="1400" height="723" loading="lazy" />
+              <img className="tile-img" src="/images/blender-save-as-my-world.webp" alt="The Save as My World box in Blender with the Save and Publish button" width="1400" height="723" loading="lazy" />
               <h3><span className="step-n">1</span> Install the add-on</h3>
               <p>Blender 4.5 or newer. Sign in once with Google, GitHub or an emailed link.</p>
             </div>
             <div className="step-tile">
-              <img className="feature-photo" src="/images/blender-link-appears.webp" alt="The Save as My World box after Save and Publish, with the World Address filled in" width="1400" height="807" loading="lazy" />
+              <img className="tile-img" src="/images/blender-link-appears.webp" alt="The Save as My World box after Save and Publish, with the World Address filled in" width="1400" height="807" loading="lazy" />
               <h3><span className="step-n">2</span> Press Save and Publish</h3>
               <p>Your scene becomes a world at its own web address and opens in your browser.</p>
             </div>
             <div className="step-tile">
-              <img className="tile-portrait" src="/images/loft-phone.webp" alt="The loft on a phone screen, with the two sticks" width="780" height="1688" loading="lazy" />
+              <img className="tile-img" src="/images/loft-phone.webp" alt="The loft on a phone screen, with the two sticks" width="780" height="1688" loading="lazy" />
               <h3><span className="step-n">3</span> Send the link</h3>
               <p>Paste it in a message. Whoever taps it walks in.</p>
             </div>
