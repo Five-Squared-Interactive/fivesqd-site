@@ -17,7 +17,7 @@ laptop, with whoever else is there. Nothing for them to install.
 [Get the add-on]({ADDON_URL}) · [See it in action](#watch)
 Free and open source. Blender 4.5 or newer.
 
-*(Recording: the same loop as the home page, `public/video/hero.webm`;
+*(Recording: the same loop as the home page, `public/video/hero-2026-11-13b.webm`;
 the door part waits for v4-monorepo #873.)*
 
 ## Three steps from your scene to a link
