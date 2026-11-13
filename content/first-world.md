@@ -92,7 +92,9 @@ under their own names.
 
 ### Share
 
-[slot: the world open in a browser tab, address bar visible]
+*(Picture: the loft open in a Chrome guest window with its address in the
+address bar, captured from the window itself on 2026-11-13 and cropped to
+the tab and address bar.)*
 The address your world opened at is the one to share, for example
 `https://worlds.worldhub.me/w/…`. Anyone can open it in a browser; nothing
 to install. Press Save and Publish again and the same address shows the

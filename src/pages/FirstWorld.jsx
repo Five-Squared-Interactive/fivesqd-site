@@ -150,7 +150,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="Share" shotLabel="The world open in a browser tab, address bar visible.">
+          <Step title="Share" shot={{ src: '/images/loft-browser-tab.webp', alt: 'The loft open in a Chrome tab, its address in the address bar' }}>
             <p>
               The address your world opened at is the one to share, for example{' '}
               <code>https://worlds.worldhub.me/w/…</code>. Anyone can open it in a browser; nothing to install. Press
