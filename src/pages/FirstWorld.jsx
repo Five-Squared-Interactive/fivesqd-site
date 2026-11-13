@@ -26,7 +26,7 @@ const K = ({ children }) => <kbd style={kbd}>{children}</kbd>;
 const Step = ({ title, shot, shotLabel, children }) => (
   <div className="card step-card" style={{ marginBottom: '1.5rem', textAlign: 'left' }}>
     <h3 style={{ marginTop: 0, fontSize: '1.5rem' }}>{title}</h3>
-    {shot ? <img className="step-shot" src={shot.src} alt={shot.alt} loading="lazy" /> : shotLabel ? <Slot label={shotLabel} className="step-slot" /> : null}
+    {shot ? <img className={shot.portrait ? 'step-shot step-shot-portrait' : 'step-shot'} src={shot.src} alt={shot.alt} loading="lazy" /> : shotLabel ? <Slot label={shotLabel} className="step-slot" /> : null}
     {children}
   </div>
 );
@@ -158,7 +158,7 @@ const FirstWorld = () => {
             </p>
           </Step>
 
-          <Step title="Walking around" shotLabel="The world on a phone, held in a hand, both sticks showing.">
+          <Step title="Walking around" shot={{ src: '/images/loft-phone.webp', alt: 'The loft on a phone screen: the left stick, the right stick, and the Jump, Fly and Chat buttons', portrait: true }}>
             <ul style={listStyle}>
               <li>Click in the world to look around with the mouse; <K>Esc</K> gives the mouse back.</li>
               <li>

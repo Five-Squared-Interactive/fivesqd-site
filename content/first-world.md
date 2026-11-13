@@ -102,7 +102,9 @@ new version.
 
 ### Walking around
 
-[slot: the world on a phone, held in a hand, both sticks showing]
+*(Picture: the loft at phone size with both sticks and the Jump, Fly and
+Chat buttons, taken on 2026-11-13 in Chrome with a phone's viewport and
+touch on the founder's machine.)*
 - Click in the world to look around with the mouse; Esc gives the mouse
   back.
 - W A S D to move, Space to jump.

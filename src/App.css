@@ -2156,4 +2156,5 @@ pre.code-example {
 .footer-h3-gap { margin-top: 1.25rem; }
 .founder-photo { display: block; width: 100%; height: auto; border-radius: 8px; }
 .feature-photo { display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18); }
+.step-shot-portrait { width: auto; max-height: 560px; max-width: 100%; margin: 0 auto 1rem; display: block; }
 .walkin { aspect-ratio: 1600 / 780; }
