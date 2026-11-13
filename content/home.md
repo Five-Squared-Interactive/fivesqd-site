@@ -22,7 +22,7 @@ Make a place, send the link, and people walk around in it with you.
 
 Free and open source.
 
-*(Recording, muted and looping, `public/video/hero-2026-11-13b.webm`
+*(Recording, muted and looping, `public/video/hero-2026-11-13c.webm`
 with an mp4 beside it; the file name carries its date so a replacement
 is never served stale from a browser's cache: a phone standing in the loft as a second visitor walks in,
 then the one press in Blender that published it, then the browser
