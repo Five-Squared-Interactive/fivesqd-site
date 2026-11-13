@@ -17,9 +17,8 @@ laptop, with whoever else is there. Nothing for them to install.
 [Get the add-on]({ADDON_URL}) · [See it in action](#watch)
 Free and open source. Blender 4.5 or newer.
 
-[slot, recording: muted, looping: a Blender scene, Save and Publish, the
-link appears, a phone opens it, a second person walks in, one taps a door
-and both are in another world]
+*(Recording: the same loop as the home page, `public/video/hero.webm`;
+the door part waits for v4-monorepo #873.)*
 
 ## Three steps from your scene to a link
 

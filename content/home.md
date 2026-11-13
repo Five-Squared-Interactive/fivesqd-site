@@ -22,9 +22,13 @@ Make a place, send the link, and people walk around in it with you.
 
 Free and open source.
 
-[slot, recording: muted, looping; open on the payoff: a phone opens a link
-and is standing in a room; a second person walks in; then, briefly, the
-scene it came from and the one press that published it]
+*(Recording, muted and looping, `public/video/hero.webm` with an mp4
+beside it: a phone standing in the loft as a second visitor walks in,
+then the one press in Blender that published it, then the browser
+opening the world. A 37-second draft assembled on 2026-11-13 from the
+founder's press and a phone-sized Chrome on his machine; the master is
+`Media/site-2026-11/hero-draft.mp4` in the company OneDrive, to be
+replaced when he records a better one.)*
 
 ## Share the worlds you already have.
 

@@ -60,11 +60,10 @@ const Home = () => {
             <p className="hero-note">Free and open source.</p>
           </div>
           <div className="media-figure" id="watch">
-            <Slot
-              kind="video"
-              label="Muted, looping. Open on the payoff: a phone opens a link and is standing in a room; a second person walks in; then, briefly, the scene it came from and the one press that published it."
-              poster={WORLD_CARD}
-            />
+            <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
+              <source src="/video/hero.webm" type="video/webm" />
+              <source src="/video/hero.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>

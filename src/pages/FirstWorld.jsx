@@ -50,11 +50,10 @@ const FirstWorld = () => {
             <p className="hero-note">Free and open source. Blender 4.5 or newer.</p>
           </div>
           <div className="media-figure" id="watch">
-            <Slot
-              kind="video"
-              label="Muted, looping: a Blender scene, Save and Publish, the link appears, a phone opens it, a second person walks in, one taps a door and both are in another world."
-              poster={WORLD_CARD}
-            />
+            <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={WORLD_CARD} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
+              <source src="/video/hero.webm" type="video/webm" />
+              <source src="/video/hero.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>
