@@ -30,9 +30,9 @@ export const WORLDHUB_URL = 'https://www.worldhub.me/';
 // The GitHub organisation. Founder (2026-10-24): the site never speaks of
 // earlier or current generations; the link is simply GitHub.
 export const GITHUB_ORG = 'https://github.com/Five-Squared-Interactive';
-// The current VEML specification (4.0, with its schema and profiles), on
-// GitHub since 2026-11-13. Founder: the site points at the current spec,
-// never at "the earlier documents".
+// The current VEML specification, with its schema and profiles, on GitHub
+// since 2026-11-13. Founder: the site points at the current spec, never at
+// "the earlier documents", and the repository carries no version numbers.
 export const VEML_SPEC = 'https://github.com/Five-Squared-Interactive/VEML';
 export const CONTACT_EMAIL = 'info@fivesquaredinteractive.com';
 // Version 2.0, 12 November 2026, the founder's edit of the reviewed draft;

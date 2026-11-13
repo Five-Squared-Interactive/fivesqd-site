@@ -178,9 +178,11 @@ until a spec, repo or protocol document is public (founder to confirm).
   say "GitHub". (The v4 code is not public yet; the GitHub organisation
   holds the open code that exists. We say "open source under MIT, on
   GitHub" and no more.) Founder, 2026-11-13: the CURRENT VEML specification
-  (4.0 draft, schema, profiles) is on GitHub in the VEML repository, with
-  3.0 under its own folder; the site links it (`VEML_SPEC`) and never says
-  the earlier documents are there.
+  is on GitHub in the VEML repository as `VEML.md`, `VEML.xsd` and
+  `profiles/`, with no version numbers in the file names and no earlier
+  material beside it (founder: "i just want to have veml 4 as the current
+  without numbering in the file"); the site links it (`VEML_SPEC`) and never
+  says the earlier documents are there.
 - The e-mail is `info@fivesquaredinteractive.com`, the one the live site uses.
 - Pictures made on 2026-11-12 without the founder: the loft from inside
   and a second visitor with their name label, shot headless with two
