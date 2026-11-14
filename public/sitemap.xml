@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://fivesqd.com/</loc></url>
+  <url><loc>https://fivesqd.com/first-world</loc></url>
   <url><loc>https://fivesqd.com/products</loc></url>
   <url><loc>https://fivesqd.com/products/worldhub</loc></url>
-  <url><loc>https://fivesqd.com/products/worldkit</loc></url>
-  <url><loc>https://fivesqd.com/products/gitworlds</loc></url>
   <url><loc>https://fivesqd.com/technology</loc></url>
   <url><loc>https://fivesqd.com/ecosystem</loc></url>
   <url><loc>https://fivesqd.com/about</loc></url>

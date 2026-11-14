@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import { WHITE_PAPER } from '../links';
 
 const YEAR = new Date().getFullYear();
 
@@ -18,33 +19,45 @@ const Footer = React.memo(() => {
           <div className="footer-section">
             <img
               src="/images/fivesquared-gradient.png"
-              alt="Five Squared Interactive"
-              style={{ width: '48px', height: '48px', borderRadius: '10px', marginBottom: '1rem' }}
+              alt=""
+              style={{ width: '48px', height: '48px', borderRadius: '8px', marginBottom: '1rem' }}
             />
             <h3>Five Squared Interactive</h3>
-            <p>Building open tools for 3D worlds on the web, and WorldHub to host them.</p>
+            <p>We make the software that turns a 3D scene into a place people can walk through from a link, and WorldHub to host what you publish.</p>
           </div>
 
           <div className="footer-section">
-            <h3>Explore</h3>
+            <h3>Make</h3>
             <div className="footer-columns">
               <div className="footer-column">
-                <Link to="/products">Products</Link>
+                <Link to="/first-world">Make a world from Blender</Link>
+                <Link to="/private-link">A private link for a client</Link>
+                <Link to="/doors">A world your friends meet in</Link>
+              </div>
+            </div>
+            <h3 className="footer-h3-gap">The pieces</h3>
+            <div className="footer-columns">
+              <div className="footer-column">
+                <Link to="/technology">How it works</Link>
+                <Link to="/technology#client">WebVerse</Link>
                 <Link to="/products/worldhub">WorldHub</Link>
-                <Link to="/technology">Technology</Link>
                 <Link to="/ecosystem">Ecosystem</Link>
-                <Link to="/about">About</Link>
               </div>
               <div className="footer-column">
-                <a href="https://webverse.fivesqd.com" target="_blank" rel="noopener noreferrer">WebVerse</a>
                 <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="/docs/www_whitepaper_v1.1.pdf" target="_blank" rel="noopener noreferrer">White Paper</a>
+                <a href={WHITE_PAPER} target="_blank" rel="noopener noreferrer">White paper</a>
               </div>
             </div>
           </div>
 
           <div className="footer-section">
-            <h3>Contact</h3>
+            <h3>Company</h3>
+            <div className="footer-columns">
+              <div className="footer-column">
+                <Link to="/about">About</Link>
+                <Link to="/about#press">Press</Link>
+              </div>
+            </div>
             <a href="mailto:info@fivesquaredinteractive.com">info@fivesquaredinteractive.com</a>
             <button
               className="theme-toggle-footer"
@@ -57,7 +70,7 @@ const Footer = React.memo(() => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {YEAR} Five Squared Interactive. All Rights Reserved.</p>
+          <p>&copy; {YEAR} Five Squared Interactive.</p>
           <div className="footer-legal-links">
             <Link to="/privacy-policy">Privacy Policy</Link>
             <span> | </span>
