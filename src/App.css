@@ -1563,10 +1563,26 @@ pre.code-example {
 
   .navbar-nav.active {
     display: flex;
+    align-items: stretch;
+    max-height: calc(100vh - 4.5rem);
+    overflow-y: auto;
   }
 
+  /* One item per line, its submenu underneath it, at the menu's full width. */
   .navbar-nav > li {
     padding: 0;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-content {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .navbar-nav > li.nav-cta {
+    align-items: flex-start;
+    padding: 0.75rem 0;
   }
 
   .navbar-nav > li > a,
