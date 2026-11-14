@@ -209,8 +209,8 @@ until a spec, repo or protocol document is public (founder to confirm).
 - Imagery: the hero and the WebVerse card are the loft, a textured scene
   the founder published from Blender with Save and Publish on 2026-10-25
   (`public/images/world-loft-*.webp`, shot headless the same day), and
-  `DEMO_WORLD_URL` is its address, so "Walk into one now" and "Walk in"
-  open it. The "world and document" pair on Home shows the loft beside
+  `DEMO_WORLD_URL` is its address, so "Walk in" opens it (the hero's
+  first button goes to WorldHub instead, founder 2026-11-14). The "world and document" pair on Home shows the loft beside
   the loft's own document (1,119 bytes, fetched from its address on
   2026-11-13: a title, the room, one sky, one entry point, one model, and
   a door whose link leads to the subway station), so the pair is one

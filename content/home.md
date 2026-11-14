@@ -18,7 +18,10 @@ make; `[ph]` a fact he must supply. This file is the words twin of
 
 Make a place, send the link, and people walk around in it with you.
 
-[Walk into one now]({DEMO_WORLD_URL}: the loft) · [Make one](/first-world)
+[Explore worlds on WorldHub](https://www.worldhub.me/) · [Make one](/first-world)
+
+*(Founder, 2026-11-14: the hero's first button is "Explore worlds on
+  WorldHub", not "Walk into one now"; he had asked for it already.)*
 
 Free and open source.
 
