@@ -184,6 +184,10 @@ until a spec, repo or protocol document is public (founder to confirm).
   without numbering in the file"); the site links it (`VEML_SPEC`) and never
   says the earlier documents are there.
 - The e-mail is `info@fivesquaredinteractive.com`, the one the live site uses.
+- Founder, 2026-11-14: the ecosystem page keeps the live site's shape and
+  words (the banner, The Ecosystem Is Yours, How to Get Involved, Where You
+  Fit In, What's Already Here, Let's Build Together), with today's facts and
+  links; see `build-on-it.md`. The About page has no "How we got here".
 - Pictures made on 2026-11-12 without the founder: the loft from inside
   and a second visitor with their name label, shot headless with two
   visitors in the world (the second takes about half a minute to appear;

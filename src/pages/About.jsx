@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GITHUB_ORG, CONTACT_EMAIL, WHITE_PAPER } from '../links';
+import { CONTACT_EMAIL } from '../links';
 
 // The words are content/about.md; keep the two in step. The founder's
 // name, photo, year and bio are placeholders until he supplies them.
@@ -53,14 +53,6 @@ const About = () => {
             that opens worlds is open, hosting is a convenience the design never requires, and the
             design puts nothing of ours between a link and the world it points to. A thousand worlds
             on our servers would mean less to us than one person's world at their own address.
-          </p>
-          <h2 style={{ marginTop: '2.5rem' }}>How we got here</h2>
-          <p>
-            We have been building open 3D worlds for the web since 2019. The
-            long form of the idea is the white paper,{' '}
-            <a href={WHITE_PAPER} target="_blank" rel="noopener noreferrer">Web Wide Worlds</a>. Today a
-            Blender scene becomes a world in one press. The code is open source under MIT, on{' '}
-            <a href={GITHUB_ORG} target="_blank" rel="noopener noreferrer">GitHub</a>.
           </p>
         </div>
       </section>

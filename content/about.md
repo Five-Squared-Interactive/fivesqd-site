@@ -33,12 +33,9 @@ design never requires, and the design puts nothing of ours between a link
 and the world it points to. A thousand worlds on our servers would mean
 less to us than one person's world at their own address.
 
-## How we got here
-
-We have been building open 3D worlds for the web since 2019. The
-long form of the idea is the white paper, Web Wide Worlds. Today a
-Blender scene becomes a world in one press. The code is open source under
-MIT, on GitHub.
+*(Founder, 2026-11-14: the "How we got here" section that followed is
+gone; the bio above says since 2019, and the white paper and GitHub are
+linked from the press kit and the footer.)*
 
 ## Press
 

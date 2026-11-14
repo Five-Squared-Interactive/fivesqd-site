@@ -41,7 +41,7 @@ const Footer = React.memo(() => {
                 <Link to="/technology">How it works</Link>
                 <Link to="/technology#client">WebVerse</Link>
                 <Link to="/products/worldhub">WorldHub</Link>
-                <Link to="/ecosystem">Build on it</Link>
+                <Link to="/ecosystem">Ecosystem</Link>
               </div>
               <div className="footer-column">
                 <a href="https://github.com/Five-Squared-Interactive" target="_blank" rel="noopener noreferrer">GitHub</a>

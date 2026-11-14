@@ -163,7 +163,7 @@ const Technology = () => {
           </p>
           <p>
             Want to build on the pieces, or put your own things in a world?{' '}
-            <Link to="/ecosystem">Build on it &rarr;</Link>
+            <Link to="/ecosystem">The ecosystem &rarr;</Link>
           </p>
         </div>
       </section>
@@ -213,7 +213,7 @@ const Technology = () => {
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
             <Link to="/first-world" className="btn btn-primary">Make a world</Link>
-            <Link to="/ecosystem" className="btn btn-secondary">Build on it</Link>
+            <Link to="/ecosystem" className="btn btn-secondary">The ecosystem</Link>
           </div>
         </div>
       </section>

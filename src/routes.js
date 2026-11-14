@@ -49,8 +49,8 @@ export const ROUTES = [
   },
   {
     path: '/ecosystem',
-    title: 'Build on it - Five Squared Interactive',
-    description: 'Make worlds, put your own things in a world, or build the pieces yourself: everything that opens, moves or syncs a world is MIT-licensed.',
+    title: 'Ecosystem - Five Squared Interactive',
+    description: 'The ecosystem is yours: create worlds, bring in what you have already built, or build something new. Every layer is MIT-licensed and designed to be extended, replaced, or reimagined.',
   },
   {
     path: '/about',

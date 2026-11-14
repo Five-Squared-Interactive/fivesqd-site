@@ -116,7 +116,7 @@ world, the page's host serves the page, and the two never need to be the
 same. *(The cross-origin header a host must send is a fact for the
 developer guide, not this page; it is in content/README.md.)*
 Want to build on the pieces, or put your own things in a world?
-[Build on it](/ecosystem)
+[The ecosystem](/ecosystem)
 
 ## Questions people ask
 
@@ -150,4 +150,4 @@ Want to build on the pieces, or put your own things in a world?
 The long form is in the white paper, version 2.0 (November 2026):
 [Web Wide Worlds](/docs/www_whitepaper_v2.0.pdf). *(1.1 stays in docs/ so
 sent links keep working; the "predates the current page" caveat went with
-it.)* [Make a world](/first-world) · [Build on it](/ecosystem)
+it.)* [Make a world](/first-world) · [The ecosystem](/ecosystem)
