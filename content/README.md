@@ -219,10 +219,19 @@ until a spec, repo or protocol document is public (founder to confirm).
   (`w_cVo42GFe5Tm3`, the CC BY "Subway station" by Pasha, with a door
   back); the October address `w_jpR9xNJ0pb9q` belongs to the founder's
   pre-migration identity and cannot be updated, so it stays as it was.
-  Today the door opens an empty world because the client fetches the
-  station's page as its document (v4-monorepo #873); the door clip waits
-  for that fix, and until then the copy says a door "names" or "shows
-  where it leads", never that you step through (review of 2026-11-13).
+  Until 2026-11-15 the door opened an empty world because the client
+  fetched the station's page as its document (v4-monorepo #873), and the
+  copy said a door "names" or "shows where it leads". The fix is deployed
+  (shell and publish service, 2026-11-15) and the door was checked live
+  from outside both ways (loft to station, station to loft), so the copy
+  now says a door opens into the world it names. The door clip
+  (`public/video/door-2026-11-15*.webm/.mp4`, posters `door-poster*.webp`)
+  was recorded headless from the live loft on 2026-11-15 with the session
+  scratchpad's `doorclip.cjs` (turn round at the entry point, walk to the
+  door, click) and cut with `doorcut.sh` (the door in view and approached,
+  a jump to the loading screen as the click lands, the station); the
+  master is `Media/site-2026-11/door-2026-11-15-master.mp4` in the company
+  OneDrive.
 - The subway station is the CC BY 4.0 "Subway station" by Pasha
   (https://skfb.ly/pByQU); every page that shows it carries the credit.
 - A world served from your own host must allow cross-origin reads

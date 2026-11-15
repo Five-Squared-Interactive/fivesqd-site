@@ -19,8 +19,7 @@ laptop, with whoever else is there. Nothing for them to install.
 WorldHub" everywhere.)*
 Free and open source. Blender 4.5 or newer.
 
-*(Recording: the same loop as the home page, `public/video/hero-2026-11-13d.webm`;
-the door part waits for v4-monorepo #873.)*
+*(Recording: the same loop as the home page, `public/video/hero-2026-11-13d.webm`.)*
 
 ## Three steps from your scene to a link
 
@@ -127,8 +126,9 @@ Your world is a web page.
   address yourself.
 - **Link it to another world.** Select an object in Blender, open its VEML
   Entity panel, and put another world's address in the **Link** field. In
-  your world it lights up when you look at it and shows where it leads.
-  That is how one world becomes part of many. *(Stepping through waits
-  for v4-monorepo #873; the copy does not claim it.)*
+  your world it lights up when you look at it, and a click takes you
+  through. That is how one world becomes part of many. *(True since
+  2026-11-15, v4-monorepo #873 deployed; before that the copy said only
+  "shows where it leads".)*
 - **Change it.** Change the scene in Blender and press Save and Publish
   again; the same address shows the new version.
