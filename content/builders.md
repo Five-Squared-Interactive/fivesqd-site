@@ -10,11 +10,11 @@ This file is the words twin of `src/pages/Builders.jsx`; keep them in step.
 
 **A world of your own, with your friends in it.**
 Your world is a few plain files at its own web address. Your people walk
-in from a link, and a door in it points to other worlds. You don't run a
+in from a link, and a door in it opens into other worlds. You don't run a
 server.
-[Explore worlds on WorldHub](https://www.worldhub.me/) · [Build one from Blender](/first-world)
-*(Recording: the same loop as the home page, `public/video/hero-2026-11-13d.webm`;
-the door clip waits for v4-monorepo #873.)*
+*(Founder, 2026-11-14: the hero's first button goes to WorldHub; the
+recording is the home page's loop. Since 2026-11-15 the door works live
+(v4-monorepo #873), so the copy says a door opens into other worlds.)*
 
 ## Your people, in your world, without running a server.
 
@@ -25,14 +25,13 @@ connect to each other, so nothing of yours has to stay switched on.
 head, `loft-two-visitors.webp`; the name is the one the world gives an
 anonymous visitor.)*
 
-## Put a door in your world that points to a friend's.
+## Put a door in your world that opens into a friend's.
 
-A door in your world names a friend's world at its own address, the way
-one page links to the next. Each world's own file says where its doors
+A door in your world opens into a friend's world at its own address, the
+way one page links to the next. Each world's own file says where its doors
 lead.
-*(Picture: the loft's front door at the end of its hall, `loft-door.webp`;
-the clip through it waits for #873, and the copy says a door "names" a
-friend's world.)*
+*(Picture: the loft's front door at the end of its hall, `loft-door.webp`,
+which opens into the station; checked live both ways on 2026-11-15.)*
 
 ## What you get
 

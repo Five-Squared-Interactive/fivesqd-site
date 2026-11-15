@@ -79,12 +79,12 @@ to the private-link page.)*
 
 ## Worlds lead to worlds.
 
-A door in your world names someone else's, at its own address, the way
-pages link to pages.
+A door in your world opens into someone else's, at its own address, the
+way pages link to pages.
 *(Picture: the loft's front door at the end of its hall, `loft-door.webp`,
-whose link names the station; the clip through it waits for v4-monorepo
-#873, since today the door opens an empty world, and the copy says
-"names", never "step through".)*
+which opens into the station. Since 2026-11-15, with v4-monorepo #873
+fixed and deployed and the door checked live both ways, the copy says a
+door opens into another world; until then it said "names".)*
 
 ## It's yours.
 

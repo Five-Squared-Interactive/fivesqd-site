@@ -187,7 +187,7 @@ const FirstWorld = () => {
               <li>
                 <strong>Link it to another world.</strong> Select an object in Blender, open its VEML Entity panel,
                 and put another world's address in the <strong>Link</strong> field. In your world it lights up when
-                you look at it and shows where it leads. That is how one world becomes part of many.
+                you look at it, and a click takes you through. That is how one world becomes part of many.
                 <img className="step-shot" src="/images/blender-link-field.webp" alt="An object's VEML Entity panel with the Portal section and its Link field" loading="lazy" />
               </li>
               <li>

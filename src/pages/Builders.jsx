@@ -14,7 +14,7 @@ const Builders = () => (
           <h1>A world of your own, with your friends in it.</h1>
           <p className="lead">
             Your world is a few plain files at its own web address. Your people walk in from a
-            link, and a door in it points to other worlds. You don’t run a server.
+            link, and a door in it opens into other worlds. You don’t run a server.
           </p>
           <div className="hero-actions-left">
             <a href={WORLDHUB_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">Explore worlds on WorldHub</a>
@@ -49,14 +49,14 @@ const Builders = () => (
     <section className="section big-row">
       <div className="container media-row">
         <div className="media-text">
-          <h2 className="big">Put a door in your world that points to a friend’s.</h2>
+          <h2 className="big">Put a door in your world that opens into a friend’s.</h2>
           <p className="lead">
-            A door in your world names a friend’s world at its own address, the way one page links to
-            the next. Each world’s own file says where its doors lead.
+            A door in your world opens into a friend’s world at its own address, the way one page links
+            to the next. Each world’s own file says where its doors lead.
           </p>
         </div>
         <div className="media-figure">
-          <img className="feature-photo" src="/images/loft-door.webp" alt="The loft's front door at the end of its hall; its link names the subway station" width="1600" height="780" loading="lazy" />
+          <img className="feature-photo" src="/images/loft-door.webp" alt="The loft's front door at the end of its hall; it opens into the subway station" width="1600" height="780" loading="lazy" />
         </div>
       </div>
     </section>

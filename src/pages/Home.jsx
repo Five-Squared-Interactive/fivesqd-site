@@ -119,9 +119,9 @@ const Home = () => {
         id="doors"
         flip
         title="Worlds lead to worlds."
-        figure={<img className="feature-photo" src="/images/loft-door.webp" alt="The loft's front door at the end of its hall; its link names the subway station" width="1600" height="780" loading="lazy" />}
+        figure={<img className="feature-photo" src="/images/loft-door.webp" alt="The loft's front door at the end of its hall; it opens into the subway station" width="1600" height="780" loading="lazy" />}
       >
-        A door in your world names someone else’s, at its own address, the way pages link to pages.
+        A door in your world opens into someone else’s, at its own address, the way pages link to pages.
       </Feature>
 
       <Feature
