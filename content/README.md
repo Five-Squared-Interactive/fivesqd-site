@@ -37,7 +37,8 @@ nothing in `drafts/` is routed or prerendered.
 ## Rules the copy keeps
 
 - One sentence, everywhere: **a world is a web page.** Say *page*, *world*,
-  *link*, *client*. Never *app*, *platform*, *shell*, *metaverse*.
+  *link*, and WebVerse or "the page that opens a world" for the thing
+  visitors use. Never *client*, *app*, *platform*, *shell*, *metaverse*.
 - No new product names. The names are VEML, StraightFour, WebVerse,
   MyWorlds, WorldSync, WorldOS, WorldKit, and the one service, WorldHub
   (with WorldHub ID, Search and MyWorlds as its features). Nothing else.
