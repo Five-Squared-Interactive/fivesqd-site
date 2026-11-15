@@ -81,10 +81,16 @@ to the private-link page.)*
 
 A door in your world opens into someone else's, at its own address, the
 way pages link to pages.
-*(Picture: the loft's front door at the end of its hall, `loft-door.webp`,
-which opens into the station. Since 2026-11-15, with v4-monorepo #873
-fixed and deployed and the door checked live both ways, the copy says a
-door opens into another world; until then it said "names".)*
+*(Clip, muted and looping, `public/video/door-2026-11-15-wide.webm` with
+an mp4 beside it, cropped to the row's 1600:780 shape, poster
+`door-poster-wide.webp`: the loft's front door comes into view lit up with
+"To the subway", the click lands, the loading screen, and the station
+appears; 9 seconds, recorded headless from the live world on 2026-11-15,
+master in the company OneDrive's Media/site-2026-11. It replaces the
+still `loft-door.webp`, which stays for the press kit. Since 2026-11-15,
+with v4-monorepo #873 fixed and deployed and the door checked live both
+ways, the copy says a door opens into another world; until then it said
+"names".)*
 
 ## It's yours.
 

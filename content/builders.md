@@ -12,9 +12,12 @@ This file is the words twin of `src/pages/Builders.jsx`; keep them in step.
 Your world is a few plain files at its own web address. Your people walk
 in from a link, and a door in it opens into other worlds. You don't run a
 server.
-*(Founder, 2026-11-14: the hero's first button goes to WorldHub; the
-recording is the home page's loop. Since 2026-11-15 the door works live
-(v4-monorepo #873), so the copy says a door opens into other worlds.)*
+*(Founder, 2026-11-14: the hero's first button goes to WorldHub. The
+recording is the door clip, `public/video/door-2026-11-15.webm` at 16:9
+with its mp4 and poster `door-poster.webp`: the loft's front door lit up
+with "To the subway", the click, the loading screen, the station. Since
+2026-11-15 the door works live (v4-monorepo #873), so the copy says a door
+opens into other worlds.)*
 
 ## Your people, in your world, without running a server.
 

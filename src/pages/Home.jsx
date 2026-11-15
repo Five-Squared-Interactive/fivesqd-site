@@ -119,7 +119,12 @@ const Home = () => {
         id="doors"
         flip
         title="Worlds lead to worlds."
-        figure={<img className="feature-photo" src="/images/loft-door.webp" alt="The loft's front door at the end of its hall; it opens into the subway station" width="1600" height="780" loading="lazy" />}
+        figure={
+          <video className="feature-photo" autoPlay muted loop playsInline preload="metadata" poster="/images/door-poster-wide.webp" width="1280" height="624" aria-label="Walking up to the loft's front door, which lights up with the name of the subway station; a click, and the station appears">
+            <source src="/video/door-2026-11-15-wide.webm" type="video/webm" />
+            <source src="/video/door-2026-11-15-wide.mp4" type="video/mp4" />
+          </video>
+        }
       >
         A door in your world opens into someone else’s, at its own address, the way pages link to pages.
       </Feature>

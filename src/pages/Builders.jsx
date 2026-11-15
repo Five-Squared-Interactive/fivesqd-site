@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HERO_POSTER, WORLDHUB_URL } from '../links';
+import { WORLDHUB_URL } from '../links';
 
 // For people who want to make a world of their own, with other people in
 // it. The words are content/builders.md; keep the two in step. Problem
@@ -22,9 +22,9 @@ const Builders = () => (
           </div>
         </div>
         <div className="media-figure" id="watch">
-          <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={HERO_POSTER} aria-label="A phone standing in the loft as a second visitor walks in; then the one press in Blender that published it, and the browser opening the world">
-            <source src="/video/hero-2026-11-13d.webm" type="video/webm" />
-            <source src="/video/hero-2026-11-13d.mp4" type="video/mp4" />
+          <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster="/images/door-poster.webp" aria-label="Walking up to the loft's front door, which lights up with the name of the subway station; a click, and the station appears">
+            <source src="/video/door-2026-11-15.webm" type="video/webm" />
+            <source src="/video/door-2026-11-15.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
